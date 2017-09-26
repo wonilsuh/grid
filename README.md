@@ -1,6 +1,6 @@
 # IBM Grid
 
-![Introducing the IBM Grid](./docs/intro.gif)
+![Introducing the IBM Grid](./docs/intro.gif?raw=true)
 
 The Sketch file and a flexbox code implementation of the IBM Grid.
 
