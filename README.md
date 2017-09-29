@@ -79,9 +79,9 @@ If you would like to help develop a resource to implement this grid using CSS Gr
 | Classname                     | Purpose                                                                                                                                             |
 |-------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
 | `.ibm`                        | Container div of the grid                                                                                                                           |
-| `.ibm-col-sm-[0-4]`           | Set the width out of two columns for an item in the grid starting at 0px screen width                                                               |
-| `.ibm-col-md-[0-8]`           | Set the width out of four columns for an item in the grid starting at 640px screen width                                                            |
-| `.ibm-col-lg-[0-16]`           | Set the width out of two columns for an item in the grid starting at 1056px screen width                                                            |
+| `.ibm-col-sm-[0-4]`           | Set the width out of four columns for an item in the grid starting at 0px screen width                                                               |
+| `.ibm-col-md-[0-8]`           | Set the width out of eight columns for an item in the grid starting at 640px screen width                                                            |
+| `.ibm-col-lg-[0-16]`           | Set the width out of sixteen columns for an item in the grid starting at 1056px screen width                                                            |
 | `.ibm-col-[sm, md, lg]-0-only`  | Do not display an item for a specific breakpoint                                                                                                    |
 | `.ibm-col-group`              | Turn an item into a group of items for sub-rows and sub-columns                                                                                     |
 | `.ibm-col-tall`               | Double the vertical padding of an item                                                                                                              |
