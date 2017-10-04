@@ -1,7 +1,7 @@
 {
   "name": "@ibm/grid",
   "description": "An opinionated grid for all IBM experiences.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repository": "https://github.com/ibm/grid.git",
   "bugs": {
     "url": "https://github.com/ibm/grid/issues"

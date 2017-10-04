@@ -183,12 +183,14 @@ html, body {
 
     @media (min-width: map-get($map, lg--breakpoint)) {
       @if map-has-key($map, #{$bp}--columns) {
+
+        @debug $bp;
         $columns: map-get($map, #{$bp}--columns);
         $a: 1;
         @while $a <= $columns {
           // col width
           .ibm-col-#{$bp}-#{$a} {
-            width: round((100vw - map-get($map, #{$bp}--unit) * 2) / $columns * $a * 10000) / 10000;
+            width: (100vw - map-get($map, lg--unit) * 2) / $columns * $a;
           }
           $a: $a + 1;
         }
