@@ -7,7 +7,9 @@
     "url": "https://github.com/ibm/grid/issues"
   },
   "devDependencies": {
+    "@ibm/type": "^0.1.3",
     "browser-sync": "^2.18.12",
+    "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.7.0",
     "gulp-rename": "^1.2.2",
@@ -15,7 +17,7 @@
   },
   "license": "Apache-2.0",
   "scripts": {
-    "start": "gulp watch"
+    "start": "gulp clean && gulp type && gulp styles && gulp watch"
   },
   "author": "James Y. Rauhut <jamesrauhut@us.ibm.com>",
   "dependencies": {}
