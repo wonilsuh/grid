@@ -1,34 +1,67 @@
 // Each section is labeled with a comment describing
 // how much data the section takes when minified
 
-$breakpoints: "sm" "md" "lg" "freeze";
-$bleeds: "lg" "freeze";
-$used: "sm" "md" "lg";
+// $breakpoints: "sm" "md" "lg" "freeze";
+// $bleeds: "lg" "freeze";
+// $used: "sm" "md" "lg";
 
-$sm--unit: 100vw / 64;
-$lg--unit: 100vw / 66;
-$freeze--unit: 1650px / 66;
+// $sm--unit: 100vw / 64;
+// $lg--unit: 100vw / 66;
+// $freeze--unit: 1650px / 66;
 
-$ratios: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16;
+// $ratios: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16;
 
-$map: (
- sm--breakpoint: 0px,
- sm--columns: 4,
- sm--padding: 4,
- sm--unit: $sm--unit,
- md--breakpoint: 640px,
- md--columns: 8,
- md--padding: 2,
- md--unit: $sm--unit,
- lg--breakpoint: 1056px,
- lg--columns: 16,
- lg--padding: 1,
- lg--unit: $lg--unit,
- lg--width: 100vw,
- freeze--breakpoint: 1650px,
- freeze--padding: 1,
- freeze--unit: $freeze--unit,
- freeze--width: 1650px
+// $map: (
+//  sm--breakpoint: 0px,
+//  sm--columns: 4,
+//  sm--padding: 4,
+//  sm--unit: $sm--unit,
+//  md--breakpoint: 640px,
+//  md--columns: 8,
+//  md--padding: 2,
+//  md--unit: $sm--unit,
+//  lg--breakpoint: 1056px,
+//  lg--columns: 16,
+//  lg--padding: 1,
+//  lg--unit: $lg--unit,
+//  lg--width: 100vw,
+//  freeze--breakpoint: 1650px,
+//  freeze--padding: 1,
+//  freeze--unit: $freeze--unit,
+//  freeze--width: 1650px
+// );
+
+$ibm-grid: (
+  "sm": (
+    breakpoint: 0px,
+    columns: 4,
+    hideable: true,
+    margin: false,
+    next: "md",
+    unit: (100vw / 16),
+  ),
+  "md": (
+    breakpoint: 640px,
+    columns: 8,
+    hideable: true,
+    margin: false,
+    next: "lg",
+    unit: (100vw / 32),
+  ),
+  "lg": (
+    breakpoint: 1056px,
+    columns: 16,
+    hideable: true,
+    margin: true,
+    max: "max",
+    unit: (100vw / 66),
+  ),
+  "max": (
+    breakpoint: 1650px,
+    columns: 16,
+    margin: true,
+    unit: 25px,
+  )
 );
 
 html, body {
@@ -40,15 +73,15 @@ html, body {
 .ibm {
   box-sizing: border-box;
   margin: auto;
-  max-width: map-get($map, freeze--breakpoint);
+  max-width: map-get(map-get($ibm-grid, max), breakpoint);
   width: 100vw;
 
-  @media (min-width: map-get($map, lg--breakpoint)) {
-    padding: 0 map-get($map, lg--unit);
-  }
-
-  @media (min-width: map-get($map, freeze--breakpoint)) {
-    padding: 0 map-get($map, freeze--unit);
+  @each $breakpoint, $values in $ibm-grid {
+    @if map-get($values, margin) == true {
+      @media (min-width: map-get($values, breakpoint)) {
+        padding: 0 map-get($values, unit);
+      }
+    }
   }
 }
 
@@ -68,6 +101,11 @@ html, body {
 .ibm-col-full_padding,
 .ibm-col-ratio_content {
   box-sizing: border-box;
+  padding: map-get(map-get($ibm-grid, sm), unit);
+
+  &.ibm-col-tall {
+    padding: 2 * map-get(map-get($ibm-grid, sm), unit) map-get(map-get($ibm-grid, sm), unit);
+  }
 
   > *:first-child {
     margin-top: 0;
@@ -77,14 +115,13 @@ html, body {
     margin-bottom: 0;
   }
 
-  @each $bp in $breakpoints {
-    @if map-has-key($map, #{$bp}--breakpoint) {
-      @media (min-width: map-get($map, #{$bp}--breakpoint)) {
-        padding: map-get($map, #{$bp}--unit) * map-get($map, #{$bp}--padding);
+  @each $breakpoint, $values in $ibm-grid {
+    @if map-get($values, breakpoint) {
+      @media (min-width: map-get($values, breakpoint)) {
+        padding: map-get($values, unit);
 
         &.ibm-col-tall {
-          padding-bottom: 2 * map-get($map, #{$bp}--unit) * map-get($map, #{$bp}--padding);
-          padding-top: 2 * map-get($map, #{$bp}--unit) * map-get($map, #{$bp}--padding);
+          padding: 2 * map-get($values, unit) map-get($values, unit);
         }
       }
     }
@@ -93,13 +130,7 @@ html, body {
 
 .ibm > *,
 .ibm-col-group > * {
-  @media (min-width: map-get($map, lg--breakpoint)) {
-    width: #{100vw - 2 * map-get($map, lg--unit)};
-  }
-
-  @media (min-width: map-get($map, freeze--breakpoint)) {
-    width: #{map-get($map, freeze--breakpoint) - 2 * map-get($map, freeze--unit)};
-  }
+  width: 100%;
 }
 
 .ibm-col-group,
@@ -108,50 +139,23 @@ html, body {
   position: relative;
 }
 
-@each $bp in $used {
-  @if map-has-key($map, #{$bp}--breakpoint) {
-    $next: index($used, $bp) + 1;
-    $next-bp: nth($breakpoints, $next);
-    $next-width: map-get($map, #{$next-bp}--breakpoint);
-    .ibm-col-#{$bp}-0-only {
-      @if $bp != 'lg' {
-        @media (min-width: map-get($map, #{$bp}--breakpoint)) and (max-width: #{$next-width - 1px}) {
-          display: none;
-        }
-      } @else {
-        @media (min-width: map-get($map, #{$bp}--breakpoint)) {
-          display: none;
-        }
+@each $breakpoint, $values in $ibm-grid {
+  @if map-get($values, hideable) == true {
+    @media (min-width: map-get($values, breakpoint)) {
+      .ibm-col-#{$breakpoint}-0,
+      .ibm-col-#{$breakpoint}-0-only {
+        display: none;
       }
     }
 
-    .ibm .ibm-col-#{$bp}-0 {
-      @media (min-width: map-get($map, #{$bp}--breakpoint)) {
-        display: none;
-      }
+    @if map-get($ibm-grid, map-get($values, next)) {
+      @media (min-width: map-get(map-get($ibm-grid, map-get($values, next)), breakpoint)) {
+        .ibm-col-#{$breakpoint}-0[class^="ibm-col-#{map-get($values, next)}-"],
+        .ibm-col-#{$breakpoint}-0-only {
+          display: initial;
 
-      // Hidden cols don't need to return if hidden at large
-      @if $bp != 'lg' {
-        @media (min-width: $next-width) {
-          &[class*="ibm-col-#{$next-bp}-"] {
-            display: initial;
-
-            &.ibm-col-group {
-              display: flex;
-            }
-          }
-        }
-
-        // If col is hidden at small, it can return with both a medium or large classname
-        @if $bp == 'sm' {
-          @media (min-width: map-get($map, lg--breakpoint)) {
-            &[class*="ibm-col-lg-"] {
-              display: initial;
-
-              &.ibm-col-group {
-                display: flex;
-              }
-            }
+          &.ibm-col-group {
+            display: flex;
           }
         }
       }
@@ -159,56 +163,23 @@ html, body {
   }
 }
 
-@each $bp in $breakpoints {
-  @if map-has-key($map, #{$bp}--breakpoint) {
-    @media (min-width: map-get($map, #{$bp}--breakpoint)) {
-      // col width - <1kb
-      @if map-has-key($map, #{$bp}--columns) {
-        $columns: map-get($map, #{$bp}--columns);
-        $a: 1;
-        @while $a <= $columns {
-          // Can avoid sm-2 because that is default behavior.
-          @if ($bp != 'sm' or $a != 4) {
-            // col width
-            .ibm-col-#{$bp}-#{$a} {
-              @if ($bp != 'lg') {
-                width: 100vw / $columns * $a;
-              }
-            }
+@each $breakpoint, $values in $ibm-grid {
+  @if $breakpoint != 'max' {
+    $a: 1;
+    @while $a <= map-get($values, columns) {
+      .ibm-col-#{$breakpoint}-#{$a} {
+        @if $breakpoint != 'lg' {
+          @media (min-width: map-get($values, breakpoint)) {
+            width: 100vw / map-get($values, columns) * $a;
           }
-          $a: $a + 1;
+        }
+
+        @media (min-width: map-get(map-get($ibm-grid, lg), breakpoint)) {
+          max-width: (map-get(map-get($ibm-grid, max), breakpoint) - map-get(map-get($ibm-grid, max), unit) * 2) / map-get($values, columns) * $a;
+          width: (100vw - map-get(map-get($ibm-grid, lg), unit) * 2) / map-get($values, columns) * $a;
         }
       }
-    }
-
-    @media (min-width: map-get($map, lg--breakpoint)) {
-      @if map-has-key($map, #{$bp}--columns) {
-
-        @debug $bp;
-        $columns: map-get($map, #{$bp}--columns);
-        $a: 1;
-        @while $a <= $columns {
-          // col width
-          .ibm-col-#{$bp}-#{$a} {
-            width: (100vw - map-get($map, lg--unit) * 2) / $columns * $a;
-          }
-          $a: $a + 1;
-        }
-      }
-    }
-
-    @media (min-width: map-get($map, freeze--breakpoint)) {
-      @if map-has-key($map, #{$bp}--columns) {
-        $columns: map-get($map, #{$bp}--columns);
-        $a: 1;
-        @while $a <= $columns {
-          // col width
-          .ibm-col-#{$bp}-#{$a} {
-            width: (map-get($map, freeze--breakpoint) - map-get($map, freeze--unit) * 2) / $columns * $a;
-          }
-          $a: $a + 1;
-        }
-      }
+      $a: $a + 1;
     }
   }
 }
