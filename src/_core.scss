@@ -1,40 +1,8 @@
-// Each section is labeled with a comment describing
-// how much data the section takes when minified
-
-// $breakpoints: "sm" "md" "lg" "freeze";
-// $bleeds: "lg" "freeze";
-// $used: "sm" "md" "lg";
-
-// $sm--unit: 100vw / 64;
-// $lg--unit: 100vw / 66;
-// $freeze--unit: 1650px / 66;
-
-// $ratios: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16;
-
-// $map: (
-//  sm--breakpoint: 0px,
-//  sm--columns: 4,
-//  sm--padding: 4,
-//  sm--unit: $sm--unit,
-//  md--breakpoint: 640px,
-//  md--columns: 8,
-//  md--padding: 2,
-//  md--unit: $sm--unit,
-//  lg--breakpoint: 1056px,
-//  lg--columns: 16,
-//  lg--padding: 1,
-//  lg--unit: $lg--unit,
-//  lg--width: 100vw,
-//  freeze--breakpoint: 1650px,
-//  freeze--padding: 1,
-//  freeze--unit: $freeze--unit,
-//  freeze--width: 1650px
-// );
-
 $ibm-grid: (
   "sm": (
     breakpoint: 0px,
     columns: 4,
+    heights: 16,
     hideable: true,
     margin: false,
     next: "md",
@@ -43,6 +11,7 @@ $ibm-grid: (
   "md": (
     breakpoint: 640px,
     columns: 8,
+    heights: 16,
     hideable: true,
     margin: false,
     next: "lg",
@@ -51,6 +20,7 @@ $ibm-grid: (
   "lg": (
     breakpoint: 1056px,
     columns: 16,
+    heights: 32,
     hideable: true,
     margin: true,
     max: "max",
@@ -103,10 +73,6 @@ html, body {
   box-sizing: border-box;
   padding: map-get(map-get($ibm-grid, sm), unit);
 
-  &.ibm-col-tall {
-    padding: 2 * map-get(map-get($ibm-grid, sm), unit) map-get(map-get($ibm-grid, sm), unit);
-  }
-
   > *:first-child {
     margin-top: 0;
   }
@@ -117,14 +83,21 @@ html, body {
 
   @each $breakpoint, $values in $ibm-grid {
     @if map-get($values, breakpoint) {
-      @media (min-width: map-get($values, breakpoint)) {
-        padding: map-get($values, unit);
-
-        &.ibm-col-tall {
-          padding: 2 * map-get($values, unit) map-get($values, unit);
+      @if $breakpoint != 'sm' {
+        @media (min-width: map-get($values, breakpoint)) {
+          padding: map-get($values, unit);
         }
+      } @else {
+        padding: map-get($values, unit);
       }
     }
+  }
+}
+
+@each $breakpoint, $values in $ibm-grid {
+  .ibm-col-tall {
+    padding-bottom: 2 * map-get($values, unit);
+    padding-top: 2 * map-get($values, unit);
   }
 }
 
@@ -140,8 +113,15 @@ html, body {
 }
 
 @each $breakpoint, $values in $ibm-grid {
-  @if map-get($values, hideable) == true {
-    @media (min-width: map-get($values, breakpoint)) {
+  @if map-get($values, hideable) {
+    @if $breakpoint != 'sm' {
+      @media (min-width: map-get($values, breakpoint)) {
+        .ibm-col-#{$breakpoint}-0,
+        .ibm-col-#{$breakpoint}-0-only {
+          display: none;
+        }
+      }
+    } @else {
       .ibm-col-#{$breakpoint}-0,
       .ibm-col-#{$breakpoint}-0-only {
         display: none;
@@ -169,7 +149,11 @@ html, body {
     @while $a <= map-get($values, columns) {
       .ibm-col-#{$breakpoint}-#{$a} {
         @if $breakpoint != 'lg' {
-          @media (min-width: map-get($values, breakpoint)) {
+          @if $breakpoint != 'sm' {
+            @media (min-width: map-get($values, breakpoint)) {
+              width: 100vw / map-get($values, columns) * $a;
+            }
+          } @else {
             width: 100vw / map-get($values, columns) * $a;
           }
         }
@@ -177,6 +161,11 @@ html, body {
         @media (min-width: map-get(map-get($ibm-grid, lg), breakpoint)) {
           max-width: (map-get(map-get($ibm-grid, max), breakpoint) - map-get(map-get($ibm-grid, max), unit) * 2) / map-get($values, columns) * $a;
           width: (100vw - map-get(map-get($ibm-grid, lg), unit) * 2) / map-get($values, columns) * $a;
+
+          &[class*="ibm-col-bleed-"] {
+            max-width: (map-get(map-get($ibm-grid, max), breakpoint) - map-get(map-get($ibm-grid, max), unit) * 2) / map-get($values, columns) * $a + map-get(map-get($ibm-grid, max), unit);
+            width: (100vw - map-get(map-get($ibm-grid, lg), unit) * 2) / map-get($values, columns) * $a + map-get(map-get($ibm-grid, lg), unit);
+          }
         }
       }
       $a: $a + 1;

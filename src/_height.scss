@@ -1,0 +1,47 @@
+// Dependent on _core.scss from @ibm/grid
+
+@each $breakpoint, $values in $ibm-grid {
+  @if $breakpoint != 'max' {
+    @if $breakpoint != 'sm' {
+      @media (min-width: map-get($values, breakpoint)) {
+        .ibm-height-#{$breakpoint}-0 {
+          min-height: unset;
+        }
+      }
+    } @else {
+      .ibm-height-#{$breakpoint}-0 {
+        min-height: unset;
+      }
+    }
+
+    $a: 1;
+    @while $a <= map-get($values, heights) {
+      .ibm-height-#{$breakpoint}-#{$a} {
+        @if $breakpoint != 'sm' {
+          @media (min-width: map-get($values, breakpoint)) {
+            min-height: map-get($values, unit) * $a;
+          }
+        } @else {
+          min-height: map-get($values, unit) * $a;
+        }
+
+        @if map-get($ibm-grid, map-get($values, next)) {
+          @media (min-width: map-get(map-get($ibm-grid, map-get($values, next)), breakpoint)) {
+            min-height: map-get(map-get($ibm-grid, map-get($values, next)), unit) * $a;
+          }
+          
+          @if map-get(map-get($ibm-grid, map-get($values, next)), next) {
+            @media (min-width: map-get(map-get($ibm-grid, map-get(map-get($ibm-grid, map-get($values, next)), next)), breakpoint)) {
+              min-height: map-get(map-get($ibm-grid, map-get(map-get($ibm-grid, map-get($values, next)), next)), unit) * $a;
+            }
+          }
+        }
+
+        @media (min-width: map-get(map-get($ibm-grid, max), breakpoint)) {
+          min-height: map-get(map-get($ibm-grid, max), unit) * $a;
+        }
+      }
+      $a: $a + 1;
+    }
+  }
+}
