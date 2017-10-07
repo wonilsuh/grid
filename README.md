@@ -14,9 +14,9 @@ The Sketch file and a flexbox code implementation of the IBM Grid.
 
 Check that any webpage follows the IBM Grid with our [Chrome and Firefox extension](https://github.com/ibm/grid-checker). This extremely helpful to developers as they code and designers as they review work.
 
-[Get IBM Grid Checker for Chrome.](https://chrome.google.com/webstore/detail/ibm-grid-checker/pldabmdegaljijpjldajlemcdfghmdib)
+[Get IBM Grid Checker for Chrome](https://chrome.google.com/webstore/detail/ibm-grid-checker/pldabmdegaljijpjldajlemcdfghmdib)
 
-[Get IBM Grid Checker for Firefox.](https://addons.mozilla.org/en-US/firefox/addon/ibm-grid-checker)
+[Get IBM Grid Checker for Firefox](https://addons.mozilla.org/en-US/firefox/addon/ibm-grid-checker)
 
 ### Examples
 
