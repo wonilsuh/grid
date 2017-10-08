@@ -2,7 +2,7 @@
 
 @each $breakpoint, $values in $ibm-grid {
   @if map-get($values, margin) {
-    @if $breakpoint != 'sm' {
+    @if map-get($values, breakpoint) != 0px {
       @media (min-width: map-get($values, breakpoint)) {
         .ibm-col-bleed-left {
           margin-left: -1 * map-get($values, unit);
@@ -47,7 +47,7 @@
 .ibm-col-bleed {
   @each $breakpoint, $values in $ibm-grid {
     @if map-get($values, margin) {
-      @if $breakpoint != 'sm' {
+      @if map-get($values, breakpoint) != 0px {
         @media (min-width: map-get($values, breakpoint)) {
           margin: 0 -1 * map-get($values, unit);
           padding-left: 2 * map-get($values, unit);
@@ -58,8 +58,10 @@
             padding-right: map-get($values, unit);
           }
   
-          .ibm-col-full_padding {
-            padding: map-get($values, unit) 2 * map-get($values, unit);
+          > .ibm-col_padding,
+          > .ibm-col_padding-horizontal {
+            padding-left: 2 * map-get($values, unit);
+            padding-right: 2 * map-get($values, unit);
           }
         }
       } @else {
@@ -72,8 +74,10 @@
           padding-right: map-get($values, unit);
         }
 
-        .ibm-col-full_padding {
-          padding: map-get($values, unit) 2 * map-get($values, unit);
+        > .ibm-col_padding,
+        > .ibm-col_padding-horizontal {
+          padding-left: 2 * map-get($values, unit);
+          padding-right: 2 * map-get($values, unit);
         }
       }
     }

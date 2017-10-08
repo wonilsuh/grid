@@ -1,8 +1,8 @@
 // Dependent on _core.scss from @ibm/grid
 
 @each $breakpoint, $values in $ibm-grid {
-  @if $breakpoint != 'max' {
-    @if $breakpoint != 'sm' {
+  @if map-get($values, columns) != null {
+    @if map-get($values, breakpoint) != 0px {
       @media (min-width: map-get($values, breakpoint)) {
         .ibm-height-#{$breakpoint}-0 {
           min-height: unset;
