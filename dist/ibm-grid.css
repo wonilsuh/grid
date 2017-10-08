@@ -120,6 +120,14 @@ html, body {
   [class^="ibm-col-lg-0"] {
     display: none; } }
 
+@media (min-width: 1650px) {
+  .ibm-col-lg-0[class^="ibm-col-max-"],
+  .ibm-col-lg-0-only {
+    display: initial; }
+    .ibm-col-lg-0[class^="ibm-col-max-"].ibm-col-group,
+    .ibm-col-lg-0-only.ibm-col-group {
+      display: flex; } }
+
 .ibm-col-sm-1 {
   width: 25vw; }
 
@@ -429,105 +437,105 @@ html, body {
 
 @media (min-width: 640px) {
   .ibm-height-sm-1 {
-    min-height: 3.125vw; }
-  .ibm-height-sm-2 {
     min-height: 6.25vw; }
-  .ibm-height-sm-3 {
-    min-height: 9.375vw; }
-  .ibm-height-sm-4 {
+  .ibm-height-sm-2 {
     min-height: 12.5vw; }
-  .ibm-height-sm-5 {
-    min-height: 15.625vw; }
-  .ibm-height-sm-6 {
+  .ibm-height-sm-3 {
     min-height: 18.75vw; }
-  .ibm-height-sm-7 {
-    min-height: 21.875vw; }
-  .ibm-height-sm-8 {
+  .ibm-height-sm-4 {
     min-height: 25vw; }
-  .ibm-height-sm-9 {
-    min-height: 28.125vw; }
-  .ibm-height-sm-10 {
+  .ibm-height-sm-5 {
     min-height: 31.25vw; }
-  .ibm-height-sm-11 {
-    min-height: 34.375vw; }
-  .ibm-height-sm-12 {
+  .ibm-height-sm-6 {
     min-height: 37.5vw; }
-  .ibm-height-sm-13 {
-    min-height: 40.625vw; }
-  .ibm-height-sm-14 {
+  .ibm-height-sm-7 {
     min-height: 43.75vw; }
+  .ibm-height-sm-8 {
+    min-height: 50vw; }
+  .ibm-height-sm-9 {
+    min-height: 56.25vw; }
+  .ibm-height-sm-10 {
+    min-height: 62.5vw; }
+  .ibm-height-sm-11 {
+    min-height: 68.75vw; }
+  .ibm-height-sm-12 {
+    min-height: 75vw; }
+  .ibm-height-sm-13 {
+    min-height: 81.25vw; }
+  .ibm-height-sm-14 {
+    min-height: 87.5vw; }
   .ibm-height-sm-15 {
-    min-height: 46.875vw; }
+    min-height: 93.75vw; }
   .ibm-height-sm-16 {
-    min-height: 50vw; } }
+    min-height: 100vw; } }
 
 @media (min-width: 1056px) {
   .ibm-height-sm-1 {
-    min-height: 1.51515vw; }
-  .ibm-height-sm-2 {
-    min-height: 3.0303vw; }
-  .ibm-height-sm-3 {
-    min-height: 4.54545vw; }
-  .ibm-height-sm-4 {
     min-height: 6.06061vw; }
-  .ibm-height-sm-5 {
-    min-height: 7.57576vw; }
-  .ibm-height-sm-6 {
-    min-height: 9.09091vw; }
-  .ibm-height-sm-7 {
-    min-height: 10.60606vw; }
-  .ibm-height-sm-8 {
+  .ibm-height-sm-2 {
     min-height: 12.12121vw; }
-  .ibm-height-sm-9 {
-    min-height: 13.63636vw; }
-  .ibm-height-sm-10 {
-    min-height: 15.15152vw; }
-  .ibm-height-sm-11 {
-    min-height: 16.66667vw; }
-  .ibm-height-sm-12 {
+  .ibm-height-sm-3 {
     min-height: 18.18182vw; }
+  .ibm-height-sm-4 {
+    min-height: 24.24242vw; }
+  .ibm-height-sm-5 {
+    min-height: 30.30303vw; }
+  .ibm-height-sm-6 {
+    min-height: 36.36364vw; }
+  .ibm-height-sm-7 {
+    min-height: 42.42424vw; }
+  .ibm-height-sm-8 {
+    min-height: 48.48485vw; }
+  .ibm-height-sm-9 {
+    min-height: 54.54545vw; }
+  .ibm-height-sm-10 {
+    min-height: 60.60606vw; }
+  .ibm-height-sm-11 {
+    min-height: 66.66667vw; }
+  .ibm-height-sm-12 {
+    min-height: 72.72727vw; }
   .ibm-height-sm-13 {
-    min-height: 19.69697vw; }
+    min-height: 78.78788vw; }
   .ibm-height-sm-14 {
-    min-height: 21.21212vw; }
+    min-height: 84.84848vw; }
   .ibm-height-sm-15 {
-    min-height: 22.72727vw; }
+    min-height: 90.90909vw; }
   .ibm-height-sm-16 {
-    min-height: 24.24242vw; } }
+    min-height: 96.9697vw; } }
 
 @media (min-width: 1650px) {
   .ibm-height-sm-1 {
-    min-height: 25px; }
-  .ibm-height-sm-2 {
-    min-height: 50px; }
-  .ibm-height-sm-3 {
-    min-height: 75px; }
-  .ibm-height-sm-4 {
     min-height: 100px; }
-  .ibm-height-sm-5 {
-    min-height: 125px; }
-  .ibm-height-sm-6 {
-    min-height: 150px; }
-  .ibm-height-sm-7 {
-    min-height: 175px; }
-  .ibm-height-sm-8 {
+  .ibm-height-sm-2 {
     min-height: 200px; }
-  .ibm-height-sm-9 {
-    min-height: 225px; }
-  .ibm-height-sm-10 {
-    min-height: 250px; }
-  .ibm-height-sm-11 {
-    min-height: 275px; }
-  .ibm-height-sm-12 {
+  .ibm-height-sm-3 {
     min-height: 300px; }
+  .ibm-height-sm-4 {
+    min-height: 400px; }
+  .ibm-height-sm-5 {
+    min-height: 500px; }
+  .ibm-height-sm-6 {
+    min-height: 600px; }
+  .ibm-height-sm-7 {
+    min-height: 700px; }
+  .ibm-height-sm-8 {
+    min-height: 800px; }
+  .ibm-height-sm-9 {
+    min-height: 900px; }
+  .ibm-height-sm-10 {
+    min-height: 1000px; }
+  .ibm-height-sm-11 {
+    min-height: 1100px; }
+  .ibm-height-sm-12 {
+    min-height: 1200px; }
   .ibm-height-sm-13 {
-    min-height: 325px; }
+    min-height: 1300px; }
   .ibm-height-sm-14 {
-    min-height: 350px; }
+    min-height: 1400px; }
   .ibm-height-sm-15 {
-    min-height: 375px; }
+    min-height: 1500px; }
   .ibm-height-sm-16 {
-    min-height: 400px; } }
+    min-height: 1600px; } }
 
 @media (min-width: 640px) {
   .ibm-height-md-0 {
@@ -567,71 +575,71 @@ html, body {
 
 @media (min-width: 1056px) {
   .ibm-height-md-1 {
-    min-height: 1.51515vw; }
-  .ibm-height-md-2 {
     min-height: 3.0303vw; }
-  .ibm-height-md-3 {
-    min-height: 4.54545vw; }
-  .ibm-height-md-4 {
+  .ibm-height-md-2 {
     min-height: 6.06061vw; }
-  .ibm-height-md-5 {
-    min-height: 7.57576vw; }
-  .ibm-height-md-6 {
+  .ibm-height-md-3 {
     min-height: 9.09091vw; }
-  .ibm-height-md-7 {
-    min-height: 10.60606vw; }
-  .ibm-height-md-8 {
+  .ibm-height-md-4 {
     min-height: 12.12121vw; }
-  .ibm-height-md-9 {
-    min-height: 13.63636vw; }
-  .ibm-height-md-10 {
+  .ibm-height-md-5 {
     min-height: 15.15152vw; }
-  .ibm-height-md-11 {
-    min-height: 16.66667vw; }
-  .ibm-height-md-12 {
+  .ibm-height-md-6 {
     min-height: 18.18182vw; }
-  .ibm-height-md-13 {
-    min-height: 19.69697vw; }
-  .ibm-height-md-14 {
+  .ibm-height-md-7 {
     min-height: 21.21212vw; }
+  .ibm-height-md-8 {
+    min-height: 24.24242vw; }
+  .ibm-height-md-9 {
+    min-height: 27.27273vw; }
+  .ibm-height-md-10 {
+    min-height: 30.30303vw; }
+  .ibm-height-md-11 {
+    min-height: 33.33333vw; }
+  .ibm-height-md-12 {
+    min-height: 36.36364vw; }
+  .ibm-height-md-13 {
+    min-height: 39.39394vw; }
+  .ibm-height-md-14 {
+    min-height: 42.42424vw; }
   .ibm-height-md-15 {
-    min-height: 22.72727vw; }
+    min-height: 45.45455vw; }
   .ibm-height-md-16 {
-    min-height: 24.24242vw; } }
+    min-height: 48.48485vw; } }
 
 @media (min-width: 1650px) {
   .ibm-height-md-1 {
-    min-height: 25px; }
-  .ibm-height-md-2 {
     min-height: 50px; }
-  .ibm-height-md-3 {
-    min-height: 75px; }
-  .ibm-height-md-4 {
+  .ibm-height-md-2 {
     min-height: 100px; }
-  .ibm-height-md-5 {
-    min-height: 125px; }
-  .ibm-height-md-6 {
+  .ibm-height-md-3 {
     min-height: 150px; }
-  .ibm-height-md-7 {
-    min-height: 175px; }
-  .ibm-height-md-8 {
+  .ibm-height-md-4 {
     min-height: 200px; }
-  .ibm-height-md-9 {
-    min-height: 225px; }
-  .ibm-height-md-10 {
+  .ibm-height-md-5 {
     min-height: 250px; }
-  .ibm-height-md-11 {
-    min-height: 275px; }
-  .ibm-height-md-12 {
+  .ibm-height-md-6 {
     min-height: 300px; }
-  .ibm-height-md-13 {
-    min-height: 325px; }
-  .ibm-height-md-14 {
+  .ibm-height-md-7 {
     min-height: 350px; }
+  .ibm-height-md-8 {
+    min-height: 400px; }
+  .ibm-height-md-9 {
+    min-height: 450px; }
+  .ibm-height-md-10 {
+    min-height: 500px; }
+  .ibm-height-md-11 {
+    min-height: 550px; }
+  .ibm-height-md-12 {
+    min-height: 600px; }
+  .ibm-height-md-13 {
+    min-height: 650px; }
+  .ibm-height-md-14 {
+    min-height: 700px; }
   .ibm-height-md-15 {
-    min-height: 375px; }
+    min-height: 750px; }
   .ibm-height-md-16 {
-    min-height: 400px; } }
+    min-height: 800px; } }
 
 @media (min-width: 1056px) {
   .ibm-height-lg-0 {
@@ -770,3 +778,6 @@ html, body {
     min-height: 800px; }
   .ibm-height-lg-33 {
     min-height: 825px; } }
+
+.ibm-height-strict {
+  max-height: 0; }

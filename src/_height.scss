@@ -30,8 +30,18 @@
       @media (min-width: map-get(map-get($ibm-grid, map-get($values, next)), breakpoint)) {
         $a: 1;
         @while $a <= map-get($values, heights) {
-          .ibm-height-#{$breakpoint}-#{$a} {
-            min-height: map-get(map-get($ibm-grid, map-get($values, next)), unit) * $a;
+          @if map-get($ibm-grid, map-get($values, next)) == 'max' {
+            .ibm-height-#{$breakpoint}-#{$a} {
+              min-height: map-get(map-get($ibm-grid, map-get($values, next)), unit) * $a;
+            }
+          } @else if $breakpoint != 'lg' {
+            .ibm-height-#{$breakpoint}-#{$a} {
+              min-height: map-get(map-get($ibm-grid, map-get($values, next)), unit) * $a * 2;
+            }
+          } @else {
+            .ibm-height-#{$breakpoint}-#{$a} {
+              min-height: map-get(map-get($ibm-grid, map-get($values, next)), unit) * $a;
+            }
           }
           $a: $a + 1;
         }
@@ -41,24 +51,35 @@
         @media (min-width: map-get(map-get($ibm-grid, map-get(map-get($ibm-grid, map-get($values, next)), next)), breakpoint)) {
           $a: 1;
           @while $a <= map-get($values, heights) {
-            .ibm-height-#{$breakpoint}-#{$a} {
-              min-height: map-get(map-get($ibm-grid, map-get(map-get($ibm-grid, map-get($values, next)), next)), unit) * $a;
+            @if map-get(map-get($ibm-grid, map-get($values, next)), next) == 'max' {
+              .ibm-height-#{$breakpoint}-#{$a} {
+                min-height: map-get(map-get($ibm-grid, map-get(map-get($ibm-grid, map-get($values, next)), next)), unit) * $a * 2;
+              }
+            } @else {
+              .ibm-height-#{$breakpoint}-#{$a} {
+                min-height: map-get(map-get($ibm-grid, map-get(map-get($ibm-grid, map-get($values, next)), next)), unit) * $a * 4;
+              }
             }
             $a: $a + 1;
           }
         }
-      }
-    }
 
-
-    @media (min-width: map-get(map-get($ibm-grid, max), breakpoint)) {
-      $a: 1;
-      @while $a <= map-get($values, heights) {
-        .ibm-height-#{$breakpoint}-#{$a} {
-          min-height: map-get(map-get($ibm-grid, max), unit) * $a;
+        @if map-get(map-get($ibm-grid, map-get(map-get($ibm-grid, map-get($values, next)), next)), next) {
+          @media (min-width: map-get(map-get($ibm-grid, map-get(map-get($ibm-grid, map-get(map-get($ibm-grid, map-get($values, next)), next)), next)), breakpoint)) {
+            $a: 1;
+            @while $a <= map-get($values, heights) {
+              .ibm-height-#{$breakpoint}-#{$a} {
+                min-height: map-get(map-get($ibm-grid, map-get(map-get($ibm-grid, map-get(map-get($ibm-grid, map-get($values, next)), next)), next)), unit) * $a * 4;
+              }
+              $a: $a + 1;
+            }
+          }
         }
-        $a: $a + 1;
       }
     }
   }
+}
+
+.ibm-height-strict {
+  max-height: 0;
 }
