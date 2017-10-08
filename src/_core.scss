@@ -65,7 +65,7 @@ html, body {
 
 .ibm > *,
 .ibm-col-group > *,
-[class^="ibm-col_padding"] {
+[class*="ibm-padding"] {
   box-sizing: border-box;
   
   > *:first-child {
@@ -82,16 +82,16 @@ html, body {
     @media (min-width: map-get($values, breakpoint)) {
       .ibm > *,
       .ibm-col-group > *,
-      .ibm-col_padding {
+      .ibm-padding {
         padding: map-get($values, unit);
       }
 
-      .ibm-col_padding-horizontal {
+      .ibm-padding-horizontal {
         padding-left: map-get($values, unit);
         padding-right: map-get($values, unit);
       }
       
-      .ibm-col_padding-vertical {
+      .ibm-padding-vertical {
         padding-bottom: map-get($values, unit);
         padding-top: map-get($values, unit);
       }
@@ -99,16 +99,16 @@ html, body {
   } @else {
     .ibm > *,
     .ibm-col-group > *,
-    .ibm-col_padding {
+    .ibm-padding {
       padding: map-get($values, unit);
     }
 
-    .ibm-col_padding-horizontal {
+    .ibm-padding-horizontal {
       padding-left: map-get($values, unit);
       padding-right: map-get($values, unit);
     }
     
-    .ibm-col_padding-vertical {
+    .ibm-padding-vertical {
       padding-bottom: map-get($values, unit);
       padding-top: map-get($values, unit);
     }
@@ -142,7 +142,7 @@ html, body {
 
     @if map-get($ibm-grid, map-get($values, next)) {
       @media (min-width: map-get(map-get($ibm-grid, map-get($values, next)), breakpoint)) {
-        .ibm-col-#{$breakpoint}-0[class^="ibm-col-#{map-get($values, next)}-"],
+        [class*="ibm-col-#{map-get($values, next)}-"].ibm-col-#{$breakpoint}-0,
         .ibm-col-#{$breakpoint}-0-only {
           display: initial;
 
@@ -153,9 +153,7 @@ html, body {
       }
     }
   }
-}
 
-@each $breakpoint, $values in $ibm-grid {
   @if map-get($values, columns) != null {
     @if $breakpoint != 'lg' {
       @if map-get($values, breakpoint) != 0px {

@@ -30,14 +30,14 @@
           <p class="ibm-type-c"><strong>Tip: </strong>You can have multiple instances of the IBM container class on a page. They just can't cascade each other.</p>
         </div>
         <div class="ibm-col-lg-8 ibm-col-full">
-          <p class="ibm-col-full_padding ibm-type-c">Apply the IBM container class to either once div or the body:</p>
-          <pre class="ibm-col-full_padding black overflow"><p class="ibm-type-c ibm-type-mono">&lt;div class="ibm" style="background: #a3a4a3"&gt;
-  The grid container without any cols.
+          <p class="ibm-padding ibm-type-c">Apply the IBM container class to either once div or the body:</p>
+          <pre class="ibm-padding black overflow"><p class="ibm-type-c ibm-type-mono">&lt;div class="ibm" style="background: #a3a4a3"&gt;
+  The grid container without any columns.
 &lt;/div&gt;</p></pre>
         </div>
         <div class="example">
           <div class="ibm" style="background: #a3a4a3">
-            <p class="ibm-type-c">The grid container without any cols.</p>
+            <p class="ibm-type-c">The grid container without any columns.</p>
           </div>
         </div>
       </section>
@@ -51,12 +51,12 @@
             <li class="ibm-type-c">md breakpoint (640px+) = 8 columns</li>
             <li class="ibm-type-c">lg breakpoint (1056px+) = 16 columns</li>
           </ul>
-          <p class="ibm-type-c">cols will wrap as the sum of col widths exceed that breakpoint's max column width.</p>
+          <p class="ibm-type-c">columns will wrap as the sum of col widths exceed that breakpoint's max column width.</p>
           <p class="ibm-type-c"><strong>Tip: </strong>Before specifying width classes, direct children will take full width of the container at every breakpoint to support mobile-first coding. This means that there is no point in applying the full width for small [.ibm-col-sm-4]</p>
         </div>
         <div class="ibm-col-lg-8 ibm-col-full">
-          <p class="ibm-col-lg-8 ibm-col-full_padding ibm-type-c">Create a full-width col and then multiple cols that split width over larger breakpoints:</p>
-          <pre class="ibm-col-full_padding black overflow"><p class="ibm-type-c ibm-type-mono">&lt;div class="ibm"&gt;
+          <p class="ibm-col-lg-8 ibm-padding ibm-type-c">Create a full-width col and then multiple columns that split width over larger breakpoints:</p>
+          <pre class="ibm-padding black overflow"><p class="ibm-type-c ibm-type-mono">&lt;div class="ibm"&gt;
   &lt;div style="background: #a3a4a3"&gt;
     &lt;p&gt;All of the grid.&lt;/p&gt;
   &lt;/div&gt;
@@ -122,11 +122,11 @@
       <section class="ibm-col-group">
         <h2 class="ibm-type-f">3. Creating Layouts with Groups</h2>
         <div class="ibm-col-lg-8">
-          <p class="ibm-type-c">Grid frameworks usually refer to a class called "row" and it can not be placed inside other rows. IBM Grid's group class allows you to transform an col into a collection of cols.</p>
+          <p class="ibm-type-c">Grid frameworks usually refer to a class called "row" and it can not be placed inside other rows. IBM Grid's group class allows you to transform an col into a collection of columns.</p>
         </div>
         <div class="ibm-col-lg-8 ibm-col-full">
-          <p class="ibm-col-lg-8 ibm-col-full_padding  ibm-type-c">Have two bottom halves form a sub-column at the medium breakpoint:</p>
-          <pre class="ibm-col-full_padding black overflow"><p class="ibm-type-c ibm-type-mono">&lt;div class="ibm"&gt;
+          <p class="ibm-col-lg-8 ibm-padding  ibm-type-c">Have two bottom halves form a sub-column at the medium breakpoint:</p>
+          <pre class="ibm-padding black overflow"><p class="ibm-type-c ibm-type-mono">&lt;div class="ibm"&gt;
   &lt;div class="ibm-col-md-4" style="background: #a3a4a3"&gt;
     &lt;p&gt;All of the grid at small, and then half of the grid at medium.&lt;/p&gt;
   &lt;/div&gt;
@@ -156,15 +156,15 @@
           </div>
         </div>
         <div class="ibm-col-lg-8">
-          <p class="ibm-type-c">There are two great parts of removing our concepts of "rows" and thinking about cols that turn into "groups":</p>
+          <p class="ibm-type-c">There are two great parts of removing our concepts of "rows" and thinking about columns that turn into "groups":</p>
           <ul>
-            <li><p class="ibm-type-c">You do not have to wrap your cols into a row div if the sum of their widths stay within the breakpoint's amount of columns.</p></li>
+            <li><p class="ibm-type-c">You do not have to wrap your columns into a row div if the sum of their widths stay within the breakpoint's amount of columns.</p></li>
             <li><p class="ibm-type-c">You can nest as many groups inside of each other as needed for a complex layout.</p></li>
           </ul>
         </div>
         <div class="ibm-col-lg-8 ibm-col-full">
-          <p class="ibm-col-lg-8 ibm-col-full_padding ibm-type-c">Create a layout with nested groups:</p>
-          <pre class="ibm-col-full_padding black overflow"><p class="ibm-type-c ibm-type-mono">&lt;div class="ibm"&gt;
+          <p class="ibm-col-lg-8 ibm-padding ibm-type-c">Create a layout with nested groups:</p>
+          <pre class="ibm-padding black overflow"><p class="ibm-type-c ibm-type-mono">&lt;div class="ibm"&gt;
   &lt;div class="ibm-col-md-4" style="background: #a3a4a3"&gt;
     &lt;p&gt;At the medium breakpoint, this should take the full-height of the grid.&lt;/p&gt;
   &lt;/div&gt;
@@ -218,8 +218,8 @@
           <p class="ibm-type-c">The IBM Grid allows you to specify that you want content to be hidden starting at a certain screen width. You then specify an col width at the next breakpoint you want it to display.</p>
         </div>
         <div class="ibm-col-lg-8 ibm-col-full">
-          <p class="ibm-col-lg-8 ibm-col-full_padding ibm-type-c">Hide an col at the small breakpoint, but then reveal it at the large breakpoint:</p>
-          <pre class="ibm-col-full_padding black overflow"><p class="ibm-type-c ibm-type-mono">&lt;div class="ibm"&gt;
+          <p class="ibm-col-lg-8 ibm-padding ibm-type-c">Hide an col at the small breakpoint, but then reveal it at the large breakpoint:</p>
+          <pre class="ibm-padding black overflow"><p class="ibm-type-c ibm-type-mono">&lt;div class="ibm"&gt;
   &lt;div class=&quot;ibm-col-sm-0 ibm-col-lg-16&quot; style=&quot;background: #a3a4a3&quot;&gt;
     &lt;p&gt;This content is displayed only when the screen is larger than 1056px.&lt;/p&gt;
   &lt;/div&gt;
@@ -236,8 +236,8 @@
           <p class="ibm-type-c">You can also specify if you want an col to hide only for a specific breakpoint.</p>
         </div>
         <div class="ibm-col-lg-8 ibm-col-full">
-          <p class="ibm-col-lg-8 ibm-col-full_padding ibm-type-c">Hide an col at each breakpoint, but have it come back in the next breakpoint:</p>  
-          <pre class="ibm-col-full_padding black overflow"><p class="ibm-type-c ibm-type-mono">&lt;div class="ibm"&gt;
+          <p class="ibm-col-lg-8 ibm-padding ibm-type-c">Hide an col at each breakpoint, but have it come back in the next breakpoint:</p>  
+          <pre class="ibm-padding black overflow"><p class="ibm-type-c ibm-type-mono">&lt;div class="ibm"&gt;
   &lt;div class=&quot;ibm-col-sm-0-only&quot; style=&quot;background: #a3a4a3&quot;&gt;
     &lt;p&gt;This content is displayed only when the screen is larger than 640px.&lt;/p&gt;
   &lt;/div&gt;
@@ -259,37 +259,27 @@
       </section>
       
       <section class="ibm-col-group">
-        <h2 class="ibm-type-f">5. Adding Full-Sized Media and Vertical Padding</h2>
+        <h2 class="ibm-type-f">5. Removing and Adding Padding</h2>
         <div class="ibm-col-lg-8">
-          <p class="ibm-type-c">Appropiate padding for most content is applied within cols by default. However, media usually should ignore the padding and take the full width and height of the col.</p>
+          <p class="ibm-type-c">When you turn on the grid checker, you will notice many smaller lines then the dark grey columns. These are what we call the grid’s units. The units scale with the user’s device and there are more of them at each breakpoint:</p>
+          <ul>
+            <li class="ibm-type-c">sm breakpoint (0px+) = 16 units</li>
+            <li class="ibm-type-c">md breakpoint (640px+) = 32 units</li>
+            <li class="ibm-type-c">lg breakpoint (1056px+) = 66 units</li>
+          </ul>
+          <p class="ibm-type-c">All columns you create automatically have one unit of padding on all sides. However with situations like media, you would want to remove that.</p>
+          <p class="ibm-type-c">What if you want to reapply padding to content below the media? You can then use the padding class (ibm-padding) to add one unit of padding to children.</p>
+          <p class="ibm-type-c">There are also versions of the padding class in case you just want to add horizontal or vertical padding: ibm-padding-horizontal and ibm-padding-vertical.</p>
         </div>
         <div class="ibm-col-lg-8 ibm-col-full">
-          <p class="ibm-col-lg-8 ibm-col-full_padding ibm-type-c">Remove the padding on an col for an image or video to take full width and height:</p>
-          <pre class="ibm-col-full_padding black overflow"><p class="ibm-type-c ibm-type-mono">&lt;div class="ibm"&gt;
-  &lt;div class=&quot;ibm-col-sm-0 ibm-col-md-4&quot; style=&quot;background: #c6c6c6&quot;&gt;This content has padding, but the image to the right does not.&lt;/div&gt;
+          <p class="ibm-padding ibm-type-c">Add media that ignores the default padding add and content that has extra vertical padding:</p>
+          <pre class="ibm-padding black overflow"><p class="ibm-type-c ibm-type-mono">&lt;div class=&quot;ibm&quot;&gt;
+  &lt;div class=&quot;ibm-col-sm-0 ibm-col-md-4&quot; style=&quot;background: #c6c6c6&quot;&gt;
+    &lt;div class=&quot;ibm-padding-vertical&quot;&gt;This content has extra vertical padding.&lt;/div&gt;
+  &lt;/div&gt;                  
   &lt;div class=&quot;ibm-col-md-4 ibm-col-full&quot;&gt;
-    &lt;img src=&quot;./image.jpg&quot; style=&quot;width: 100%;&quot;&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</p></pre>
-        </div>
-        <div class="example">
-          <div class="ibm">
-            <div class="ibm-col-sm-0 ibm-col-md-4" style="background: #c6c6c6">This content has padding, but the image to the right does not.</div>
-            <div class="ibm-col-md-4 ibm-col-full">
-              <img src="./image.jpg" style="width: 100%;">
-            </div>
-          </div>
-        </div>
-        <div class="ibm-col-lg-8">
-          <p class="ibm-type-c">The example above is helpful, but what if you want to reapply padding to content below the media? You can then use the padding classname to reapply padding to children.</p>
-        </div>
-        <div class="ibm-col-lg-8 ibm-col-full">
-          <p class="ibm-col-full_padding ibm-type-c">Add media, but then have the other content respect IBM Grid's padding:</p>
-          <pre class="ibm-col-full_padding black overflow"><p class="ibm-type-c ibm-type-mono">&lt;div class=&quot;ibm&quot;&gt;
-  &lt;div class=&quot;ibm-col-sm-0 ibm-col-md-4&quot; style=&quot;background: #c6c6c6&quot;&gt;This content has padding, but the image to the right does not.&lt;/div&gt;              
-  &lt;div class=&quot;ibm-col-md-4 ibm-col-full&quot;&gt;
-    &lt;img src=&quot;./image.jpg&quot; style=&quot;width: 100%;&quot;&gt;
-    &lt;div class=&quot;ibm-col-full_padding&quot; style=&quot;background: #a3a4a3&quot;&gt;
+    &lt;img src=&quot;./image.jpg&quot; style=&quot;display: block; width: 100%;&quot;&gt;
+    &lt;div class=&quot;ibm-padding&quot; style=&quot;background: #a3a4a3&quot;&gt;
       &lt;h3&gt;Content with padding reapplied&lt;/h3&gt;
       &lt;p&gt;A paragraph below the title.&lt;/p&gt;
     &lt;/div&gt;
@@ -298,44 +288,16 @@
         </div>
         <div class="example">
           <div class="ibm">
-            <div class="ibm-col-sm-0 ibm-col-md-4" style="background: #c6c6c6">This content has padding, but the image to the right does not.</div>              
+            <div class="ibm-col-sm-0 ibm-col-md-4" style="background: #c6c6c6"><div class="ibm-padding-vertical">This content has extra vertical padding.</div></div>           
             <div class="ibm-col-md-4 ibm-col-full">
-              <img src="./image.jpg" style="width: 100%;">
-              <div class="ibm-col-full_padding" style="background: #a3a4a3">
+              <img src="./image.jpg" style="display: block; width: 100%;">
+              <div class="ibm-padding" style="background: #a3a4a3">
                 <h3 class="ibm-type-c">Content with padding reapplied</h3>
                 <p class="ibm-type-c">A paragraph below the title.</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="ibm-col-lg-8">
-            <p class="ibm-type-c">For a lot of marketing experiences, we would like to double the vertical padding. This creates more breathing room when the user is reading. The tall class allows this when applied to a col or content class.</p>
-          </div>
-          <div class="ibm-col-lg-8 ibm-col-full">
-            <p class="ibm-col-full_padding ibm-type-c">Display a col with normal padding and then one one with double the vertical padding:</p>
-            <pre class="ibm-col-full_padding black overflow"><p class="ibm-type-c ibm-type-mono">&lt;div class=&quot;ibm&quot;&gt;
-    &lt;div class=&quot;ibm-col-sm-2&quot; style=&quot;background: #a3a4a3&quot;&gt;
-      &lt;h3&gt;This is the typical padding on a col.&lt;/h3&gt;
-      &lt;p&gt;A paragraph below the title.&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;ibm-col-sm-2 ibm-col-tall&quot; style=&quot;background: #c6c6c6&quot;&gt;
-      &lt;h3&gt;Content with padding reapplied.&lt;/h3&gt;
-      &lt;p&gt;A paragraph below the title.&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;</p></pre>
-          </div>
-          <div class="example">
-            <div class="ibm">
-              <div class="ibm-col-sm-2" style="background: #a3a4a3">
-                <h3 class="ibm-type-c">This is the typical padding on a col.</h3>
-                <p class="ibm-type-c">A paragraph below the title.</p>
-              </div>
-              <div class="ibm-col-sm-2 ibm-col-tall" style="background: #c6c6c6">
-                <h3 class="ibm-type-c">The vertical padding was doubled on this col.</h3>
-                <p class="ibm-type-c">A paragraph below the title.</p>
-              </div>
-            </div>
-          </div>
       </section>
       
       <section class="ibm-col-group">
@@ -344,8 +306,8 @@
           <p class="ibm-type-c">The visual spec of IBM Grid applies extra left and right padding when a user reaches the large width breakpoint (1056px). If you have full-sized media or a background color on the left or right edge of the grid, the large breakpoint will reveal that extra padding with white space. You can remove that white space by telling the col if it should bleed on both sides or one of the sides.</p>
         </div>
         <div class="ibm-col-lg-8 ibm-col-full">
-          <p class="ibm-col-lg-8 ibm-col-full_padding ibm-type-c">Remove white space when the user reaches the large breakpoint:</p>
-          <pre class="ibm-col-full_padding black overflow"><p class="ibm-type-c ibm-type-mono">&lt;div class="ibm"&gt;
+          <p class="ibm-col-lg-8 ibm-padding ibm-type-c">Remove white space when the user reaches the large breakpoint:</p>
+          <pre class="ibm-padding black overflow"><p class="ibm-type-c ibm-type-mono">&lt;div class="ibm"&gt;
   &lt;div class=&quot;ibm-col-bleed&quot; style=&quot;background: #a3a4a3;&quot;&gt;
     &lt;p&gt;col's background color takes full width of grid at 1056px.&lt;/p&gt;
   &lt;/div&gt;
@@ -373,103 +335,67 @@
       </section>
       
       <section class="ibm-col-group">
-        <h2 class="ibm-type-f">7. Maintaing Height with Aspect Ratios</h2>
+        <h2 class="ibm-type-f">7. Setting heights</h2>
         <div class="ibm-col-lg-8">
-          <p class="ibm-type-c">An essential part to layouts is maintaining vertical heights for static content. IBM Grid encourages this by providing classnames to maintain responsive aspect ratios.</p>
-          <p class="ibm-type-c">You can specify an aspect ratio out of the denominator of 16 at each breakpoint. Watch the height of an col grow as you increase the screen width.</p>
+          <p class="ibm-type-c">An essential part to layouts is the y-axis. IBM Grid encourages this by providing classes for unit-based min-heights.</p>
+          <p class="ibm-type-c">We use min-height in case you have dynamic content that you want to avoid being cut off. If that is not a concern, you can use the strict modifier (ibm-height-strict) for the element to act like normal height.</p>
         </div>
         <div class="ibm-col-lg-8 ibm-col-full">
-          <p class="ibm-col-lg-8 ibm-col-full_padding ibm-type-c">Apply aspect ratios at the small and medium breakpoints:</p>
-          <pre class="ibm-col-full_padding black overflow"><p class="ibm-type-c ibm-type-mono">&lt;div class="ibm"&gt;
-  &lt;div class=&quot;ibm-col-ratio-sm-4 ibm-col-ratio-md-2&quot; style=&quot;background: #a3a4a3;&quot;&gt;
-    &lt;div class=&quot;ibm-col-ratio_content&quot;&gt;
-      &lt;p&gt;col maintains an aspect ratio of 2:8 of it's width at the small breakpoint, and then 1:8 starting at the medium breakpoint.&lt;/p&gt;
-    &lt;/div&gt;
+          <p class="ibm-col-lg-8 ibm-padding ibm-type-c">Apply heights at the sm and md breakpoints:</p>
+          <pre class="ibm-padding black overflow"><p class="ibm-type-c ibm-type-mono">&lt;div class="ibm"&gt;
+  &lt;div class=&quot;ibm-height-sm-8 ibm-height-md-4&quot; style=&quot;background: #a3a4a3;&quot;&gt;
+      &lt;p&gt;Column maintains a height of 8 units at the sm breakpoint, and then 4 units starting at the medium breakpoint.&lt;/p&gt;
   &lt;/div&gt;
 
-  &lt;div class=&quot;ibm-col-sm-2 ibm-col-ratio-sm-16 ibm-col-ratio-md-8&quot; style=&quot;background: #b4b4b4;&quot;&gt;
-    &lt;div class=&quot;ibm-col-ratio_content&quot;&gt;
-      &lt;p&gt;col maintains a square aspect ratio of it's width at the small breakpoint, and then half-square starting at the medium breakpoint.&lt;/p&gt;
-    &lt;/div&gt;
+  &lt;div class=&quot;ibm-col-sm-2 ibm-height-sm-8 ibm-height-md-8&quot; style=&quot;background: #b4b4b4;&quot;&gt;
+    &lt;p&gt;Column maintains a height of 8 units at the sm breakpoint, and then 8 units starting at the medium breakpoint.&lt;/p&gt;
   &lt;/div&gt;
-  &lt;div class=&quot;ibm-col-sm-2 ibm-col-ratio-sm-16 ibm-col-ratio-md-8&quot; style=&quot;background: #c6c6c6;&quot;&gt;
-    &lt;div class=&quot;ibm-col-ratio_content&quot;&gt;
-      &lt;p&gt;col maintains a square aspect ratio of it's width at the small breakpoint, and then half-square starting at the medium breakpoint.&lt;/p&gt;
-    &lt;/div&gt;
+  &lt;div class=&quot;ibm-col-sm-2 ibm-height-sm-8 ibm-height-md-8&quot; style=&quot;background: #c6c6c6;&quot;&gt;
+    &lt;p&gt;Column maintains a height of 8 units at the sm breakpoint, and then 8 units starting at the medium breakpoint.&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;</p></pre>
         </div>
         <div class="example">
           <div class="ibm">
-            <div class="ibm-col-ratio-sm-8 ibm-col-ratio-md-4" style="background: #a3a4a3;">
-              <div class="ibm-col-ratio_content">
-                <p class="ibm-type-c">col maintains an aspect ratio of 8:16 of it's width at the small breakpoint, and then 4:16 starting at the medium breakpoint.</p>
-              </div>
+            <div class="ibm-height-sm-8 ibm-height-md-4" style="background: #a3a4a3;">
+              <p class="ibm-type-c">Column maintains a height of 8 units at the sm breakpoint, and then 4 units starting at the medium breakpoint.</p>
             </div>
 
-            <div class="ibm-col-sm-2 ibm-col-ratio-sm-16 ibm-col-ratio-md-8" style="background: #b4b4b4;">
-              <div class="ibm-col-ratio_content">
-                <p class="ibm-type-c">col maintains a square aspect ratio of it's width at the small breakpoint, and then half-square starting at the medium breakpoint.</p>
-              </div>
+            <div class="ibm-col-sm-2 ibm-height-sm-8 ibm-height-md-8" style="background: #b4b4b4;">
+              <p class="ibm-type-c">Column maintains a height of 8 units at the sm breakpoint, and then 8 units starting at the medium breakpoint.</p>
             </div>
-            <div class="ibm-col-sm-2 ibm-col-ratio-sm-16 ibm-col-ratio-md-8" style="background: #c6c6c6;">
-              <div class="ibm-col-ratio_content">
-                <p class="ibm-type-c">col maintains a square aspect ratio of it's width at the small breakpoint, and then half-square starting at the medium breakpoint.</p>
-              </div>
+            <div class="ibm-col-sm-2 ibm-height-sm-8 ibm-height-md-8" style="background: #c6c6c6;">
+              <p class="ibm-type-c">Column maintains a height of 8 units at the sm breakpoint, and then 8 units starting at the medium breakpoint.</p>
             </div>
           </div>
         </div>
       </section>
-      <section class="ibm-col-group">
-        <h2 class="ibm-type-f">8. Custom sizes</h2>
-        <div class="ibm-col-lg-8">
-          <p class="ibm-type-c">When a designer shares a Sketch file with you, you will notice a grid with CTRL+G.</p>
-          <p class="ibm-type-c">The small squares of the grid are measured in units. We can tie those units directly to vw units for measuring until the max-width of 1650px.</p>
-        </div>
-        <div class="ibm-col-lg-8 ibm-col-full">
-          <p class="ibm-col-lg-8 ibm-col-full_padding ibm-type-c">Show the units that sizes should be divisible by for each breakpoint:</p>
-          <pre class="ibm-col-full_padding black overflow"><p class="ibm-type-c ibm-type-mono">your-rule: 1.5625vw;
-          
-@media (min-width: 1056px) {
-  your-rule: 1.5151vw;
-}
-
-@media (min-width: 1650px) {
-  your-rule: 25px;
-}</p></pre>
-        </div>
-      </section>
       
       <section class="ibm-col-group">
-        <h2 class="ibm-type-f">9. Putting It All Together</h2>
+        <h2 class="ibm-type-f">8. Putting It All Together</h2>
         <div class="ibm-col-lg-8">
           <p class="ibm-type-c">There are a lot of different parts of the IBM Grid to help a variety of scenarios. It is important that these work together.</p>
         </div>
         <div class="ibm-col-lg-8 ibm-col-full">
-          <p class="ibm-col-lg-8 ibm-col-full_padding ibm-type-c">Create a layout that includes nested groups, full-sized media, and aspect ratios:</p>
-          <pre class="ibm-col-full_padding black overflow"><p class="ibm-type-c ibm-type-mono">&lt;div class="ibm"&gt;
+          <p class="ibm-col-lg-8 ibm-padding ibm-type-c">Create a layout that includes nested groups, full-sized media, and aspect ratios:</p>
+          <pre class="ibm-padding black overflow"><p class="ibm-type-c ibm-type-mono">&lt;div class=&quot;ibm&quot;&gt;
   &lt;div class=&quot;ibm-col-md-4 ibm-col-bleed-left&quot; style=&quot;background: #a3a4a3&quot;&gt;
-    &lt;p&gt;At the medium breakpoint, this should take the full-height of the grid. This should also bleed left on the large breakpoint.&lt;/p&gt;
+    &lt;p class=&quot;ibm-type-c&quot;&gt;At the medium breakpoint, this should take the full-height of the grid. This should also bleed left on the large breakpoint.&lt;/p&gt;
   &lt;/div&gt;
   &lt;div class=&quot;ibm-col-md-4 ibm-col-group&quot;&gt;
-    &lt;div class=&quot;ibm-col-md-4 ibm-col-ratio-sm-4 ibm-col-bleed-right&quot; style=&quot;background: #b4b4b4&quot;&gt;
-      &lt;div class=&quot;ibm-col-ratio_content&quot;&gt;
-        &lt;p&gt;At the medium breakpoint, this should take the second half of the width. It should maintain a half-square aspect ratio. This should also bleed right on the large breakpoint.&lt;/p&gt;
-      &lt;/div&gt;
+    &lt;div class=&quot;ibm-col-md-4 ibm-height-sm-4 ibm-height-lg-17 ibm-col-bleed-right&quot; style=&quot;background: #b4b4b4&quot;&gt;
+      &lt;p class=&quot;ibm-type-c&quot;&gt;At the medium breakpoint, this should take the second half of the width. It should maintain a half-square aspect ratio. This should also bleed right on the large breakpoint.&lt;/p&gt;
     &lt;/div&gt;
     &lt;div class=&quot;ibm-col-md-2 ibm-col-group&quot;&gt;
       &lt;div class=&quot;ibm-col-sm-2 ibm-col-md-2&quot; style=&quot;background: #c6c6c6&quot;&gt;
-        &lt;p&gt;At the medium breakpoint, this should stack at a quarter of the width.&lt;/p&gt;
+        &lt;p class=&quot;ibm-type-c&quot;&gt;At the medium breakpoint, this should stack at a quarter of the width.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;ibm-col-sm-2 ibm-col-md-2&quot; style=&quot;background: #d8d8d8&quot;&gt;
-        &lt;p&gt;At the medium breakpoint, this should stack at a quarter of the width.&lt;/p&gt;
+        &lt;p class=&quot;ibm-type-c&quot;&gt;At the medium breakpoint, this should stack at a quarter of the width.&lt;/p&gt;
       &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;ibm-col-md-2 ibm-col-ratio-md-16 ibm-col-bleed-right ibm-col-full&quot; style=&quot;overflow: hidden&quot;&gt;
-      &lt;img src=&quot;./image.jpg&quot; style=&quot;height: 100%; min-width: 100%; position: absolute; left: 0; top: 0; z-index: -1;&quot;&gt;
-      &lt;div class=&quot;ibm-col-ratio_content&quot; style=&quot;color: white;&quot;&gt;
-        &lt;p&gt;At the medium breakpoint, it should maintain a square aspect ratio. It should have a full background image and reapply padding for text. This should also bleed right on the large breakpoint.&lt;/p&gt;
-      &lt;/div&gt;
+    &lt;div class=&quot;ibm-col-md-2 ibm-height-sm-8 ibm-height-md-16 ibm-height-lg-17 ibm-col-bleed-right ibm-col-full&quot; style=&quot;overflow: hidden&quot;&gt;
+      &lt;img src=&quot;./image.jpg&quot; style=&quot;height: 100%; min-width: 100%; position: absolute; left: 0; top: 0;&quot;&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</p></pre>
@@ -480,10 +406,8 @@
               <p class="ibm-type-c">At the medium breakpoint, this should take the full-height of the grid. This should also bleed left on the large breakpoint.</p>
             </div>
             <div class="ibm-col-md-4 ibm-col-group">
-              <div class="ibm-col-md-4 ibm-col-ratio-sm-4 ibm-col-bleed-right" style="background: #b4b4b4">
-                <div class="ibm-col-ratio_content">
-                  <p class="ibm-type-c">At the medium breakpoint, this should take the second half of the width. It should maintain a half-square aspect ratio. This should also bleed right on the large breakpoint.</p>
-                </div>
+              <div class="ibm-col-md-4 ibm-height-sm-4 ibm-height-lg-17 ibm-col-bleed-right" style="background: #b4b4b4">
+                <p class="ibm-type-c">At the medium breakpoint, this should take the second half of the width. It should maintain a half-square aspect ratio. This should also bleed right on the large breakpoint.</p>
               </div>
               <div class="ibm-col-md-2 ibm-col-group">
                 <div class="ibm-col-sm-2 ibm-col-md-2" style="background: #c6c6c6">
@@ -493,7 +417,7 @@
                   <p class="ibm-type-c">At the medium breakpoint, this should stack at a quarter of the width.</p>
                 </div>
               </div>
-              <div class="ibm-col-md-2 ibm-col-ratio-md-16 ibm-col-bleed-right ibm-col-full" style="overflow: hidden">
+              <div class="ibm-col-md-2 ibm-height-sm-8 ibm-height-md-16 ibm-height-lg-17 ibm-col-bleed-right ibm-col-full" style="overflow: hidden">
                 <img src="./image.jpg" style="height: 100%; min-width: 100%; position: absolute; left: 0; top: 0;">
               </div>
             </div>
