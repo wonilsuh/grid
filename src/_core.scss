@@ -20,7 +20,7 @@ $ibm-grid: (
   "lg": (
     breakpoint: 1056px,
     columns: 16,
-    heights: 32,
+    heights: 33,
     hideable: true,
     margin: true,
     max: "max",
@@ -116,14 +116,12 @@ html, body {
   @if map-get($values, hideable) {
     @if $breakpoint != 'sm' {
       @media (min-width: map-get($values, breakpoint)) {
-        .ibm-col-#{$breakpoint}-0,
-        .ibm-col-#{$breakpoint}-0-only {
+        [class^="ibm-col-#{$breakpoint}-0"] {
           display: none;
         }
       }
     } @else {
-      .ibm-col-#{$breakpoint}-0,
-      .ibm-col-#{$breakpoint}-0-only {
+      [class^="ibm-col-#{$breakpoint}-0"] {
         display: none;
       }
     }
@@ -145,20 +143,33 @@ html, body {
 
 @each $breakpoint, $values in $ibm-grid {
   @if $breakpoint != 'max' {
-    $a: 1;
-    @while $a <= map-get($values, columns) {
-      .ibm-col-#{$breakpoint}-#{$a} {
-        @if $breakpoint != 'lg' {
-          @if $breakpoint != 'sm' {
-            @media (min-width: map-get($values, breakpoint)) {
+    @if $breakpoint != 'lg' {
+      @if $breakpoint != 'sm' {
+        @media (min-width: map-get($values, breakpoint)) {
+          $a: 1;
+          @while $a <= map-get($values, columns) {
+            .ibm-col-#{$breakpoint}-#{$a} {
               width: 100vw / map-get($values, columns) * $a;
             }
-          } @else {
-            width: 100vw / map-get($values, columns) * $a;
+            $a: $a + 1;
           }
         }
-
-        @media (min-width: map-get(map-get($ibm-grid, lg), breakpoint)) {
+      } @else {
+        $a: 1;
+        @while $a <= map-get($values, columns) {
+          .ibm-col-#{$breakpoint}-#{$a} {
+            width: 100vw / map-get($values, columns) * $a;
+          }
+          $a: $a + 1;
+        }
+      }
+    }
+    
+    
+    @media (min-width: map-get(map-get($ibm-grid, lg), breakpoint)) {
+      $a: 1;
+      @while $a <= map-get($values, columns) {
+        .ibm-col-#{$breakpoint}-#{$a} {
           max-width: (map-get(map-get($ibm-grid, max), breakpoint) - map-get(map-get($ibm-grid, max), unit) * 2) / map-get($values, columns) * $a;
           width: (100vw - map-get(map-get($ibm-grid, lg), unit) * 2) / map-get($values, columns) * $a;
 
@@ -167,8 +178,8 @@ html, body {
             width: (100vw - map-get(map-get($ibm-grid, lg), unit) * 2) / map-get($values, columns) * $a + map-get(map-get($ibm-grid, lg), unit);
           }
         }
+        $a: $a + 1;
       }
-      $a: $a + 1;
     }
   }
 }
