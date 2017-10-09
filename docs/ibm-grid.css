@@ -61,8 +61,10 @@ html, body {
   display: none; }
 
 @media (min-width: 640px) {
+  .ibm-col-sm-0-only,
   [class*="ibm-col-md-"][class*="ibm-col-sm-0"] {
     display: initial; }
+    .ibm-col-sm-0-only.ibm-col-group,
     [class*="ibm-col-md-"][class*="ibm-col-sm-0"].ibm-col-group {
       display: flex; } }
 
@@ -127,8 +129,10 @@ html, body {
     display: none; } }
 
 @media (min-width: 1056px) {
+  .ibm-col-md-0-only,
   [class*="ibm-col-lg-"][class*="ibm-col-md-0"] {
     display: initial; }
+    .ibm-col-md-0-only.ibm-col-group,
     [class*="ibm-col-lg-"][class*="ibm-col-md-0"].ibm-col-group {
       display: flex; } }
 

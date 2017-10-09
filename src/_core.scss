@@ -140,6 +140,7 @@ html, body {
     
     @if $breakpoint == 'sm' {
       @media (min-width: map-get(map-get($ibm-grid, 'md'), breakpoint)) {
+        .ibm-col-#{$breakpoint}-0-only,
         [class*="ibm-col-md-"][class*="ibm-col-#{$breakpoint}-0"] {
           display: initial;
 
@@ -162,6 +163,7 @@ html, body {
 
     @if $breakpoint == 'md' {
       @media (min-width: map-get(map-get($ibm-grid, 'lg'), breakpoint)) {
+        .ibm-col-#{$breakpoint}-0-only,
         [class*="ibm-col-lg-"][class*="ibm-col-#{$breakpoint}-0"] {
           display: initial;
 
