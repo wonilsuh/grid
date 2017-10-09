@@ -128,12 +128,12 @@ html, body {
   @if map-get($values, columns) {
     @if map-get($values, breakpoint) != 0px {
       @media (min-width: map-get($values, breakpoint)) {
-        [class^="ibm-col-#{$breakpoint}-0"] {
+        [class*="ibm-col-#{$breakpoint}-0"] {
           display: none;
         }
       }
     } @else {
-      [class^="ibm-col-#{$breakpoint}-0"] {
+      [class*="ibm-col-#{$breakpoint}-0"] {
         display: none;
       }
     }

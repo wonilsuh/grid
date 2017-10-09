@@ -57,7 +57,7 @@ html, body {
   padding-bottom: 6.25vw;
   padding-top: 6.25vw; }
 
-[class^="ibm-col-sm-0"] {
+[class*="ibm-col-sm-0"] {
   display: none; }
 
 @media (min-width: 640px) {
@@ -123,7 +123,7 @@ html, body {
     padding-top: 3.125vw; } }
 
 @media (min-width: 640px) {
-  [class^="ibm-col-md-0"] {
+  [class*="ibm-col-md-0"] {
     display: none; } }
 
 @media (min-width: 1056px) {
@@ -213,7 +213,7 @@ html, body {
     padding-top: 1.51515vw; } }
 
 @media (min-width: 1056px) {
-  [class^="ibm-col-lg-0"] {
+  [class*="ibm-col-lg-0"] {
     display: none; } }
 
 @media (min-width: 1056px) {
