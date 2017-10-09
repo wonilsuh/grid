@@ -36,6 +36,15 @@ html, body {
     margin-bottom: 0; }
 
 .ibm > *,
+.ibm-col-group > * {
+  width: 100%; }
+
+.ibm-col-group,
+.ibm-col-full {
+  padding: 0;
+  position: relative; }
+
+.ibm > *,
 .ibm-col-group > *,
 .ibm-padding {
   padding: 6.25vw; }
@@ -47,51 +56,6 @@ html, body {
 .ibm-padding-vertical {
   padding-bottom: 6.25vw;
   padding-top: 6.25vw; }
-
-@media (min-width: 640px) {
-  .ibm > *,
-  .ibm-col-group > *,
-  .ibm-padding {
-    padding: 3.125vw; }
-  .ibm-padding-horizontal {
-    padding-left: 3.125vw;
-    padding-right: 3.125vw; }
-  .ibm-padding-vertical {
-    padding-bottom: 3.125vw;
-    padding-top: 3.125vw; } }
-
-@media (min-width: 1056px) {
-  .ibm > *,
-  .ibm-col-group > *,
-  .ibm-padding {
-    padding: 1.51515vw; }
-  .ibm-padding-horizontal {
-    padding-left: 1.51515vw;
-    padding-right: 1.51515vw; }
-  .ibm-padding-vertical {
-    padding-bottom: 1.51515vw;
-    padding-top: 1.51515vw; } }
-
-@media (min-width: 1650px) {
-  .ibm > *,
-  .ibm-col-group > *,
-  .ibm-padding {
-    padding: 25px; }
-  .ibm-padding-horizontal {
-    padding-left: 25px;
-    padding-right: 25px; }
-  .ibm-padding-vertical {
-    padding-bottom: 25px;
-    padding-top: 25px; } }
-
-.ibm > *,
-.ibm-col-group > * {
-  width: 100%; }
-
-.ibm-col-group,
-.ibm-col-full {
-  padding: 0;
-  position: relative; }
 
 [class^="ibm-col-sm-0"] {
   display: none; }
@@ -141,6 +105,18 @@ html, body {
     .ibm-col-sm-4[class*="ibm-col-bleed-"] {
       max-width: 1625px;
       width: 98.48485vw; } }
+
+@media (min-width: 640px) {
+  .ibm > *,
+  .ibm-col-group > *,
+  .ibm-padding {
+    padding: 3.125vw; }
+  .ibm-padding-horizontal {
+    padding-left: 3.125vw;
+    padding-right: 3.125vw; }
+  .ibm-padding-vertical {
+    padding-bottom: 3.125vw;
+    padding-top: 3.125vw; } }
 
 @media (min-width: 640px) {
   [class^="ibm-col-md-0"] {
@@ -221,6 +197,18 @@ html, body {
     .ibm-col-md-8[class*="ibm-col-bleed-"] {
       max-width: 1625px;
       width: 98.48485vw; } }
+
+@media (min-width: 1056px) {
+  .ibm > *,
+  .ibm-col-group > *,
+  .ibm-padding {
+    padding: 1.51515vw; }
+  .ibm-padding-horizontal {
+    padding-left: 1.51515vw;
+    padding-right: 1.51515vw; }
+  .ibm-padding-vertical {
+    padding-bottom: 1.51515vw;
+    padding-top: 1.51515vw; } }
 
 @media (min-width: 1056px) {
   [class^="ibm-col-lg-0"] {
@@ -331,6 +319,18 @@ html, body {
     .ibm-col-lg-16[class*="ibm-col-bleed-"] {
       max-width: 1625px;
       width: 98.48485vw; } }
+
+@media (min-width: 1650px) {
+  .ibm > *,
+  .ibm-col-group > *,
+  .ibm-padding {
+    padding: 25px; }
+  .ibm-padding-horizontal {
+    padding-left: 25px;
+    padding-right: 25px; }
+  .ibm-padding-vertical {
+    padding-bottom: 25px;
+    padding-top: 25px; } }
 
 @media (min-width: 1056px) {
   .ibm-col-bleed-left {
