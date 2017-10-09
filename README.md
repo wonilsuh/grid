@@ -59,7 +59,7 @@ If you want to use the sass partials, import the files in the src folder:
 ```
 @import 'node_modules/@ibm/grid/src/_core.scss';
 @import 'node_modules/@ibm/grid/src/_bleed.scss';
-@import 'node_modules/@ibm/grid/src/height.scss';
+@import 'node_modules/@ibm/grid/src/_height.scss';
 ```
 
 Check out the Performance section below for a description of each partial.
@@ -80,6 +80,14 @@ If you would like to help develop a resource to implement this grid using CSS Gr
 
 ## Class Reference
 
+The classes are listed below, separated by which SCSS partial they are included in. It is necessary to use `_core.scss` to use any of the other partials.
+
+### Core
+
+There are three breakpoints in IBM Grid: sm (0px+), md (640px+), and lg (1056px+). At each larger breakpoint, the screen is divided into additional columns: 4, 8, and then 16 respectively.
+
+**Note:** To respect mobile-first design, a smaller breakpoints’ columns will scale at the next breakpoint unless the next breakpoint has column widths specified. This means that setting a column at `.ibm-col-sm-2` will maintain half of the grid’s width throughout unless a width is specified at a larger breakpoint.
+
 | Class | Purpose |
 |---|---|
 | `.ibm` | Container div of the grid |
@@ -91,12 +99,28 @@ If you would like to help develop a resource to implement this grid using CSS Gr
 | `.ibm-col-group` | Use a column to group other columns to make sub-rows and sub-columns <br> <br> *This is the most powerful part of IBM Grid’s ability to make complex layouts.* |
 | `.ibm-col-[sm, md, lg]-0-only` | Do not display a column at a specific breakpoint |
 | `.ibm-col-full` | Remove all padding of a column |
+
+### Bleed
+
+| Class | Purpose |
+| **Column Modifiers** | |
 | `.ibm-col-bleed` | Stretch a column’s background color or image across the lg breakpoint’s horizontal margin on both sides <br> <br> *Can be mixed with `.ibm-col-full`.* |
 | `.ibm-col-bleed-[left, right]` | Stretch a column’s background color or image across the lg breakpoint’s horizontal margin on a single side <br> <br> *Can be mixed with `.ibm-col-full`.* |
+
+### Height
+
+The grid contains the same unit sizes that a visual designer uses. These units change size between breakpoints: sm = 1/16vw, md = 1/32vw, and lg = 1/66vw. We use these units to measure specific heights in all of our wireframes and mock-ups.
+
+**Note:** To respect mobile-first design, a smaller breakpoints’ units will scale at the next breakpoint unless the next breakpoint has unit heights specified. This means that setting a height at `.ibm-height-sm-2` will scale to `.ibm-height-md-4` and `.ibm-height-lg-8` unless a height at those breakpoints is specified. You can use a height at `0` to unset heights at a breakpoint.
+
+**Note:** Since this code uses flex wrap, a row of columns will reflect the column with the largest height. To undo this behavior, you can wrap the smaller height in a `.ibm-col-group` to ignore the larger height sibling.
+
+| Class | Purpose |
+|---|---|
 | **Heights** | |
-| `.ibm-height-sm-[0-16]` | Set the min-height based on the units of the grid starting at 0px screen width <br> <br> *16 units would be a square because the grid is 16 units wide at sm.* |
-| `.ibm-height-md-[0-16]` | Set the min-height based on the units of the grid starting at 640px screen width <br> <br> *16 units would be a half-square because the grid is 16 units wide at md.* |
-| `.ibm-height-lg-[0-33]` | Set the min-height based on the units of the grid starting at 1056px screen width <br> <br> *33 units would be a half-square because the grid is 16 units wide at lg.* |
+| `.ibm-height-sm-[0-16]` | Set the min-height based on the units of the grid starting at 0px screen width |
+| `.ibm-height-md-[0-16]` | Set the min-height based on the units of the grid starting at 640px screen width |
+| `.ibm-height-lg-[0-33]` | Set the min-height based on the units of the grid starting at 1056px screen width |
 | **Height Modifiers** | |
 | `.ibm-height-strict` | Will switch the behavior of the height from min-height to height |
 | **Additional Padding** | |
@@ -113,8 +137,9 @@ There are three distinct capabilities of this codebase and you are welcome to on
 | | Includes core grid? | Includes lg bleeds? | Includes heights? | File Size | Minified | Gzip |
 |---|---|---|---|---|---|---|
 | IBM Grid | Yes | Yes | Yes | 19kb | 14kb | 2.2kb |
-| _core.scss + _bleed.scss | Yes | Yes | No | 10kb | 7kb | 1.2kb |
 | _core.scss | Yes | No | No | 8kb | 6kb | 1.0kb |
+| _bleed.scss | No | Yes | No | 2kb | 1kb | 0.2kb |
+| _height.scss | No | No | Yes | 9kb | 7kb | 1.0kb |
 
 ## Contribute
 
