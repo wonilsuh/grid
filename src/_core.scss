@@ -137,11 +137,32 @@ html, body {
         display: none;
       }
     }
+    
+    @if $breakpoint == 'sm' {
+      @media (min-width: map-get(map-get($ibm-grid, 'md'), breakpoint)) {
+        [class*="ibm-col-md-"][class*="ibm-col-#{$breakpoint}-0"] {
+          display: initial;
 
-    @if map-get($ibm-grid, map-get($values, next)) {
-      @media (min-width: map-get(map-get($ibm-grid, map-get($values, next)), breakpoint)) {
-        [class*="ibm-col-#{map-get($values, next)}-"].ibm-col-#{$breakpoint}-0,
-        .ibm-col-#{$breakpoint}-0-only {
+          &.ibm-col-group {
+            display: flex;
+          }
+        }
+      }
+
+      @media (min-width: map-get(map-get($ibm-grid, 'lg'), breakpoint)) {
+        [class*="ibm-col-lg-"].ibm-col-#{$breakpoint}-0 {
+          display: initial;
+
+          &.ibm-col-group {
+            display: flex;
+          }
+        }
+      }
+    }
+
+    @if $breakpoint == 'md' {
+      @media (min-width: map-get(map-get($ibm-grid, 'lg'), breakpoint)) {
+        [class*="ibm-col-lg-"][class*="ibm-col-#{$breakpoint}-0"] {
           display: initial;
 
           &.ibm-col-group {
