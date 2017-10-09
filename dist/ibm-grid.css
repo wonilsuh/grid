@@ -39,8 +39,8 @@ html, body {
 .ibm-col-group > * {
   width: 100%; }
 
-.ibm-col-group,
-.ibm-col-full {
+.ibm .ibm-col-group,
+.ibm .ibm-col-full {
   padding: 0;
   position: relative; }
 
