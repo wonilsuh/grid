@@ -99,6 +99,9 @@ There are three breakpoints in IBM Grid: sm (0px+), md (640px+), and lg (1056px+
 | `.ibm-col-group` | Use a column to group other columns to make sub-rows and sub-columns <br> <br> *This is the most powerful part of IBM Grid’s ability to make complex layouts.* |
 | `.ibm-col-[sm, md, lg]-0-only` | Do not display a column at a specific breakpoint |
 | `.ibm-col-full` | Remove all padding of a column |
+| **Padding** | |
+| `.ibm-padding` | Set the padding of an element at one unit of the grid <br> <br> *Each column already applies one unit of padding. You can add this element inside for another unit of padding. Most helpful when using `.ibm-col-full` and you want to add padding back in a child.* |
+| `.ibm-padding-[horizontal, vertical]` | Set either the horizontal or vertical padding of an element at one unit of the grid |
 
 ### Bleed
 
@@ -123,9 +126,6 @@ The grid contains the same unit sizes that a visual designer uses. These units c
 | `.ibm-height-lg-[0-33]` | Set the min-height based on the units of the grid starting at 1056px screen width |
 | **Height Modifiers** | |
 | `.ibm-height-strict` | Will switch the behavior of the height from min-height to height |
-| **Additional Padding** | |
-| `.ibm-padding` | Set the padding of an element at one unit of the grid <br> <br> *Each column already applies one unit of padding. You can add this element inside for another unit of padding. Most helpful when using `.ibm-col-full` and you want to add padding back in a child.* |
-| `.ibm-padding-[horizontal, vertical]` | Set either the horizontal or vertical padding of an element at one unit of the grid |
 
 ## Performance
 
