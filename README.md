@@ -59,7 +59,7 @@ If you want to use the sass partials, import the files in the src folder:
 ```
 @import 'node_modules/@ibm/grid/src/_core.scss';
 @import 'node_modules/@ibm/grid/src/_bleed.scss';
-@import 'node_modules/@ibm/grid/src/_ratio.scss';
+@import 'node_modules/@ibm/grid/src/_height.scss';
 ```
 
 Check out the Performance section below for a description of each partial.
@@ -76,40 +76,70 @@ You do not need to use the code in this repo. We understand that there are many 
 
 We want to use the [CSS Grid Spec](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout). However, many of our experiences support IE11 at the moment. If your experience does not need to support IE11 or you do not need the [missing specs in IE11](https://rachelandrew.co.uk/archives/2016/11/26/should-i-try-to-use-the-ie-implementation-of-css-grid-layout/), feel free to use CSS Grid.
 
-If you would like to help develop a resource to implement this grid using CSS Grid, all contributions are welcome!
+If you would like to help develop a resource to implement this grid using CSS Grid, contributions are welcome!
 
-## Classname Reference
+## Class Reference
 
-| Classname                     | Purpose                                                                                                                                             |
-|-------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `.ibm`                        | Container div of the grid                                                                                                                           |
-| `.ibm-col-sm-[0-4]`           | Set the width out of four columns for an item in the grid starting at 0px screen width                                                               |
-| `.ibm-col-md-[0-8]`           | Set the width out of eight columns for an item in the grid starting at 640px screen width                                                            |
-| `.ibm-col-lg-[0-16]`           | Set the width out of sixteen columns for an item in the grid starting at 1056px screen width                                                            |
-| `.ibm-col-[sm, md, lg]-0-only`  | Do not display an item for a specific breakpoint                                                                                                    |
-| `.ibm-col-group`              | Turn an item into a group of items for sub-rows and sub-columns                                                                                     |
-| `.ibm-col-tall`               | Double the vertical padding of an item                                                                                                              |
-| `.ibm-col-full`               | Undo all padding of an item                                                                                                                         |
-| `.ibm-col-full_padding`       | Reapply padding to the child of an item with no padding                                                                                             |
-| `.ibm-col-bleed`              | Ignore the grid's horizontal padding on both sides for background colors and media                                                                  |
-| `.ibm-col-bleed-[left, right]` | Ignore the grid's horizontal padding on a particular side for background colors and media                                                           |
-| `.ibm-col-ratio-sm-[1-16]`     | Set a height responsive to screen width based on aspect ratios out of eight starting at 0px screen width. Square would be `.ibm-col-ratio-sm-16`.    |
-| `.ibm-col-ratio-md-[1-16]`     | Set a height responsive to screen width based on aspect ratios out of eight starting at 640px screen width. Square would be `.ibm-col-ratio-md-16`.  |
-| `.ibm-col-ratio-lg-[1-16]`     | Set a height responsive to screen width based on aspect ratios out of eight starting at 1056px screen width. Square would be `.ibm-col-ratio-lg-16`. |
-| `.ibm-col-ratio_content`      | The required immediate child of `ibm-col-ratio-` that holds all content of the child                                                                |
+The classes are listed below, separated by which SCSS partial they are included in. It is necessary to use `_core.scss` to use any of the other partials.
+
+### Core
+
+There are three breakpoints in IBM Grid: sm (0px+), md (640px+), and lg (1056px+). At each larger breakpoint, the screen is divided into additional columns: 4, 8, and then 16 respectively.
+
+**Note:** To respect mobile-first design, a smaller breakpoints’ columns will scale at the next breakpoint unless the next breakpoint has column widths specified. This means that setting a column at `.ibm-col-sm-2` will maintain half of the grid’s width throughout unless a width is specified at a larger breakpoint.
+
+| Class | Purpose |
+|---|---|
+| `.ibm` | Container div of the grid |
+| **Columns** | |
+| `.ibm-col-sm-[0-4]` | Set the width out of four columns for an item in the grid starting at 0px screen width |
+| `.ibm-col-md-[0-8]` | Set the width out of eight columns for an item in the grid starting at 640px screen width |
+| `.ibm-col-lg-[0-16]` | Set the width out of sixteen columns for an item in the grid starting at 1056px screen width |
+| **Column Modifiers** | |
+| `.ibm-col-group` | Use a column to group other columns to make sub-rows and sub-columns <br> <br> *This is the most powerful part of IBM Grid’s ability to make complex layouts.* |
+| `.ibm-col-[sm, md, lg]-0-only` | Do not display a column at a specific breakpoint |
+| `.ibm-col-full` | Remove all padding of a column |
+
+### Bleed
+
+| Class | Purpose |
+| **Column Modifiers** | |
+| `.ibm-col-bleed` | Stretch a column’s background color or image across the lg breakpoint’s horizontal margin on both sides <br> <br> *Can be mixed with `.ibm-col-full`.* |
+| `.ibm-col-bleed-[left, right]` | Stretch a column’s background color or image across the lg breakpoint’s horizontal margin on a single side <br> <br> *Can be mixed with `.ibm-col-full`.* |
+
+### Height
+
+The grid contains the same unit sizes that a visual designer uses. These units change size between breakpoints: sm = 1/16vw, md = 1/32vw, and lg = 1/66vw. We use these units to measure specific heights in all of our wireframes and mock-ups.
+
+**Note:** To respect mobile-first design, a smaller breakpoints’ units will scale at the next breakpoint unless the next breakpoint has unit heights specified. This means that setting a height at `.ibm-height-sm-2` will scale to `.ibm-height-md-4` and `.ibm-height-lg-8` unless a height at those breakpoints is specified. You can use a height at `0` to unset heights at a breakpoint.
+
+**Note:** Since this code uses flex wrap, a row of columns will reflect the column with the largest height. To undo this behavior, you can wrap the smaller height in a `.ibm-col-group` to ignore the larger height sibling.
+
+| Class | Purpose |
+|---|---|
+| **Heights** | |
+| `.ibm-height-sm-[0-16]` | Set the min-height based on the units of the grid starting at 0px screen width |
+| `.ibm-height-md-[0-16]` | Set the min-height based on the units of the grid starting at 640px screen width |
+| `.ibm-height-lg-[0-33]` | Set the min-height based on the units of the grid starting at 1056px screen width |
+| **Height Modifiers** | |
+| `.ibm-height-strict` | Will switch the behavior of the height from min-height to height |
+| **Additional Padding** | |
+| `.ibm-padding` | Set the padding of an element at one unit of the grid <br> <br> *Each column already applies one unit of padding. You can add this element inside for another unit of padding. Most helpful when using `.ibm-col-full` and you want to add padding back in a child.* |
+| `.ibm-padding-[horizontal, vertical]` | Set either the horizontal or vertical padding of an element at one unit of the grid |
 
 ## Performance
 
 There are three distinct capabilities of this codebase and you are welcome to only import what you need:
 1. Core - All capabilities not listed below.
 2. Bleed - Allows you to stretch background colors and media across the left and right edges of the grid on the large breakpoint.
-3. Ratio - Allows an col to maintain an aspect ratio as the screen width adjusts.
+3. Height - Allows you to set heights of any elements to the grid
 
-|                          | Includes core grid? | Includes side bleeds? | Includes aspect ratios? | File Size | Minified | Gzip  |
-|--------------------------|---------------------|-----------------------|-------------------------|-----------|----------|-------|
-| IBM Grid                 | Yes                 | Yes                   | Yes                     | 16kb      | 12kb      | 2.4kb |
-| _core.scss + _bleed.scss | Yes                 | Yes                   | No                      | 13kb       | 9kb      | 1.8kb |
-| _core.scss               | Yes                 | No                    | No                      | 7kb       | 5kb      | 1.5kb |
+| | Includes core grid? | Includes lg bleeds? | Includes heights? | File Size | Minified | Gzip |
+|---|---|---|---|---|---|---|
+| IBM Grid | Yes | Yes | Yes | 19kb | 14kb | 2.2kb |
+| _core.scss | Yes | No | No | 8kb | 6kb | 1.0kb |
+| _bleed.scss | No | Yes | No | 2kb | 1kb | 0.2kb |
+| _height.scss | No | No | Yes | 9kb | 7kb | 1.0kb |
 
 ## Contribute
 

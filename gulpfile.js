@@ -40,4 +40,4 @@ gulp.task('watch',function() {
     gulp.watch("docs/**/*").on("change", browserSync.reload);
 });
 
-gulp.task('default', ['clean', 'type', 'styles', 'grid']);
+gulp.task('default', ['clean', 'type', 'styles']);
