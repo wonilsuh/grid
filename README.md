@@ -102,8 +102,8 @@ There are three breakpoints in IBM Grid: sm (0px+), md (640px+), and lg (1056px+
 
 ### Bleed
 
-| Class | Purpose |
-| **Column Modifiers** | |
+| **Additional Column Modifiers** | |
+|---|---|
 | `.ibm-col-bleed` | Stretch a column’s background color or image across the lg breakpoint’s horizontal margin on both sides <br> <br> *Can be mixed with `.ibm-col-full`.* |
 | `.ibm-col-bleed-[left, right]` | Stretch a column’s background color or image across the lg breakpoint’s horizontal margin on a single side <br> <br> *Can be mixed with `.ibm-col-full`.* |
 
