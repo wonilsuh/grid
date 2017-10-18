@@ -355,6 +355,7 @@ html, body {
       padding-right: 25px; } }
 
 .ibm-col-bleed {
+  max-width: initial;
   width: 100vw; }
   @media (min-width: 1056px) {
     .ibm-col-bleed {
