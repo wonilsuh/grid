@@ -45,7 +45,7 @@
 }
 
 .ibm-col-bleed {
-  max-width: initial;
+  max-width: map-get(map-get($ibm-grid, max), breakpoint);
 
   @each $breakpoint, $values in $ibm-grid {
     @if map-get($values, margin) {
