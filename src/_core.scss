@@ -1,19 +1,19 @@
 $ibm-grid: (
   "sm": (
     breakpoint: 0px,
-    columns: 4,
+    columns: 16,
     heights: 16,
     margin: false,
     next: "md",
-    unit: (100vw / 16),
+    unit: (100vw / 64),
   ),
   "md": (
     breakpoint: 640px,
-    columns: 8,
+    columns: 16,
     heights: 16,
     margin: false,
     next: "lg",
-    unit: (100vw / 32),
+    unit: (100vw / 64),
   ),
   "lg": (
     breakpoint: 1056px,
