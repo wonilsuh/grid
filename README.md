@@ -23,6 +23,7 @@ Check that any webpage follows the IBM Grid with our [Chrome and Firefox extensi
 We want to show off many examples of what IBM Grid is capable of. Check out the examples below and learn at the bottom of this document how to provide a new example:
 -  [Capabilities](https://ibm.github.io/grid/capabilities.html) ([Source](./docs/capabilities.html))
 -  [Dev Tutorial](https://ibm.github.io/grid/) ([Source](./docs/index.html))
+-  [Product](https://ibm.github.io/grid/product.html) ([Source](./docs/product.html))
 
 # Design
 
