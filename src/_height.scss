@@ -21,7 +21,9 @@
       $a: 1;
       @while $a <= map-get($values, heights) {
         .ibm-height-#{$breakpoint}-#{$a} {
-            min-height: map-get(map-get($ibm-grid, $col-64-66-breakpoint), unit) * $a;
+            @if map-get(map-get($ibm-grid, $col-64-66-breakpoint), breakpoint) > map-get($values, breakpoint) {
+              min-height: map-get(map-get($ibm-grid, $col-64-66-breakpoint), unit) * $a;
+            }
         }
         $a: $a + 1;
       }
