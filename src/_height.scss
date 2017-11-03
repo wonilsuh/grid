@@ -2,81 +2,41 @@
 
 @each $breakpoint, $values in $ibm-grid {
   @if map-get($values, columns) != null {
-    @if map-get($values, breakpoint) != 0px {
-      @media (min-width: map-get($values, breakpoint)) {
-        .ibm-height-#{$breakpoint}-0 {
-          min-height: unset;
-        }
-
-        $a: 1;
-        @while $a <= map-get($values, heights) {
-          .ibm-height-#{$breakpoint}-#{$a} {
-              min-height: map-get($values, unit) * $a;
-          }
-          $a: $a + 1;
-        }
+    /* BEGIN: height: #{$breakpoint} */
+    @media (min-width: map-get($values, breakpoint)) {
+      .ibm-height-#{$breakpoint}-0 {
+        min-height: unset;
       }
-    } @else {
+
       $a: 1;
       @while $a <= map-get($values, heights) {
         .ibm-height-#{$breakpoint}-#{$a} {
-          min-height: map-get($values, unit) * $a;
+            min-height: map-get($values, unit) * $a;
         }
         $a: $a + 1;
       }
     }
-
-    @if map-get($ibm-grid, map-get($values, next)) {
-      @media (min-width: map-get(map-get($ibm-grid, map-get($values, next)), breakpoint)) {
-        $a: 1;
-        @while $a <= map-get($values, heights) {
-          @if map-get($ibm-grid, map-get($values, next)) == 'max' {
-            .ibm-height-#{$breakpoint}-#{$a} {
-              min-height: map-get(map-get($ibm-grid, map-get($values, next)), unit) * $a;
-            }
-          } @else if $breakpoint != 'lg' {
-            .ibm-height-#{$breakpoint}-#{$a} {
-              min-height: map-get(map-get($ibm-grid, map-get($values, next)), unit) * $a * 2;
-            }
-          } @else {
-            .ibm-height-#{$breakpoint}-#{$a} {
-              min-height: map-get(map-get($ibm-grid, map-get($values, next)), unit) * $a;
-            }
-          }
-          $a: $a + 1;
+    // now let's do the 64 -> 66 break point
+    @media (min-width: map-get(map-get($ibm-grid, $col-64-66-breakpoint), breakpoint)) {
+      $a: 1;
+      @while $a <= map-get($values, heights) {
+        .ibm-height-#{$breakpoint}-#{$a} {
+            min-height: map-get(map-get($ibm-grid, $col-64-66-breakpoint), unit) * $a;
         }
-      }
-
-      @if map-get(map-get($ibm-grid, map-get($values, next)), next) {
-        @media (min-width: map-get(map-get($ibm-grid, map-get(map-get($ibm-grid, map-get($values, next)), next)), breakpoint)) {
-          $a: 1;
-          @while $a <= map-get($values, heights) {
-            @if map-get(map-get($ibm-grid, map-get($values, next)), next) == 'max' {
-              .ibm-height-#{$breakpoint}-#{$a} {
-                min-height: map-get(map-get($ibm-grid, map-get(map-get($ibm-grid, map-get($values, next)), next)), unit) * $a * 2;
-              }
-            } @else {
-              .ibm-height-#{$breakpoint}-#{$a} {
-                min-height: map-get(map-get($ibm-grid, map-get(map-get($ibm-grid, map-get($values, next)), next)), unit) * $a * 4;
-              }
-            }
-            $a: $a + 1;
-          }
-        }
-
-        @if map-get(map-get($ibm-grid, map-get(map-get($ibm-grid, map-get($values, next)), next)), next) {
-          @media (min-width: map-get(map-get($ibm-grid, map-get(map-get($ibm-grid, map-get(map-get($ibm-grid, map-get($values, next)), next)), next)), breakpoint)) {
-            $a: 1;
-            @while $a <= map-get($values, heights) {
-              .ibm-height-#{$breakpoint}-#{$a} {
-                min-height: map-get(map-get($ibm-grid, map-get(map-get($ibm-grid, map-get(map-get($ibm-grid, map-get($values, next)), next)), next)), unit) * $a * 4;
-              }
-              $a: $a + 1;
-            }
-          }
-        }
+        $a: $a + 1;
       }
     }
+    // max
+    @media (min-width: map-get(map-get($ibm-grid, max), breakpoint)) {
+      $a: 1;
+      @while $a <= map-get($values, heights) {
+        .ibm-height-#{$breakpoint}-#{$a} {
+            min-height: map-get(map-get($ibm-grid, max), unit) * $a;
+        }
+        $a: $a + 1;
+      }
+    }
+    /* END: height: #{$breakpoint} */
   }
 }
 

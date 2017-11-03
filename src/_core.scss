@@ -2,17 +2,37 @@ $ibm-grid: (
   "sm": (
     breakpoint: 0px,
     columns: 16,
-    heights: 16,
+    heights: 32,
+    margin: false,
+    next: "smd",
+    numunit:64,
+    unit: (100vw / 64),
+  ),
+  "smd": (
+    breakpoint: 512px,
+    columns: 16,
+    heights: 32,
     margin: false,
     next: "md",
+    numunit:64,
     unit: (100vw / 64),
   ),
   "md": (
     breakpoint: 640px,
     columns: 16,
-    heights: 16,
+    heights: 32,
+    margin: false,
+    next: "slg",
+    numunit:64,
+    unit: (100vw / 64),
+  ),
+  "slg": (
+    breakpoint: 924px,
+    columns: 16,
+    heights: 32,
     margin: false,
     next: "lg",
+    numunit:64,
     unit: (100vw / 64),
   ),
   "lg": (
@@ -20,16 +40,39 @@ $ibm-grid: (
     columns: 16,
     heights: 33,
     margin: true,
+    next: "xlg",
+    numunit:66,
+    unit: (100vw / 66),
+  ),
+  "xlg": (
+    breakpoint: 1188px,
+    columns: 16,
+    heights: 33,
+    margin: true,
+    next: "xxlg",
+    numunit:66,
+    unit: (100vw / 66),
+  ),
+  "xxlg": (
+    breakpoint: 1452px,
+    columns: 16,
+    heights: 33,
+    margin: true,
     max: "max",
     next: "max",
+    numunit:66,
     unit: (100vw / 66),
   ),
   "max": (
     breakpoint: 1650px,
+    columns: 16,
+    heights:33,
     margin: true,
+    numunit:66,
     unit: 25px,
   )
 );
+$col-64-66-breakpoint:"lg";
 
 html, body {
   margin: 0;
@@ -89,6 +132,7 @@ html, body {
 }
 
 @each $breakpoint, $values in $ibm-grid {
+  /* BEGIN: #{$breakpoint} */
   @if map-get($values, breakpoint) != 0px {
     @media (min-width: map-get($values, breakpoint)) {
       .ibm > *,
@@ -137,54 +181,51 @@ html, body {
         display: none;
       }
     }
-    
-    @if $breakpoint == 'sm' {
-      @media (min-width: map-get(map-get($ibm-grid, 'md'), breakpoint)) {
-        .ibm-col-#{$breakpoint}-0-only,
-        [class*="ibm-col-md-"][class*="ibm-col-#{$breakpoint}-0"] {
-          display: initial;
 
-          &.ibm-col-group {
-            display: flex;
+    @each $breakPointFor0, $valuesFor0 in $ibm-grid {
+
+      @media (min-width: map-get($valuesFor0, 'breakpoint')){
+
+        @if map-get($valuesFor0, 'breakpoint') > map-get($values, 'breakpoint'){
+          .ibm-col-sm-0-only,
+          [class*="ibm-col-#{$breakPointFor0}-"][class*="ibm-col-#{$breakpoint}-0"] {
+            display: initial; 
+
+            &.ibm-col-group {
+              display: flex;
+            }
           }
         }
-      }
 
-      @media (min-width: map-get(map-get($ibm-grid, 'lg'), breakpoint)) {
-        [class*="ibm-col-lg-"].ibm-col-#{$breakpoint}-0 {
-          display: initial;
-
-          &.ibm-col-group {
-            display: flex;
-          }
-        }
-      }
-    }
-
-    @if $breakpoint == 'md' {
-      @media (min-width: map-get(map-get($ibm-grid, 'lg'), breakpoint)) {
-        .ibm-col-#{$breakpoint}-0-only,
-        [class*="ibm-col-lg-"][class*="ibm-col-#{$breakpoint}-0"] {
-          display: initial;
-
-          &.ibm-col-group {
-            display: flex;
-          }
-        }
       }
     }
   }
 
+  /* BEGIN: now the col classes */
   @if map-get($values, columns) != null {
-    @if $breakpoint != 'lg' {
+    @if map-get($values, next) != 'mazzx'{
       @if map-get($values, breakpoint) != 0px {
         @media (min-width: map-get($values, breakpoint)) {
           $a: 1;
           @while $a <= map-get($values, columns) {
             .ibm-col-#{$breakpoint}-#{$a} {
-              width: 100vw / map-get($values, columns) * $a;
+              width: (100vw - (100vw / 66) * (map-get($values, numunit) - 64)) / map-get($values, columns) * $a;
+              max-width: (map-get(map-get($ibm-grid, max), breakpoint) - map-get(map-get($ibm-grid, max), unit) * 2) / map-get($values, columns) * $a;
             }
             $a: $a + 1;
+          }
+        }
+        // now 64 based columns should switch to 66 based at $col-64-66-breakpoint
+        @if(map-get($values, numunit) == 64){
+          @media (min-width: map-get(map-get($ibm-grid, $col-64-66-breakpoint), breakpoint)) {
+            $a: 1;
+            @while $a <= map-get($values, columns) {
+              .ibm-col-#{$breakpoint}-#{$a} {
+                
+                width: (100vw - (100vw / 66) * 2)/ map-get($values, columns) * $a;
+              }
+              $a: $a + 1;
+            }
           }
         }
       } @else {
@@ -195,11 +236,21 @@ html, body {
           }
           $a: $a + 1;
         }
+        // now 64 based columns should switch to 66 based at $col-64-66-breakpoint
+        @if(map-get($values, numunit) == 64){
+          @media (min-width: map-get(map-get($ibm-grid, $col-64-66-breakpoint), breakpoint)) {
+            $a: 1;
+            @while $a <= map-get($values, columns) {
+              .ibm-col-#{$breakpoint}-#{$a} {
+                max-width: (map-get(map-get($ibm-grid, max), breakpoint) - map-get(map-get($ibm-grid, max), unit) * 2) / map-get($values, columns) * $a;
+                width: (100vw - (100vw / 66) * 2)/ map-get($values, columns) * $a;
+              }
+              $a: $a + 1;
+            }
+          }
+        }
       }
-    }
-    
-    
-    @media (min-width: map-get(map-get($ibm-grid, lg), breakpoint)) {
+    } @else {
       $a: 1;
       @while $a <= map-get($values, columns) {
         .ibm-col-#{$breakpoint}-#{$a} {
@@ -214,5 +265,6 @@ html, body {
         $a: $a + 1;
       }
     }
-  }
+  } 
+/* END: #{$breakpoint} */
 }
