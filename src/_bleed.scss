@@ -1,92 +1,84 @@
 // Dependent on _core.scss from @ibm/grid
 
-@each $breakpoint, $values in $ibm-grid {
-  @if map-get($values, margin) {
-    @if map-get($values, breakpoint) != 0px {
-      @media (min-width: map-get($values, breakpoint)) {
-        .ibm-col-bleed-left {
-          margin-left: -1 * map-get($values, unit);
-          padding-left: 2 * map-get($values, unit);
-  
-          &.ibm-col-group {
-            padding-left: map-get($values, unit);
-          }
-        }
-  
-        .ibm-col-bleed-right {
-          margin-right: -1 * map-get($values, unit);
-          padding-right: 2 * map-get($values, unit);
-          
-          &.ibm-col-group {
-            padding-right: map-get($values, unit);
-          }
-        }
-      }
-    } @else {
-      .ibm-col-bleed-left {
-        margin-left: -1 * map-get($values, unit);
-        padding-left: 2 * map-get($values, unit);
-
-        &.ibm-col-group {
-          padding-left: map-get($values, unit);
-        }
-      }
-
-      .ibm-col-bleed-right {
-        margin-right: -1 * map-get($values, unit);
-        padding-right: 2 * map-get($values, unit);
-        
-        &.ibm-col-group {
-          padding-right: map-get($values, unit);
-        }
-      }
-    }
-  }
-}
-
 .ibm-col-bleed {
-  max-width: map-get(map-get($ibm-grid, max), breakpoint);
+  max-width: map-get(map-get($ibm-grid, 'max'), 'breakpoint');
+  width: 100vw; 
+}
 
-  @each $breakpoint, $values in $ibm-grid {
-    @if map-get($values, margin) {
-      @if map-get($values, breakpoint) != 0px {
-        @media (min-width: map-get($values, breakpoint)) {
-          margin: 0 -1 * map-get($values, unit);
-          padding-left: 2 * map-get($values, unit);
-          padding-right: 2 * map-get($values, unit);
-  
-          &.ibm-col-group {
-            padding-left: map-get($values, unit);
-            padding-right: map-get($values, unit);
-          }
-  
-          > .ibm-col_padding,
-          > .ibm-col_padding-horizontal {
-            padding-left: 2 * map-get($values, unit);
-            padding-right: 2 * map-get($values, unit);
-          }
-        }
-      } @else {
-        margin: 0 -1 * map-get($values, unit);
-        padding-left: 2 * map-get($values, unit);
-        padding-right: 2 * map-get($values, unit);
+/* bleed >= 64-66 breakpoint */
+@media (min-width:map-get(map-get($ibm-grid, $col-64-66-breakpoint), 'breakpoint')) {
+  $col-64-66-breakpoint-unit: map-get(map-get($ibm-grid, $col-64-66-breakpoint), 'unit');
+  .ibm-col-bleed-left {
+    margin-left: -1 * $col-64-66-breakpoint-unit;
+    padding-left: 2 * $col-64-66-breakpoint-unit;
 
-        &.ibm-col-group {
-          padding-left: map-get($values, unit);
-          padding-right: map-get($values, unit);
-        }
-
-        > .ibm-col_padding,
-        > .ibm-col_padding-horizontal {
-          padding-left: 2 * map-get($values, unit);
-          padding-right: 2 * map-get($values, unit);
-        }
-      }
+    &.ibm-col-group {
+      padding-left: $col-64-66-breakpoint-unit;
     }
   }
 
-  width: 100vw;
+  .ibm-col-bleed-right {
+    margin-right: -1 * $col-64-66-breakpoint-unit;
+    padding-right: 2 * $col-64-66-breakpoint-unit;
+    
+    &.ibm-col-group {
+      padding-right: $col-64-66-breakpoint-unit;
+    }
+  }
+
+  .ibm-col-bleed {
+    margin: 0 -$col-64-66-breakpoint-unit;
+    padding-left: $col-64-66-breakpoint-unit * 2;
+    padding-right: $col-64-66-breakpoint-unit * 2; 
+  }
+  .ibm-col-bleed.ibm-col-group {
+    padding-left: $col-64-66-breakpoint-unit;
+    padding-right: $col-64-66-breakpoint-unit; 
+  }
+  .ibm-col-bleed > .ibm-col_padding,
+  .ibm-col-bleed > .ibm-col_padding-horizontal {
+    padding-left: $col-64-66-breakpoint-unit * 2;
+    padding-right: $col-64-66-breakpoint-unit * 2; 
+  }
 }
+
+/* bleed >= max */
+@media (min-width:map-get(map-get($ibm-grid, 'max'), 'breakpoint')) {
+  $max-breakpoint-unit: map-get(map-get($ibm-grid, 'max'), 'unit');
+  .ibm-col-bleed-left {
+    margin-left: -1 * $max-breakpoint-unit;
+    padding-left: 2 * $max-breakpoint-unit;
+
+    &.ibm-col-group {
+      padding-left: $max-breakpoint-unit;
+    }
+  }
+
+  .ibm-col-bleed-right {
+    margin-right: -1 * $max-breakpoint-unit;
+    padding-right: 2 * $max-breakpoint-unit;
+    
+    &.ibm-col-group {
+      padding-right: $max-breakpoint-unit;
+    }
+  }
+
+  .ibm-col-bleed {
+    margin: 0 -$max-breakpoint-unit;
+    padding-left: $max-breakpoint-unit * 2;
+    padding-right: $max-breakpoint-unit * 2; 
+  }
+  .ibm-col-bleed.ibm-col-group {
+    padding-left: $max-breakpoint-unit;
+    padding-right: $max-breakpoint-unit; 
+  }
+  .ibm-col-bleed > .ibm-col_padding,
+  .ibm-col-bleed > .ibm-col_padding-horizontal {
+    padding-left: $max-breakpoint-unit * 2;
+    padding-right: $max-breakpoint-unit * 2; 
+  }
+}
+/* END: bleed */
 
 .ibm-col-full[class*="ibm-col-bleed"] {
   padding-left: 0;

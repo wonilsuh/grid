@@ -825,6 +825,11 @@ html, body {
     max-width: 1600px; } }
 
 /* END: xxlg */
+.ibm-col-bleed {
+  max-width: 1650px;
+  width: 100vw; }
+
+/* bleed >= 64-66 breakpoint */
 @media (min-width: 1056px) {
   .ibm-col-bleed-left {
     margin-left: -1.51515vw;
@@ -835,32 +840,20 @@ html, body {
     margin-right: -1.51515vw;
     padding-right: 3.0303vw; }
     .ibm-col-bleed-right.ibm-col-group {
-      padding-right: 1.51515vw; } }
-
-@media (min-width: 1188px) {
-  .ibm-col-bleed-left {
-    margin-left: -1.51515vw;
-    padding-left: 3.0303vw; }
-    .ibm-col-bleed-left.ibm-col-group {
-      padding-left: 1.51515vw; }
-  .ibm-col-bleed-right {
-    margin-right: -1.51515vw;
+      padding-right: 1.51515vw; }
+  .ibm-col-bleed {
+    margin: -1.51515vw;
+    padding-left: 3.0303vw;
     padding-right: 3.0303vw; }
-    .ibm-col-bleed-right.ibm-col-group {
-      padding-right: 1.51515vw; } }
+  .ibm-col-bleed.ibm-col-group {
+    padding-left: 1.51515vw;
+    padding-right: 1.51515vw; }
+  .ibm-col-bleed > .ibm-col_padding,
+  .ibm-col-bleed > .ibm-col_padding-horizontal {
+    padding-left: 3.0303vw;
+    padding-right: 3.0303vw; } }
 
-@media (min-width: 1452px) {
-  .ibm-col-bleed-left {
-    margin-left: -1.51515vw;
-    padding-left: 3.0303vw; }
-    .ibm-col-bleed-left.ibm-col-group {
-      padding-left: 1.51515vw; }
-  .ibm-col-bleed-right {
-    margin-right: -1.51515vw;
-    padding-right: 3.0303vw; }
-    .ibm-col-bleed-right.ibm-col-group {
-      padding-right: 1.51515vw; } }
-
+/* bleed >= max */
 @media (min-width: 1650px) {
   .ibm-col-bleed-left {
     margin-left: -25px;
@@ -871,60 +864,20 @@ html, body {
     margin-right: -25px;
     padding-right: 50px; }
     .ibm-col-bleed-right.ibm-col-group {
-      padding-right: 25px; } }
+      padding-right: 25px; }
+  .ibm-col-bleed {
+    margin: -25px;
+    padding-left: 50px;
+    padding-right: 50px; }
+  .ibm-col-bleed.ibm-col-group {
+    padding-left: 25px;
+    padding-right: 25px; }
+  .ibm-col-bleed > .ibm-col_padding,
+  .ibm-col-bleed > .ibm-col_padding-horizontal {
+    padding-left: 50px;
+    padding-right: 50px; } }
 
-.ibm-col-bleed {
-  max-width: 1650px;
-  width: 100vw; }
-  @media (min-width: 1056px) {
-    .ibm-col-bleed {
-      margin: 0 -1.51515vw;
-      padding-left: 3.0303vw;
-      padding-right: 3.0303vw; }
-      .ibm-col-bleed.ibm-col-group {
-        padding-left: 1.51515vw;
-        padding-right: 1.51515vw; }
-      .ibm-col-bleed > .ibm-col_padding,
-      .ibm-col-bleed > .ibm-col_padding-horizontal {
-        padding-left: 3.0303vw;
-        padding-right: 3.0303vw; } }
-  @media (min-width: 1188px) {
-    .ibm-col-bleed {
-      margin: 0 -1.51515vw;
-      padding-left: 3.0303vw;
-      padding-right: 3.0303vw; }
-      .ibm-col-bleed.ibm-col-group {
-        padding-left: 1.51515vw;
-        padding-right: 1.51515vw; }
-      .ibm-col-bleed > .ibm-col_padding,
-      .ibm-col-bleed > .ibm-col_padding-horizontal {
-        padding-left: 3.0303vw;
-        padding-right: 3.0303vw; } }
-  @media (min-width: 1452px) {
-    .ibm-col-bleed {
-      margin: 0 -1.51515vw;
-      padding-left: 3.0303vw;
-      padding-right: 3.0303vw; }
-      .ibm-col-bleed.ibm-col-group {
-        padding-left: 1.51515vw;
-        padding-right: 1.51515vw; }
-      .ibm-col-bleed > .ibm-col_padding,
-      .ibm-col-bleed > .ibm-col_padding-horizontal {
-        padding-left: 3.0303vw;
-        padding-right: 3.0303vw; } }
-  @media (min-width: 1650px) {
-    .ibm-col-bleed {
-      margin: 0 -25px;
-      padding-left: 50px;
-      padding-right: 50px; }
-      .ibm-col-bleed.ibm-col-group {
-        padding-left: 25px;
-        padding-right: 25px; }
-      .ibm-col-bleed > .ibm-col_padding,
-      .ibm-col-bleed > .ibm-col_padding-horizontal {
-        padding-left: 50px;
-        padding-right: 50px; } }
-
+/* END: bleed */
 .ibm-col-full[class*="ibm-col-bleed"] {
   padding-left: 0;
   padding-right: 0; }
@@ -2157,145 +2110,5 @@ html, body {
     min-height: 825px; } }
 
 /* END: height: xxlg */
-/* BEGIN: height: max */
-@media (min-width: 1650px) {
-  .ibm-height-max-0 {
-    min-height: unset; }
-  .ibm-height-max-1 {
-    min-height: 25px; }
-  .ibm-height-max-2 {
-    min-height: 50px; }
-  .ibm-height-max-3 {
-    min-height: 75px; }
-  .ibm-height-max-4 {
-    min-height: 100px; }
-  .ibm-height-max-5 {
-    min-height: 125px; }
-  .ibm-height-max-6 {
-    min-height: 150px; }
-  .ibm-height-max-7 {
-    min-height: 175px; }
-  .ibm-height-max-8 {
-    min-height: 200px; }
-  .ibm-height-max-9 {
-    min-height: 225px; }
-  .ibm-height-max-10 {
-    min-height: 250px; }
-  .ibm-height-max-11 {
-    min-height: 275px; }
-  .ibm-height-max-12 {
-    min-height: 300px; }
-  .ibm-height-max-13 {
-    min-height: 325px; }
-  .ibm-height-max-14 {
-    min-height: 350px; }
-  .ibm-height-max-15 {
-    min-height: 375px; }
-  .ibm-height-max-16 {
-    min-height: 400px; }
-  .ibm-height-max-17 {
-    min-height: 425px; }
-  .ibm-height-max-18 {
-    min-height: 450px; }
-  .ibm-height-max-19 {
-    min-height: 475px; }
-  .ibm-height-max-20 {
-    min-height: 500px; }
-  .ibm-height-max-21 {
-    min-height: 525px; }
-  .ibm-height-max-22 {
-    min-height: 550px; }
-  .ibm-height-max-23 {
-    min-height: 575px; }
-  .ibm-height-max-24 {
-    min-height: 600px; }
-  .ibm-height-max-25 {
-    min-height: 625px; }
-  .ibm-height-max-26 {
-    min-height: 650px; }
-  .ibm-height-max-27 {
-    min-height: 675px; }
-  .ibm-height-max-28 {
-    min-height: 700px; }
-  .ibm-height-max-29 {
-    min-height: 725px; }
-  .ibm-height-max-30 {
-    min-height: 750px; }
-  .ibm-height-max-31 {
-    min-height: 775px; }
-  .ibm-height-max-32 {
-    min-height: 800px; }
-  .ibm-height-max-33 {
-    min-height: 825px; } }
-
-@media (min-width: 1650px) {
-  .ibm-height-max-1 {
-    min-height: 25px; }
-  .ibm-height-max-2 {
-    min-height: 50px; }
-  .ibm-height-max-3 {
-    min-height: 75px; }
-  .ibm-height-max-4 {
-    min-height: 100px; }
-  .ibm-height-max-5 {
-    min-height: 125px; }
-  .ibm-height-max-6 {
-    min-height: 150px; }
-  .ibm-height-max-7 {
-    min-height: 175px; }
-  .ibm-height-max-8 {
-    min-height: 200px; }
-  .ibm-height-max-9 {
-    min-height: 225px; }
-  .ibm-height-max-10 {
-    min-height: 250px; }
-  .ibm-height-max-11 {
-    min-height: 275px; }
-  .ibm-height-max-12 {
-    min-height: 300px; }
-  .ibm-height-max-13 {
-    min-height: 325px; }
-  .ibm-height-max-14 {
-    min-height: 350px; }
-  .ibm-height-max-15 {
-    min-height: 375px; }
-  .ibm-height-max-16 {
-    min-height: 400px; }
-  .ibm-height-max-17 {
-    min-height: 425px; }
-  .ibm-height-max-18 {
-    min-height: 450px; }
-  .ibm-height-max-19 {
-    min-height: 475px; }
-  .ibm-height-max-20 {
-    min-height: 500px; }
-  .ibm-height-max-21 {
-    min-height: 525px; }
-  .ibm-height-max-22 {
-    min-height: 550px; }
-  .ibm-height-max-23 {
-    min-height: 575px; }
-  .ibm-height-max-24 {
-    min-height: 600px; }
-  .ibm-height-max-25 {
-    min-height: 625px; }
-  .ibm-height-max-26 {
-    min-height: 650px; }
-  .ibm-height-max-27 {
-    min-height: 675px; }
-  .ibm-height-max-28 {
-    min-height: 700px; }
-  .ibm-height-max-29 {
-    min-height: 725px; }
-  .ibm-height-max-30 {
-    min-height: 750px; }
-  .ibm-height-max-31 {
-    min-height: 775px; }
-  .ibm-height-max-32 {
-    min-height: 800px; }
-  .ibm-height-max-33 {
-    min-height: 825px; } }
-
-/* END: height: max */
 .ibm-height-strict {
   max-height: 0; }

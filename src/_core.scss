@@ -1,6 +1,7 @@
 $unit64:(100vw / 64);
 $unit66:(100vw / 66);
 $unitmax:25px;
+$col-64-66-breakpoint:"lg";
 
 $ibm-grid: (
   "sm": (
@@ -76,7 +77,6 @@ $ibm-grid: (
     unit: $unitmax,
   )
 );
-$col-64-66-breakpoint:"lg";
 
 html, body {
   margin: 0;
