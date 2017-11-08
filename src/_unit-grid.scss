@@ -1,0 +1,14 @@
+/* unit grid */
+
+@each $breakpoint, $values in $ibm-grid{
+	@media (min-width:map-get($values, 'breakpoint')) {
+		$a:1;
+		@while $a <= 64 {
+			.ibm-col-#{$breakpoint}-unit-#{$a}{
+				width:$a * $unit66;
+				max-width: map-get(map-get($ibm-grid, 'max'), 'unit') * $a;
+			}
+			$a: $a + 1;
+		}		
+	}
+}
