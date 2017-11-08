@@ -1,45 +1,17 @@
 // Dependent on _core.scss from @ibm/grid
 
+$height-scales:(
+  16, 24, 36, 48, 64, 96, 128, 192, 256, 384, 512, 768
+);
+
 @each $breakpoint, $values in $ibm-grid {
   @if $breakpoint != 'max' {
-    @if map-get($values, columns) != null {
-      /* BEGIN: height: #{$breakpoint} */
-      @media (min-width: map-get($values, breakpoint)) {
-        .ibm-height-#{$breakpoint}-0 {
-          min-height: unset;
-        }
-
-        $a: 1;
-        @while $a <= map-get($values, heights) {
-          .ibm-height-#{$breakpoint}-#{$a} {
-              min-height: map-get($values, unit) * $a;
-          }
-          $a: $a + 1;
+    @media (min-width:map-get($values, 'breakpoint')) {
+      @each $height in $height-scales{
+        .ibm-height-#{$breakpoint}-#{$height} {
+          min-height: #{$height}px;
         }
       }
-      // now let's do the 64 -> 66 break point
-      @media (min-width: map-get(map-get($ibm-grid, $col-64-66-breakpoint), breakpoint)) {
-        $a: 1;
-        @while $a <= map-get($values, heights) {
-          .ibm-height-#{$breakpoint}-#{$a} {
-              @if map-get(map-get($ibm-grid, $col-64-66-breakpoint), breakpoint) > map-get($values, breakpoint) {
-                min-height: map-get(map-get($ibm-grid, $col-64-66-breakpoint), unit) * $a;
-              }
-          }
-          $a: $a + 1;
-        }
-      }
-      // max
-      @media (min-width: map-get(map-get($ibm-grid, max), breakpoint)) {
-        $a: 1;
-        @while $a <= map-get($values, heights) {
-          .ibm-height-#{$breakpoint}-#{$a} {
-              min-height: map-get(map-get($ibm-grid, max), unit) * $a;
-          }
-          $a: $a + 1;
-        }
-      }
-      /* END: height: #{$breakpoint} */
     }
   }
 }
