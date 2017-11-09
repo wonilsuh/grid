@@ -1,8 +1,9 @@
 $unit32:(100vw / 32);
 $unit64:(100vw / 64);
 $unit66:(100vw / 66);
-$unitmax:25px;
-$col-64-66-breakpoint:"lg";
+$unitmax:24px;
+$col-64-66-breakpoint:'lg';
+$padding-breakpoints:('sm', 'md', 'slg', 'lg', 'max');
 
 $ibm-grid: (
   "sm": (
@@ -11,9 +12,8 @@ $ibm-grid: (
     heights: 32,
     margin: false,
     next: "smd",
-    numunit:64,
     unit: $unit64,
-    padding:1,
+    padding:4,
   ),
   "smd": (
     breakpoint: 512px,
@@ -21,9 +21,8 @@ $ibm-grid: (
     heights: 32,
     margin: false,
     next: "md",
-    numunit:64,
     unit: $unit64,
-    padding:1,
+    padding:2,
   ),
   "md": (
     breakpoint: 640px,
@@ -31,9 +30,8 @@ $ibm-grid: (
     heights: 32,
     margin: false,
     next: "slg",
-    numunit:64,
     unit: $unit64,
-    padding:1,
+    padding:2,
   ),
   "slg": (
     breakpoint: 924px,
@@ -41,7 +39,6 @@ $ibm-grid: (
     heights: 32,
     margin: false,
     next: "lg",
-    numunit:64,
     unit: $unit64,
     padding:1,
   ),
@@ -51,7 +48,6 @@ $ibm-grid: (
     heights: 33,
     margin: true,
     next: "xlg",
-    numunit:66,
     unit: $unit66,
     padding:1,
   ),
@@ -61,7 +57,6 @@ $ibm-grid: (
     heights: 33,
     margin: true,
     next: "xxlg",
-    numunit:66,
     unit: $unit66,
     padding:1,
   ),
@@ -72,16 +67,14 @@ $ibm-grid: (
     margin: true,
     max: "max",
     next: "max",
-    numunit:66,
     unit: $unit66,
     padding:1,
   ),
   "max": (
-    breakpoint: 1650px,
+    breakpoint: 1584px,
     columns: 16,
     heights:33,
     margin: true,
-    numunit:66,
     unit: $unitmax,
     padding:1,
   )
@@ -99,8 +92,9 @@ html, body {
   max-width: map-get(map-get($ibm-grid, 'max'), breakpoint);
   width: 100vw;
 
-  @each $breakpoint, $values in $ibm-grid {
-    @if map-get($values, margin) == true {
+  @each $breakpoint in $padding-breakpoints {
+    $values: map-get($ibm-grid, $breakpoint);
+    @if map-get($values, 'margin') == true {
       @media (min-width: map-get($values, 'breakpoint')) {
         padding: 0 map-get($values, 'unit') * map-get($values, 'padding');
       }
@@ -144,68 +138,30 @@ html, body {
   position: relative;
 }
 
-/* padding stuff */
-.ibm > *,
-.ibm-col-group > *,
-.ibm-padding {
-  padding: map-get(map-get($ibm-grid, 'sm'), 'unit') * map-get(map-get($ibm-grid, 'sm'), 'padding');
-}
+/* padding */
+@each $breakpoint in $padding-breakpoints {
+  $values: map-get($ibm-grid, $breakpoint);
+  
+  @media (min-width:map-get($values, 'breakpoint')) {
 
-.ibm-padding-horizontal,
-.ibm-col-full.ibm-padding-horizontal,
-.ibm-col-group.ibm-padding-horizontal
- {
-  padding-left: map-get(map-get($ibm-grid, 'sm'), 'unit') * map-get(map-get($ibm-grid, 'sm'), 'padding');
-  padding-right: map-get(map-get($ibm-grid, 'sm'), 'unit') * map-get(map-get($ibm-grid, 'sm'), 'padding');
-}
+    .ibm > *,
+    .ibm-col-group > *,
+    .ibm-padding {
+      padding: map-get($values, 'unit') * map-get($values, 'padding');
+    }
 
-.ibm-padding-vertical,
-.ibm-col-full.ibm-padding-vertical {
-  padding-bottom: map-get(map-get($ibm-grid, 'sm'), 'unit') * map-get(map-get($ibm-grid, 'sm'), 'padding');
-  padding-top: map-get(map-get($ibm-grid, 'sm'), 'unit') * map-get(map-get($ibm-grid, 'sm'), 'padding');
-}
+    .ibm-padding-horizontal,
+    .ibm-col-full.ibm-padding-horizontal,
+    .ibm-col-group.ibm-padding-horizontal {
+      padding-left: map-get($values, 'unit') * map-get($values, 'padding');
+      padding-right: map-get($values, 'unit') * map-get($values, 'padding');
+    }
 
-@media (min-width:map-get(map-get($ibm-grid, $col-64-66-breakpoint), 'breakpoint')){
-  .ibm > *,
-  .ibm-col-group > *,
-  .ibm-padding {
-    padding: map-get(map-get($ibm-grid, $col-64-66-breakpoint), 'unit') * map-get(map-get($ibm-grid, $col-64-66-breakpoint), 'padding');
-  }
-
-  .ibm-padding-horizontal,
-  .ibm-col-full.ibm-padding-horizontal,
-  .ibm-col-group.ibm-padding-horizontal {
-    padding-left: map-get(map-get($ibm-grid, $col-64-66-breakpoint), 'unit') * map-get(map-get($ibm-grid, $col-64-66-breakpoint), 'padding');
-    padding-right: map-get(map-get($ibm-grid, $col-64-66-breakpoint), 'unit') * map-get(map-get($ibm-grid, $col-64-66-breakpoint), 'padding');
-  }
-
-  .ibm-padding-vertical,
-.ibm-col-full.ibm-padding-vertical,
-.ibm-col-group.ibm-padding-vertical {
-    padding-bottom: map-get(map-get($ibm-grid, $col-64-66-breakpoint), 'unit') * map-get(map-get($ibm-grid, $col-64-66-breakpoint), 'padding');
-    padding-top: map-get(map-get($ibm-grid, $col-64-66-breakpoint), 'unit') * map-get(map-get($ibm-grid, $col-64-66-breakpoint), 'padding');
-  }
-}
-
-@media (min-width:map-get(map-get($ibm-grid, 'max'), 'breakpoint')){
-  .ibm > *,
-  .ibm-col-group > *,
-  .ibm-padding {
-    padding: map-get(map-get($ibm-grid, 'max'), 'unit') * map-get(map-get($ibm-grid, 'max'), 'padding');
-  }
-
-  .ibm-padding-horizontal,
-  .ibm-col-full.ibm-padding-horizontal,
-  .ibm-col-group.ibm-padding-horizontal {
-    padding-left: map-get(map-get($ibm-grid, 'max'), 'unit') * map-get(map-get($ibm-grid, 'max'), 'padding');
-    padding-right: map-get(map-get($ibm-grid, 'max'), 'unit') * map-get(map-get($ibm-grid, 'max'), 'padding');
-  }
-
-  .ibm-padding-vertical,
-  .ibm-col-full.ibm-padding-vertical,
-  .ibm-col-group.ibm-padding-vertical {
-    padding-bottom: map-get(map-get($ibm-grid, 'max'), 'unit') * map-get(map-get($ibm-grid, 'max'), 'padding');
-    padding-top: map-get(map-get($ibm-grid, 'max'), 'unit') * map-get(map-get($ibm-grid, 'max'), 'padding');
+    .ibm-padding-vertical,
+    .ibm-col-full.ibm-padding-vertical {
+      padding-bottom: map-get($values, 'unit') * map-get($values, 'padding');
+      padding-top: map-get($values, 'unit') * map-get($values, 'padding');
+    }
   }
 }
 
@@ -252,31 +208,33 @@ html, body {
       }
     }
     /* columns */
-    @if map-get($values, columns) != null {
-      @media (min-width: map-get($values, breakpoint)) {
+    @media (min-width: map-get($values, breakpoint)) {
+      $a: 1;
+      @while $a <= map-get($values, columns) {
+        .ibm-col-#{$breakpoint}-#{$a} {
+          @if map-get($values, 'unit') == $unit64 {
+            width: 100vw / map-get($values, columns) * $a;
+          } @else {
+            width: (100vw - map-get($values, 'unit') * 2) / map-get($values, columns) * $a;
+          }
+          max-width: (map-get(map-get($ibm-grid, max), breakpoint) - map-get(map-get($ibm-grid, max), unit) * 2) / map-get($values, columns) * $a;
+        }
+        $a: $a + 1;
+      }
+    }
+    // now 64 based columns should switch to 66 based at $col-64-66-breakpoint
+    @if(map-get($values, 'unit') == $unit64){
+      @media (min-width: map-get(map-get($ibm-grid, $col-64-66-breakpoint), breakpoint)) {
         $a: 1;
         @while $a <= map-get($values, columns) {
           .ibm-col-#{$breakpoint}-#{$a} {
-            width: (100vw - (100vw / 66) * (map-get($values, numunit) - 64)) / map-get($values, columns) * $a;
-            max-width: (map-get(map-get($ibm-grid, max), breakpoint) - map-get(map-get($ibm-grid, max), unit) * 2) / map-get($values, columns) * $a;
+            
+            width: (100vw - (100vw / 66) * 2)/ map-get($values, columns) * $a;
           }
           $a: $a + 1;
         }
       }
-      // now 64 based columns should switch to 66 based at $col-64-66-breakpoint
-      @if(map-get($values, numunit) == 64){
-        @media (min-width: map-get(map-get($ibm-grid, $col-64-66-breakpoint), breakpoint)) {
-          $a: 1;
-          @while $a <= map-get($values, columns) {
-            .ibm-col-#{$breakpoint}-#{$a} {
-              
-              width: (100vw - (100vw / 66) * 2)/ map-get($values, columns) * $a;
-            }
-            $a: $a + 1;
-          }
-        }
-      }
-    } 
+    }
   /* END: #{$breakpoint} */
   }
 }

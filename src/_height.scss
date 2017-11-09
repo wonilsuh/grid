@@ -1,13 +1,13 @@
 // Dependent on _core.scss from @ibm/grid
 
-$height-scales:(
-  16, 24, 36, 48, 64, 96, 128, 192, 256, 384, 512, 768
+$height-scale:(
+  16, 24, 32, 48, 64, 96, 128, 144, 192, 256, 384, 512, 768
 );
 
 @each $breakpoint, $values in $ibm-grid {
   @if $breakpoint != 'max' {
     @media (min-width:map-get($values, 'breakpoint')) {
-      @each $height in $height-scales{
+      @each $height in $height-scale{
         .ibm-height-#{$breakpoint}-#{$height} {
           min-height: #{$height}px;
         }
@@ -15,6 +15,9 @@ $height-scales:(
     }
   }
 }
+
+// fluid height
+
 
 .ibm-height-strict {
   max-height: 0;
