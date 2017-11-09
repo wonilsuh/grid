@@ -3,7 +3,7 @@ $unit64:(100vw / 64);
 $unit66:(100vw / 66);
 $unitmax:24px;
 $col-64-66-breakpoint:'lg';
-$padding-breakpoints:('sm', 'md', 'slg', 'lg', 'max');
+$padding-breakpoints:('sm', 'smd', 'md', 'lg', 'max');
 
 $ibm-grid: (
   "sm": (
@@ -31,7 +31,7 @@ $ibm-grid: (
     margin: false,
     next: "slg",
     unit: $unit64,
-    padding:2,
+    padding:1,
   ),
   "slg": (
     breakpoint: 924px,
@@ -228,7 +228,6 @@ html, body {
         $a: 1;
         @while $a <= map-get($values, columns) {
           .ibm-col-#{$breakpoint}-#{$a} {
-            
             width: (100vw - (100vw / 66) * 2)/ map-get($values, columns) * $a;
           }
           $a: $a + 1;

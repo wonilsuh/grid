@@ -60,7 +60,7 @@ html, body {
     padding-bottom: 6.25vw;
     padding-top: 6.25vw; } }
 
-@media (min-width: 640px) {
+@media (min-width: 512px) {
   .ibm > *,
   .ibm-col-group > *,
   .ibm-padding {
@@ -75,7 +75,7 @@ html, body {
     padding-bottom: 3.125vw;
     padding-top: 3.125vw; } }
 
-@media (min-width: 924px) {
+@media (min-width: 640px) {
   .ibm > *,
   .ibm-col-group > *,
   .ibm-padding {
@@ -1109,6 +1109,619 @@ html, body {
     min-height: 512px; }
   .ibm-height-xxlg-768 {
     min-height: 768px; } }
+
+/* fluid height */
+@media (min-width: 0px) {
+  .ibm-f-height-sm-1 {
+    min-height: 6.25vw; }
+  .ibm-f-height-sm-2 {
+    min-height: 12.5vw; }
+  .ibm-f-height-sm-3 {
+    min-height: 18.75vw; }
+  .ibm-f-height-sm-4 {
+    min-height: 25vw; }
+  .ibm-f-height-sm-5 {
+    min-height: 31.25vw; }
+  .ibm-f-height-sm-6 {
+    min-height: 37.5vw; }
+  .ibm-f-height-sm-7 {
+    min-height: 43.75vw; }
+  .ibm-f-height-sm-8 {
+    min-height: 50vw; }
+  .ibm-f-height-sm-9 {
+    min-height: 56.25vw; }
+  .ibm-f-height-sm-10 {
+    min-height: 62.5vw; }
+  .ibm-f-height-sm-11 {
+    min-height: 68.75vw; }
+  .ibm-f-height-sm-12 {
+    min-height: 75vw; }
+  .ibm-f-height-sm-13 {
+    min-height: 81.25vw; }
+  .ibm-f-height-sm-14 {
+    min-height: 87.5vw; }
+  .ibm-f-height-sm-15 {
+    min-height: 93.75vw; }
+  .ibm-f-height-sm-16 {
+    min-height: 100vw; } }
+
+@media (min-width: 1056px) {
+  .ibm-f-height-sm-1 {
+    min-height: 6.06061vw; }
+  .ibm-f-height-sm-2 {
+    min-height: 12.12121vw; }
+  .ibm-f-height-sm-3 {
+    min-height: 18.18182vw; }
+  .ibm-f-height-sm-4 {
+    min-height: 24.24242vw; }
+  .ibm-f-height-sm-5 {
+    min-height: 30.30303vw; }
+  .ibm-f-height-sm-6 {
+    min-height: 36.36364vw; }
+  .ibm-f-height-sm-7 {
+    min-height: 42.42424vw; }
+  .ibm-f-height-sm-8 {
+    min-height: 48.48485vw; }
+  .ibm-f-height-sm-9 {
+    min-height: 54.54545vw; }
+  .ibm-f-height-sm-10 {
+    min-height: 60.60606vw; }
+  .ibm-f-height-sm-11 {
+    min-height: 66.66667vw; }
+  .ibm-f-height-sm-12 {
+    min-height: 72.72727vw; }
+  .ibm-f-height-sm-13 {
+    min-height: 78.78788vw; }
+  .ibm-f-height-sm-14 {
+    min-height: 84.84848vw; }
+  .ibm-f-height-sm-15 {
+    min-height: 90.90909vw; }
+  .ibm-f-height-sm-16 {
+    min-height: 96.9697vw; } }
+
+@media (min-width: 1584px) {
+  .ibm-f-height-sm-1 {
+    min-height: 96px; }
+  .ibm-f-height-sm-2 {
+    min-height: 192px; }
+  .ibm-f-height-sm-3 {
+    min-height: 288px; }
+  .ibm-f-height-sm-4 {
+    min-height: 384px; }
+  .ibm-f-height-sm-5 {
+    min-height: 480px; }
+  .ibm-f-height-sm-6 {
+    min-height: 576px; }
+  .ibm-f-height-sm-7 {
+    min-height: 672px; }
+  .ibm-f-height-sm-8 {
+    min-height: 768px; }
+  .ibm-f-height-sm-9 {
+    min-height: 864px; }
+  .ibm-f-height-sm-10 {
+    min-height: 960px; }
+  .ibm-f-height-sm-11 {
+    min-height: 1056px; }
+  .ibm-f-height-sm-12 {
+    min-height: 1152px; }
+  .ibm-f-height-sm-13 {
+    min-height: 1248px; }
+  .ibm-f-height-sm-14 {
+    min-height: 1344px; }
+  .ibm-f-height-sm-15 {
+    min-height: 1440px; }
+  .ibm-f-height-sm-16 {
+    min-height: 1536px; } }
+
+@media (min-width: 512px) {
+  .ibm-f-height-smd-1 {
+    min-height: 6.25vw; }
+  .ibm-f-height-smd-2 {
+    min-height: 12.5vw; }
+  .ibm-f-height-smd-3 {
+    min-height: 18.75vw; }
+  .ibm-f-height-smd-4 {
+    min-height: 25vw; }
+  .ibm-f-height-smd-5 {
+    min-height: 31.25vw; }
+  .ibm-f-height-smd-6 {
+    min-height: 37.5vw; }
+  .ibm-f-height-smd-7 {
+    min-height: 43.75vw; }
+  .ibm-f-height-smd-8 {
+    min-height: 50vw; }
+  .ibm-f-height-smd-9 {
+    min-height: 56.25vw; }
+  .ibm-f-height-smd-10 {
+    min-height: 62.5vw; }
+  .ibm-f-height-smd-11 {
+    min-height: 68.75vw; }
+  .ibm-f-height-smd-12 {
+    min-height: 75vw; }
+  .ibm-f-height-smd-13 {
+    min-height: 81.25vw; }
+  .ibm-f-height-smd-14 {
+    min-height: 87.5vw; }
+  .ibm-f-height-smd-15 {
+    min-height: 93.75vw; }
+  .ibm-f-height-smd-16 {
+    min-height: 100vw; } }
+
+@media (min-width: 1056px) {
+  .ibm-f-height-smd-1 {
+    min-height: 6.06061vw; }
+  .ibm-f-height-smd-2 {
+    min-height: 12.12121vw; }
+  .ibm-f-height-smd-3 {
+    min-height: 18.18182vw; }
+  .ibm-f-height-smd-4 {
+    min-height: 24.24242vw; }
+  .ibm-f-height-smd-5 {
+    min-height: 30.30303vw; }
+  .ibm-f-height-smd-6 {
+    min-height: 36.36364vw; }
+  .ibm-f-height-smd-7 {
+    min-height: 42.42424vw; }
+  .ibm-f-height-smd-8 {
+    min-height: 48.48485vw; }
+  .ibm-f-height-smd-9 {
+    min-height: 54.54545vw; }
+  .ibm-f-height-smd-10 {
+    min-height: 60.60606vw; }
+  .ibm-f-height-smd-11 {
+    min-height: 66.66667vw; }
+  .ibm-f-height-smd-12 {
+    min-height: 72.72727vw; }
+  .ibm-f-height-smd-13 {
+    min-height: 78.78788vw; }
+  .ibm-f-height-smd-14 {
+    min-height: 84.84848vw; }
+  .ibm-f-height-smd-15 {
+    min-height: 90.90909vw; }
+  .ibm-f-height-smd-16 {
+    min-height: 96.9697vw; } }
+
+@media (min-width: 1584px) {
+  .ibm-f-height-smd-1 {
+    min-height: 96px; }
+  .ibm-f-height-smd-2 {
+    min-height: 192px; }
+  .ibm-f-height-smd-3 {
+    min-height: 288px; }
+  .ibm-f-height-smd-4 {
+    min-height: 384px; }
+  .ibm-f-height-smd-5 {
+    min-height: 480px; }
+  .ibm-f-height-smd-6 {
+    min-height: 576px; }
+  .ibm-f-height-smd-7 {
+    min-height: 672px; }
+  .ibm-f-height-smd-8 {
+    min-height: 768px; }
+  .ibm-f-height-smd-9 {
+    min-height: 864px; }
+  .ibm-f-height-smd-10 {
+    min-height: 960px; }
+  .ibm-f-height-smd-11 {
+    min-height: 1056px; }
+  .ibm-f-height-smd-12 {
+    min-height: 1152px; }
+  .ibm-f-height-smd-13 {
+    min-height: 1248px; }
+  .ibm-f-height-smd-14 {
+    min-height: 1344px; }
+  .ibm-f-height-smd-15 {
+    min-height: 1440px; }
+  .ibm-f-height-smd-16 {
+    min-height: 1536px; } }
+
+@media (min-width: 640px) {
+  .ibm-f-height-md-1 {
+    min-height: 6.25vw; }
+  .ibm-f-height-md-2 {
+    min-height: 12.5vw; }
+  .ibm-f-height-md-3 {
+    min-height: 18.75vw; }
+  .ibm-f-height-md-4 {
+    min-height: 25vw; }
+  .ibm-f-height-md-5 {
+    min-height: 31.25vw; }
+  .ibm-f-height-md-6 {
+    min-height: 37.5vw; }
+  .ibm-f-height-md-7 {
+    min-height: 43.75vw; }
+  .ibm-f-height-md-8 {
+    min-height: 50vw; }
+  .ibm-f-height-md-9 {
+    min-height: 56.25vw; }
+  .ibm-f-height-md-10 {
+    min-height: 62.5vw; }
+  .ibm-f-height-md-11 {
+    min-height: 68.75vw; }
+  .ibm-f-height-md-12 {
+    min-height: 75vw; }
+  .ibm-f-height-md-13 {
+    min-height: 81.25vw; }
+  .ibm-f-height-md-14 {
+    min-height: 87.5vw; }
+  .ibm-f-height-md-15 {
+    min-height: 93.75vw; }
+  .ibm-f-height-md-16 {
+    min-height: 100vw; } }
+
+@media (min-width: 1056px) {
+  .ibm-f-height-md-1 {
+    min-height: 6.06061vw; }
+  .ibm-f-height-md-2 {
+    min-height: 12.12121vw; }
+  .ibm-f-height-md-3 {
+    min-height: 18.18182vw; }
+  .ibm-f-height-md-4 {
+    min-height: 24.24242vw; }
+  .ibm-f-height-md-5 {
+    min-height: 30.30303vw; }
+  .ibm-f-height-md-6 {
+    min-height: 36.36364vw; }
+  .ibm-f-height-md-7 {
+    min-height: 42.42424vw; }
+  .ibm-f-height-md-8 {
+    min-height: 48.48485vw; }
+  .ibm-f-height-md-9 {
+    min-height: 54.54545vw; }
+  .ibm-f-height-md-10 {
+    min-height: 60.60606vw; }
+  .ibm-f-height-md-11 {
+    min-height: 66.66667vw; }
+  .ibm-f-height-md-12 {
+    min-height: 72.72727vw; }
+  .ibm-f-height-md-13 {
+    min-height: 78.78788vw; }
+  .ibm-f-height-md-14 {
+    min-height: 84.84848vw; }
+  .ibm-f-height-md-15 {
+    min-height: 90.90909vw; }
+  .ibm-f-height-md-16 {
+    min-height: 96.9697vw; } }
+
+@media (min-width: 1584px) {
+  .ibm-f-height-md-1 {
+    min-height: 96px; }
+  .ibm-f-height-md-2 {
+    min-height: 192px; }
+  .ibm-f-height-md-3 {
+    min-height: 288px; }
+  .ibm-f-height-md-4 {
+    min-height: 384px; }
+  .ibm-f-height-md-5 {
+    min-height: 480px; }
+  .ibm-f-height-md-6 {
+    min-height: 576px; }
+  .ibm-f-height-md-7 {
+    min-height: 672px; }
+  .ibm-f-height-md-8 {
+    min-height: 768px; }
+  .ibm-f-height-md-9 {
+    min-height: 864px; }
+  .ibm-f-height-md-10 {
+    min-height: 960px; }
+  .ibm-f-height-md-11 {
+    min-height: 1056px; }
+  .ibm-f-height-md-12 {
+    min-height: 1152px; }
+  .ibm-f-height-md-13 {
+    min-height: 1248px; }
+  .ibm-f-height-md-14 {
+    min-height: 1344px; }
+  .ibm-f-height-md-15 {
+    min-height: 1440px; }
+  .ibm-f-height-md-16 {
+    min-height: 1536px; } }
+
+@media (min-width: 924px) {
+  .ibm-f-height-slg-1 {
+    min-height: 6.25vw; }
+  .ibm-f-height-slg-2 {
+    min-height: 12.5vw; }
+  .ibm-f-height-slg-3 {
+    min-height: 18.75vw; }
+  .ibm-f-height-slg-4 {
+    min-height: 25vw; }
+  .ibm-f-height-slg-5 {
+    min-height: 31.25vw; }
+  .ibm-f-height-slg-6 {
+    min-height: 37.5vw; }
+  .ibm-f-height-slg-7 {
+    min-height: 43.75vw; }
+  .ibm-f-height-slg-8 {
+    min-height: 50vw; }
+  .ibm-f-height-slg-9 {
+    min-height: 56.25vw; }
+  .ibm-f-height-slg-10 {
+    min-height: 62.5vw; }
+  .ibm-f-height-slg-11 {
+    min-height: 68.75vw; }
+  .ibm-f-height-slg-12 {
+    min-height: 75vw; }
+  .ibm-f-height-slg-13 {
+    min-height: 81.25vw; }
+  .ibm-f-height-slg-14 {
+    min-height: 87.5vw; }
+  .ibm-f-height-slg-15 {
+    min-height: 93.75vw; }
+  .ibm-f-height-slg-16 {
+    min-height: 100vw; } }
+
+@media (min-width: 1056px) {
+  .ibm-f-height-slg-1 {
+    min-height: 6.06061vw; }
+  .ibm-f-height-slg-2 {
+    min-height: 12.12121vw; }
+  .ibm-f-height-slg-3 {
+    min-height: 18.18182vw; }
+  .ibm-f-height-slg-4 {
+    min-height: 24.24242vw; }
+  .ibm-f-height-slg-5 {
+    min-height: 30.30303vw; }
+  .ibm-f-height-slg-6 {
+    min-height: 36.36364vw; }
+  .ibm-f-height-slg-7 {
+    min-height: 42.42424vw; }
+  .ibm-f-height-slg-8 {
+    min-height: 48.48485vw; }
+  .ibm-f-height-slg-9 {
+    min-height: 54.54545vw; }
+  .ibm-f-height-slg-10 {
+    min-height: 60.60606vw; }
+  .ibm-f-height-slg-11 {
+    min-height: 66.66667vw; }
+  .ibm-f-height-slg-12 {
+    min-height: 72.72727vw; }
+  .ibm-f-height-slg-13 {
+    min-height: 78.78788vw; }
+  .ibm-f-height-slg-14 {
+    min-height: 84.84848vw; }
+  .ibm-f-height-slg-15 {
+    min-height: 90.90909vw; }
+  .ibm-f-height-slg-16 {
+    min-height: 96.9697vw; } }
+
+@media (min-width: 1584px) {
+  .ibm-f-height-slg-1 {
+    min-height: 96px; }
+  .ibm-f-height-slg-2 {
+    min-height: 192px; }
+  .ibm-f-height-slg-3 {
+    min-height: 288px; }
+  .ibm-f-height-slg-4 {
+    min-height: 384px; }
+  .ibm-f-height-slg-5 {
+    min-height: 480px; }
+  .ibm-f-height-slg-6 {
+    min-height: 576px; }
+  .ibm-f-height-slg-7 {
+    min-height: 672px; }
+  .ibm-f-height-slg-8 {
+    min-height: 768px; }
+  .ibm-f-height-slg-9 {
+    min-height: 864px; }
+  .ibm-f-height-slg-10 {
+    min-height: 960px; }
+  .ibm-f-height-slg-11 {
+    min-height: 1056px; }
+  .ibm-f-height-slg-12 {
+    min-height: 1152px; }
+  .ibm-f-height-slg-13 {
+    min-height: 1248px; }
+  .ibm-f-height-slg-14 {
+    min-height: 1344px; }
+  .ibm-f-height-slg-15 {
+    min-height: 1440px; }
+  .ibm-f-height-slg-16 {
+    min-height: 1536px; } }
+
+@media (min-width: 1056px) {
+  .ibm-f-height-lg-1 {
+    min-height: 6.06061vw; }
+  .ibm-f-height-lg-2 {
+    min-height: 12.12121vw; }
+  .ibm-f-height-lg-3 {
+    min-height: 18.18182vw; }
+  .ibm-f-height-lg-4 {
+    min-height: 24.24242vw; }
+  .ibm-f-height-lg-5 {
+    min-height: 30.30303vw; }
+  .ibm-f-height-lg-6 {
+    min-height: 36.36364vw; }
+  .ibm-f-height-lg-7 {
+    min-height: 42.42424vw; }
+  .ibm-f-height-lg-8 {
+    min-height: 48.48485vw; }
+  .ibm-f-height-lg-9 {
+    min-height: 54.54545vw; }
+  .ibm-f-height-lg-10 {
+    min-height: 60.60606vw; }
+  .ibm-f-height-lg-11 {
+    min-height: 66.66667vw; }
+  .ibm-f-height-lg-12 {
+    min-height: 72.72727vw; }
+  .ibm-f-height-lg-13 {
+    min-height: 78.78788vw; }
+  .ibm-f-height-lg-14 {
+    min-height: 84.84848vw; }
+  .ibm-f-height-lg-15 {
+    min-height: 90.90909vw; }
+  .ibm-f-height-lg-16 {
+    min-height: 96.9697vw; } }
+
+@media (min-width: 1584px) {
+  .ibm-f-height-lg-1 {
+    min-height: 96px; }
+  .ibm-f-height-lg-2 {
+    min-height: 192px; }
+  .ibm-f-height-lg-3 {
+    min-height: 288px; }
+  .ibm-f-height-lg-4 {
+    min-height: 384px; }
+  .ibm-f-height-lg-5 {
+    min-height: 480px; }
+  .ibm-f-height-lg-6 {
+    min-height: 576px; }
+  .ibm-f-height-lg-7 {
+    min-height: 672px; }
+  .ibm-f-height-lg-8 {
+    min-height: 768px; }
+  .ibm-f-height-lg-9 {
+    min-height: 864px; }
+  .ibm-f-height-lg-10 {
+    min-height: 960px; }
+  .ibm-f-height-lg-11 {
+    min-height: 1056px; }
+  .ibm-f-height-lg-12 {
+    min-height: 1152px; }
+  .ibm-f-height-lg-13 {
+    min-height: 1248px; }
+  .ibm-f-height-lg-14 {
+    min-height: 1344px; }
+  .ibm-f-height-lg-15 {
+    min-height: 1440px; }
+  .ibm-f-height-lg-16 {
+    min-height: 1536px; } }
+
+@media (min-width: 1188px) {
+  .ibm-f-height-xlg-1 {
+    min-height: 6.06061vw; }
+  .ibm-f-height-xlg-2 {
+    min-height: 12.12121vw; }
+  .ibm-f-height-xlg-3 {
+    min-height: 18.18182vw; }
+  .ibm-f-height-xlg-4 {
+    min-height: 24.24242vw; }
+  .ibm-f-height-xlg-5 {
+    min-height: 30.30303vw; }
+  .ibm-f-height-xlg-6 {
+    min-height: 36.36364vw; }
+  .ibm-f-height-xlg-7 {
+    min-height: 42.42424vw; }
+  .ibm-f-height-xlg-8 {
+    min-height: 48.48485vw; }
+  .ibm-f-height-xlg-9 {
+    min-height: 54.54545vw; }
+  .ibm-f-height-xlg-10 {
+    min-height: 60.60606vw; }
+  .ibm-f-height-xlg-11 {
+    min-height: 66.66667vw; }
+  .ibm-f-height-xlg-12 {
+    min-height: 72.72727vw; }
+  .ibm-f-height-xlg-13 {
+    min-height: 78.78788vw; }
+  .ibm-f-height-xlg-14 {
+    min-height: 84.84848vw; }
+  .ibm-f-height-xlg-15 {
+    min-height: 90.90909vw; }
+  .ibm-f-height-xlg-16 {
+    min-height: 96.9697vw; } }
+
+@media (min-width: 1584px) {
+  .ibm-f-height-xlg-1 {
+    min-height: 96px; }
+  .ibm-f-height-xlg-2 {
+    min-height: 192px; }
+  .ibm-f-height-xlg-3 {
+    min-height: 288px; }
+  .ibm-f-height-xlg-4 {
+    min-height: 384px; }
+  .ibm-f-height-xlg-5 {
+    min-height: 480px; }
+  .ibm-f-height-xlg-6 {
+    min-height: 576px; }
+  .ibm-f-height-xlg-7 {
+    min-height: 672px; }
+  .ibm-f-height-xlg-8 {
+    min-height: 768px; }
+  .ibm-f-height-xlg-9 {
+    min-height: 864px; }
+  .ibm-f-height-xlg-10 {
+    min-height: 960px; }
+  .ibm-f-height-xlg-11 {
+    min-height: 1056px; }
+  .ibm-f-height-xlg-12 {
+    min-height: 1152px; }
+  .ibm-f-height-xlg-13 {
+    min-height: 1248px; }
+  .ibm-f-height-xlg-14 {
+    min-height: 1344px; }
+  .ibm-f-height-xlg-15 {
+    min-height: 1440px; }
+  .ibm-f-height-xlg-16 {
+    min-height: 1536px; } }
+
+@media (min-width: 1452px) {
+  .ibm-f-height-xxlg-1 {
+    min-height: 6.06061vw; }
+  .ibm-f-height-xxlg-2 {
+    min-height: 12.12121vw; }
+  .ibm-f-height-xxlg-3 {
+    min-height: 18.18182vw; }
+  .ibm-f-height-xxlg-4 {
+    min-height: 24.24242vw; }
+  .ibm-f-height-xxlg-5 {
+    min-height: 30.30303vw; }
+  .ibm-f-height-xxlg-6 {
+    min-height: 36.36364vw; }
+  .ibm-f-height-xxlg-7 {
+    min-height: 42.42424vw; }
+  .ibm-f-height-xxlg-8 {
+    min-height: 48.48485vw; }
+  .ibm-f-height-xxlg-9 {
+    min-height: 54.54545vw; }
+  .ibm-f-height-xxlg-10 {
+    min-height: 60.60606vw; }
+  .ibm-f-height-xxlg-11 {
+    min-height: 66.66667vw; }
+  .ibm-f-height-xxlg-12 {
+    min-height: 72.72727vw; }
+  .ibm-f-height-xxlg-13 {
+    min-height: 78.78788vw; }
+  .ibm-f-height-xxlg-14 {
+    min-height: 84.84848vw; }
+  .ibm-f-height-xxlg-15 {
+    min-height: 90.90909vw; }
+  .ibm-f-height-xxlg-16 {
+    min-height: 96.9697vw; } }
+
+@media (min-width: 1584px) {
+  .ibm-f-height-xxlg-1 {
+    min-height: 96px; }
+  .ibm-f-height-xxlg-2 {
+    min-height: 192px; }
+  .ibm-f-height-xxlg-3 {
+    min-height: 288px; }
+  .ibm-f-height-xxlg-4 {
+    min-height: 384px; }
+  .ibm-f-height-xxlg-5 {
+    min-height: 480px; }
+  .ibm-f-height-xxlg-6 {
+    min-height: 576px; }
+  .ibm-f-height-xxlg-7 {
+    min-height: 672px; }
+  .ibm-f-height-xxlg-8 {
+    min-height: 768px; }
+  .ibm-f-height-xxlg-9 {
+    min-height: 864px; }
+  .ibm-f-height-xxlg-10 {
+    min-height: 960px; }
+  .ibm-f-height-xxlg-11 {
+    min-height: 1056px; }
+  .ibm-f-height-xxlg-12 {
+    min-height: 1152px; }
+  .ibm-f-height-xxlg-13 {
+    min-height: 1248px; }
+  .ibm-f-height-xxlg-14 {
+    min-height: 1344px; }
+  .ibm-f-height-xxlg-15 {
+    min-height: 1440px; }
+  .ibm-f-height-xxlg-16 {
+    min-height: 1536px; } }
 
 .ibm-height-strict {
   max-height: 0; }
