@@ -1,0 +1,87 @@
+$breakpoint-min: 'sm';
+$breakpoint-max:'xxxxlg';
+$padding-breakpoints:('sm', 'smd', 'lg', 'xxxlg', 'xxxxlg');
+
+$ibm-grid: (
+  "sm": (
+    breakpoint: 0px,
+    min-width:320px,
+    columns: 4,
+    heights: 32,
+    margin: 0,
+    next: "smd",
+    padding:24px,
+  ),
+  "smd": (
+    breakpoint: 512px,
+    columns: 8,
+    heights: 32,
+    margin: 0,
+    next: "md",
+    padding:24px,
+  ),
+  "md": (
+    breakpoint: 640px,
+    columns: 8,
+    heights: 32,
+    margin: 0,
+    next: "lmd",
+    padding:24px,
+  ),
+  "lmd": (
+    breakpoint: 768px,
+    columns: 16,
+    heights: 32,
+    margin: 0,
+    next: "slg",
+    padding:24px,
+  ),
+  "slg": (
+    breakpoint: 960px,
+    columns: 16,
+    heights: 33,
+    margin: 0,
+    next: "lg",
+    padding:24px,
+  ),
+  "lg": (
+    breakpoint: 1056px,
+    columns: 16,
+    heights: 33,
+    margin: 1,
+    next: "xlg",
+    padding:16px,
+  ),
+  "xlg": (
+    breakpoint: 1184px,
+    columns: 16,
+    heights: 33,
+    margin: 1,
+    next: "xxlg",
+    padding:16px,
+  ),
+  "xxlg": (
+    breakpoint: 1312px,
+    columns: 16,
+    heights: 33,
+    margin: 1,
+    next: "xxxlg",
+    padding:16px,
+  ),
+  "xxxlg": (
+    breakpoint: 1312px,
+    columns: 16,
+    heights: 33,
+    margin: 1,
+    next: "xxxxlg",
+    padding:16px,
+  ),
+  "xxxxlg": (
+    breakpoint: 1584px,
+    columns: 16,
+    heights:33,
+    margin: 1,
+    padding:24px,
+    fixed-padding:true,
+  )
+);

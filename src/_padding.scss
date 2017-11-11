@@ -1,0 +1,9 @@
+/* Padding */
+
+@each $breakpoint in $padding-breakpoints {
+	
+	$values: map-get($ibm-grid, $breakpoint);
+	@media (min-width:#{map-get($values, 'breakpoint')}) {
+		
+	}
+}
