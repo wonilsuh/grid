@@ -1,0 +1,53 @@
+ <html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="ibm-grid.css"></link>
+    <link rel="stylesheet" href="./css/@ibm/type/css/ibm-type.css"></link>
+		<title>IBM Grid Tutorial</title>
+    <style>
+      .content-wrap{
+        background-color:white;
+      }
+      [class*="ibm-col-"]:not(.ibm-col-group):not(.title){
+        border:solid 1px #fff;
+        background-color:#FDA0C2;
+      }
+      [class*="ibm-col-smd"][class*="ibm-col-sm-0"]:not(.ibm-col-group):not(.title){
+        background-color:#FA75A6;
+      }
+      [class*="ibm-col-md"][class*="ibm-col-sm-0"]:not(.ibm-col-group):not(.title){
+        background-color:#EB4B86;
+      }
+      [class*="ibm-col-lmd"][class*="ibm-col-sm-0"]:not(.ibm-col-group):not(.title){
+        background-color:#D6316C;
+      }
+      [class*="ibm-col-slg"][class*="ibm-col-sm-0"]:not(.ibm-col-group):not(.title){
+        background-color:#6BA5FC;
+      }
+      .title{
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        height:48px;
+        padding-top:0;
+        padding-bottom:0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ibm">
+      <div class="ibm-col-sm-4 title">sm</div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-sm-1 ibm-col-slg-0"><div class="content-wrap">sm1</div></div>
+      <div class="ibm-col-sm-1 ibm-col-lmd-0"><div class="content-wrap">sm1</div></div>
+      <div class="ibm-col-sm-1 ibm-col-md-0"><div class="content-wrap">sm1</div></div>
+      <div class="ibm-col-sm-1 ibm-col-smd-0"><div class="content-wrap">sm1</div></div>
+      <div class="ibm-col-sm-0 ibm-col-smd-2 ibm-col-lg-0"><div class="content-wrap">smd2</div></div>
+      <div class="ibm-col-sm-0 ibm-col-md-2"><div class="content-wrap">md2</div></div>
+      <div class="ibm-col-sm-0 ibm-col-lmd-2"><div class="content-wrap">lmd2</div></div>
+      <div class="ibm-col-sm-0 ibm-col-slg-4"><div class="content-wrap">slg4</div></div>
+      <div class="ibm-col-sm-0 ibm-col-lg-4"><div class="content-wrap">lg4</div></div>
+		</div>
+</html> 

@@ -14,7 +14,9 @@
 
 					@each $breakpoint3, $values3 in $ibm-grid {
 
-						@if map-get($values3, 'breakpoint') > map-get($values2, 'breakpoint') {
+						@if map-get($values3, 'breakpoint') > map-get($values2, 'breakpoint')
+							and map-get($values3, 'breakpoint') == map-get($values, 'breakpoint') {
+							/* #{map-get($values3, 'breakpoint')} == #{map-get($values, 'breakpoint')} */
 
 							[class*="ibm-col-#{$breakpoint3}-"].ibm-col-#{$breakpoint2}-0 {
 								display: initial; 
