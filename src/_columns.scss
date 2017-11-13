@@ -6,6 +6,10 @@ $height-scale:(
   8, 16, 24, 32, 48
 );
 
+.ibm-height-strict {
+  max-height: 0;
+}
+
 @each $breakpoint, $values in $ibm-grid {
 	
 	@if $breakpoint != $breakpoint-max {

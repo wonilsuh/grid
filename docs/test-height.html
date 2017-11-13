@@ -9,7 +9,7 @@
       .content-wrap{
         background-color:white;
       }
-      [class*="ibm-col-"]:not(.ibm-col-group):not(.title):not(.no-bg){
+      [class*="ibm-col-"]:not(.ibm-col-group):not(.title):not(.no-bg):not(.menu-item):not(.spacer){
         border:solid 1px #fff;
         background-color:#FFA0C2;
       }
@@ -24,12 +24,34 @@
       .spacer{
         border:solid 1px #fff;
       }
-      [class*="ibm-height-"]{
+      [class*="ibm-height-"]:not(.no-bg){
         background-color:#D8D8D8;
+      }
+      .menu{
+          background-color:white;
+          border-bottom:solid 1px #BEBEBE;
+      }
+
+      .menu > *{
+          backgorund-color:white;
       }
     </style>
   </head>
   <body>
+    <div class="ibm menu">
+      <div class="ibm-col-sm-1 menu-item">
+        <a href="test.html">Column test</a>
+      </div> 
+      <div class="ibm-col-sm-1 menu-item">
+        <a href="test-bleed.html">Bleed test</a>
+      </div> 
+      <div class="ibm-col-sm-1 menu-item">
+        <a href="test-height.html">Height test</a>
+      </div>
+    </div>
+    <div class="ibm">
+        <div class="spacer no-bg ibm-col-full ibm-col-sm-4 ibm-height-sm-32"></div>
+    </div>
     <div class="ibm">
       <div class="ibm-col-sm-4 title">Spacers</div>
     </div>

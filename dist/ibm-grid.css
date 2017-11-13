@@ -184,6 +184,9 @@ html, body {
 /*-----------------------------------------------------
  *	columns consolidated
  */
+.ibm-height-strict {
+  max-height: 0; }
+
 @media (min-width: 0px) {
   .ibm-height-sm-8 {
     min-height: 8px; }
