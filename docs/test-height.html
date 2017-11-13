@@ -1,0 +1,60 @@
+ <html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="ibm-grid.css"></link>
+    <link rel="stylesheet" href="./css/@ibm/type/css/ibm-type.css"></link>
+		<title>IBM Grid Tutorial</title>
+    <style>
+      .content-wrap{
+        background-color:white;
+      }
+      [class*="ibm-col-"]:not(.ibm-col-group):not(.title):not(.no-bg){
+        border:solid 1px #fff;
+        background-color:#FFA0C2;
+      }
+      .title{
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        height:48px;
+        padding-top:0;
+        padding-bottom:0;
+      }
+      .spacer{
+        border:solid 1px #fff;
+      }
+      [class*="ibm-height-"]{
+        background-color:#D8D8D8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ibm">
+      <div class="ibm-col-sm-4 title">Spacers</div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-sm-4"><div class="content-wrap">b.</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-sm-4 no-bg spacer ibm-col-full ibm-height-sm-8 ibm-height-md-16 ibm-height-lg-24 ibm-height-xlg-32 ibm-height-xxlg-48"></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-sm-4"><div class="content-wrap">b.</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-sm-4 title">Fluid height</div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-sm-1 ibm-f-height-sm-1"><div class="content-wrap">1.</div></div>
+      <div class="ibm-col-sm-1 ibm-f-height-sm-1"><div class="content-wrap">2.</div></div>
+      <div class="ibm-col-sm-1 ibm-f-height-sm-1"><div class="content-wrap">3.</div></div>
+      <div class="ibm-col-sm-1 ibm-f-height-sm-1"><div class="content-wrap">4.</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-sm-1 ibm-f-height-sm-1 ibm-f-height-md-1 ibm-f-height-lg-8 ibm-f-height-xlg-2"><div class="content-wrap">1.</div></div>
+      <div class="ibm-col-sm-1 ibm-f-height-sm-1 ibm-f-height-md-1 ibm-f-height-lg-8 ibm-f-height-xlg-2"><div class="content-wrap">2.</div></div>
+      <div class="ibm-col-sm-1 ibm-f-height-sm-1 ibm-f-height-md-1 ibm-f-height-lg-8 ibm-f-height-xlg-2"><div class="content-wrap">3.</div></div>
+      <div class="ibm-col-sm-1 ibm-f-height-sm-1 ibm-f-height-md-1 ibm-f-height-lg-8 ibm-f-height-xlg-2"><div class="content-wrap">4.</div></div>
+    </div>
+</html> 

@@ -1,56 +1,43 @@
 // Dependent on _core.scss from @ibm/grid
 
 $height-scale:(
-  16, 24, 32, 48, 64, 96, 128, 144, 192, 256, 384, 512, 768
+  8, 16, 24, 32, 48
 );
 
+$values-max: map-get($ibm-grid, $breakpoint-max);
+$values-min: map-get($ibm-grid, $breakpoint-min);
+
 @each $breakpoint, $values in $ibm-grid {
-  @if $breakpoint != 'max' {
+  @if $breakpoint != $breakpoint-max {
     @media (min-width:map-get($values, 'breakpoint')) {
       @each $height in $height-scale{
         .ibm-height-#{$breakpoint}-#{$height} {
           min-height: #{$height}px;
         }
       }
-    }
-  }
-}
 
-/* fluid height */
-@each $breakpoint, $values in $ibm-grid {
-  @if $breakpoint != 'max' {
-    @media (min-width:map-get($values, 'breakpoint')) {
       $a:1;
-      @while $a <= 16 {
+      @while $a <= map-get($values, 'columns') {
+
         .ibm-f-height-#{$breakpoint}-#{$a} {
-          @if map-get($values, 'unit') == $unit64 {
-            min-height: 100vw / map-get($values, columns) * $a;
-          } @else {
-            min-height: (100vw - map-get($values, 'unit') * 2) / map-get($values, columns) * $a;
+          $padding: get-padding($values, 1);
+          min-height: calc( (100vw - (#{$padding}) * #{map-get($values, 'margin')} * 2) / #{map-get($values, 'columns')} * #{$a} );
+        }
+
+        @if map-get($values, 'margin') > 0 {
+          $padding: get-padding($values, 1);
+          .ibm-col-f-height-#{$breakpoint}-#{$a}.ibm-col-bleed {
+            max-height: #{map-get($values-max, 'breakpoint') / map-get($values, 'columns') * $a };
+            height: calc( 100vw / #{map-get($values, 'columns')} * #{$a} );
+          }
+          .ibm-col-f-height-#{$breakpoint}-#{$a}.ibm-col-bleed-left,
+          .ibm-col-f-height-#{$breakpoint}-#{$a}.ibm-col-bleed-right {
+            max-height: calc(#{(map-get($values-max, 'breakpoint') - map-get($values-max, 'padding') *2 ) / map-get($values, 'columns') * $a }  + #{map-get($values-max, 'padding')} );
+            height: calc( (100vw - (#{$padding}) * #{map-get($values, 'margin')} * 2) / #{map-get($values, 'columns')} * #{$a} + #{$padding});
           }
         }
-        $a: $a + 1;
-      }
-    }
-    @if(map-get($values, 'unit') == $unit64){
-      @media (min-width: map-get(map-get($ibm-grid, $col-64-66-breakpoint), breakpoint)) {
-        $a: 1;
-        @while $a <= map-get($values, columns) {
-          .ibm-f-height-#{$breakpoint}-#{$a} {
-            min-height: (100vw - (100vw / 66) * 2)/ map-get($values, columns) * $a;
-          }
-          $a: $a + 1;
-        }
-      }
-    }
-    $max-breakpoint-values:map-get($ibm-grid, 'max');
-    @media (min-width:map-get($max-breakpoint-values, 'breakpoint')) {
-      $a:1;
-      @while $a <= 16 {
-        .ibm-f-height-#{$breakpoint}-#{$a} {
-          min-height: (map-get($max-breakpoint-values, 'breakpoint') - map-get($max-breakpoint-values, 'unit') * 2) / map-get($max-breakpoint-values, columns) * $a;
-        }
-        $a: $a + 1;
+
+        $a:$a + 1;
       }
     }
   }

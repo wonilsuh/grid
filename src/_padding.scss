@@ -1,9 +1,66 @@
-/* Padding */
+/*-----------------------------------------------------
+ *	Padding
+ */
 
-@each $breakpoint in $padding-breakpoints {
-	
-	$values: map-get($ibm-grid, $breakpoint);
-	@media (min-width:#{map-get($values, 'breakpoint')}) {
-		
+.ibm > *,
+.ibm-col-group > * {
+	padding: #{map-get(map-get($ibm-grid, $breakpoint-min), 'padding')};
+
+	&.ibm-padding-horizontal{
+		padding-right: #{map-get(map-get($ibm-grid, $breakpoint-min), 'padding')};
+		padding-left: #{map-get(map-get($ibm-grid, $breakpoint-min), 'padding')};
+	}
+
+	&.ibm-padding-vertical{
+		padding-top: #{map-get(map-get($ibm-grid, $breakpoint-min), 'padding')};
+		padding-bottom: #{map-get(map-get($ibm-grid, $breakpoint-min), 'padding')};
+	}
+
+
+	@each $breakpoint, $values in $ibm-grid {
+
+	  	@if $breakpoint != $breakpoint-min  and $breakpoint != $breakpoint-max {
+
+	  		$width: map-get($values, 'breakpoint');
+		    @if map-has-key($values, 'min-width') == true {
+
+		      $width: map-get($values, 'min-width');
+		    }
+		    @media (min-width:#{$width}) {
+
+				& {
+					padding: calc(#{strip-unit(map-get($values, 'padding'))} / #{strip-unit($width)} * 100vw;
+				}
+
+				&.ibm-padding-horizontal{
+					padding-right: calc(#{strip-unit(map-get($values, 'padding'))} / #{strip-unit($width)} * 100vw;
+					padding-left: calc(#{strip-unit(map-get($values, 'padding'))} / #{strip-unit($width)} * 100vw;
+				}
+
+				&.ibm-padding-vertical{
+					padding-top: calc(#{strip-unit(map-get($values, 'padding'))} / #{strip-unit($width)} * 100vw;
+					padding-bottom: calc(#{strip-unit(map-get($values, 'padding'))} / #{strip-unit($width)} * 100vw;
+				}
+			}
+		} @else if $breakpoint == $breakpoint-max {
+			$padding: map-get($values, 'padding');
+
+			@media (min-width:#{map-get($values, 'breakpoint')}) {
+
+				& {
+					padding: $padding;
+				}
+
+				&.ibm-padding-horizontal{
+					padding-right: $padding;
+					padding-left: $padding;
+				}
+
+				&.ibm-padding-vertical{
+					padding-top: $padding;
+					padding-bottom: $padding;
+				}
+			}
+		}
 	}
 }

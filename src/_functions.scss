@@ -8,3 +8,19 @@
 
   @return $number;
 }
+
+@function get-padding($values, $multiplier) {
+	@if multiplier == null {
+		$multiplier:1;
+	}
+
+	$breakpoint: map-get($values, 'breakpoint');
+	@if map-has-key($values, 'min-width') {
+		$breakpoint:map-get($values, 'min-width');
+	}
+	$padding: calc( #{strip-unit( map-get($values, 'padding') )} / #{strip-unit( $breakpoint )} * #{$multiplier * 100vw} );
+	@if map-get($values, 'breakpoint') == map-get(map-get($ibm-grid, $breakpoint-max), 'breakpoint') {
+		$padding: map-get($values, 'padding') * $multiplier;
+	}
+	@return $padding;
+}

@@ -35,10 +35,6 @@ html, body {
 .ibm-col-group {
   display: flex;
   flex-wrap: wrap;
-
-  > * {
-    width: 100vw;
-  }
 }
 
 .ibm > *,
@@ -58,20 +54,6 @@ html, body {
 .ibm > *,
 .ibm-col-group > * {
   width: 100%;
-  padding: #{map-get(map-get($ibm-grid, $breakpoint-min), 'padding')};
-
-  @each $breakpoint, $values in $ibm-grid {
-
-    $width: map-get($values, 'breakpoint');
-    @if map-has-key($values, 'min-width') == true {
-      $width: map-get($values, 'min-width');
-    }
-    @media (min-width:#{$width}) {
-      & {
-        padding: calc(#{strip-unit(map-get($values, 'padding'))} / #{strip-unit($width)} * 100vw;
-      }
-    }
-  }
 }
 
 .ibm .ibm-col-group,
