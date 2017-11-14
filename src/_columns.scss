@@ -74,9 +74,7 @@ $height-scale:(
 							@if map-has-key($values, 'min-width') {
 								$width: map-get($values, 'min-width');
 							}
-							//$padding: #{strip-unit(map-get($values, 'padding'))} / #{strip-unit($width)} * 100vw;
-							$padding: get-padding($values, 1);
-							min-height: calc( (100vw - (#{$padding}) * #{map-get($values, 'margin')} * 2) / #{map-get($values2, 'columns')} * #{$a} );
+							min-height: calc( (100vw - #{get-padding($values, 1)} * #{map-get($values, 'margin')} * 2) / #{map-get($values2, 'columns')} * #{$a} );
 						}
 
 						@if map-get($values, 'margin') > 0 {

@@ -1,0 +1,41 @@
+/* test pages */
+
+.content-wrap{
+	background-color:white;
+}
+.duo-pink{
+	border:solid 1px #fff;
+	background-color:#FFA0C2;
+}
+.grey-box{
+	border:solid 1px #d8d8d8;
+}
+.title{
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	height:48px;
+	padding-top:0;
+	padding-bottom:0;
+}
+.spacer{
+	background-color:#FFA0C2;
+}
+[class*="ibm-height-"]:not(.no-bg){
+	background-color:#D8D8D8;
+}
+
+.menu.ibm{
+  background-color:white;
+  border-bottom:solid 1px #BEBEBE;
+  max-width:100%;
+  width:100%;
+}
+
+.menu > *{
+  backgorund-color:white;
+  display:inline-block;
+  margin-right:0.5em;
+  margin-left:0.5em;
+  width:auto;
+}

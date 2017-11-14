@@ -29,17 +29,17 @@
 		    @media (min-width:#{$width}) {
 
 				& {
-					padding: calc(#{strip-unit(map-get($values, 'padding'))} / #{strip-unit($width)} * 100vw;
+					padding: get-padding($values, 1);
 				}
 
 				&.ibm-padding-horizontal{
-					padding-right: calc(#{strip-unit(map-get($values, 'padding'))} / #{strip-unit($width)} * 100vw;
-					padding-left: calc(#{strip-unit(map-get($values, 'padding'))} / #{strip-unit($width)} * 100vw;
+					padding-right: get-padding($values, 1);
+					padding-left: get-padding($values, 1);
 				}
 
 				&.ibm-padding-vertical{
-					padding-top: calc(#{strip-unit(map-get($values, 'padding'))} / #{strip-unit($width)} * 100vw;
-					padding-bottom: calc(#{strip-unit(map-get($values, 'padding'))} / #{strip-unit($width)} * 100vw;
+					padding-top: get-padding($values, 1);
+					padding-bottom: get-padding($values, 1);
 				}
 			}
 		} @else if $breakpoint == $breakpoint-max {

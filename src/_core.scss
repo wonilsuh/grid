@@ -21,7 +21,7 @@ html, body {
           padding: 0 map-get($values, 'padding');
         } @else {
           // width: map-get($values, 'breakpoint');
-          padding: 0 calc(#{strip-unit(map-get($values, 'padding'))} / #{strip-unit(map-get($values, 'breakpoint'))} * 100vw;
+          padding: 0 get-padding($values, 1);
         }
       }
     }

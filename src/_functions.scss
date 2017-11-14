@@ -9,7 +9,7 @@
   @return $number;
 }
 
-@function get-padding($values, $multiplier) {
+@function get-padding($values, $multiplier, $is-fixed: true) {
 	@if multiplier == null {
 		$multiplier:1;
 	}
@@ -20,6 +20,10 @@
 	}
 	$padding: calc( #{strip-unit( map-get($values, 'padding') )} / #{strip-unit( $breakpoint )} * #{$multiplier * 100vw} );
 	@if map-get($values, 'breakpoint') == map-get(map-get($ibm-grid, $breakpoint-max), 'breakpoint') {
+		$padding: map-get($values, 'padding') * $multiplier;
+	}
+
+	@if $is-fixed == true {
 		$padding: map-get($values, 'padding') * $multiplier;
 	}
 	@return $padding;
