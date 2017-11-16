@@ -19,10 +19,11 @@
 	padding-bottom:0;
 }
 .spacer{
-	background-color:#FFA0C2;
+	
 }
-[class*="ibm-height-"]:not(.no-bg){
-	background-color:#D8D8D8;
+
+.bg-grey{
+	background-color:#d8d8d8;
 }
 
 .menu.ibm{
@@ -32,10 +33,14 @@
   width:100%;
 }
 
-.menu > *{
+.menu-inner{
+	display:flex;
+	align-items:center;
+}
+
+.menu .menu-item{
   backgorund-color:white;
   display:inline-block;
-  margin-right:0.5em;
-  margin-left:0.5em;
+  margin-right:1em;
   width:auto;
 }

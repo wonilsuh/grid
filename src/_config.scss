@@ -9,7 +9,7 @@ $ibm-grid: (
     heights: 32,
     margin: 0,
     next: "smd",
-    padding:24px,
+    padding:16px,
   ),
   "smd": (
     breakpoint: 512px,
@@ -73,7 +73,7 @@ $ibm-grid: (
     heights: 33,
     margin: 1,
     next: "xxxxlg",
-    padding:16px,
+    padding:24px,
   ),
   "xxxxlg": (
     breakpoint: 1584px,

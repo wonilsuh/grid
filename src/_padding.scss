@@ -3,7 +3,8 @@
  */
 
 .ibm > *,
-.ibm-col-group > * {
+.ibm-col-group > *,
+.ibm-padding {
 	padding: #{map-get(map-get($ibm-grid, $breakpoint-min), 'padding')};
 
 	&.ibm-padding-horizontal{

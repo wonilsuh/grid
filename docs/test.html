@@ -3,44 +3,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="ibm-grid.css"></link>
-    <link rel="stylesheet" href="./css/@ibm/type/css/ibm-type.css"></link>
+    <link rel="stylesheet" href="./css/@ibm/type/css/ibm-type-fixed.css"></link>
+    <link rel="stylesheet" href="./css/test-pages.css"></link>
 		<title>IBM Grid Tutorial</title>
-    <style>
-      .content-wrap{
-        background-color:white;
-      }
-      [class*="ibm-col-"]:not(.ibm-col-group):not(.title):not(.no-bg):not(.menu-item):not(.spacer){
-        border:solid 1px #fff;
-        background-color:#FFA0C2;
-      }
-      .title{
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-        height:48px;
-        padding-top:0;
-        padding-bottom:0;
-      }
-      .menu{
-          background-color:white;
-          border-bottom:solid 1px #BEBEBE;
-      }
-
-      .menu > *{
-          backgorund-color:white;
-      }
-    </style>
   </head>
   <body>
-    <div class="ibm menu">
-      <div class="ibm-col-sm-1 menu-item">
-        <a href="test.html">Column test</a>
-      </div> 
-      <div class="ibm-col-sm-1 menu-item">
-        <a href="test-bleed.html">Bleed test</a>
-      </div> 
-      <div class="ibm-col-sm-1 menu-item">
-        <a href="test-height.html">Height test</a>
+    <div class="menu ibm">
+      <div class="menu-inner ibm-padding-horizontal ibm-col-sm-4 ibm-height-sm-48 ibm-col-full">
+        <a class="menu-item" href="test.html">Columns</a>
+        <a class="menu-item" href="text-columns.html">Columns w text</a>
+        <a class="menu-item" href="test-bleed.html">Bleed</a>
+        <a class="menu-item" href="test-height.html">Height</a>
       </div>
     </div>
     <div class="ibm">
@@ -50,298 +23,298 @@
       <div class="ibm-col-sm-4 title">sm</div>
     </div>
     <div class="ibm">
-      <div class="ibm-col-sm-1"><div class="content-wrap">1.</div></div>
-      <div class="ibm-col-sm-1"><div class="content-wrap">2.</div></div>
-      <div class="ibm-col-sm-1"><div class="content-wrap">3.</div></div>
-      <div class="ibm-col-sm-1"><div class="content-wrap">4.</div></div>
+      <div class="ibm-col-sm-1 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+      <div class="ibm-col-sm-1 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
+      <div class="ibm-col-sm-1 duo-pink"><div class="content-wrap"><div class="content-abs">3.</div></div></div>
+      <div class="ibm-col-sm-1 duo-pink"><div class="content-wrap"><div class="content-abs">4.</div></div></div>
 		</div>
     <div class="ibm">
-      <div class="ibm-col-sm-1"><div class="content-wrap">1.</div></div>
-      <div class="ibm-col-sm-3"><div class="content-wrap">2.</div></div>
+      <div class="ibm-col-sm-1 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+      <div class="ibm-col-sm-3 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
     </div>
     <div class="ibm">
-      <div class="ibm-col-sm-2"><div class="content-wrap">1.</div></div>
-      <div class="ibm-col-sm-2"><div class="content-wrap">2.</div></div>
+      <div class="ibm-col-sm-2 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+      <div class="ibm-col-sm-2 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
     </div>
     <div class="ibm">
       <div class="ibm-col-sm-4 title">smd</div>
     </div>
     <div class="ibm">
-      <div class="ibm-col-smd-2"><div class="content-wrap">1.</div></div>
-      <div class="ibm-col-smd-2"><div class="content-wrap">2.</div></div>
-      <div class="ibm-col-smd-2"><div class="content-wrap">3.</div></div>
-      <div class="ibm-col-smd-2"><div class="content-wrap">4.</div></div>
+      <div class="ibm-col-smd-2 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+      <div class="ibm-col-smd-2 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
+      <div class="ibm-col-smd-2 duo-pink"><div class="content-wrap"><div class="content-abs">3.</div></div></div>
+      <div class="ibm-col-smd-2 duo-pink"><div class="content-wrap"><div class="content-abs">4.</div></div></div>
     </div>
     <div class="ibm">
-      <div class="ibm-col-smd-1"><div class="content-wrap">1.</div></div>
-      <div class="ibm-col-smd-7"><div class="content-wrap">2.</div></div>
+      <div class="ibm-col-smd-1 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+      <div class="ibm-col-smd-7 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
     </div>
     <div class="ibm">
-      <div class="ibm-col-smd-2"><div class="content-wrap">1.</div></div>
-      <div class="ibm-col-smd-6"><div class="content-wrap">2.</div></div>
+      <div class="ibm-col-smd-2 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+      <div class="ibm-col-smd-6 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
     </div>
     <div class="ibm">
-      <div class="ibm-col-smd-3"><div class="content-wrap">1.</div></div>
-      <div class="ibm-col-smd-5"><div class="content-wrap">2.</div></div>
+      <div class="ibm-col-smd-3 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+      <div class="ibm-col-smd-5 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
     </div>
     <div class="ibm">
-      <div class="ibm-col-smd-4"><div class="content-wrap">1.</div></div>
-      <div class="ibm-col-smd-4"><div class="content-wrap">2.</div></div>
+      <div class="ibm-col-smd-4 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+      <div class="ibm-col-smd-4 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
     </div>
     <div class="ibm">
       <div class="ibm-col-sm-4 title">md</div>
     </div>
     <div class="ibm">
-      <div class="ibm-col-md-2"><div class="content-wrap">1.</div></div>
-      <div class="ibm-col-md-2"><div class="content-wrap">2.</div></div>
-      <div class="ibm-col-md-2"><div class="content-wrap">3.</div></div>
-      <div class="ibm-col-md-2"><div class="content-wrap">4.</div></div>
+      <div class="ibm-col-md-2 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+      <div class="ibm-col-md-2 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
+      <div class="ibm-col-md-2 duo-pink"><div class="content-wrap"><div class="content-abs">3.</div></div></div>
+      <div class="ibm-col-md-2 duo-pink"><div class="content-wrap"><div class="content-abs">4.</div></div></div>
     </div>
     <div class="ibm">
-      <div class="ibm-col-md-1"><div class="content-wrap">1.</div></div>
-      <div class="ibm-col-md-7"><div class="content-wrap">2.</div></div>
+      <div class="ibm-col-md-1 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+      <div class="ibm-col-md-7 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
     </div>
     <div class="ibm">
-      <div class="ibm-col-md-2"><div class="content-wrap">1.</div></div>
-      <div class="ibm-col-md-6"><div class="content-wrap">2.</div></div>
+      <div class="ibm-col-md-2 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+      <div class="ibm-col-md-6 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
     </div>
     <div class="ibm">
-      <div class="ibm-col-md-3"><div class="content-wrap">1.</div></div>
-      <div class="ibm-col-md-5"><div class="content-wrap">2.</div></div>
+      <div class="ibm-col-md-3 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+      <div class="ibm-col-md-5 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
     </div>
     <div class="ibm">
-      <div class="ibm-col-md-4"><div class="content-wrap">1.</div></div>
-      <div class="ibm-col-md-4"><div class="content-wrap">2.</div></div>
+      <div class="ibm-col-md-4 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+      <div class="ibm-col-md-4 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
     </div>
   </body>
   <div class="ibm">
       <div class="ibm-col-sm-4 title">lmd</div>
     </div>
     <div class="ibm">
-      <div class="ibm-col-lmd-2"><div class="content-wrap">1.</div></div>
-      <div class="ibm-col-lmd-2"><div class="content-wrap">2.</div></div>
-      <div class="ibm-col-lmd-2"><div class="content-wrap">3.</div></div>
-      <div class="ibm-col-lmd-2"><div class="content-wrap">4.</div></div>
+      <div class="ibm-col-lmd-2 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+      <div class="ibm-col-lmd-2 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
+      <div class="ibm-col-lmd-2 duo-pink"><div class="content-wrap"><div class="content-abs">3.</div></div></div>
+      <div class="ibm-col-lmd-2 duo-pink"><div class="content-wrap"><div class="content-abs">4.</div></div></div>
     </div>
     <div class="ibm">
-      <div class="ibm-col-lmd-1"><div class="content-wrap">1.</div></div>
-      <div class="ibm-col-lmd-7"><div class="content-wrap">2.</div></div>
+      <div class="ibm-col-lmd-1 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+      <div class="ibm-col-lmd-7 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
     </div>
     <div class="ibm">
-      <div class="ibm-col-lmd-2"><div class="content-wrap">1.</div></div>
-      <div class="ibm-col-lmd-6"><div class="content-wrap">2.</div></div>
+      <div class="ibm-col-lmd-2 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+      <div class="ibm-col-lmd-6 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
     </div>
     <div class="ibm">
-      <div class="ibm-col-lmd-3"><div class="content-wrap">1.</div></div>
-      <div class="ibm-col-lmd-5"><div class="content-wrap">2.</div></div>
+      <div class="ibm-col-lmd-3 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+      <div class="ibm-col-lmd-5 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
     </div>
     <div class="ibm">
-      <div class="ibm-col-lmd-4"><div class="content-wrap">1.</div></div>
-      <div class="ibm-col-lmd-4"><div class="content-wrap">2.</div></div>
+      <div class="ibm-col-lmd-4 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+      <div class="ibm-col-lmd-4 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
     </div>
   <div class="ibm">
     <div class="ibm-col-sm-4 title">slg</div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-slg-4"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-slg-4"><div class="content-wrap">2.</div></div>
-    <div class="ibm-col-slg-4"><div class="content-wrap">3.</div></div>
-    <div class="ibm-col-slg-4"><div class="content-wrap">4.</div></div>
+    <div class="ibm-col-slg-4 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-slg-4 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
+    <div class="ibm-col-slg-4 duo-pink"><div class="content-wrap"><div class="content-abs">3.</div></div></div>
+    <div class="ibm-col-slg-4 duo-pink"><div class="content-wrap"><div class="content-abs">4.</div></div></div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-slg-1"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-slg-15"><div class="content-wrap">2.</div></div>
+    <div class="ibm-col-slg-1 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-slg-15 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-slg-2"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-slg-14"><div class="content-wrap">2.</div></div>
+    <div class="ibm-col-slg-2 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-slg-14 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-slg-3"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-slg-13"><div class="content-wrap">2.</div></div>
+    <div class="ibm-col-slg-3 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-slg-13 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-slg-4"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-slg-12"><div class="content-wrap">2.</div></div>
+    <div class="ibm-col-slg-4 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-slg-12 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-slg-5"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-slg-11"><div class="content-wrap">2.</div></div>
+    <div class="ibm-col-slg-5 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-slg-11 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-slg-6"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-slg-10"><div class="content-wrap">2.</div></div>
+    <div class="ibm-col-slg-6 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-slg-10 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-slg-7"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-slg-9"><div class="content-wrap">2.</div></div>
+    <div class="ibm-col-slg-7 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-slg-9 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-slg-8"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-slg-8"><div class="content-wrap">2.</div></div>
+    <div class="ibm-col-slg-8 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-slg-8 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
   </div>
   <div class="ibm">
     <div class="ibm-col-sm-4 title">lg</div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-lg-4"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-lg-4"><div class="content-wrap">2.</div></div>
-    <div class="ibm-col-lg-4"><div class="content-wrap">3.</div></div>
-    <div class="ibm-col-lg-4"><div class="content-wrap">4.</div></div>
+    <div class="ibm-col-lg-4 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-lg-4 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
+    <div class="ibm-col-lg-4 duo-pink"><div class="content-wrap"><div class="content-abs">3.</div></div></div>
+    <div class="ibm-col-lg-4 duo-pink"><div class="content-wrap"><div class="content-abs">4.</div></div></div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-lg-1"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-lg-15"><div class="content-wrap">2.</div></div>
+    <div class="ibm-col-lg-1 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-lg-15 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-lg-2"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-lg-14"><div class="content-wrap">2.</div></div>
+    <div class="ibm-col-lg-2 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-lg-14 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-lg-3"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-lg-13"><div class="content-wrap">2.</div></div>
+    <div class="ibm-col-lg-3 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-lg-13 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-lg-4"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-lg-12"><div class="content-wrap">2.</div></div>
+    <div class="ibm-col-lg-4 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-lg-12 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-lg-5"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-lg-11"><div class="content-wrap">2.</div></div>
+    <div class="ibm-col-lg-5 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-lg-11 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-lg-6"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-lg-10"><div class="content-wrap">2.</div></div>
+    <div class="ibm-col-lg-6 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-lg-10 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-lg-7"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-lg-9"><div class="content-wrap">2.</div></div>
+    <div class="ibm-col-lg-7 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-lg-9 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-lg-8"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-lg-8"><div class="content-wrap">2.</div></div>
+    <div class="ibm-col-lg-8 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-lg-8 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
   </div>
   <div class="ibm">
     <div class="ibm-col-sm-4 title">xlg</div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-xlg-4"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-xlg-4"><div class="content-wrap">2.</div></div>
-    <div class="ibm-col-xlg-4"><div class="content-wrap">3.</div></div>
-    <div class="ibm-col-xlg-4"><div class="content-wrap">4.</div></div>
+    <div class="ibm-col-xlg-4 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-xlg-4 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
+    <div class="ibm-col-xlg-4 duo-pink"><div class="content-wrap"><div class="content-abs">3.</div></div></div>
+    <div class="ibm-col-xlg-4 duo-pink"><div class="content-wrap"><div class="content-abs">4.</div></div></div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-xlg-1"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-xlg-15"><div class="content-wrap">2.</div></div>
+    <div class="ibm-col-xlg-1 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-xlg-15 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-xlg-2"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-xlg-14"><div class="content-wrap">2.</div></div>
+    <div class="ibm-col-xlg-2 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-xlg-14 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-xlg-3"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-xlg-13"><div class="content-wrap">2.</div></div>
+    <div class="ibm-col-xlg-3 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-xlg-13 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-xlg-4"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-xlg-12"><div class="content-wrap">2.</div></div>
+    <div class="ibm-col-xlg-4 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-xlg-12 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-xlg-5"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-xlg-11"><div class="content-wrap">2.</div></div>
+    <div class="ibm-col-xlg-5 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-xlg-11 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-xlg-6"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-xlg-10"><div class="content-wrap">2.</div></div>
+    <div class="ibm-col-xlg-6 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-xlg-10 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-xlg-7"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-xlg-9"><div class="content-wrap">2.</div></div>
+    <div class="ibm-col-xlg-7 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-xlg-9 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-xlg-8"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-xlg-8"><div class="content-wrap">2.</div></div>
+    <div class="ibm-col-xlg-8 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-xlg-8 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
   </div>
   <div class="ibm">
     <div class="ibm-col-sm-4 title">xxlg</div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-xxlg-4"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-xxlg-4"><div class="content-wrap">2.</div></div>
-    <div class="ibm-col-xxlg-4"><div class="content-wrap">3.</div></div>
-    <div class="ibm-col-xxlg-4"><div class="content-wrap">4.</div></div>
+    <div class="ibm-col-xxlg-4 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-xxlg-4 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
+    <div class="ibm-col-xxlg-4 duo-pink"><div class="content-wrap"><div class="content-abs">3.</div></div></div>
+    <div class="ibm-col-xxlg-4 duo-pink"><div class="content-wrap"><div class="content-abs">4.</div></div></div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-xxlg-1"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-xxlg-15"><div class="content-wrap">2.</div></div>
+    <div class="ibm-col-xxlg-1 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-xxlg-15 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-xxlg-2"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-xxlg-14"><div class="content-wrap">2.</div></div>
+    <div class="ibm-col-xxlg-2 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-xxlg-14 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-xxlg-3"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-xxlg-13"><div class="content-wrap">2.</div></div>
+    <div class="ibm-col-xxlg-3 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-xxlg-13 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-xxlg-4"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-xxlg-12"><div class="content-wrap">2.</div></div>
+    <div class="ibm-col-xxlg-4 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-xxlg-12 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-xxlg-5"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-xxlg-11"><div class="content-wrap">2.</div></div>
+    <div class="ibm-col-xxlg-5 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-xxlg-11 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-xxlg-6"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-xxlg-10"><div class="content-wrap">2.</div></div>
+    <div class="ibm-col-xxlg-6 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-xxlg-10 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-xxlg-7"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-xxlg-9"><div class="content-wrap">2.</div></div>
+    <div class="ibm-col-xxlg-7 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-xxlg-9 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-xxlg-8"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-xxlg-8"><div class="content-wrap">2.</div></div>
+    <div class="ibm-col-xxlg-8 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-xxlg-8 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
   </div>
   <div class="ibm">
     <div class="ibm-col-sm-4 title">xxxlg</div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-xxxlg-4"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-xxxlg-4"><div class="content-wrap">2.</div></div>
-    <div class="ibm-col-xxxlg-4"><div class="content-wrap">3.</div></div>
-    <div class="ibm-col-xxxlg-4"><div class="content-wrap">4.</div></div>
+    <div class="ibm-col-xxxlg-4 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-xxxlg-4 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
+    <div class="ibm-col-xxxlg-4 duo-pink"><div class="content-wrap"><div class="content-abs">3.</div></div></div>
+    <div class="ibm-col-xxxlg-4 duo-pink"><div class="content-wrap"><div class="content-abs">4.</div></div></div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-xxxlg-1"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-xxxlg-15"><div class="content-wrap">2.</div></div>
+    <div class="ibm-col-xxxlg-1 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-xxxlg-15 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-xxxlg-2"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-xxxlg-14"><div class="content-wrap">2.</div></div>
+    <div class="ibm-col-xxxlg-2 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-xxxlg-14 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-xxxlg-3"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-xxxlg-13"><div class="content-wrap">2.</div></div>
+    <div class="ibm-col-xxxlg-3 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-xxxlg-13 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-xxxlg-4"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-xxxlg-12"><div class="content-wrap">2.</div></div>
+    <div class="ibm-col-xxxlg-4 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-xxxlg-12 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-xxxlg-5"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-xxxlg-11"><div class="content-wrap">2.</div></div>
+    <div class="ibm-col-xxxlg-5 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-xxxlg-11 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-xxxlg-6"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-xxxlg-10"><div class="content-wrap">2.</div></div>
+    <div class="ibm-col-xxxlg-6 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-xxxlg-10 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-xxxlg-7"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-xxxlg-9"><div class="content-wrap">2.</div></div>
+    <div class="ibm-col-xxxlg-7 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-xxxlg-9 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
   </div>
   <div class="ibm">
-    <div class="ibm-col-xxxlg-8"><div class="content-wrap">1.</div></div>
-    <div class="ibm-col-xxxlg-8"><div class="content-wrap">2.</div></div>
+    <div class="ibm-col-xxxlg-8 duo-pink"><div class="content-wrap"><div class="content-abs">1.</div></div></div>
+    <div class="ibm-col-xxxlg-8 duo-pink"><div class="content-wrap"><div class="content-abs">2.</div></div></div>
   </div>
 </html> 
