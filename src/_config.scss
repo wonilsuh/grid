@@ -1,5 +1,5 @@
 $breakpoint-min: 'sm';
-$breakpoint-max:'xxxxlg';
+$breakpoint-max:'max';
 
 $ibm-grid: (
   "sm": (
@@ -24,18 +24,18 @@ $ibm-grid: (
     columns: 16,
     heights: 33,
     margin: 1,
-    next: "xxlg",
+    next: "xlg",
     padding:16px,
   ),
-  "xxlg": (
+  "xlg": (
     breakpoint: 1312px,
     columns: 16,
     heights: 33,
     margin: 1,
-    next: "xxxxlg",
+    next: "max",
     padding:16px,
   ),
-  "xxxxlg": (
+  "max": (
     breakpoint: 1584px,
     columns: 16,
     heights:33,

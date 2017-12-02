@@ -1,0 +1,241 @@
+<!doctype html> 
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../ibm-grid.css"></link>
+    <link rel="stylesheet" href="../css/@ibm/type/css/ibm-type-fixed.css"></link>
+		<title>IBM Grid Tutorial</title>
+    <style>
+      .content-wrap{
+        background-color:white;
+        height:100%;
+        max-width:100vw;
+      }
+      [class*="ibm-col-"]:not(.ibm-col-group):not(.title):not(.menu-item):not(.spacer):not(.menu-inner){
+        border:solid 1px #fff;
+        background-color:#D8D8D8;
+      }
+      .title{
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        height:48px;
+        padding-top:0;
+        padding-bottom:0;
+      }
+
+      .menu .menu-inner{
+        background-color:white;
+        display:flex;
+        flex-direction:row;
+      }
+      .menu .menu-item{
+        margin-right:16px;
+        display:flex;
+        align-items:center;
+        margin:0;
+      }
+    </style>
+  </head>
+  <body>
+    	<!-- BEGIN: Nav header -->
+	<div class="menu ibm" style="background-color:white;border-bottom:solid 1px #BEBEBE;">
+      <div class="menu-inner ibm-col-full ibm-padding-horizontal">
+      	<div class="menu-item ibm-type-b ibm-padding-horizontal" style="">Grid test</div>
+        <a class="menu-item ibm-padding-horizontal ibm-s-height-sm-6 ibm-type-b" href="index.html">Columns</a>
+        <a class="menu-item ibm-padding-horizontal ibm-s-height-sm-6 ibm-type-b" href="test-heights.html">Height</a>
+        <a class="menu-item ibm-padding-horizontal ibm-s-height-sm-6 ibm-type-b" href="test-bleed.html">Bleed</a>
+        <a class="menu-item ibm-padding-horizontal ibm-s-height-sm-6 ibm-type-b" href="test-hiding-columns.html">Hiding columns</a>
+      </div>
+    </div>
+    <div class="ibm">
+        <div class="spacer no-bg ibm-col-full ibm-col-sm-4 ibm-height-sm-32"></div>
+    </div>
+    <!-- END: Nav header -->
+    <div class="ibm">
+      <div class="ibm-col-sm-4 title"><div class="ibm-type-b">sm, bleed</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-sm-4 ibm-col-bleed"><div class="ibm-type-b content-wrap">b.</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-sm-4 title"><div class="ibm-type-b">sm, no bleed</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-sm-4"><div class="ibm-type-b content-wrap">b.</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-sm-4 title"><div class="ibm-type-b">sm, no bleed</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-sm-1 ibm-col-bleed-left"><div class="ibm-type-b content-wrap">1.</div></div>
+      <div class="ibm-col-sm-1"><div class="ibm-type-b content-wrap">2.</div></div>
+      <div class="ibm-col-sm-1"><div class="ibm-type-b content-wrap">3.</div></div>
+      <div class="ibm-col-sm-1 ibm-col-bleed-right"><div class="ibm-type-b content-wrap">4.</div></div>
+		</div>
+    <div class="ibm">
+      <div class="ibm-col-sm-4 title"><div class="ibm-type-b">sm, bleed</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-sm-1"><div class="ibm-type-b content-wrap">1.</div></div>
+      <div class="ibm-col-sm-1"><div class="ibm-type-b content-wrap">2.</div></div>
+      <div class="ibm-col-sm-1"><div class="ibm-type-b content-wrap">3.</div></div>
+      <div class="ibm-col-sm-1"><div class="ibm-type-b content-wrap">4.</div></div>
+    </div>
+    <!-- smd -->
+    <div class="ibm">
+      <div class="ibm-col-smd-8 title"><div class="ibm-type-b">smd, bleed</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-smd-8 ibm-col-bleed"><div class="ibm-type-b content-wrap">b.</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-smd-8 title"><div class="ibm-type-b">smd, no bleed</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-smd-8"><div class="ibm-type-b content-wrap">b.</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-smd-8 title"><div class="ibm-type-b">smd, no bleed</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-smd-2 ibm-col-bleed-left"><div class="ibm-type-b content-wrap">1.</div></div>
+      <div class="ibm-col-smd-2"><div class="ibm-type-b content-wrap">2.</div></div>
+      <div class="ibm-col-smd-2"><div class="ibm-type-b content-wrap">3.</div></div>
+      <div class="ibm-col-smd-2 ibm-col-bleed-right"><div class="ibm-type-b content-wrap">4.</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-smd-8 title"><div class="ibm-type-b">smd, bleed</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-smd-2"><div class="ibm-type-b content-wrap">1.</div></div>
+      <div class="ibm-col-smd-2"><div class="ibm-type-b content-wrap">2.</div></div>
+      <div class="ibm-col-smd-2"><div class="ibm-type-b content-wrap">3.</div></div>
+      <div class="ibm-col-smd-2"><div class="ibm-type-b content-wrap">4.</div></div>
+    </div>
+    <!-- md -->
+    <div class="ibm">
+      <div class="ibm-col-md-8 title"><div class="ibm-type-b">md, bleed</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-md-8 ibm-col-bleed"><div class="ibm-type-b content-wrap">b.</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-md-8 title"><div class="ibm-type-b">md, no bleed</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-md-8"><div class="ibm-type-b content-wrap">b.</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-md-8 title"><div class="ibm-type-b">md, no bleed</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-md-2 ibm-col-bleed-left"><div class="ibm-type-b content-wrap">1.</div></div>
+      <div class="ibm-col-md-2"><div class="ibm-type-b content-wrap">2.</div></div>
+      <div class="ibm-col-md-2"><div class="ibm-type-b content-wrap">3.</div></div>
+      <div class="ibm-col-md-2 ibm-col-bleed-right"><div class="ibm-type-b content-wrap">4.</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-md-8 title"><div class="ibm-type-b">md, bleed</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-md-2"><div class="ibm-type-b content-wrap">1.</div></div>
+      <div class="ibm-col-md-2"><div class="ibm-type-b content-wrap">2.</div></div>
+      <div class="ibm-col-md-2"><div class="ibm-type-b content-wrap">3.</div></div>
+      <div class="ibm-col-md-2"><div class="ibm-type-b content-wrap">4.</div></div>
+    </div>
+    <!-- lmd -->
+    <div class="ibm">
+      <div class="ibm-col-lmd-8 title"><div class="ibm-type-b">lmd, bleed</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-lmd-8 ibm-col-bleed"><div class="ibm-type-b content-wrap">b.</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-lmd-8 title"><div class="ibm-type-b">lmd, no bleed</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-lmd-8"><div class="ibm-type-b content-wrap">b.</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-lmd-8 title"><div class="ibm-type-b">lmd, no bleed</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-lmd-2 ibm-col-bleed-left"><div class="ibm-type-b content-wrap">1.</div></div>
+      <div class="ibm-col-lmd-2"><div class="ibm-type-b content-wrap">2.</div></div>
+      <div class="ibm-col-lmd-2"><div class="ibm-type-b content-wrap">3.</div></div>
+      <div class="ibm-col-lmd-2 ibm-col-bleed-right"><div class="ibm-type-b content-wrap">4.</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-lmd-8 title"><div class="ibm-type-b">lmd, bleed</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-lmd-2"><div class="ibm-type-b content-wrap">1.</div></div>
+      <div class="ibm-col-lmd-2"><div class="ibm-type-b content-wrap">2.</div></div>
+      <div class="ibm-col-lmd-2"><div class="ibm-type-b content-wrap">3.</div></div>
+      <div class="ibm-col-lmd-2"><div class="ibm-type-b content-wrap">4.</div></div>
+    </div>
+    <!-- slg -->
+    <div class="ibm">
+      <div class="ibm-col-slg-16 title"><div class="ibm-type-b">slg, bleed</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-slg-16 ibm-col-bleed"><div class="ibm-type-b content-wrap">b.</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-slg-16 title"><div class="ibm-type-b">slg, no bleed</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-slg-16"><div class="ibm-type-b content-wrap">b.</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-slg-16 title"><div class="ibm-type-b">slg, no bleed</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-slg-4 ibm-col-bleed-left"><div class="ibm-type-b content-wrap">1.</div></div>
+      <div class="ibm-col-slg-4"><div class="ibm-type-b content-wrap">2.</div></div>
+      <div class="ibm-col-slg-4"><div class="ibm-type-b content-wrap">3.</div></div>
+      <div class="ibm-col-slg-4 ibm-col-bleed-right"><div class="ibm-type-b content-wrap">4.</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-slg-16 title"><div class="ibm-type-b">slg, bleed</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-slg-4"><div class="ibm-type-b content-wrap">1.</div></div>
+      <div class="ibm-col-slg-4"><div class="ibm-type-b content-wrap">2.</div></div>
+      <div class="ibm-col-slg-4"><div class="ibm-type-b content-wrap">3.</div></div>
+      <div class="ibm-col-slg-4"><div class="ibm-type-b content-wrap">4.</div></div>
+    </div>
+    <!-- lg -->
+    <div class="ibm">
+      <div class="ibm-col-lg-16 title"><div class="ibm-type-b">lg, bleed</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-lg-16 ibm-col-bleed"><div class="ibm-type-b content-wrap">b.</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-lg-16 title"><div class="ibm-type-b">lg, no bleed</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-lg-16"><div class="ibm-type-b content-wrap">b.</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-lg-16 title"><div class="ibm-type-b">lg, no bleed</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-lg-4 ibm-col-bleed-left"><div class="ibm-type-b content-wrap">1.</div></div>
+      <div class="ibm-col-lg-4"><div class="ibm-type-b content-wrap">2.</div></div>
+      <div class="ibm-col-lg-4"><div class="ibm-type-b content-wrap">3.</div></div>
+      <div class="ibm-col-lg-4 ibm-col-bleed-right"><div class="ibm-type-b content-wrap">4.</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-lg-16 title"><div class="ibm-type-b">lg, bleed</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-lg-4"><div class="ibm-type-b content-wrap">1.</div></div>
+      <div class="ibm-col-lg-4"><div class="ibm-type-b content-wrap">2.</div></div>
+      <div class="ibm-col-lg-4"><div class="ibm-type-b content-wrap">3.</div></div>
+      <div class="ibm-col-lg-4"><div class="ibm-type-b content-wrap">4.</div></div>
+    </div>
+</html> 

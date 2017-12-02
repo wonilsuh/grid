@@ -1,0 +1,89 @@
+<!doctype html> 
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../ibm-grid.css"></link>
+    <link rel="stylesheet" href="../css/@ibm/type/css/ibm-type-fixed.css"></link>
+		<title>IBM Grid Tutorial</title>
+    <style>
+      .content-wrap{
+        background-color:white;
+        height:100%;
+        max-width:100vw;
+      }
+      [class*="ibm-col-"]:not(.ibm-col-group):not(.title):not(.menu-item):not(.spacer):not(.menu-inner){
+        border:solid 1px #fff;
+        background-color:#D8D8D8;
+      }
+      .title{
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        height:48px;
+        padding-top:0;
+        padding-bottom:0;
+      }
+
+      .menu .menu-inner{
+        background-color:white;
+        display:flex;
+        flex-direction:row;
+      }
+      .menu .menu-item{
+        margin-right:16px;
+        display:flex;
+        align-items:center;
+        margin:0;
+      }
+    </style>
+  </head>
+  <body>
+    	<!-- BEGIN: Nav header -->
+	<div class="menu ibm" style="background-color:white;border-bottom:solid 1px #BEBEBE;">
+      <div class="menu-inner ibm-col-full ibm-padding-horizontal">
+      	<div class="menu-item ibm-type-b ibm-padding-horizontal" style="">Grid test</div>
+        <a class="menu-item ibm-padding-horizontal ibm-s-height-sm-6 ibm-type-b" href="index.html">Columns</a>
+        <a class="menu-item ibm-padding-horizontal ibm-s-height-sm-6 ibm-type-b" href="test-heights.html">Height</a>
+        <a class="menu-item ibm-padding-horizontal ibm-s-height-sm-6 ibm-type-b" href="test-bleed.html">Bleed</a>
+        <a class="menu-item ibm-padding-horizontal ibm-s-height-sm-6 ibm-type-b" href="test-hiding-columns.html">Hiding columns</a>
+      </div>
+    </div>
+    <div class="ibm">
+        <div class="spacer no-bg ibm-col-full ibm-col-sm-4 ibm-height-sm-32"></div>
+    </div>
+    <!-- END: Nav header -->
+    <div class="ibm">
+      <div class="ibm-col-sm-4 title"><div class="ibm-type-b">Small heights</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-sm-4 grey-box"><div class="content-wrap">b.</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-sm-4 no-bg spacer ibm-col-full ibm-s-height-sm-8 ibm-s-height-md-16 ibm-s-height-lg-24 ibm-s-height-xlg-32 ibm-s-height-xxlg-48"></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-sm-4 grey-box"><div class="content-wrap">b.</div></div>
+    </div>
+    <div class="ibm">
+        <div class="no-bg ibm-col-full ibm-col-sm-4 ibm-height-sm-32"></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-sm-4 title"><div class="ibm-type-b">Fluid heights</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-sm-1 ibm-height-sm-1 duo-pink"><div class="content-wrap">Sqr</div></div>
+      <div class="ibm-col-sm-1 ibm-height-sm-1 duo-pink"><div class="content-wrap">Sqr</div></div>
+      <div class="ibm-col-sm-1 ibm-height-sm-1 duo-pink"><div class="content-wrap">Sqr</div></div>
+      <div class="ibm-col-sm-1 ibm-height-sm-1 duo-pink"><div class="content-wrap">Sqr</div></div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-sm-1 ibm-height-sm-1 ibm-height-md-1 ibm-height-lg-2 ibm-height-xlg-1 duo-pink"><div class="content-wrap">Var H.</div></div>
+      <div class="ibm-col-sm-1 ibm-height-sm-1 ibm-height-md-1 ibm-height-lg-2 ibm-height-xlg-1 duo-pink"><div class="content-wrap">Var H.</div></div>
+      <div class="ibm-col-sm-1 ibm-height-sm-1 ibm-height-md-1 ibm-height-lg-2 ibm-height-xlg-1 duo-pink"><div class="content-wrap">Var H.</div></div>
+      <div class="ibm-col-sm-1 ibm-height-sm-1 ibm-height-md-1 ibm-height-lg-2 ibm-height-xlg-1 duo-pink"><div class="content-wrap">Var H.</div></div>
+    </div>
+    <div class="ibm">
+        <div class="no-bg ibm-col-full ibm-col-sm-4 ibm-height-sm-32"></div>
+    </div>
+</html> 

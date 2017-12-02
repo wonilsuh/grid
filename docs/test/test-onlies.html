@@ -1,0 +1,56 @@
+<!doctype html> 
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../ibm-grid.css"></link>
+    <link rel="stylesheet" href="../css/@ibm/type/css/ibm-type-fixed.css"></link>
+		<title>IBM Grid Tutorial</title>
+    <style>
+      .content-wrap{
+        background-color:white;
+      }
+      [class*="ibm-col-"]:not(.ibm-col-group):not(.title):not(.menu-item):not(.spacer){
+        border:solid 1px #fff;
+        background-color:#FFA0C2;
+      }
+      .title{
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        height:48px;
+        padding-top:0;
+        padding-bottom:0;
+      }
+      .menu{
+          background-color:white;
+          border-bottom:solid 1px #BEBEBE;
+      }
+
+      .menu > *{
+          backgorund-color:white;
+      }
+    </style>
+  </head>
+  <body>
+    	<!-- BEGIN: Nav header -->
+	<div class="menu ibm">
+      <div class="menu-inner ibm-padding-horizontal ibm-col-sm-4 ibm-height-sm-48 ibm-col-full">
+        <a class="menu-item" href="index.html">Columns</a>
+        <a class="menu-item" href="test-heights.html">Height</a>
+        <a class="menu-item" href="test-bleed.html">Bleed</a>
+        <a class="menu-item" href="test-onlies.html">Only</a>
+      </div>
+    </div>
+    <div class="ibm">
+        <div class="spacer no-bg ibm-col-full ibm-col-sm-4 ibm-height-sm-32"></div>
+    </div>
+    <!-- END: Nav header -->
+    <div class="ibm">
+      <div class="ibm-col-sm-4 title">Hiding columns</div>
+    </div>
+    <div class="ibm">
+      <div class="ibm-col-sm-2 ibm-col-sm-0-only">Not for sm</div>
+      <div class="ibm-col-sm-2"><div class="content-wrap">Fixture</div></div>
+    </div>
+</html> 

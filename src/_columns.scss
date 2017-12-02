@@ -11,8 +11,10 @@ $height-scale:(
 }
 
 $prev-padding:0;
-
+$prev-breakpoint:null;
+$prev-values:null;
 @each $breakpoint, $values in $ibm-grid {
+	$next-values: map-get($ibm-grid, map-get($values, 'next'));
 	
 	@if $breakpoint != $breakpoint-max {
 
@@ -27,6 +29,16 @@ $prev-padding:0;
 				}
 			}
 
+			.ibm-col-#{$breakpoint}-0,
+			.ibm-col-hide-#{$breakpoint} {
+				display: none;
+			}
+			@if $prev-breakpoint != null {
+				[class*="ibm-col-#{$prev-breakpoint}-"].ibm-col-hide-#{$breakpoint} {
+					display: none;
+				}
+			}
+
 			@each $breakpoint2, $values2 in $ibm-grid {
 
 				@if map-get($values2, 'breakpoint') <= map-get($values, 'breakpoint') {
@@ -36,7 +48,8 @@ $prev-padding:0;
 						@if map-get($values3, 'breakpoint') > map-get($values2, 'breakpoint')
 							and map-get($values3, 'breakpoint') == map-get($values, 'breakpoint') {
 
-							[class*="ibm-col-#{$breakpoint3}-"].ibm-col-#{$breakpoint2}-0 {
+							[class*="ibm-col-#{$breakpoint3}-"].ibm-col-#{$breakpoint2}-0,
+							[class*="ibm-col-#{$breakpoint3}-"].ibm-col-hide-#{$breakpoint2} {
 								display: initial; 
 
 								&.ibm-col-group {
@@ -44,10 +57,6 @@ $prev-padding:0;
 								}
 							}
 						}
-					}
-
-					.ibm-col-#{$breakpoint2}-0 {
-						display: none;
 					}
 
 					$values-max: map-get($ibm-grid, $breakpoint-max);
@@ -71,7 +80,6 @@ $prev-padding:0;
 							}
 
 							@if $breakpoint2 == $breakpoint {
-								// padding: map-get($values-max, 'padding');
 								max-width: #{(map-get($values-max, 'breakpoint') - map-get($values-max, 'padding') *2 ) / map-get($values2, 'columns') * $a };
 								min-width: map-get($values-min, 'min-width') / map-get($values2, 'columns') * $a;
 							}
@@ -106,30 +114,17 @@ $prev-padding:0;
 			}
 		}
 	}
-}
 
-@each $breakpoint, $values in $ibm-grid {
-	
-	@media (min-width:#{map-get($values, 'breakpoint')}) {
-
-		@each $breakpoint2, $values2 in $ibm-grid {
-
-			@if map-get($values2, 'breakpoint') >= map-get($values, 'breakpoint') {
-
-				@if $breakpoint2 == $breakpoint-max {
-					@media (min-width:map-get($values2, 'breakpoint')) {
-						.ibm-col-#{$breakpoint}-0-only {
-							display:none;
-						}
-					}
-				} @else {
-					@media (min-width:map-get($values2, 'breakpoint')) and (max-width:#{map-get(map-get($ibm-grid, map-get($values2, 'next')), 'breakpoint') - 1px}) {
-						.ibm-col-#{$breakpoint}-0-only {
-							display:none;
-						}
-					}
-				}
+	@if "deprecating" == null and $breakpoint != $breakpoint-max{
+		/* Onlies */
+		@media (min-width:map-get($values, 'breakpoint')) and (max-width:#{map-get($next-values, 'breakpoint') - 1px}) {
+			.ibm-col-#{$breakpoint}-0-only,
+			.ibm-col-hide-#{$breakpoint}-only {
+				display:none;
 			}
 		}
 	}
+
+	$prev-breakpoint:$breakpoint;
+	$prev-values:$values;
 }
