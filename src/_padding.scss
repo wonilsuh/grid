@@ -5,62 +5,46 @@
 .ibm > *,
 .ibm-col-group > *,
 .ibm-padding {
-	padding: #{map-get(map-get($ibm-grid, $breakpoint-min), 'padding')};
+	padding: #{map-get(map-get($ibm-grid, $breakpoint-min), 'padding')}
+}
 
-	&.ibm-padding-horizontal{
-		padding-right: #{map-get(map-get($ibm-grid, $breakpoint-min), 'padding')};
-		padding-left: #{map-get(map-get($ibm-grid, $breakpoint-min), 'padding')};
-	}
+.ibm-padding-horizontal {
+	padding-right: #{map-get(map-get($ibm-grid, $breakpoint-min), 'padding')};
+	padding-left: #{map-get(map-get($ibm-grid, $breakpoint-min), 'padding')};
+}
 
-	&.ibm-padding-vertical{
-		padding-top: #{map-get(map-get($ibm-grid, $breakpoint-min), 'padding')};
-		padding-bottom: #{map-get(map-get($ibm-grid, $breakpoint-min), 'padding')};
-	}
+.ibm-padding-vertical {
+	padding-top: #{map-get(map-get($ibm-grid, $breakpoint-min), 'padding')};
+	padding-bottom: #{map-get(map-get($ibm-grid, $breakpoint-min), 'padding')};
+}
 
+$prev-padding:0;
+@each $breakpoint, $values in $ibm-grid {
 
-	@each $breakpoint, $values in $ibm-grid {
+  	@if $breakpoint != $breakpoint-min  and $breakpoint != $breakpoint-max and $prev-padding != map-get($values, 'padding') {
+  		$prev-padding: map-get($values, 'padding');
 
-	  	@if $breakpoint != $breakpoint-min  and $breakpoint != $breakpoint-max {
+  		$width: map-get($values, 'breakpoint');
+	    @if map-has-key($values, 'min-width') == true {
 
-	  		$width: map-get($values, 'breakpoint');
-		    @if map-has-key($values, 'min-width') == true {
+	      $width: map-get($values, 'min-width');
+	    }
+	    @media (min-width:#{$width}) {
 
-		      $width: map-get($values, 'min-width');
-		    }
-		    @media (min-width:#{$width}) {
-
-				& {
-					padding: get-padding($values, 1);
-				}
-
-				&.ibm-padding-horizontal{
-					padding-right: get-padding($values, 1);
-					padding-left: get-padding($values, 1);
-				}
-
-				&.ibm-padding-vertical{
-					padding-top: get-padding($values, 1);
-					padding-bottom: get-padding($values, 1);
-				}
+			.ibm > *,
+			.ibm-col-group > *,
+			.ibm-padding {
+				padding: get-padding($values, 1);
 			}
-		} @else if $breakpoint == $breakpoint-max {
-			$padding: map-get($values, 'padding');
 
-			@media (min-width:#{map-get($values, 'breakpoint')}) {
+			&.ibm-padding-horizontal{
+				padding-right: get-padding($values, 1);
+				padding-left: get-padding($values, 1);
+			}
 
-				& {
-					padding: $padding;
-				}
-
-				&.ibm-padding-horizontal{
-					padding-right: $padding;
-					padding-left: $padding;
-				}
-
-				&.ibm-padding-vertical{
-					padding-top: $padding;
-					padding-bottom: $padding;
-				}
+			&.ibm-padding-vertical{
+				padding-top: get-padding($values, 1);
+				padding-bottom: get-padding($values, 1);
 			}
 		}
 	}

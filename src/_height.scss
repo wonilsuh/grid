@@ -1,19 +1,22 @@
 // Dependent on _core.scss from @ibm/grid
 
-$height-scale:(
-  8, 16, 24, 32, 48
-);
+/* test */
+$height-scale:(0.5, 1, 1.5, 2, 2.5);
 
 $values-max: map-get($ibm-grid, $breakpoint-max);
 $values-min: map-get($ibm-grid, $breakpoint-min);
 
+$prev-padding:0;
 @each $breakpoint, $values in $ibm-grid {
   @if $breakpoint != $breakpoint-max {
     @media (min-width:map-get($values, 'breakpoint')) {
-      @each $height in $height-scale{
-        .ibm-height-#{$breakpoint}-#{$height} {
-          min-height: #{$height}px;
+      @if $prev-padding != map-get($values, 'padding'){
+        @each $height in $height-scale{
+          .ibm-height-#{$breakpoint}-#{$height} {
+            min-height: #{$height}px;
+          }
         }
+        $prev-padding:map-get($values, 'padding');
       }
 
       $a:1;

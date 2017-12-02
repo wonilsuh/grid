@@ -13,15 +13,13 @@ html, body {
   width: 100vw;
 
   /* page margin */
+  $prev-padding:0;
   @each $breakpoint, $values in $ibm-grid {
-    @if map-get($values, 'margin') > 0 {
+    @if map-get($values, 'padding') != $prev-padding {
+      $prev-padding:map-get($values, 'padding');
       @media (min-width: map-get($values, 'breakpoint')) {
-        @if map-get($values, 'fixed-padding') == true{
-          width: map-get($values, 'breakpoint');
-          padding: 0 map-get($values, 'padding');
-        } @else {
-          // width: map-get($values, 'breakpoint');
-          padding: 0 get-padding($values, 1);
+        & {
+          padding: 0 #{map-get($values, 'padding') * map-get($values, 'margin')};
         }
       }
     }
@@ -35,6 +33,10 @@ html, body {
 .ibm-col-group {
   display: flex;
   flex-wrap: wrap;
+
+  & > * {
+    width: 100vw;
+  }
 }
 
 .ibm > *,
@@ -49,11 +51,6 @@ html, body {
   > *:last-child {
     margin-bottom: 0;
   }
-}
-
-.ibm > *,
-.ibm-col-group > * {
-  width: 100%;
 }
 
 .ibm .ibm-col-group,

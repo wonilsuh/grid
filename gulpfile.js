@@ -9,7 +9,7 @@ gulp.task('clean', function () {
 	return del(['dist/**/*']);
 });
 
-gulp.task('styles', function() {
+gulp.task('styles-core', function() {
      gulp.src("src/ibm-grid.scss")
       .pipe(sass().on('error', sass.logError))
       .pipe(rename('ibm-grid.css'))
@@ -19,6 +19,20 @@ gulp.task('styles', function() {
         level: 2
       }))
       .pipe(rename('ibm-grid.min.css'))
+      .pipe(gulp.dest('dist'))
+      .pipe(gulp.dest('docs/css'));
+});
+
+gulp.task('styles-extra', function() {
+     gulp.src("src/ibm-grid-extra.scss")
+      .pipe(sass().on('error', sass.logError))
+      .pipe(rename('ibm-grid-extra.css'))
+      .pipe(gulp.dest('dist'))
+      .pipe(gulp.dest('docs'))
+      .pipe(cleanCSS({
+        level: 2
+      }))
+      .pipe(rename('ibm-grid-extra.min.css'))
       .pipe(gulp.dest('dist'))
       .pipe(gulp.dest('docs/css'));
 });
@@ -35,9 +49,10 @@ gulp.task('watch',function() {
         }
     });
 
-    gulp.watch('src/**/*.scss', ['styles']);
+    gulp.watch('src/**/*.scss', ['styles-core', 'styles-extra']);
     gulp.watch("dist/**/*").on("change", browserSync.reload);
     gulp.watch("docs/**/*").on("change", browserSync.reload);
 });
 
+gulp.task('styles', ['styles-core', 'styles-extra']);
 gulp.task('default', ['clean', 'type', 'styles']);
