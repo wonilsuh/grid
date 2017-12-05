@@ -179,10 +179,10 @@ There are three distinct capabilities of this codebase and you are welcome to on
 
 | | Includes core grid? | Includes lg bleeds? | Includes heights? | File Size | Minified | Gzip |
 |---|---|---|---|---|---|---|
-| IBM Grid | Yes | Yes | Yes | 19kb | 14kb | 2.2kb |
+| IBM Grid | Yes | Yes | Yes | 41kb | 31kb | 3kb |
 | _core.scss | Yes | No | No | 12kb | 9kb | 1.0kb |
-| _bleed.scss | No | Yes | No | 2kb | 1kb | 0.2kb |
-| _height.scss | No | No | Yes | 9kb | 7kb | 1.0kb |
+| _bleed.scss | No | Yes | No | 19kb | 15kb | 2.2kb |
+| _height.scss | No | No | Yes | 9kb | 7kb | 1.9kb |
 
 ## Contribute
 
