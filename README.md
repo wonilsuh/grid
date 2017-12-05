@@ -51,16 +51,42 @@ The IBM Grid code provides the following benefits:
 
 To install, run `npm install @ibm/grid`
 
-If you want to use the compiled css, reference the file in the dist folder:
+If you want to use the compiled css, reference the files in the dist folder:
+
+*To use the primary breakpoints:*
 ```
 <link rel="stylesheet" type="text/css" href="node_modules/@ibm/grid/dist/ibm-grid.min.css">
 ```
 
-If you want to use the sass partials, import the files in the src folder:
+*To use all breakpoints:*
 ```
-@import 'node_modules/@ibm/grid/src/_core.scss';
-@import 'node_modules/@ibm/grid/src/_bleed.scss';
-@import 'node_modules/@ibm/grid/src/_height.scss';
+<link rel="stylesheet" type="text/css" href="node_modules/@ibm/grid/dist/ibm-grid-all.min.css">
+```
+
+If you want to use the sass partials, import the files in the src folder:
+
+*To use the primary breakpoints:*
+```
+@import 'node_modules/@ibm/grid/src/ibm-grid.scss';
+```
+
+*To use all breakpoints:*
+```
+@import 'node_modules/@ibm/grid/src/ibm-grid-all.scss';
+```
+
+### How to use only some breakpoints
+
+1. Create a new scss file based on `node_modules/@ibm/grid/src/ibm-grid-all.scss`
+```
+@import 'node_modules/@ibm/grid/src/ibm-grid.scss';
+```
+
+2. Delete the breakpoints that you don't use from the following SASS map:
+```
+$breakpoints-config:(
+  'sm', 'sm2', 'sm3', 'md', 'md2', 'lg', 'lg2', 'xlg', 'xlg2', 'max'
+);
 ```
 
 Check out the Performance section below for a description of each partial.
@@ -89,17 +115,23 @@ There are three breakpoints in IBM Grid: sm (0px+), md (640px+), and lg (1056px+
 
 **Note:** To respect mobile-first design, a smaller breakpoints’ columns will scale at the next breakpoint unless the next breakpoint has column widths specified. This means that setting a column at `.ibm-col-sm-2` will maintain half of the grid’s width throughout unless a width is specified at a larger breakpoint.
 
-| Class | Purpose |
-|---|---|
-| `.ibm` | Container div of the grid |
-| **Columns** | |
-| `.ibm-col-sm-[0-4]` | Set the width out of four columns for an item in the grid starting at 0px screen width |
-| `.ibm-col-md-[0-8]` | Set the width out of eight columns for an item in the grid starting at 640px screen width |
-| `.ibm-col-lg-[0-16]` | Set the width out of sixteen columns for an item in the grid starting at 1056px screen width |
-| **Column Modifiers** | |
+| Class | Purpose | Notes |
+|---|---|---|
+| `.ibm` | Container div of the grid | |
+| **Columns** | | |
+| `.ibm-col-sm-[1-4]` | Set the width out of four columns for an item in the grid starting at 0px screen width | Primary |
+| `.ibm-col-sm2-[1-4]` | Set the width out of four columns for an item in the grid starting at 512px screen width |  |
+| `.ibm-col-sm3-[1-4]` | Set the width out of four columns for an item in the grid starting at 640px screen width |  |
+| `.ibm-col-md-[1-8]` | Set the width out of eight columns for an item in the grid starting at 768px screen width | Primary |
+| `.ibm-col-md2-[1-8]` | Set the width out of eight columns for an item in the grid starting at 896px screen width |  |
+| `.ibm-col-lg-[1-16]` | Set the width out of sixteen columns for an item in the grid starting at 1056px screen width | Primary |
+| `.ibm-col-lg2-[1-16]` | Set the width out of sixteen columns for an item in the grid starting at 1056px screen width |  |
+| `.ibm-col-xlg-[1-16]` | Set the width out of sixteen columns for an item in the grid starting at 1056px screen width | Primary |
+| `.ibm-col-xlg2-[1-16]` | Set the width out of sixteen columns for an item in the grid starting at 1056px screen width |  |
+| **Column Modifiers** | | |
 | `.ibm-col-group` | Use a column to group other columns to make sub-rows and sub-columns <br> <br> *This is the most powerful part of IBM Grid’s ability to make complex layouts.* |
-| `.ibm-col-[sm, md, lg]-0-only` | Do not display a column at a specific breakpoint |
-| `.ibm-col-full` | Remove all padding of a column |
+| `.ibm-col-hide-[sm, sm2, md, md2, lg, lg2, xlg, xlg2] | Hide the given column at a specific breakpoint | |
+| `.ibm-col-full` | Remove all padding of a column | |
 | **Padding** | |
 | `.ibm-padding` | Set the padding of an element at one unit of the grid <br> <br> *Each column already applies one unit of padding. You can add this element inside for another unit of padding. Most helpful when using `.ibm-col-full` and you want to add padding back in a child.* |
 | `.ibm-padding-[horizontal, vertical]` | Set either the horizontal or vertical padding of an element at one unit of the grid |
@@ -119,17 +151,17 @@ The grid offers two different ways to control the height of an element and your 
 
 Small heights are based on the unit size, 8px, and supports 8px times {1, 2, 3, 4, 6, 8].
 
-`.ibm-s-height-[breakpoint]-[1, 2, 3, 4, 6, 8]`
+`.ibm-s-height-[sm, sm2, sm3, md, md2, lg, lg2, xlg, xlg2]-[1, 2, 3, 4, 6, 8]`
 
 #### Large heights
 
 Large heights are based on the column width, and as many as the number of columns at a given breakpoint are supported. For an example, if the current breakpoint supports 8 columns, there will be 8 large heights available.
 
-| Breakpoint | Class |
+| Break point | Class |
 |---|---|
-| `sm`, `sm2`, `sm3` | `.ibm-height-sm-[0-4]` |
-| `md`, `md2` | `.ibm-height-md-[0-8] |
-| `lg`, `lg2`, 'xlg', `xls2` | `.ibm-height-lg-[0-16] |
+| `sm`, `sm2`, `sm3` | `.ibm-height-[breakpoint]-[0-4]` |
+| `md`, `md2` | `.ibm-height-[breakpoint]-[0-8]` |
+| `lg`, `lg2`, 'xlg', `xls2` | `.ibm-height-[brekapoint]-[0-16]` |
 
 **Note:** To respect mobile-first design, a smaller breakpoints’ units will scale at the next breakpoint unless the next breakpoint has unit heights specified. This means that setting a height at `.ibm-s-height-sm-2` will scale to `.ibm-s-height-md-4` and `.ibm-s-height-lg-8` unless a height at those breakpoints is specified. You can use a height at `0` to unset heights at a breakpoint.
 
