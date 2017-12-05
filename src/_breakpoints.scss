@@ -1,30 +1,29 @@
+// Breakpoints
+
 $breakpoint-min: 'sm';
 $breakpoint-max:'max';
 
-$ibm-grid: (
+$ibm-grid-breakpoints: (
   "sm": (
     breakpoint: 0px,
     min-width:320px,
     columns: 4,
     heights: 32,
     margin: 0,
-    next: "lsm",
     padding:16px,
   ),
-  "lsm": (
+  "sm2": (
     breakpoint: 512px,
     columns: 8,
     heights: 32,
     margin: 0,
-    next: "smd",
     padding:24px,
   ),
-  "smd": (
+  "sm3": (
     breakpoint: 640px,
     columns: 8,
     heights: 32,
     margin: 0,
-    next: "md",
     padding:24px,
   ),
   "md": (
@@ -32,15 +31,13 @@ $ibm-grid: (
     columns: 8,
     heights: 32,
     margin: 0,
-    next: "lmd",
     padding:24px,
   ),
-  "lmd": (
+  "md2": (
     breakpoint: 896px,
     columns: 8,
     heights: 33,
     margin: 0,
-    next: "lg",
     padding:24px,
   ),
   "lg": (
@@ -48,7 +45,6 @@ $ibm-grid: (
     columns: 16,
     heights: 33,
     margin: 1,
-    next: "lg2",
     padding:16px,
   ),
   "lg2": (
@@ -56,7 +52,6 @@ $ibm-grid: (
     columns: 16,
     heights: 33,
     margin: 1,
-    next: "xlg",
     padding:16px,
   ),
   "xlg": (
@@ -64,7 +59,6 @@ $ibm-grid: (
     columns: 16,
     heights: 33,
     margin: 1,
-    next: "xlg2",
     padding:16px,
   ),
   "xlg2": (
@@ -72,7 +66,6 @@ $ibm-grid: (
     columns: 16,
     heights: 33,
     margin: 1,
-    next: "max",
     padding:24px,
   ),
   "max": (
@@ -84,3 +77,13 @@ $ibm-grid: (
     fixed-padding:true,
   )
 );
+
+// let's build $ibm-grid based on config and breakpoints, which is used by the rest of the code
+
+$ibm-grid:();
+@each $breakpoint in $breakpoints-config {
+	$new-entry:(
+		$breakpoint: map-get($ibm-grid-breakpoints, $breakpoint)
+	);
+	$ibm-grid:map-merge($ibm-grid, $new-entry);
+}

@@ -24,16 +24,16 @@ gulp.task('styles-core', function() {
       .pipe(gulp.dest('docs/css'));
 });
 
-gulp.task('styles-extra', function() {
-     gulp.src("src/ibm-grid-extra.scss")
+gulp.task('styles-all', function() {
+     gulp.src("src/ibm-grid-all.scss")
       .pipe(sass().on('error', sass.logError))
-      .pipe(rename('ibm-grid-extra.css'))
+      .pipe(rename('ibm-grid-all.css'))
       .pipe(gulp.dest('dist'))
       .pipe(gulp.dest('docs'))
       .pipe(cleanCSS({
         level: 2
       }))
-      .pipe(rename('ibm-grid-extra.min.css'))
+      .pipe(rename('ibm-grid-all.min.css'))
       .pipe(gulp.dest('dist'))
       .pipe(gulp.dest('docs/css'));
 });
@@ -65,11 +65,11 @@ gulp.task('watch',function() {
         }
     });
 
-    gulp.watch('src/**/*.scss', ['styles-core', 'styles-extra']);
+    gulp.watch('src/**/*.scss', ['styles-core', 'styles-all']);
     gulp.watch("dist/**/*").on("change", browserSync.reload);
     gulp.watch("docs/**/*").on("change", browserSync.reload);
     gulp.watch("test-src/*.html", ['build-test-files']);
 });
 
-gulp.task('styles', ['styles-core', 'styles-extra']);
+gulp.task('styles', ['styles-core', 'styles-all']);
 gulp.task('default', ['clean', 'type', 'styles']);
