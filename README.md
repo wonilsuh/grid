@@ -89,6 +89,8 @@ $breakpoints-config:(
 );
 ```
 
+3. Import the new file using the `@import` directive.
+
 Check out the Performance section below for a description of each partial.
 
 ### Developer Tutorial
