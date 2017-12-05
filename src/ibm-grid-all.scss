@@ -1,2 +1,7 @@
-@import './_config-all.scss';
+$breakpoints-config:(
+  'sm', 'sm2', 'sm3', 'md', 'md2', 'lg', 'lg2', 'xlg', 'xlg2', 'max'
+);
+
 @import './_build.scss';
+@import './_height.scss';
+@import './_bleed.scss';
