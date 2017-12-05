@@ -106,24 +106,9 @@ html, body {
     padding-bottom: 24px; } }
 
 /*-----------------------------------------------------
- *	columns and heights
+ *	columns
  */
-.ibm-height-strict {
-  max-height: 0; }
-
 @media (min-width: 0px) {
-  .ibm-s-height-sm-1 {
-    min-height: 8px; }
-  .ibm-s-height-sm-2 {
-    min-height: 16px; }
-  .ibm-s-height-sm-3 {
-    min-height: 24px; }
-  .ibm-s-height-sm-4 {
-    min-height: 32px; }
-  .ibm-s-height-sm-6 {
-    min-height: 48px; }
-  .ibm-s-height-sm-8 {
-    min-height: 64px; }
   .ibm-col-sm-0,
   .ibm-col-hide-sm {
     display: none; }
@@ -131,40 +116,20 @@ html, body {
     width: calc( 100vw * 0.25);
     max-width: 384px;
     min-width: 80px; }
-  .ibm-height-sm-1 {
-    min-height: calc( 100vw * 0.25); }
   .ibm-col-sm-2 {
     width: calc( 100vw * 0.5);
     max-width: 768px;
     min-width: 160px; }
-  .ibm-height-sm-2 {
-    min-height: calc( 100vw * 0.5); }
   .ibm-col-sm-3 {
     width: calc( 100vw * 0.75);
     max-width: 1152px;
     min-width: 240px; }
-  .ibm-height-sm-3 {
-    min-height: calc( 100vw * 0.75); }
   .ibm-col-sm-4 {
     width: calc( 100vw * 1);
     max-width: 1536px;
-    min-width: 320px; }
-  .ibm-height-sm-4 {
-    min-height: calc( 100vw * 1); } }
+    min-width: 320px; } }
 
 @media (min-width: 512px) {
-  .ibm-s-height-sm2-1 {
-    min-height: 12px; }
-  .ibm-s-height-sm2-2 {
-    min-height: 24px; }
-  .ibm-s-height-sm2-3 {
-    min-height: 36px; }
-  .ibm-s-height-sm2-4 {
-    min-height: 48px; }
-  .ibm-s-height-sm2-6 {
-    min-height: 72px; }
-  .ibm-s-height-sm2-8 {
-    min-height: 96px; }
   .ibm-col-sm2-0,
   .ibm-col-hide-sm2 {
     display: none; }
@@ -178,82 +143,46 @@ html, body {
       display: flex; }
   .ibm-col-sm-1 {
     width: calc( 100vw * 0.25); }
-  .ibm-height-sm-1 {
-    min-height: calc( 100vw * 0.25); }
   .ibm-col-sm-2 {
     width: calc( 100vw * 0.5); }
-  .ibm-height-sm-2 {
-    min-height: calc( 100vw * 0.5); }
   .ibm-col-sm-3 {
     width: calc( 100vw * 0.75); }
-  .ibm-height-sm-3 {
-    min-height: calc( 100vw * 0.75); }
   .ibm-col-sm-4 {
     width: calc( 100vw * 1); }
-  .ibm-height-sm-4 {
-    min-height: calc( 100vw * 1); }
   .ibm-col-sm2-1 {
     width: calc( 100vw * 0.125);
     max-width: 192px;
     min-width: 40px; }
-  .ibm-height-sm2-1 {
-    min-height: calc( 100vw * 0.125); }
   .ibm-col-sm2-2 {
     width: calc( 100vw * 0.25);
     max-width: 384px;
     min-width: 80px; }
-  .ibm-height-sm2-2 {
-    min-height: calc( 100vw * 0.25); }
   .ibm-col-sm2-3 {
     width: calc( 100vw * 0.375);
     max-width: 576px;
     min-width: 120px; }
-  .ibm-height-sm2-3 {
-    min-height: calc( 100vw * 0.375); }
   .ibm-col-sm2-4 {
     width: calc( 100vw * 0.5);
     max-width: 768px;
     min-width: 160px; }
-  .ibm-height-sm2-4 {
-    min-height: calc( 100vw * 0.5); }
   .ibm-col-sm2-5 {
     width: calc( 100vw * 0.625);
     max-width: 960px;
     min-width: 200px; }
-  .ibm-height-sm2-5 {
-    min-height: calc( 100vw * 0.625); }
   .ibm-col-sm2-6 {
     width: calc( 100vw * 0.75);
     max-width: 1152px;
     min-width: 240px; }
-  .ibm-height-sm2-6 {
-    min-height: calc( 100vw * 0.75); }
   .ibm-col-sm2-7 {
     width: calc( 100vw * 0.875);
     max-width: 1344px;
     min-width: 280px; }
-  .ibm-height-sm2-7 {
-    min-height: calc( 100vw * 0.875); }
   .ibm-col-sm2-8 {
     width: calc( 100vw * 1);
     max-width: 1536px;
-    min-width: 320px; }
-  .ibm-height-sm2-8 {
-    min-height: calc( 100vw * 1); } }
+    min-width: 320px; } }
 
 @media (min-width: 640px) {
-  .ibm-s-height-sm3-1 {
-    min-height: 12px; }
-  .ibm-s-height-sm3-2 {
-    min-height: 24px; }
-  .ibm-s-height-sm3-3 {
-    min-height: 36px; }
-  .ibm-s-height-sm3-4 {
-    min-height: 48px; }
-  .ibm-s-height-sm3-6 {
-    min-height: 72px; }
-  .ibm-s-height-sm3-8 {
-    min-height: 96px; }
   .ibm-col-sm3-0,
   .ibm-col-hide-sm3 {
     display: none; }
@@ -267,20 +196,12 @@ html, body {
       display: flex; }
   .ibm-col-sm-1 {
     width: calc( 100vw * 0.25); }
-  .ibm-height-sm-1 {
-    min-height: calc( 100vw * 0.25); }
   .ibm-col-sm-2 {
     width: calc( 100vw * 0.5); }
-  .ibm-height-sm-2 {
-    min-height: calc( 100vw * 0.5); }
   .ibm-col-sm-3 {
     width: calc( 100vw * 0.75); }
-  .ibm-height-sm-3 {
-    min-height: calc( 100vw * 0.75); }
   .ibm-col-sm-4 {
     width: calc( 100vw * 1); }
-  .ibm-height-sm-4 {
-    min-height: calc( 100vw * 1); }
   [class*="ibm-col-sm3-"].ibm-col-sm2-0,
   [class*="ibm-col-sm3-"].ibm-col-hide-sm2 {
     display: initial; }
@@ -289,98 +210,54 @@ html, body {
       display: flex; }
   .ibm-col-sm2-1 {
     width: calc( 100vw * 0.125); }
-  .ibm-height-sm2-1 {
-    min-height: calc( 100vw * 0.125); }
   .ibm-col-sm2-2 {
     width: calc( 100vw * 0.25); }
-  .ibm-height-sm2-2 {
-    min-height: calc( 100vw * 0.25); }
   .ibm-col-sm2-3 {
     width: calc( 100vw * 0.375); }
-  .ibm-height-sm2-3 {
-    min-height: calc( 100vw * 0.375); }
   .ibm-col-sm2-4 {
     width: calc( 100vw * 0.5); }
-  .ibm-height-sm2-4 {
-    min-height: calc( 100vw * 0.5); }
   .ibm-col-sm2-5 {
     width: calc( 100vw * 0.625); }
-  .ibm-height-sm2-5 {
-    min-height: calc( 100vw * 0.625); }
   .ibm-col-sm2-6 {
     width: calc( 100vw * 0.75); }
-  .ibm-height-sm2-6 {
-    min-height: calc( 100vw * 0.75); }
   .ibm-col-sm2-7 {
     width: calc( 100vw * 0.875); }
-  .ibm-height-sm2-7 {
-    min-height: calc( 100vw * 0.875); }
   .ibm-col-sm2-8 {
     width: calc( 100vw * 1); }
-  .ibm-height-sm2-8 {
-    min-height: calc( 100vw * 1); }
   .ibm-col-sm3-1 {
     width: calc( 100vw * 0.125);
     max-width: 192px;
     min-width: 40px; }
-  .ibm-height-sm3-1 {
-    min-height: calc( 100vw * 0.125); }
   .ibm-col-sm3-2 {
     width: calc( 100vw * 0.25);
     max-width: 384px;
     min-width: 80px; }
-  .ibm-height-sm3-2 {
-    min-height: calc( 100vw * 0.25); }
   .ibm-col-sm3-3 {
     width: calc( 100vw * 0.375);
     max-width: 576px;
     min-width: 120px; }
-  .ibm-height-sm3-3 {
-    min-height: calc( 100vw * 0.375); }
   .ibm-col-sm3-4 {
     width: calc( 100vw * 0.5);
     max-width: 768px;
     min-width: 160px; }
-  .ibm-height-sm3-4 {
-    min-height: calc( 100vw * 0.5); }
   .ibm-col-sm3-5 {
     width: calc( 100vw * 0.625);
     max-width: 960px;
     min-width: 200px; }
-  .ibm-height-sm3-5 {
-    min-height: calc( 100vw * 0.625); }
   .ibm-col-sm3-6 {
     width: calc( 100vw * 0.75);
     max-width: 1152px;
     min-width: 240px; }
-  .ibm-height-sm3-6 {
-    min-height: calc( 100vw * 0.75); }
   .ibm-col-sm3-7 {
     width: calc( 100vw * 0.875);
     max-width: 1344px;
     min-width: 280px; }
-  .ibm-height-sm3-7 {
-    min-height: calc( 100vw * 0.875); }
   .ibm-col-sm3-8 {
     width: calc( 100vw * 1);
     max-width: 1536px;
-    min-width: 320px; }
-  .ibm-height-sm3-8 {
-    min-height: calc( 100vw * 1); } }
+    min-width: 320px; } }
 
 @media (min-width: 768px) {
-  .ibm-s-height-md-1 {
-    min-height: 12px; }
-  .ibm-s-height-md-2 {
-    min-height: 24px; }
-  .ibm-s-height-md-3 {
-    min-height: 36px; }
-  .ibm-s-height-md-4 {
-    min-height: 48px; }
-  .ibm-s-height-md-6 {
-    min-height: 72px; }
-  .ibm-s-height-md-8 {
-    min-height: 96px; }
   .ibm-col-md-0,
   .ibm-col-hide-md {
     display: none; }
@@ -394,20 +271,12 @@ html, body {
       display: flex; }
   .ibm-col-sm-1 {
     width: calc( 100vw * 0.25); }
-  .ibm-height-sm-1 {
-    min-height: calc( 100vw * 0.25); }
   .ibm-col-sm-2 {
     width: calc( 100vw * 0.5); }
-  .ibm-height-sm-2 {
-    min-height: calc( 100vw * 0.5); }
   .ibm-col-sm-3 {
     width: calc( 100vw * 0.75); }
-  .ibm-height-sm-3 {
-    min-height: calc( 100vw * 0.75); }
   .ibm-col-sm-4 {
     width: calc( 100vw * 1); }
-  .ibm-height-sm-4 {
-    min-height: calc( 100vw * 1); }
   [class*="ibm-col-md-"].ibm-col-sm2-0,
   [class*="ibm-col-md-"].ibm-col-hide-sm2 {
     display: initial; }
@@ -416,36 +285,20 @@ html, body {
       display: flex; }
   .ibm-col-sm2-1 {
     width: calc( 100vw * 0.125); }
-  .ibm-height-sm2-1 {
-    min-height: calc( 100vw * 0.125); }
   .ibm-col-sm2-2 {
     width: calc( 100vw * 0.25); }
-  .ibm-height-sm2-2 {
-    min-height: calc( 100vw * 0.25); }
   .ibm-col-sm2-3 {
     width: calc( 100vw * 0.375); }
-  .ibm-height-sm2-3 {
-    min-height: calc( 100vw * 0.375); }
   .ibm-col-sm2-4 {
     width: calc( 100vw * 0.5); }
-  .ibm-height-sm2-4 {
-    min-height: calc( 100vw * 0.5); }
   .ibm-col-sm2-5 {
     width: calc( 100vw * 0.625); }
-  .ibm-height-sm2-5 {
-    min-height: calc( 100vw * 0.625); }
   .ibm-col-sm2-6 {
     width: calc( 100vw * 0.75); }
-  .ibm-height-sm2-6 {
-    min-height: calc( 100vw * 0.75); }
   .ibm-col-sm2-7 {
     width: calc( 100vw * 0.875); }
-  .ibm-height-sm2-7 {
-    min-height: calc( 100vw * 0.875); }
   .ibm-col-sm2-8 {
     width: calc( 100vw * 1); }
-  .ibm-height-sm2-8 {
-    min-height: calc( 100vw * 1); }
   [class*="ibm-col-md-"].ibm-col-sm3-0,
   [class*="ibm-col-md-"].ibm-col-hide-sm3 {
     display: initial; }
@@ -454,98 +307,54 @@ html, body {
       display: flex; }
   .ibm-col-sm3-1 {
     width: calc( 100vw * 0.125); }
-  .ibm-height-sm3-1 {
-    min-height: calc( 100vw * 0.125); }
   .ibm-col-sm3-2 {
     width: calc( 100vw * 0.25); }
-  .ibm-height-sm3-2 {
-    min-height: calc( 100vw * 0.25); }
   .ibm-col-sm3-3 {
     width: calc( 100vw * 0.375); }
-  .ibm-height-sm3-3 {
-    min-height: calc( 100vw * 0.375); }
   .ibm-col-sm3-4 {
     width: calc( 100vw * 0.5); }
-  .ibm-height-sm3-4 {
-    min-height: calc( 100vw * 0.5); }
   .ibm-col-sm3-5 {
     width: calc( 100vw * 0.625); }
-  .ibm-height-sm3-5 {
-    min-height: calc( 100vw * 0.625); }
   .ibm-col-sm3-6 {
     width: calc( 100vw * 0.75); }
-  .ibm-height-sm3-6 {
-    min-height: calc( 100vw * 0.75); }
   .ibm-col-sm3-7 {
     width: calc( 100vw * 0.875); }
-  .ibm-height-sm3-7 {
-    min-height: calc( 100vw * 0.875); }
   .ibm-col-sm3-8 {
     width: calc( 100vw * 1); }
-  .ibm-height-sm3-8 {
-    min-height: calc( 100vw * 1); }
   .ibm-col-md-1 {
     width: calc( 100vw * 0.125);
     max-width: 192px;
     min-width: 40px; }
-  .ibm-height-md-1 {
-    min-height: calc( 100vw * 0.125); }
   .ibm-col-md-2 {
     width: calc( 100vw * 0.25);
     max-width: 384px;
     min-width: 80px; }
-  .ibm-height-md-2 {
-    min-height: calc( 100vw * 0.25); }
   .ibm-col-md-3 {
     width: calc( 100vw * 0.375);
     max-width: 576px;
     min-width: 120px; }
-  .ibm-height-md-3 {
-    min-height: calc( 100vw * 0.375); }
   .ibm-col-md-4 {
     width: calc( 100vw * 0.5);
     max-width: 768px;
     min-width: 160px; }
-  .ibm-height-md-4 {
-    min-height: calc( 100vw * 0.5); }
   .ibm-col-md-5 {
     width: calc( 100vw * 0.625);
     max-width: 960px;
     min-width: 200px; }
-  .ibm-height-md-5 {
-    min-height: calc( 100vw * 0.625); }
   .ibm-col-md-6 {
     width: calc( 100vw * 0.75);
     max-width: 1152px;
     min-width: 240px; }
-  .ibm-height-md-6 {
-    min-height: calc( 100vw * 0.75); }
   .ibm-col-md-7 {
     width: calc( 100vw * 0.875);
     max-width: 1344px;
     min-width: 280px; }
-  .ibm-height-md-7 {
-    min-height: calc( 100vw * 0.875); }
   .ibm-col-md-8 {
     width: calc( 100vw * 1);
     max-width: 1536px;
-    min-width: 320px; }
-  .ibm-height-md-8 {
-    min-height: calc( 100vw * 1); } }
+    min-width: 320px; } }
 
 @media (min-width: 896px) {
-  .ibm-s-height-md2-1 {
-    min-height: 12px; }
-  .ibm-s-height-md2-2 {
-    min-height: 24px; }
-  .ibm-s-height-md2-3 {
-    min-height: 36px; }
-  .ibm-s-height-md2-4 {
-    min-height: 48px; }
-  .ibm-s-height-md2-6 {
-    min-height: 72px; }
-  .ibm-s-height-md2-8 {
-    min-height: 96px; }
   .ibm-col-md2-0,
   .ibm-col-hide-md2 {
     display: none; }
@@ -559,20 +368,12 @@ html, body {
       display: flex; }
   .ibm-col-sm-1 {
     width: calc( 100vw * 0.25); }
-  .ibm-height-sm-1 {
-    min-height: calc( 100vw * 0.25); }
   .ibm-col-sm-2 {
     width: calc( 100vw * 0.5); }
-  .ibm-height-sm-2 {
-    min-height: calc( 100vw * 0.5); }
   .ibm-col-sm-3 {
     width: calc( 100vw * 0.75); }
-  .ibm-height-sm-3 {
-    min-height: calc( 100vw * 0.75); }
   .ibm-col-sm-4 {
     width: calc( 100vw * 1); }
-  .ibm-height-sm-4 {
-    min-height: calc( 100vw * 1); }
   [class*="ibm-col-md2-"].ibm-col-sm2-0,
   [class*="ibm-col-md2-"].ibm-col-hide-sm2 {
     display: initial; }
@@ -581,36 +382,20 @@ html, body {
       display: flex; }
   .ibm-col-sm2-1 {
     width: calc( 100vw * 0.125); }
-  .ibm-height-sm2-1 {
-    min-height: calc( 100vw * 0.125); }
   .ibm-col-sm2-2 {
     width: calc( 100vw * 0.25); }
-  .ibm-height-sm2-2 {
-    min-height: calc( 100vw * 0.25); }
   .ibm-col-sm2-3 {
     width: calc( 100vw * 0.375); }
-  .ibm-height-sm2-3 {
-    min-height: calc( 100vw * 0.375); }
   .ibm-col-sm2-4 {
     width: calc( 100vw * 0.5); }
-  .ibm-height-sm2-4 {
-    min-height: calc( 100vw * 0.5); }
   .ibm-col-sm2-5 {
     width: calc( 100vw * 0.625); }
-  .ibm-height-sm2-5 {
-    min-height: calc( 100vw * 0.625); }
   .ibm-col-sm2-6 {
     width: calc( 100vw * 0.75); }
-  .ibm-height-sm2-6 {
-    min-height: calc( 100vw * 0.75); }
   .ibm-col-sm2-7 {
     width: calc( 100vw * 0.875); }
-  .ibm-height-sm2-7 {
-    min-height: calc( 100vw * 0.875); }
   .ibm-col-sm2-8 {
     width: calc( 100vw * 1); }
-  .ibm-height-sm2-8 {
-    min-height: calc( 100vw * 1); }
   [class*="ibm-col-md2-"].ibm-col-sm3-0,
   [class*="ibm-col-md2-"].ibm-col-hide-sm3 {
     display: initial; }
@@ -619,36 +404,20 @@ html, body {
       display: flex; }
   .ibm-col-sm3-1 {
     width: calc( 100vw * 0.125); }
-  .ibm-height-sm3-1 {
-    min-height: calc( 100vw * 0.125); }
   .ibm-col-sm3-2 {
     width: calc( 100vw * 0.25); }
-  .ibm-height-sm3-2 {
-    min-height: calc( 100vw * 0.25); }
   .ibm-col-sm3-3 {
     width: calc( 100vw * 0.375); }
-  .ibm-height-sm3-3 {
-    min-height: calc( 100vw * 0.375); }
   .ibm-col-sm3-4 {
     width: calc( 100vw * 0.5); }
-  .ibm-height-sm3-4 {
-    min-height: calc( 100vw * 0.5); }
   .ibm-col-sm3-5 {
     width: calc( 100vw * 0.625); }
-  .ibm-height-sm3-5 {
-    min-height: calc( 100vw * 0.625); }
   .ibm-col-sm3-6 {
     width: calc( 100vw * 0.75); }
-  .ibm-height-sm3-6 {
-    min-height: calc( 100vw * 0.75); }
   .ibm-col-sm3-7 {
     width: calc( 100vw * 0.875); }
-  .ibm-height-sm3-7 {
-    min-height: calc( 100vw * 0.875); }
   .ibm-col-sm3-8 {
     width: calc( 100vw * 1); }
-  .ibm-height-sm3-8 {
-    min-height: calc( 100vw * 1); }
   [class*="ibm-col-md2-"].ibm-col-md-0,
   [class*="ibm-col-md2-"].ibm-col-hide-md {
     display: initial; }
@@ -657,98 +426,54 @@ html, body {
       display: flex; }
   .ibm-col-md-1 {
     width: calc( 100vw * 0.125); }
-  .ibm-height-md-1 {
-    min-height: calc( 100vw * 0.125); }
   .ibm-col-md-2 {
     width: calc( 100vw * 0.25); }
-  .ibm-height-md-2 {
-    min-height: calc( 100vw * 0.25); }
   .ibm-col-md-3 {
     width: calc( 100vw * 0.375); }
-  .ibm-height-md-3 {
-    min-height: calc( 100vw * 0.375); }
   .ibm-col-md-4 {
     width: calc( 100vw * 0.5); }
-  .ibm-height-md-4 {
-    min-height: calc( 100vw * 0.5); }
   .ibm-col-md-5 {
     width: calc( 100vw * 0.625); }
-  .ibm-height-md-5 {
-    min-height: calc( 100vw * 0.625); }
   .ibm-col-md-6 {
     width: calc( 100vw * 0.75); }
-  .ibm-height-md-6 {
-    min-height: calc( 100vw * 0.75); }
   .ibm-col-md-7 {
     width: calc( 100vw * 0.875); }
-  .ibm-height-md-7 {
-    min-height: calc( 100vw * 0.875); }
   .ibm-col-md-8 {
     width: calc( 100vw * 1); }
-  .ibm-height-md-8 {
-    min-height: calc( 100vw * 1); }
   .ibm-col-md2-1 {
     width: calc( 100vw * 0.125);
     max-width: 192px;
     min-width: 40px; }
-  .ibm-height-md2-1 {
-    min-height: calc( 100vw * 0.125); }
   .ibm-col-md2-2 {
     width: calc( 100vw * 0.25);
     max-width: 384px;
     min-width: 80px; }
-  .ibm-height-md2-2 {
-    min-height: calc( 100vw * 0.25); }
   .ibm-col-md2-3 {
     width: calc( 100vw * 0.375);
     max-width: 576px;
     min-width: 120px; }
-  .ibm-height-md2-3 {
-    min-height: calc( 100vw * 0.375); }
   .ibm-col-md2-4 {
     width: calc( 100vw * 0.5);
     max-width: 768px;
     min-width: 160px; }
-  .ibm-height-md2-4 {
-    min-height: calc( 100vw * 0.5); }
   .ibm-col-md2-5 {
     width: calc( 100vw * 0.625);
     max-width: 960px;
     min-width: 200px; }
-  .ibm-height-md2-5 {
-    min-height: calc( 100vw * 0.625); }
   .ibm-col-md2-6 {
     width: calc( 100vw * 0.75);
     max-width: 1152px;
     min-width: 240px; }
-  .ibm-height-md2-6 {
-    min-height: calc( 100vw * 0.75); }
   .ibm-col-md2-7 {
     width: calc( 100vw * 0.875);
     max-width: 1344px;
     min-width: 280px; }
-  .ibm-height-md2-7 {
-    min-height: calc( 100vw * 0.875); }
   .ibm-col-md2-8 {
     width: calc( 100vw * 1);
     max-width: 1536px;
-    min-width: 320px; }
-  .ibm-height-md2-8 {
-    min-height: calc( 100vw * 1); } }
+    min-width: 320px; } }
 
 @media (min-width: 1056px) {
-  .ibm-s-height-lg-1 {
-    min-height: 8px; }
-  .ibm-s-height-lg-2 {
-    min-height: 16px; }
-  .ibm-s-height-lg-3 {
-    min-height: 24px; }
-  .ibm-s-height-lg-4 {
-    min-height: 32px; }
-  .ibm-s-height-lg-6 {
-    min-height: 48px; }
-  .ibm-s-height-lg-8 {
-    min-height: 64px; }
   .ibm-col-lg-0,
   .ibm-col-hide-lg {
     display: none; }
@@ -762,8 +487,6 @@ html, body {
       display: flex; }
   .ibm-col-sm-1 {
     width: calc( (100vw - 32px) * 0.25); }
-  .ibm-height-sm-1 {
-    min-height: calc( (100vw - 32px) * 0.25); }
   .ibm-col-sm-1.ibm-col-bleed {
     max-width: 396px;
     width: calc( 100vw / 4 * 1); }
@@ -773,8 +496,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 4 * 1 + 16px); }
   .ibm-col-sm-2 {
     width: calc( (100vw - 32px) * 0.5); }
-  .ibm-height-sm-2 {
-    min-height: calc( (100vw - 32px) * 0.5); }
   .ibm-col-sm-2.ibm-col-bleed {
     max-width: 792px;
     width: calc( 100vw / 4 * 2); }
@@ -784,8 +505,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 4 * 2 + 16px); }
   .ibm-col-sm-3 {
     width: calc( (100vw - 32px) * 0.75); }
-  .ibm-height-sm-3 {
-    min-height: calc( (100vw - 32px) * 0.75); }
   .ibm-col-sm-3.ibm-col-bleed {
     max-width: 1188px;
     width: calc( 100vw / 4 * 3); }
@@ -795,8 +514,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 4 * 3 + 16px); }
   .ibm-col-sm-4 {
     width: calc( (100vw - 32px) * 1); }
-  .ibm-height-sm-4 {
-    min-height: calc( (100vw - 32px) * 1); }
   .ibm-col-sm-4.ibm-col-bleed {
     max-width: 1584px;
     width: calc( 100vw / 4 * 4); }
@@ -812,8 +529,6 @@ html, body {
       display: flex; }
   .ibm-col-sm2-1 {
     width: calc( (100vw - 32px) * 0.125); }
-  .ibm-height-sm2-1 {
-    min-height: calc( (100vw - 32px) * 0.125); }
   .ibm-col-sm2-1.ibm-col-bleed {
     max-width: 198px;
     width: calc( 100vw / 8 * 1); }
@@ -823,8 +538,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 1 + 16px); }
   .ibm-col-sm2-2 {
     width: calc( (100vw - 32px) * 0.25); }
-  .ibm-height-sm2-2 {
-    min-height: calc( (100vw - 32px) * 0.25); }
   .ibm-col-sm2-2.ibm-col-bleed {
     max-width: 396px;
     width: calc( 100vw / 8 * 2); }
@@ -834,8 +547,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 2 + 16px); }
   .ibm-col-sm2-3 {
     width: calc( (100vw - 32px) * 0.375); }
-  .ibm-height-sm2-3 {
-    min-height: calc( (100vw - 32px) * 0.375); }
   .ibm-col-sm2-3.ibm-col-bleed {
     max-width: 594px;
     width: calc( 100vw / 8 * 3); }
@@ -845,8 +556,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 3 + 16px); }
   .ibm-col-sm2-4 {
     width: calc( (100vw - 32px) * 0.5); }
-  .ibm-height-sm2-4 {
-    min-height: calc( (100vw - 32px) * 0.5); }
   .ibm-col-sm2-4.ibm-col-bleed {
     max-width: 792px;
     width: calc( 100vw / 8 * 4); }
@@ -856,8 +565,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 4 + 16px); }
   .ibm-col-sm2-5 {
     width: calc( (100vw - 32px) * 0.625); }
-  .ibm-height-sm2-5 {
-    min-height: calc( (100vw - 32px) * 0.625); }
   .ibm-col-sm2-5.ibm-col-bleed {
     max-width: 990px;
     width: calc( 100vw / 8 * 5); }
@@ -867,8 +574,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 5 + 16px); }
   .ibm-col-sm2-6 {
     width: calc( (100vw - 32px) * 0.75); }
-  .ibm-height-sm2-6 {
-    min-height: calc( (100vw - 32px) * 0.75); }
   .ibm-col-sm2-6.ibm-col-bleed {
     max-width: 1188px;
     width: calc( 100vw / 8 * 6); }
@@ -878,8 +583,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 6 + 16px); }
   .ibm-col-sm2-7 {
     width: calc( (100vw - 32px) * 0.875); }
-  .ibm-height-sm2-7 {
-    min-height: calc( (100vw - 32px) * 0.875); }
   .ibm-col-sm2-7.ibm-col-bleed {
     max-width: 1386px;
     width: calc( 100vw / 8 * 7); }
@@ -889,8 +592,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 7 + 16px); }
   .ibm-col-sm2-8 {
     width: calc( (100vw - 32px) * 1); }
-  .ibm-height-sm2-8 {
-    min-height: calc( (100vw - 32px) * 1); }
   .ibm-col-sm2-8.ibm-col-bleed {
     max-width: 1584px;
     width: calc( 100vw / 8 * 8); }
@@ -906,8 +607,6 @@ html, body {
       display: flex; }
   .ibm-col-sm3-1 {
     width: calc( (100vw - 32px) * 0.125); }
-  .ibm-height-sm3-1 {
-    min-height: calc( (100vw - 32px) * 0.125); }
   .ibm-col-sm3-1.ibm-col-bleed {
     max-width: 198px;
     width: calc( 100vw / 8 * 1); }
@@ -917,8 +616,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 1 + 16px); }
   .ibm-col-sm3-2 {
     width: calc( (100vw - 32px) * 0.25); }
-  .ibm-height-sm3-2 {
-    min-height: calc( (100vw - 32px) * 0.25); }
   .ibm-col-sm3-2.ibm-col-bleed {
     max-width: 396px;
     width: calc( 100vw / 8 * 2); }
@@ -928,8 +625,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 2 + 16px); }
   .ibm-col-sm3-3 {
     width: calc( (100vw - 32px) * 0.375); }
-  .ibm-height-sm3-3 {
-    min-height: calc( (100vw - 32px) * 0.375); }
   .ibm-col-sm3-3.ibm-col-bleed {
     max-width: 594px;
     width: calc( 100vw / 8 * 3); }
@@ -939,8 +634,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 3 + 16px); }
   .ibm-col-sm3-4 {
     width: calc( (100vw - 32px) * 0.5); }
-  .ibm-height-sm3-4 {
-    min-height: calc( (100vw - 32px) * 0.5); }
   .ibm-col-sm3-4.ibm-col-bleed {
     max-width: 792px;
     width: calc( 100vw / 8 * 4); }
@@ -950,8 +643,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 4 + 16px); }
   .ibm-col-sm3-5 {
     width: calc( (100vw - 32px) * 0.625); }
-  .ibm-height-sm3-5 {
-    min-height: calc( (100vw - 32px) * 0.625); }
   .ibm-col-sm3-5.ibm-col-bleed {
     max-width: 990px;
     width: calc( 100vw / 8 * 5); }
@@ -961,8 +652,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 5 + 16px); }
   .ibm-col-sm3-6 {
     width: calc( (100vw - 32px) * 0.75); }
-  .ibm-height-sm3-6 {
-    min-height: calc( (100vw - 32px) * 0.75); }
   .ibm-col-sm3-6.ibm-col-bleed {
     max-width: 1188px;
     width: calc( 100vw / 8 * 6); }
@@ -972,8 +661,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 6 + 16px); }
   .ibm-col-sm3-7 {
     width: calc( (100vw - 32px) * 0.875); }
-  .ibm-height-sm3-7 {
-    min-height: calc( (100vw - 32px) * 0.875); }
   .ibm-col-sm3-7.ibm-col-bleed {
     max-width: 1386px;
     width: calc( 100vw / 8 * 7); }
@@ -983,8 +670,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 7 + 16px); }
   .ibm-col-sm3-8 {
     width: calc( (100vw - 32px) * 1); }
-  .ibm-height-sm3-8 {
-    min-height: calc( (100vw - 32px) * 1); }
   .ibm-col-sm3-8.ibm-col-bleed {
     max-width: 1584px;
     width: calc( 100vw / 8 * 8); }
@@ -1000,8 +685,6 @@ html, body {
       display: flex; }
   .ibm-col-md-1 {
     width: calc( (100vw - 32px) * 0.125); }
-  .ibm-height-md-1 {
-    min-height: calc( (100vw - 32px) * 0.125); }
   .ibm-col-md-1.ibm-col-bleed {
     max-width: 198px;
     width: calc( 100vw / 8 * 1); }
@@ -1011,8 +694,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 1 + 16px); }
   .ibm-col-md-2 {
     width: calc( (100vw - 32px) * 0.25); }
-  .ibm-height-md-2 {
-    min-height: calc( (100vw - 32px) * 0.25); }
   .ibm-col-md-2.ibm-col-bleed {
     max-width: 396px;
     width: calc( 100vw / 8 * 2); }
@@ -1022,8 +703,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 2 + 16px); }
   .ibm-col-md-3 {
     width: calc( (100vw - 32px) * 0.375); }
-  .ibm-height-md-3 {
-    min-height: calc( (100vw - 32px) * 0.375); }
   .ibm-col-md-3.ibm-col-bleed {
     max-width: 594px;
     width: calc( 100vw / 8 * 3); }
@@ -1033,8 +712,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 3 + 16px); }
   .ibm-col-md-4 {
     width: calc( (100vw - 32px) * 0.5); }
-  .ibm-height-md-4 {
-    min-height: calc( (100vw - 32px) * 0.5); }
   .ibm-col-md-4.ibm-col-bleed {
     max-width: 792px;
     width: calc( 100vw / 8 * 4); }
@@ -1044,8 +721,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 4 + 16px); }
   .ibm-col-md-5 {
     width: calc( (100vw - 32px) * 0.625); }
-  .ibm-height-md-5 {
-    min-height: calc( (100vw - 32px) * 0.625); }
   .ibm-col-md-5.ibm-col-bleed {
     max-width: 990px;
     width: calc( 100vw / 8 * 5); }
@@ -1055,8 +730,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 5 + 16px); }
   .ibm-col-md-6 {
     width: calc( (100vw - 32px) * 0.75); }
-  .ibm-height-md-6 {
-    min-height: calc( (100vw - 32px) * 0.75); }
   .ibm-col-md-6.ibm-col-bleed {
     max-width: 1188px;
     width: calc( 100vw / 8 * 6); }
@@ -1066,8 +739,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 6 + 16px); }
   .ibm-col-md-7 {
     width: calc( (100vw - 32px) * 0.875); }
-  .ibm-height-md-7 {
-    min-height: calc( (100vw - 32px) * 0.875); }
   .ibm-col-md-7.ibm-col-bleed {
     max-width: 1386px;
     width: calc( 100vw / 8 * 7); }
@@ -1077,8 +748,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 7 + 16px); }
   .ibm-col-md-8 {
     width: calc( (100vw - 32px) * 1); }
-  .ibm-height-md-8 {
-    min-height: calc( (100vw - 32px) * 1); }
   .ibm-col-md-8.ibm-col-bleed {
     max-width: 1584px;
     width: calc( 100vw / 8 * 8); }
@@ -1094,8 +763,6 @@ html, body {
       display: flex; }
   .ibm-col-md2-1 {
     width: calc( (100vw - 32px) * 0.125); }
-  .ibm-height-md2-1 {
-    min-height: calc( (100vw - 32px) * 0.125); }
   .ibm-col-md2-1.ibm-col-bleed {
     max-width: 198px;
     width: calc( 100vw / 8 * 1); }
@@ -1105,8 +772,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 1 + 16px); }
   .ibm-col-md2-2 {
     width: calc( (100vw - 32px) * 0.25); }
-  .ibm-height-md2-2 {
-    min-height: calc( (100vw - 32px) * 0.25); }
   .ibm-col-md2-2.ibm-col-bleed {
     max-width: 396px;
     width: calc( 100vw / 8 * 2); }
@@ -1116,8 +781,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 2 + 16px); }
   .ibm-col-md2-3 {
     width: calc( (100vw - 32px) * 0.375); }
-  .ibm-height-md2-3 {
-    min-height: calc( (100vw - 32px) * 0.375); }
   .ibm-col-md2-3.ibm-col-bleed {
     max-width: 594px;
     width: calc( 100vw / 8 * 3); }
@@ -1127,8 +790,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 3 + 16px); }
   .ibm-col-md2-4 {
     width: calc( (100vw - 32px) * 0.5); }
-  .ibm-height-md2-4 {
-    min-height: calc( (100vw - 32px) * 0.5); }
   .ibm-col-md2-4.ibm-col-bleed {
     max-width: 792px;
     width: calc( 100vw / 8 * 4); }
@@ -1138,8 +799,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 4 + 16px); }
   .ibm-col-md2-5 {
     width: calc( (100vw - 32px) * 0.625); }
-  .ibm-height-md2-5 {
-    min-height: calc( (100vw - 32px) * 0.625); }
   .ibm-col-md2-5.ibm-col-bleed {
     max-width: 990px;
     width: calc( 100vw / 8 * 5); }
@@ -1149,8 +808,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 5 + 16px); }
   .ibm-col-md2-6 {
     width: calc( (100vw - 32px) * 0.75); }
-  .ibm-height-md2-6 {
-    min-height: calc( (100vw - 32px) * 0.75); }
   .ibm-col-md2-6.ibm-col-bleed {
     max-width: 1188px;
     width: calc( 100vw / 8 * 6); }
@@ -1160,8 +817,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 6 + 16px); }
   .ibm-col-md2-7 {
     width: calc( (100vw - 32px) * 0.875); }
-  .ibm-height-md2-7 {
-    min-height: calc( (100vw - 32px) * 0.875); }
   .ibm-col-md2-7.ibm-col-bleed {
     max-width: 1386px;
     width: calc( 100vw / 8 * 7); }
@@ -1171,8 +826,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 7 + 16px); }
   .ibm-col-md2-8 {
     width: calc( (100vw - 32px) * 1); }
-  .ibm-height-md2-8 {
-    min-height: calc( (100vw - 32px) * 1); }
   .ibm-col-md2-8.ibm-col-bleed {
     max-width: 1584px;
     width: calc( 100vw / 8 * 8); }
@@ -1184,8 +837,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.0625);
     max-width: 96px;
     min-width: 20px; }
-  .ibm-height-lg-1 {
-    min-height: calc( (100vw - 32px) * 0.0625); }
   .ibm-col-lg-1.ibm-col-bleed {
     max-width: 99px;
     width: calc( 100vw / 16 * 1); }
@@ -1197,8 +848,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.125);
     max-width: 192px;
     min-width: 40px; }
-  .ibm-height-lg-2 {
-    min-height: calc( (100vw - 32px) * 0.125); }
   .ibm-col-lg-2.ibm-col-bleed {
     max-width: 198px;
     width: calc( 100vw / 16 * 2); }
@@ -1210,8 +859,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.1875);
     max-width: 288px;
     min-width: 60px; }
-  .ibm-height-lg-3 {
-    min-height: calc( (100vw - 32px) * 0.1875); }
   .ibm-col-lg-3.ibm-col-bleed {
     max-width: 297px;
     width: calc( 100vw / 16 * 3); }
@@ -1223,8 +870,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.25);
     max-width: 384px;
     min-width: 80px; }
-  .ibm-height-lg-4 {
-    min-height: calc( (100vw - 32px) * 0.25); }
   .ibm-col-lg-4.ibm-col-bleed {
     max-width: 396px;
     width: calc( 100vw / 16 * 4); }
@@ -1236,8 +881,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.3125);
     max-width: 480px;
     min-width: 100px; }
-  .ibm-height-lg-5 {
-    min-height: calc( (100vw - 32px) * 0.3125); }
   .ibm-col-lg-5.ibm-col-bleed {
     max-width: 495px;
     width: calc( 100vw / 16 * 5); }
@@ -1249,8 +892,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.375);
     max-width: 576px;
     min-width: 120px; }
-  .ibm-height-lg-6 {
-    min-height: calc( (100vw - 32px) * 0.375); }
   .ibm-col-lg-6.ibm-col-bleed {
     max-width: 594px;
     width: calc( 100vw / 16 * 6); }
@@ -1262,8 +903,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.4375);
     max-width: 672px;
     min-width: 140px; }
-  .ibm-height-lg-7 {
-    min-height: calc( (100vw - 32px) * 0.4375); }
   .ibm-col-lg-7.ibm-col-bleed {
     max-width: 693px;
     width: calc( 100vw / 16 * 7); }
@@ -1275,8 +914,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.5);
     max-width: 768px;
     min-width: 160px; }
-  .ibm-height-lg-8 {
-    min-height: calc( (100vw - 32px) * 0.5); }
   .ibm-col-lg-8.ibm-col-bleed {
     max-width: 792px;
     width: calc( 100vw / 16 * 8); }
@@ -1288,8 +925,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.5625);
     max-width: 864px;
     min-width: 180px; }
-  .ibm-height-lg-9 {
-    min-height: calc( (100vw - 32px) * 0.5625); }
   .ibm-col-lg-9.ibm-col-bleed {
     max-width: 891px;
     width: calc( 100vw / 16 * 9); }
@@ -1301,8 +936,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.625);
     max-width: 960px;
     min-width: 200px; }
-  .ibm-height-lg-10 {
-    min-height: calc( (100vw - 32px) * 0.625); }
   .ibm-col-lg-10.ibm-col-bleed {
     max-width: 990px;
     width: calc( 100vw / 16 * 10); }
@@ -1314,8 +947,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.6875);
     max-width: 1056px;
     min-width: 220px; }
-  .ibm-height-lg-11 {
-    min-height: calc( (100vw - 32px) * 0.6875); }
   .ibm-col-lg-11.ibm-col-bleed {
     max-width: 1089px;
     width: calc( 100vw / 16 * 11); }
@@ -1327,8 +958,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.75);
     max-width: 1152px;
     min-width: 240px; }
-  .ibm-height-lg-12 {
-    min-height: calc( (100vw - 32px) * 0.75); }
   .ibm-col-lg-12.ibm-col-bleed {
     max-width: 1188px;
     width: calc( 100vw / 16 * 12); }
@@ -1340,8 +969,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.8125);
     max-width: 1248px;
     min-width: 260px; }
-  .ibm-height-lg-13 {
-    min-height: calc( (100vw - 32px) * 0.8125); }
   .ibm-col-lg-13.ibm-col-bleed {
     max-width: 1287px;
     width: calc( 100vw / 16 * 13); }
@@ -1353,8 +980,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.875);
     max-width: 1344px;
     min-width: 280px; }
-  .ibm-height-lg-14 {
-    min-height: calc( (100vw - 32px) * 0.875); }
   .ibm-col-lg-14.ibm-col-bleed {
     max-width: 1386px;
     width: calc( 100vw / 16 * 14); }
@@ -1366,8 +991,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.9375);
     max-width: 1440px;
     min-width: 300px; }
-  .ibm-height-lg-15 {
-    min-height: calc( (100vw - 32px) * 0.9375); }
   .ibm-col-lg-15.ibm-col-bleed {
     max-width: 1485px;
     width: calc( 100vw / 16 * 15); }
@@ -1379,8 +1002,6 @@ html, body {
     width: calc( (100vw - 32px) * 1);
     max-width: 1536px;
     min-width: 320px; }
-  .ibm-height-lg-16 {
-    min-height: calc( (100vw - 32px) * 1); }
   .ibm-col-lg-16.ibm-col-bleed {
     max-width: 1584px;
     width: calc( 100vw / 16 * 16); }
@@ -1390,18 +1011,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 16 + 16px); } }
 
 @media (min-width: 1184px) {
-  .ibm-s-height-lg2-1 {
-    min-height: 8px; }
-  .ibm-s-height-lg2-2 {
-    min-height: 16px; }
-  .ibm-s-height-lg2-3 {
-    min-height: 24px; }
-  .ibm-s-height-lg2-4 {
-    min-height: 32px; }
-  .ibm-s-height-lg2-6 {
-    min-height: 48px; }
-  .ibm-s-height-lg2-8 {
-    min-height: 64px; }
   .ibm-col-lg2-0,
   .ibm-col-hide-lg2 {
     display: none; }
@@ -1415,8 +1024,6 @@ html, body {
       display: flex; }
   .ibm-col-sm-1 {
     width: calc( (100vw - 32px) * 0.25); }
-  .ibm-height-sm-1 {
-    min-height: calc( (100vw - 32px) * 0.25); }
   .ibm-col-sm-1.ibm-col-bleed {
     max-width: 396px;
     width: calc( 100vw / 4 * 1); }
@@ -1426,8 +1033,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 4 * 1 + 16px); }
   .ibm-col-sm-2 {
     width: calc( (100vw - 32px) * 0.5); }
-  .ibm-height-sm-2 {
-    min-height: calc( (100vw - 32px) * 0.5); }
   .ibm-col-sm-2.ibm-col-bleed {
     max-width: 792px;
     width: calc( 100vw / 4 * 2); }
@@ -1437,8 +1042,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 4 * 2 + 16px); }
   .ibm-col-sm-3 {
     width: calc( (100vw - 32px) * 0.75); }
-  .ibm-height-sm-3 {
-    min-height: calc( (100vw - 32px) * 0.75); }
   .ibm-col-sm-3.ibm-col-bleed {
     max-width: 1188px;
     width: calc( 100vw / 4 * 3); }
@@ -1448,8 +1051,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 4 * 3 + 16px); }
   .ibm-col-sm-4 {
     width: calc( (100vw - 32px) * 1); }
-  .ibm-height-sm-4 {
-    min-height: calc( (100vw - 32px) * 1); }
   .ibm-col-sm-4.ibm-col-bleed {
     max-width: 1584px;
     width: calc( 100vw / 4 * 4); }
@@ -1465,8 +1066,6 @@ html, body {
       display: flex; }
   .ibm-col-sm2-1 {
     width: calc( (100vw - 32px) * 0.125); }
-  .ibm-height-sm2-1 {
-    min-height: calc( (100vw - 32px) * 0.125); }
   .ibm-col-sm2-1.ibm-col-bleed {
     max-width: 198px;
     width: calc( 100vw / 8 * 1); }
@@ -1476,8 +1075,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 1 + 16px); }
   .ibm-col-sm2-2 {
     width: calc( (100vw - 32px) * 0.25); }
-  .ibm-height-sm2-2 {
-    min-height: calc( (100vw - 32px) * 0.25); }
   .ibm-col-sm2-2.ibm-col-bleed {
     max-width: 396px;
     width: calc( 100vw / 8 * 2); }
@@ -1487,8 +1084,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 2 + 16px); }
   .ibm-col-sm2-3 {
     width: calc( (100vw - 32px) * 0.375); }
-  .ibm-height-sm2-3 {
-    min-height: calc( (100vw - 32px) * 0.375); }
   .ibm-col-sm2-3.ibm-col-bleed {
     max-width: 594px;
     width: calc( 100vw / 8 * 3); }
@@ -1498,8 +1093,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 3 + 16px); }
   .ibm-col-sm2-4 {
     width: calc( (100vw - 32px) * 0.5); }
-  .ibm-height-sm2-4 {
-    min-height: calc( (100vw - 32px) * 0.5); }
   .ibm-col-sm2-4.ibm-col-bleed {
     max-width: 792px;
     width: calc( 100vw / 8 * 4); }
@@ -1509,8 +1102,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 4 + 16px); }
   .ibm-col-sm2-5 {
     width: calc( (100vw - 32px) * 0.625); }
-  .ibm-height-sm2-5 {
-    min-height: calc( (100vw - 32px) * 0.625); }
   .ibm-col-sm2-5.ibm-col-bleed {
     max-width: 990px;
     width: calc( 100vw / 8 * 5); }
@@ -1520,8 +1111,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 5 + 16px); }
   .ibm-col-sm2-6 {
     width: calc( (100vw - 32px) * 0.75); }
-  .ibm-height-sm2-6 {
-    min-height: calc( (100vw - 32px) * 0.75); }
   .ibm-col-sm2-6.ibm-col-bleed {
     max-width: 1188px;
     width: calc( 100vw / 8 * 6); }
@@ -1531,8 +1120,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 6 + 16px); }
   .ibm-col-sm2-7 {
     width: calc( (100vw - 32px) * 0.875); }
-  .ibm-height-sm2-7 {
-    min-height: calc( (100vw - 32px) * 0.875); }
   .ibm-col-sm2-7.ibm-col-bleed {
     max-width: 1386px;
     width: calc( 100vw / 8 * 7); }
@@ -1542,8 +1129,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 7 + 16px); }
   .ibm-col-sm2-8 {
     width: calc( (100vw - 32px) * 1); }
-  .ibm-height-sm2-8 {
-    min-height: calc( (100vw - 32px) * 1); }
   .ibm-col-sm2-8.ibm-col-bleed {
     max-width: 1584px;
     width: calc( 100vw / 8 * 8); }
@@ -1559,8 +1144,6 @@ html, body {
       display: flex; }
   .ibm-col-sm3-1 {
     width: calc( (100vw - 32px) * 0.125); }
-  .ibm-height-sm3-1 {
-    min-height: calc( (100vw - 32px) * 0.125); }
   .ibm-col-sm3-1.ibm-col-bleed {
     max-width: 198px;
     width: calc( 100vw / 8 * 1); }
@@ -1570,8 +1153,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 1 + 16px); }
   .ibm-col-sm3-2 {
     width: calc( (100vw - 32px) * 0.25); }
-  .ibm-height-sm3-2 {
-    min-height: calc( (100vw - 32px) * 0.25); }
   .ibm-col-sm3-2.ibm-col-bleed {
     max-width: 396px;
     width: calc( 100vw / 8 * 2); }
@@ -1581,8 +1162,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 2 + 16px); }
   .ibm-col-sm3-3 {
     width: calc( (100vw - 32px) * 0.375); }
-  .ibm-height-sm3-3 {
-    min-height: calc( (100vw - 32px) * 0.375); }
   .ibm-col-sm3-3.ibm-col-bleed {
     max-width: 594px;
     width: calc( 100vw / 8 * 3); }
@@ -1592,8 +1171,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 3 + 16px); }
   .ibm-col-sm3-4 {
     width: calc( (100vw - 32px) * 0.5); }
-  .ibm-height-sm3-4 {
-    min-height: calc( (100vw - 32px) * 0.5); }
   .ibm-col-sm3-4.ibm-col-bleed {
     max-width: 792px;
     width: calc( 100vw / 8 * 4); }
@@ -1603,8 +1180,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 4 + 16px); }
   .ibm-col-sm3-5 {
     width: calc( (100vw - 32px) * 0.625); }
-  .ibm-height-sm3-5 {
-    min-height: calc( (100vw - 32px) * 0.625); }
   .ibm-col-sm3-5.ibm-col-bleed {
     max-width: 990px;
     width: calc( 100vw / 8 * 5); }
@@ -1614,8 +1189,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 5 + 16px); }
   .ibm-col-sm3-6 {
     width: calc( (100vw - 32px) * 0.75); }
-  .ibm-height-sm3-6 {
-    min-height: calc( (100vw - 32px) * 0.75); }
   .ibm-col-sm3-6.ibm-col-bleed {
     max-width: 1188px;
     width: calc( 100vw / 8 * 6); }
@@ -1625,8 +1198,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 6 + 16px); }
   .ibm-col-sm3-7 {
     width: calc( (100vw - 32px) * 0.875); }
-  .ibm-height-sm3-7 {
-    min-height: calc( (100vw - 32px) * 0.875); }
   .ibm-col-sm3-7.ibm-col-bleed {
     max-width: 1386px;
     width: calc( 100vw / 8 * 7); }
@@ -1636,8 +1207,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 7 + 16px); }
   .ibm-col-sm3-8 {
     width: calc( (100vw - 32px) * 1); }
-  .ibm-height-sm3-8 {
-    min-height: calc( (100vw - 32px) * 1); }
   .ibm-col-sm3-8.ibm-col-bleed {
     max-width: 1584px;
     width: calc( 100vw / 8 * 8); }
@@ -1653,8 +1222,6 @@ html, body {
       display: flex; }
   .ibm-col-md-1 {
     width: calc( (100vw - 32px) * 0.125); }
-  .ibm-height-md-1 {
-    min-height: calc( (100vw - 32px) * 0.125); }
   .ibm-col-md-1.ibm-col-bleed {
     max-width: 198px;
     width: calc( 100vw / 8 * 1); }
@@ -1664,8 +1231,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 1 + 16px); }
   .ibm-col-md-2 {
     width: calc( (100vw - 32px) * 0.25); }
-  .ibm-height-md-2 {
-    min-height: calc( (100vw - 32px) * 0.25); }
   .ibm-col-md-2.ibm-col-bleed {
     max-width: 396px;
     width: calc( 100vw / 8 * 2); }
@@ -1675,8 +1240,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 2 + 16px); }
   .ibm-col-md-3 {
     width: calc( (100vw - 32px) * 0.375); }
-  .ibm-height-md-3 {
-    min-height: calc( (100vw - 32px) * 0.375); }
   .ibm-col-md-3.ibm-col-bleed {
     max-width: 594px;
     width: calc( 100vw / 8 * 3); }
@@ -1686,8 +1249,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 3 + 16px); }
   .ibm-col-md-4 {
     width: calc( (100vw - 32px) * 0.5); }
-  .ibm-height-md-4 {
-    min-height: calc( (100vw - 32px) * 0.5); }
   .ibm-col-md-4.ibm-col-bleed {
     max-width: 792px;
     width: calc( 100vw / 8 * 4); }
@@ -1697,8 +1258,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 4 + 16px); }
   .ibm-col-md-5 {
     width: calc( (100vw - 32px) * 0.625); }
-  .ibm-height-md-5 {
-    min-height: calc( (100vw - 32px) * 0.625); }
   .ibm-col-md-5.ibm-col-bleed {
     max-width: 990px;
     width: calc( 100vw / 8 * 5); }
@@ -1708,8 +1267,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 5 + 16px); }
   .ibm-col-md-6 {
     width: calc( (100vw - 32px) * 0.75); }
-  .ibm-height-md-6 {
-    min-height: calc( (100vw - 32px) * 0.75); }
   .ibm-col-md-6.ibm-col-bleed {
     max-width: 1188px;
     width: calc( 100vw / 8 * 6); }
@@ -1719,8 +1276,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 6 + 16px); }
   .ibm-col-md-7 {
     width: calc( (100vw - 32px) * 0.875); }
-  .ibm-height-md-7 {
-    min-height: calc( (100vw - 32px) * 0.875); }
   .ibm-col-md-7.ibm-col-bleed {
     max-width: 1386px;
     width: calc( 100vw / 8 * 7); }
@@ -1730,8 +1285,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 7 + 16px); }
   .ibm-col-md-8 {
     width: calc( (100vw - 32px) * 1); }
-  .ibm-height-md-8 {
-    min-height: calc( (100vw - 32px) * 1); }
   .ibm-col-md-8.ibm-col-bleed {
     max-width: 1584px;
     width: calc( 100vw / 8 * 8); }
@@ -1747,8 +1300,6 @@ html, body {
       display: flex; }
   .ibm-col-md2-1 {
     width: calc( (100vw - 32px) * 0.125); }
-  .ibm-height-md2-1 {
-    min-height: calc( (100vw - 32px) * 0.125); }
   .ibm-col-md2-1.ibm-col-bleed {
     max-width: 198px;
     width: calc( 100vw / 8 * 1); }
@@ -1758,8 +1309,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 1 + 16px); }
   .ibm-col-md2-2 {
     width: calc( (100vw - 32px) * 0.25); }
-  .ibm-height-md2-2 {
-    min-height: calc( (100vw - 32px) * 0.25); }
   .ibm-col-md2-2.ibm-col-bleed {
     max-width: 396px;
     width: calc( 100vw / 8 * 2); }
@@ -1769,8 +1318,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 2 + 16px); }
   .ibm-col-md2-3 {
     width: calc( (100vw - 32px) * 0.375); }
-  .ibm-height-md2-3 {
-    min-height: calc( (100vw - 32px) * 0.375); }
   .ibm-col-md2-3.ibm-col-bleed {
     max-width: 594px;
     width: calc( 100vw / 8 * 3); }
@@ -1780,8 +1327,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 3 + 16px); }
   .ibm-col-md2-4 {
     width: calc( (100vw - 32px) * 0.5); }
-  .ibm-height-md2-4 {
-    min-height: calc( (100vw - 32px) * 0.5); }
   .ibm-col-md2-4.ibm-col-bleed {
     max-width: 792px;
     width: calc( 100vw / 8 * 4); }
@@ -1791,8 +1336,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 4 + 16px); }
   .ibm-col-md2-5 {
     width: calc( (100vw - 32px) * 0.625); }
-  .ibm-height-md2-5 {
-    min-height: calc( (100vw - 32px) * 0.625); }
   .ibm-col-md2-5.ibm-col-bleed {
     max-width: 990px;
     width: calc( 100vw / 8 * 5); }
@@ -1802,8 +1345,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 5 + 16px); }
   .ibm-col-md2-6 {
     width: calc( (100vw - 32px) * 0.75); }
-  .ibm-height-md2-6 {
-    min-height: calc( (100vw - 32px) * 0.75); }
   .ibm-col-md2-6.ibm-col-bleed {
     max-width: 1188px;
     width: calc( 100vw / 8 * 6); }
@@ -1813,8 +1354,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 6 + 16px); }
   .ibm-col-md2-7 {
     width: calc( (100vw - 32px) * 0.875); }
-  .ibm-height-md2-7 {
-    min-height: calc( (100vw - 32px) * 0.875); }
   .ibm-col-md2-7.ibm-col-bleed {
     max-width: 1386px;
     width: calc( 100vw / 8 * 7); }
@@ -1824,8 +1363,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 7 + 16px); }
   .ibm-col-md2-8 {
     width: calc( (100vw - 32px) * 1); }
-  .ibm-height-md2-8 {
-    min-height: calc( (100vw - 32px) * 1); }
   .ibm-col-md2-8.ibm-col-bleed {
     max-width: 1584px;
     width: calc( 100vw / 8 * 8); }
@@ -1841,8 +1378,6 @@ html, body {
       display: flex; }
   .ibm-col-lg-1 {
     width: calc( (100vw - 32px) * 0.0625); }
-  .ibm-height-lg-1 {
-    min-height: calc( (100vw - 32px) * 0.0625); }
   .ibm-col-lg-1.ibm-col-bleed {
     max-width: 99px;
     width: calc( 100vw / 16 * 1); }
@@ -1852,8 +1387,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 1 + 16px); }
   .ibm-col-lg-2 {
     width: calc( (100vw - 32px) * 0.125); }
-  .ibm-height-lg-2 {
-    min-height: calc( (100vw - 32px) * 0.125); }
   .ibm-col-lg-2.ibm-col-bleed {
     max-width: 198px;
     width: calc( 100vw / 16 * 2); }
@@ -1863,8 +1396,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 2 + 16px); }
   .ibm-col-lg-3 {
     width: calc( (100vw - 32px) * 0.1875); }
-  .ibm-height-lg-3 {
-    min-height: calc( (100vw - 32px) * 0.1875); }
   .ibm-col-lg-3.ibm-col-bleed {
     max-width: 297px;
     width: calc( 100vw / 16 * 3); }
@@ -1874,8 +1405,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 3 + 16px); }
   .ibm-col-lg-4 {
     width: calc( (100vw - 32px) * 0.25); }
-  .ibm-height-lg-4 {
-    min-height: calc( (100vw - 32px) * 0.25); }
   .ibm-col-lg-4.ibm-col-bleed {
     max-width: 396px;
     width: calc( 100vw / 16 * 4); }
@@ -1885,8 +1414,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 4 + 16px); }
   .ibm-col-lg-5 {
     width: calc( (100vw - 32px) * 0.3125); }
-  .ibm-height-lg-5 {
-    min-height: calc( (100vw - 32px) * 0.3125); }
   .ibm-col-lg-5.ibm-col-bleed {
     max-width: 495px;
     width: calc( 100vw / 16 * 5); }
@@ -1896,8 +1423,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 5 + 16px); }
   .ibm-col-lg-6 {
     width: calc( (100vw - 32px) * 0.375); }
-  .ibm-height-lg-6 {
-    min-height: calc( (100vw - 32px) * 0.375); }
   .ibm-col-lg-6.ibm-col-bleed {
     max-width: 594px;
     width: calc( 100vw / 16 * 6); }
@@ -1907,8 +1432,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 6 + 16px); }
   .ibm-col-lg-7 {
     width: calc( (100vw - 32px) * 0.4375); }
-  .ibm-height-lg-7 {
-    min-height: calc( (100vw - 32px) * 0.4375); }
   .ibm-col-lg-7.ibm-col-bleed {
     max-width: 693px;
     width: calc( 100vw / 16 * 7); }
@@ -1918,8 +1441,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 7 + 16px); }
   .ibm-col-lg-8 {
     width: calc( (100vw - 32px) * 0.5); }
-  .ibm-height-lg-8 {
-    min-height: calc( (100vw - 32px) * 0.5); }
   .ibm-col-lg-8.ibm-col-bleed {
     max-width: 792px;
     width: calc( 100vw / 16 * 8); }
@@ -1929,8 +1450,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 8 + 16px); }
   .ibm-col-lg-9 {
     width: calc( (100vw - 32px) * 0.5625); }
-  .ibm-height-lg-9 {
-    min-height: calc( (100vw - 32px) * 0.5625); }
   .ibm-col-lg-9.ibm-col-bleed {
     max-width: 891px;
     width: calc( 100vw / 16 * 9); }
@@ -1940,8 +1459,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 9 + 16px); }
   .ibm-col-lg-10 {
     width: calc( (100vw - 32px) * 0.625); }
-  .ibm-height-lg-10 {
-    min-height: calc( (100vw - 32px) * 0.625); }
   .ibm-col-lg-10.ibm-col-bleed {
     max-width: 990px;
     width: calc( 100vw / 16 * 10); }
@@ -1951,8 +1468,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 10 + 16px); }
   .ibm-col-lg-11 {
     width: calc( (100vw - 32px) * 0.6875); }
-  .ibm-height-lg-11 {
-    min-height: calc( (100vw - 32px) * 0.6875); }
   .ibm-col-lg-11.ibm-col-bleed {
     max-width: 1089px;
     width: calc( 100vw / 16 * 11); }
@@ -1962,8 +1477,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 11 + 16px); }
   .ibm-col-lg-12 {
     width: calc( (100vw - 32px) * 0.75); }
-  .ibm-height-lg-12 {
-    min-height: calc( (100vw - 32px) * 0.75); }
   .ibm-col-lg-12.ibm-col-bleed {
     max-width: 1188px;
     width: calc( 100vw / 16 * 12); }
@@ -1973,8 +1486,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 12 + 16px); }
   .ibm-col-lg-13 {
     width: calc( (100vw - 32px) * 0.8125); }
-  .ibm-height-lg-13 {
-    min-height: calc( (100vw - 32px) * 0.8125); }
   .ibm-col-lg-13.ibm-col-bleed {
     max-width: 1287px;
     width: calc( 100vw / 16 * 13); }
@@ -1984,8 +1495,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 13 + 16px); }
   .ibm-col-lg-14 {
     width: calc( (100vw - 32px) * 0.875); }
-  .ibm-height-lg-14 {
-    min-height: calc( (100vw - 32px) * 0.875); }
   .ibm-col-lg-14.ibm-col-bleed {
     max-width: 1386px;
     width: calc( 100vw / 16 * 14); }
@@ -1995,8 +1504,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 14 + 16px); }
   .ibm-col-lg-15 {
     width: calc( (100vw - 32px) * 0.9375); }
-  .ibm-height-lg-15 {
-    min-height: calc( (100vw - 32px) * 0.9375); }
   .ibm-col-lg-15.ibm-col-bleed {
     max-width: 1485px;
     width: calc( 100vw / 16 * 15); }
@@ -2006,8 +1513,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 15 + 16px); }
   .ibm-col-lg-16 {
     width: calc( (100vw - 32px) * 1); }
-  .ibm-height-lg-16 {
-    min-height: calc( (100vw - 32px) * 1); }
   .ibm-col-lg-16.ibm-col-bleed {
     max-width: 1584px;
     width: calc( 100vw / 16 * 16); }
@@ -2019,8 +1524,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.0625);
     max-width: 96px;
     min-width: 20px; }
-  .ibm-height-lg2-1 {
-    min-height: calc( (100vw - 32px) * 0.0625); }
   .ibm-col-lg2-1.ibm-col-bleed {
     max-width: 99px;
     width: calc( 100vw / 16 * 1); }
@@ -2032,8 +1535,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.125);
     max-width: 192px;
     min-width: 40px; }
-  .ibm-height-lg2-2 {
-    min-height: calc( (100vw - 32px) * 0.125); }
   .ibm-col-lg2-2.ibm-col-bleed {
     max-width: 198px;
     width: calc( 100vw / 16 * 2); }
@@ -2045,8 +1546,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.1875);
     max-width: 288px;
     min-width: 60px; }
-  .ibm-height-lg2-3 {
-    min-height: calc( (100vw - 32px) * 0.1875); }
   .ibm-col-lg2-3.ibm-col-bleed {
     max-width: 297px;
     width: calc( 100vw / 16 * 3); }
@@ -2058,8 +1557,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.25);
     max-width: 384px;
     min-width: 80px; }
-  .ibm-height-lg2-4 {
-    min-height: calc( (100vw - 32px) * 0.25); }
   .ibm-col-lg2-4.ibm-col-bleed {
     max-width: 396px;
     width: calc( 100vw / 16 * 4); }
@@ -2071,8 +1568,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.3125);
     max-width: 480px;
     min-width: 100px; }
-  .ibm-height-lg2-5 {
-    min-height: calc( (100vw - 32px) * 0.3125); }
   .ibm-col-lg2-5.ibm-col-bleed {
     max-width: 495px;
     width: calc( 100vw / 16 * 5); }
@@ -2084,8 +1579,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.375);
     max-width: 576px;
     min-width: 120px; }
-  .ibm-height-lg2-6 {
-    min-height: calc( (100vw - 32px) * 0.375); }
   .ibm-col-lg2-6.ibm-col-bleed {
     max-width: 594px;
     width: calc( 100vw / 16 * 6); }
@@ -2097,8 +1590,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.4375);
     max-width: 672px;
     min-width: 140px; }
-  .ibm-height-lg2-7 {
-    min-height: calc( (100vw - 32px) * 0.4375); }
   .ibm-col-lg2-7.ibm-col-bleed {
     max-width: 693px;
     width: calc( 100vw / 16 * 7); }
@@ -2110,8 +1601,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.5);
     max-width: 768px;
     min-width: 160px; }
-  .ibm-height-lg2-8 {
-    min-height: calc( (100vw - 32px) * 0.5); }
   .ibm-col-lg2-8.ibm-col-bleed {
     max-width: 792px;
     width: calc( 100vw / 16 * 8); }
@@ -2123,8 +1612,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.5625);
     max-width: 864px;
     min-width: 180px; }
-  .ibm-height-lg2-9 {
-    min-height: calc( (100vw - 32px) * 0.5625); }
   .ibm-col-lg2-9.ibm-col-bleed {
     max-width: 891px;
     width: calc( 100vw / 16 * 9); }
@@ -2136,8 +1623,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.625);
     max-width: 960px;
     min-width: 200px; }
-  .ibm-height-lg2-10 {
-    min-height: calc( (100vw - 32px) * 0.625); }
   .ibm-col-lg2-10.ibm-col-bleed {
     max-width: 990px;
     width: calc( 100vw / 16 * 10); }
@@ -2149,8 +1634,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.6875);
     max-width: 1056px;
     min-width: 220px; }
-  .ibm-height-lg2-11 {
-    min-height: calc( (100vw - 32px) * 0.6875); }
   .ibm-col-lg2-11.ibm-col-bleed {
     max-width: 1089px;
     width: calc( 100vw / 16 * 11); }
@@ -2162,8 +1645,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.75);
     max-width: 1152px;
     min-width: 240px; }
-  .ibm-height-lg2-12 {
-    min-height: calc( (100vw - 32px) * 0.75); }
   .ibm-col-lg2-12.ibm-col-bleed {
     max-width: 1188px;
     width: calc( 100vw / 16 * 12); }
@@ -2175,8 +1656,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.8125);
     max-width: 1248px;
     min-width: 260px; }
-  .ibm-height-lg2-13 {
-    min-height: calc( (100vw - 32px) * 0.8125); }
   .ibm-col-lg2-13.ibm-col-bleed {
     max-width: 1287px;
     width: calc( 100vw / 16 * 13); }
@@ -2188,8 +1667,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.875);
     max-width: 1344px;
     min-width: 280px; }
-  .ibm-height-lg2-14 {
-    min-height: calc( (100vw - 32px) * 0.875); }
   .ibm-col-lg2-14.ibm-col-bleed {
     max-width: 1386px;
     width: calc( 100vw / 16 * 14); }
@@ -2201,8 +1678,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.9375);
     max-width: 1440px;
     min-width: 300px; }
-  .ibm-height-lg2-15 {
-    min-height: calc( (100vw - 32px) * 0.9375); }
   .ibm-col-lg2-15.ibm-col-bleed {
     max-width: 1485px;
     width: calc( 100vw / 16 * 15); }
@@ -2214,8 +1689,6 @@ html, body {
     width: calc( (100vw - 32px) * 1);
     max-width: 1536px;
     min-width: 320px; }
-  .ibm-height-lg2-16 {
-    min-height: calc( (100vw - 32px) * 1); }
   .ibm-col-lg2-16.ibm-col-bleed {
     max-width: 1584px;
     width: calc( 100vw / 16 * 16); }
@@ -2225,18 +1698,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 16 + 16px); } }
 
 @media (min-width: 1312px) {
-  .ibm-s-height-xlg-1 {
-    min-height: 8px; }
-  .ibm-s-height-xlg-2 {
-    min-height: 16px; }
-  .ibm-s-height-xlg-3 {
-    min-height: 24px; }
-  .ibm-s-height-xlg-4 {
-    min-height: 32px; }
-  .ibm-s-height-xlg-6 {
-    min-height: 48px; }
-  .ibm-s-height-xlg-8 {
-    min-height: 64px; }
   .ibm-col-xlg-0,
   .ibm-col-hide-xlg {
     display: none; }
@@ -2250,8 +1711,6 @@ html, body {
       display: flex; }
   .ibm-col-sm-1 {
     width: calc( (100vw - 32px) * 0.25); }
-  .ibm-height-sm-1 {
-    min-height: calc( (100vw - 32px) * 0.25); }
   .ibm-col-sm-1.ibm-col-bleed {
     max-width: 396px;
     width: calc( 100vw / 4 * 1); }
@@ -2261,8 +1720,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 4 * 1 + 16px); }
   .ibm-col-sm-2 {
     width: calc( (100vw - 32px) * 0.5); }
-  .ibm-height-sm-2 {
-    min-height: calc( (100vw - 32px) * 0.5); }
   .ibm-col-sm-2.ibm-col-bleed {
     max-width: 792px;
     width: calc( 100vw / 4 * 2); }
@@ -2272,8 +1729,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 4 * 2 + 16px); }
   .ibm-col-sm-3 {
     width: calc( (100vw - 32px) * 0.75); }
-  .ibm-height-sm-3 {
-    min-height: calc( (100vw - 32px) * 0.75); }
   .ibm-col-sm-3.ibm-col-bleed {
     max-width: 1188px;
     width: calc( 100vw / 4 * 3); }
@@ -2283,8 +1738,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 4 * 3 + 16px); }
   .ibm-col-sm-4 {
     width: calc( (100vw - 32px) * 1); }
-  .ibm-height-sm-4 {
-    min-height: calc( (100vw - 32px) * 1); }
   .ibm-col-sm-4.ibm-col-bleed {
     max-width: 1584px;
     width: calc( 100vw / 4 * 4); }
@@ -2300,8 +1753,6 @@ html, body {
       display: flex; }
   .ibm-col-sm2-1 {
     width: calc( (100vw - 32px) * 0.125); }
-  .ibm-height-sm2-1 {
-    min-height: calc( (100vw - 32px) * 0.125); }
   .ibm-col-sm2-1.ibm-col-bleed {
     max-width: 198px;
     width: calc( 100vw / 8 * 1); }
@@ -2311,8 +1762,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 1 + 16px); }
   .ibm-col-sm2-2 {
     width: calc( (100vw - 32px) * 0.25); }
-  .ibm-height-sm2-2 {
-    min-height: calc( (100vw - 32px) * 0.25); }
   .ibm-col-sm2-2.ibm-col-bleed {
     max-width: 396px;
     width: calc( 100vw / 8 * 2); }
@@ -2322,8 +1771,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 2 + 16px); }
   .ibm-col-sm2-3 {
     width: calc( (100vw - 32px) * 0.375); }
-  .ibm-height-sm2-3 {
-    min-height: calc( (100vw - 32px) * 0.375); }
   .ibm-col-sm2-3.ibm-col-bleed {
     max-width: 594px;
     width: calc( 100vw / 8 * 3); }
@@ -2333,8 +1780,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 3 + 16px); }
   .ibm-col-sm2-4 {
     width: calc( (100vw - 32px) * 0.5); }
-  .ibm-height-sm2-4 {
-    min-height: calc( (100vw - 32px) * 0.5); }
   .ibm-col-sm2-4.ibm-col-bleed {
     max-width: 792px;
     width: calc( 100vw / 8 * 4); }
@@ -2344,8 +1789,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 4 + 16px); }
   .ibm-col-sm2-5 {
     width: calc( (100vw - 32px) * 0.625); }
-  .ibm-height-sm2-5 {
-    min-height: calc( (100vw - 32px) * 0.625); }
   .ibm-col-sm2-5.ibm-col-bleed {
     max-width: 990px;
     width: calc( 100vw / 8 * 5); }
@@ -2355,8 +1798,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 5 + 16px); }
   .ibm-col-sm2-6 {
     width: calc( (100vw - 32px) * 0.75); }
-  .ibm-height-sm2-6 {
-    min-height: calc( (100vw - 32px) * 0.75); }
   .ibm-col-sm2-6.ibm-col-bleed {
     max-width: 1188px;
     width: calc( 100vw / 8 * 6); }
@@ -2366,8 +1807,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 6 + 16px); }
   .ibm-col-sm2-7 {
     width: calc( (100vw - 32px) * 0.875); }
-  .ibm-height-sm2-7 {
-    min-height: calc( (100vw - 32px) * 0.875); }
   .ibm-col-sm2-7.ibm-col-bleed {
     max-width: 1386px;
     width: calc( 100vw / 8 * 7); }
@@ -2377,8 +1816,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 7 + 16px); }
   .ibm-col-sm2-8 {
     width: calc( (100vw - 32px) * 1); }
-  .ibm-height-sm2-8 {
-    min-height: calc( (100vw - 32px) * 1); }
   .ibm-col-sm2-8.ibm-col-bleed {
     max-width: 1584px;
     width: calc( 100vw / 8 * 8); }
@@ -2394,8 +1831,6 @@ html, body {
       display: flex; }
   .ibm-col-sm3-1 {
     width: calc( (100vw - 32px) * 0.125); }
-  .ibm-height-sm3-1 {
-    min-height: calc( (100vw - 32px) * 0.125); }
   .ibm-col-sm3-1.ibm-col-bleed {
     max-width: 198px;
     width: calc( 100vw / 8 * 1); }
@@ -2405,8 +1840,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 1 + 16px); }
   .ibm-col-sm3-2 {
     width: calc( (100vw - 32px) * 0.25); }
-  .ibm-height-sm3-2 {
-    min-height: calc( (100vw - 32px) * 0.25); }
   .ibm-col-sm3-2.ibm-col-bleed {
     max-width: 396px;
     width: calc( 100vw / 8 * 2); }
@@ -2416,8 +1849,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 2 + 16px); }
   .ibm-col-sm3-3 {
     width: calc( (100vw - 32px) * 0.375); }
-  .ibm-height-sm3-3 {
-    min-height: calc( (100vw - 32px) * 0.375); }
   .ibm-col-sm3-3.ibm-col-bleed {
     max-width: 594px;
     width: calc( 100vw / 8 * 3); }
@@ -2427,8 +1858,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 3 + 16px); }
   .ibm-col-sm3-4 {
     width: calc( (100vw - 32px) * 0.5); }
-  .ibm-height-sm3-4 {
-    min-height: calc( (100vw - 32px) * 0.5); }
   .ibm-col-sm3-4.ibm-col-bleed {
     max-width: 792px;
     width: calc( 100vw / 8 * 4); }
@@ -2438,8 +1867,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 4 + 16px); }
   .ibm-col-sm3-5 {
     width: calc( (100vw - 32px) * 0.625); }
-  .ibm-height-sm3-5 {
-    min-height: calc( (100vw - 32px) * 0.625); }
   .ibm-col-sm3-5.ibm-col-bleed {
     max-width: 990px;
     width: calc( 100vw / 8 * 5); }
@@ -2449,8 +1876,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 5 + 16px); }
   .ibm-col-sm3-6 {
     width: calc( (100vw - 32px) * 0.75); }
-  .ibm-height-sm3-6 {
-    min-height: calc( (100vw - 32px) * 0.75); }
   .ibm-col-sm3-6.ibm-col-bleed {
     max-width: 1188px;
     width: calc( 100vw / 8 * 6); }
@@ -2460,8 +1885,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 6 + 16px); }
   .ibm-col-sm3-7 {
     width: calc( (100vw - 32px) * 0.875); }
-  .ibm-height-sm3-7 {
-    min-height: calc( (100vw - 32px) * 0.875); }
   .ibm-col-sm3-7.ibm-col-bleed {
     max-width: 1386px;
     width: calc( 100vw / 8 * 7); }
@@ -2471,8 +1894,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 7 + 16px); }
   .ibm-col-sm3-8 {
     width: calc( (100vw - 32px) * 1); }
-  .ibm-height-sm3-8 {
-    min-height: calc( (100vw - 32px) * 1); }
   .ibm-col-sm3-8.ibm-col-bleed {
     max-width: 1584px;
     width: calc( 100vw / 8 * 8); }
@@ -2488,8 +1909,6 @@ html, body {
       display: flex; }
   .ibm-col-md-1 {
     width: calc( (100vw - 32px) * 0.125); }
-  .ibm-height-md-1 {
-    min-height: calc( (100vw - 32px) * 0.125); }
   .ibm-col-md-1.ibm-col-bleed {
     max-width: 198px;
     width: calc( 100vw / 8 * 1); }
@@ -2499,8 +1918,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 1 + 16px); }
   .ibm-col-md-2 {
     width: calc( (100vw - 32px) * 0.25); }
-  .ibm-height-md-2 {
-    min-height: calc( (100vw - 32px) * 0.25); }
   .ibm-col-md-2.ibm-col-bleed {
     max-width: 396px;
     width: calc( 100vw / 8 * 2); }
@@ -2510,8 +1927,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 2 + 16px); }
   .ibm-col-md-3 {
     width: calc( (100vw - 32px) * 0.375); }
-  .ibm-height-md-3 {
-    min-height: calc( (100vw - 32px) * 0.375); }
   .ibm-col-md-3.ibm-col-bleed {
     max-width: 594px;
     width: calc( 100vw / 8 * 3); }
@@ -2521,8 +1936,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 3 + 16px); }
   .ibm-col-md-4 {
     width: calc( (100vw - 32px) * 0.5); }
-  .ibm-height-md-4 {
-    min-height: calc( (100vw - 32px) * 0.5); }
   .ibm-col-md-4.ibm-col-bleed {
     max-width: 792px;
     width: calc( 100vw / 8 * 4); }
@@ -2532,8 +1945,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 4 + 16px); }
   .ibm-col-md-5 {
     width: calc( (100vw - 32px) * 0.625); }
-  .ibm-height-md-5 {
-    min-height: calc( (100vw - 32px) * 0.625); }
   .ibm-col-md-5.ibm-col-bleed {
     max-width: 990px;
     width: calc( 100vw / 8 * 5); }
@@ -2543,8 +1954,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 5 + 16px); }
   .ibm-col-md-6 {
     width: calc( (100vw - 32px) * 0.75); }
-  .ibm-height-md-6 {
-    min-height: calc( (100vw - 32px) * 0.75); }
   .ibm-col-md-6.ibm-col-bleed {
     max-width: 1188px;
     width: calc( 100vw / 8 * 6); }
@@ -2554,8 +1963,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 6 + 16px); }
   .ibm-col-md-7 {
     width: calc( (100vw - 32px) * 0.875); }
-  .ibm-height-md-7 {
-    min-height: calc( (100vw - 32px) * 0.875); }
   .ibm-col-md-7.ibm-col-bleed {
     max-width: 1386px;
     width: calc( 100vw / 8 * 7); }
@@ -2565,8 +1972,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 7 + 16px); }
   .ibm-col-md-8 {
     width: calc( (100vw - 32px) * 1); }
-  .ibm-height-md-8 {
-    min-height: calc( (100vw - 32px) * 1); }
   .ibm-col-md-8.ibm-col-bleed {
     max-width: 1584px;
     width: calc( 100vw / 8 * 8); }
@@ -2582,8 +1987,6 @@ html, body {
       display: flex; }
   .ibm-col-md2-1 {
     width: calc( (100vw - 32px) * 0.125); }
-  .ibm-height-md2-1 {
-    min-height: calc( (100vw - 32px) * 0.125); }
   .ibm-col-md2-1.ibm-col-bleed {
     max-width: 198px;
     width: calc( 100vw / 8 * 1); }
@@ -2593,8 +1996,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 1 + 16px); }
   .ibm-col-md2-2 {
     width: calc( (100vw - 32px) * 0.25); }
-  .ibm-height-md2-2 {
-    min-height: calc( (100vw - 32px) * 0.25); }
   .ibm-col-md2-2.ibm-col-bleed {
     max-width: 396px;
     width: calc( 100vw / 8 * 2); }
@@ -2604,8 +2005,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 2 + 16px); }
   .ibm-col-md2-3 {
     width: calc( (100vw - 32px) * 0.375); }
-  .ibm-height-md2-3 {
-    min-height: calc( (100vw - 32px) * 0.375); }
   .ibm-col-md2-3.ibm-col-bleed {
     max-width: 594px;
     width: calc( 100vw / 8 * 3); }
@@ -2615,8 +2014,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 3 + 16px); }
   .ibm-col-md2-4 {
     width: calc( (100vw - 32px) * 0.5); }
-  .ibm-height-md2-4 {
-    min-height: calc( (100vw - 32px) * 0.5); }
   .ibm-col-md2-4.ibm-col-bleed {
     max-width: 792px;
     width: calc( 100vw / 8 * 4); }
@@ -2626,8 +2023,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 4 + 16px); }
   .ibm-col-md2-5 {
     width: calc( (100vw - 32px) * 0.625); }
-  .ibm-height-md2-5 {
-    min-height: calc( (100vw - 32px) * 0.625); }
   .ibm-col-md2-5.ibm-col-bleed {
     max-width: 990px;
     width: calc( 100vw / 8 * 5); }
@@ -2637,8 +2032,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 5 + 16px); }
   .ibm-col-md2-6 {
     width: calc( (100vw - 32px) * 0.75); }
-  .ibm-height-md2-6 {
-    min-height: calc( (100vw - 32px) * 0.75); }
   .ibm-col-md2-6.ibm-col-bleed {
     max-width: 1188px;
     width: calc( 100vw / 8 * 6); }
@@ -2648,8 +2041,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 6 + 16px); }
   .ibm-col-md2-7 {
     width: calc( (100vw - 32px) * 0.875); }
-  .ibm-height-md2-7 {
-    min-height: calc( (100vw - 32px) * 0.875); }
   .ibm-col-md2-7.ibm-col-bleed {
     max-width: 1386px;
     width: calc( 100vw / 8 * 7); }
@@ -2659,8 +2050,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 8 * 7 + 16px); }
   .ibm-col-md2-8 {
     width: calc( (100vw - 32px) * 1); }
-  .ibm-height-md2-8 {
-    min-height: calc( (100vw - 32px) * 1); }
   .ibm-col-md2-8.ibm-col-bleed {
     max-width: 1584px;
     width: calc( 100vw / 8 * 8); }
@@ -2676,8 +2065,6 @@ html, body {
       display: flex; }
   .ibm-col-lg-1 {
     width: calc( (100vw - 32px) * 0.0625); }
-  .ibm-height-lg-1 {
-    min-height: calc( (100vw - 32px) * 0.0625); }
   .ibm-col-lg-1.ibm-col-bleed {
     max-width: 99px;
     width: calc( 100vw / 16 * 1); }
@@ -2687,8 +2074,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 1 + 16px); }
   .ibm-col-lg-2 {
     width: calc( (100vw - 32px) * 0.125); }
-  .ibm-height-lg-2 {
-    min-height: calc( (100vw - 32px) * 0.125); }
   .ibm-col-lg-2.ibm-col-bleed {
     max-width: 198px;
     width: calc( 100vw / 16 * 2); }
@@ -2698,8 +2083,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 2 + 16px); }
   .ibm-col-lg-3 {
     width: calc( (100vw - 32px) * 0.1875); }
-  .ibm-height-lg-3 {
-    min-height: calc( (100vw - 32px) * 0.1875); }
   .ibm-col-lg-3.ibm-col-bleed {
     max-width: 297px;
     width: calc( 100vw / 16 * 3); }
@@ -2709,8 +2092,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 3 + 16px); }
   .ibm-col-lg-4 {
     width: calc( (100vw - 32px) * 0.25); }
-  .ibm-height-lg-4 {
-    min-height: calc( (100vw - 32px) * 0.25); }
   .ibm-col-lg-4.ibm-col-bleed {
     max-width: 396px;
     width: calc( 100vw / 16 * 4); }
@@ -2720,8 +2101,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 4 + 16px); }
   .ibm-col-lg-5 {
     width: calc( (100vw - 32px) * 0.3125); }
-  .ibm-height-lg-5 {
-    min-height: calc( (100vw - 32px) * 0.3125); }
   .ibm-col-lg-5.ibm-col-bleed {
     max-width: 495px;
     width: calc( 100vw / 16 * 5); }
@@ -2731,8 +2110,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 5 + 16px); }
   .ibm-col-lg-6 {
     width: calc( (100vw - 32px) * 0.375); }
-  .ibm-height-lg-6 {
-    min-height: calc( (100vw - 32px) * 0.375); }
   .ibm-col-lg-6.ibm-col-bleed {
     max-width: 594px;
     width: calc( 100vw / 16 * 6); }
@@ -2742,8 +2119,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 6 + 16px); }
   .ibm-col-lg-7 {
     width: calc( (100vw - 32px) * 0.4375); }
-  .ibm-height-lg-7 {
-    min-height: calc( (100vw - 32px) * 0.4375); }
   .ibm-col-lg-7.ibm-col-bleed {
     max-width: 693px;
     width: calc( 100vw / 16 * 7); }
@@ -2753,8 +2128,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 7 + 16px); }
   .ibm-col-lg-8 {
     width: calc( (100vw - 32px) * 0.5); }
-  .ibm-height-lg-8 {
-    min-height: calc( (100vw - 32px) * 0.5); }
   .ibm-col-lg-8.ibm-col-bleed {
     max-width: 792px;
     width: calc( 100vw / 16 * 8); }
@@ -2764,8 +2137,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 8 + 16px); }
   .ibm-col-lg-9 {
     width: calc( (100vw - 32px) * 0.5625); }
-  .ibm-height-lg-9 {
-    min-height: calc( (100vw - 32px) * 0.5625); }
   .ibm-col-lg-9.ibm-col-bleed {
     max-width: 891px;
     width: calc( 100vw / 16 * 9); }
@@ -2775,8 +2146,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 9 + 16px); }
   .ibm-col-lg-10 {
     width: calc( (100vw - 32px) * 0.625); }
-  .ibm-height-lg-10 {
-    min-height: calc( (100vw - 32px) * 0.625); }
   .ibm-col-lg-10.ibm-col-bleed {
     max-width: 990px;
     width: calc( 100vw / 16 * 10); }
@@ -2786,8 +2155,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 10 + 16px); }
   .ibm-col-lg-11 {
     width: calc( (100vw - 32px) * 0.6875); }
-  .ibm-height-lg-11 {
-    min-height: calc( (100vw - 32px) * 0.6875); }
   .ibm-col-lg-11.ibm-col-bleed {
     max-width: 1089px;
     width: calc( 100vw / 16 * 11); }
@@ -2797,8 +2164,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 11 + 16px); }
   .ibm-col-lg-12 {
     width: calc( (100vw - 32px) * 0.75); }
-  .ibm-height-lg-12 {
-    min-height: calc( (100vw - 32px) * 0.75); }
   .ibm-col-lg-12.ibm-col-bleed {
     max-width: 1188px;
     width: calc( 100vw / 16 * 12); }
@@ -2808,8 +2173,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 12 + 16px); }
   .ibm-col-lg-13 {
     width: calc( (100vw - 32px) * 0.8125); }
-  .ibm-height-lg-13 {
-    min-height: calc( (100vw - 32px) * 0.8125); }
   .ibm-col-lg-13.ibm-col-bleed {
     max-width: 1287px;
     width: calc( 100vw / 16 * 13); }
@@ -2819,8 +2182,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 13 + 16px); }
   .ibm-col-lg-14 {
     width: calc( (100vw - 32px) * 0.875); }
-  .ibm-height-lg-14 {
-    min-height: calc( (100vw - 32px) * 0.875); }
   .ibm-col-lg-14.ibm-col-bleed {
     max-width: 1386px;
     width: calc( 100vw / 16 * 14); }
@@ -2830,8 +2191,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 14 + 16px); }
   .ibm-col-lg-15 {
     width: calc( (100vw - 32px) * 0.9375); }
-  .ibm-height-lg-15 {
-    min-height: calc( (100vw - 32px) * 0.9375); }
   .ibm-col-lg-15.ibm-col-bleed {
     max-width: 1485px;
     width: calc( 100vw / 16 * 15); }
@@ -2841,8 +2200,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 15 + 16px); }
   .ibm-col-lg-16 {
     width: calc( (100vw - 32px) * 1); }
-  .ibm-height-lg-16 {
-    min-height: calc( (100vw - 32px) * 1); }
   .ibm-col-lg-16.ibm-col-bleed {
     max-width: 1584px;
     width: calc( 100vw / 16 * 16); }
@@ -2858,8 +2215,6 @@ html, body {
       display: flex; }
   .ibm-col-lg2-1 {
     width: calc( (100vw - 32px) * 0.0625); }
-  .ibm-height-lg2-1 {
-    min-height: calc( (100vw - 32px) * 0.0625); }
   .ibm-col-lg2-1.ibm-col-bleed {
     max-width: 99px;
     width: calc( 100vw / 16 * 1); }
@@ -2869,8 +2224,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 1 + 16px); }
   .ibm-col-lg2-2 {
     width: calc( (100vw - 32px) * 0.125); }
-  .ibm-height-lg2-2 {
-    min-height: calc( (100vw - 32px) * 0.125); }
   .ibm-col-lg2-2.ibm-col-bleed {
     max-width: 198px;
     width: calc( 100vw / 16 * 2); }
@@ -2880,8 +2233,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 2 + 16px); }
   .ibm-col-lg2-3 {
     width: calc( (100vw - 32px) * 0.1875); }
-  .ibm-height-lg2-3 {
-    min-height: calc( (100vw - 32px) * 0.1875); }
   .ibm-col-lg2-3.ibm-col-bleed {
     max-width: 297px;
     width: calc( 100vw / 16 * 3); }
@@ -2891,8 +2242,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 3 + 16px); }
   .ibm-col-lg2-4 {
     width: calc( (100vw - 32px) * 0.25); }
-  .ibm-height-lg2-4 {
-    min-height: calc( (100vw - 32px) * 0.25); }
   .ibm-col-lg2-4.ibm-col-bleed {
     max-width: 396px;
     width: calc( 100vw / 16 * 4); }
@@ -2902,8 +2251,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 4 + 16px); }
   .ibm-col-lg2-5 {
     width: calc( (100vw - 32px) * 0.3125); }
-  .ibm-height-lg2-5 {
-    min-height: calc( (100vw - 32px) * 0.3125); }
   .ibm-col-lg2-5.ibm-col-bleed {
     max-width: 495px;
     width: calc( 100vw / 16 * 5); }
@@ -2913,8 +2260,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 5 + 16px); }
   .ibm-col-lg2-6 {
     width: calc( (100vw - 32px) * 0.375); }
-  .ibm-height-lg2-6 {
-    min-height: calc( (100vw - 32px) * 0.375); }
   .ibm-col-lg2-6.ibm-col-bleed {
     max-width: 594px;
     width: calc( 100vw / 16 * 6); }
@@ -2924,8 +2269,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 6 + 16px); }
   .ibm-col-lg2-7 {
     width: calc( (100vw - 32px) * 0.4375); }
-  .ibm-height-lg2-7 {
-    min-height: calc( (100vw - 32px) * 0.4375); }
   .ibm-col-lg2-7.ibm-col-bleed {
     max-width: 693px;
     width: calc( 100vw / 16 * 7); }
@@ -2935,8 +2278,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 7 + 16px); }
   .ibm-col-lg2-8 {
     width: calc( (100vw - 32px) * 0.5); }
-  .ibm-height-lg2-8 {
-    min-height: calc( (100vw - 32px) * 0.5); }
   .ibm-col-lg2-8.ibm-col-bleed {
     max-width: 792px;
     width: calc( 100vw / 16 * 8); }
@@ -2946,8 +2287,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 8 + 16px); }
   .ibm-col-lg2-9 {
     width: calc( (100vw - 32px) * 0.5625); }
-  .ibm-height-lg2-9 {
-    min-height: calc( (100vw - 32px) * 0.5625); }
   .ibm-col-lg2-9.ibm-col-bleed {
     max-width: 891px;
     width: calc( 100vw / 16 * 9); }
@@ -2957,8 +2296,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 9 + 16px); }
   .ibm-col-lg2-10 {
     width: calc( (100vw - 32px) * 0.625); }
-  .ibm-height-lg2-10 {
-    min-height: calc( (100vw - 32px) * 0.625); }
   .ibm-col-lg2-10.ibm-col-bleed {
     max-width: 990px;
     width: calc( 100vw / 16 * 10); }
@@ -2968,8 +2305,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 10 + 16px); }
   .ibm-col-lg2-11 {
     width: calc( (100vw - 32px) * 0.6875); }
-  .ibm-height-lg2-11 {
-    min-height: calc( (100vw - 32px) * 0.6875); }
   .ibm-col-lg2-11.ibm-col-bleed {
     max-width: 1089px;
     width: calc( 100vw / 16 * 11); }
@@ -2979,8 +2314,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 11 + 16px); }
   .ibm-col-lg2-12 {
     width: calc( (100vw - 32px) * 0.75); }
-  .ibm-height-lg2-12 {
-    min-height: calc( (100vw - 32px) * 0.75); }
   .ibm-col-lg2-12.ibm-col-bleed {
     max-width: 1188px;
     width: calc( 100vw / 16 * 12); }
@@ -2990,8 +2323,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 12 + 16px); }
   .ibm-col-lg2-13 {
     width: calc( (100vw - 32px) * 0.8125); }
-  .ibm-height-lg2-13 {
-    min-height: calc( (100vw - 32px) * 0.8125); }
   .ibm-col-lg2-13.ibm-col-bleed {
     max-width: 1287px;
     width: calc( 100vw / 16 * 13); }
@@ -3001,8 +2332,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 13 + 16px); }
   .ibm-col-lg2-14 {
     width: calc( (100vw - 32px) * 0.875); }
-  .ibm-height-lg2-14 {
-    min-height: calc( (100vw - 32px) * 0.875); }
   .ibm-col-lg2-14.ibm-col-bleed {
     max-width: 1386px;
     width: calc( 100vw / 16 * 14); }
@@ -3012,8 +2341,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 14 + 16px); }
   .ibm-col-lg2-15 {
     width: calc( (100vw - 32px) * 0.9375); }
-  .ibm-height-lg2-15 {
-    min-height: calc( (100vw - 32px) * 0.9375); }
   .ibm-col-lg2-15.ibm-col-bleed {
     max-width: 1485px;
     width: calc( 100vw / 16 * 15); }
@@ -3023,8 +2350,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 15 + 16px); }
   .ibm-col-lg2-16 {
     width: calc( (100vw - 32px) * 1); }
-  .ibm-height-lg2-16 {
-    min-height: calc( (100vw - 32px) * 1); }
   .ibm-col-lg2-16.ibm-col-bleed {
     max-width: 1584px;
     width: calc( 100vw / 16 * 16); }
@@ -3036,8 +2361,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.0625);
     max-width: 96px;
     min-width: 20px; }
-  .ibm-height-xlg-1 {
-    min-height: calc( (100vw - 32px) * 0.0625); }
   .ibm-col-xlg-1.ibm-col-bleed {
     max-width: 99px;
     width: calc( 100vw / 16 * 1); }
@@ -3049,8 +2372,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.125);
     max-width: 192px;
     min-width: 40px; }
-  .ibm-height-xlg-2 {
-    min-height: calc( (100vw - 32px) * 0.125); }
   .ibm-col-xlg-2.ibm-col-bleed {
     max-width: 198px;
     width: calc( 100vw / 16 * 2); }
@@ -3062,8 +2383,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.1875);
     max-width: 288px;
     min-width: 60px; }
-  .ibm-height-xlg-3 {
-    min-height: calc( (100vw - 32px) * 0.1875); }
   .ibm-col-xlg-3.ibm-col-bleed {
     max-width: 297px;
     width: calc( 100vw / 16 * 3); }
@@ -3075,8 +2394,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.25);
     max-width: 384px;
     min-width: 80px; }
-  .ibm-height-xlg-4 {
-    min-height: calc( (100vw - 32px) * 0.25); }
   .ibm-col-xlg-4.ibm-col-bleed {
     max-width: 396px;
     width: calc( 100vw / 16 * 4); }
@@ -3088,8 +2405,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.3125);
     max-width: 480px;
     min-width: 100px; }
-  .ibm-height-xlg-5 {
-    min-height: calc( (100vw - 32px) * 0.3125); }
   .ibm-col-xlg-5.ibm-col-bleed {
     max-width: 495px;
     width: calc( 100vw / 16 * 5); }
@@ -3101,8 +2416,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.375);
     max-width: 576px;
     min-width: 120px; }
-  .ibm-height-xlg-6 {
-    min-height: calc( (100vw - 32px) * 0.375); }
   .ibm-col-xlg-6.ibm-col-bleed {
     max-width: 594px;
     width: calc( 100vw / 16 * 6); }
@@ -3114,8 +2427,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.4375);
     max-width: 672px;
     min-width: 140px; }
-  .ibm-height-xlg-7 {
-    min-height: calc( (100vw - 32px) * 0.4375); }
   .ibm-col-xlg-7.ibm-col-bleed {
     max-width: 693px;
     width: calc( 100vw / 16 * 7); }
@@ -3127,8 +2438,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.5);
     max-width: 768px;
     min-width: 160px; }
-  .ibm-height-xlg-8 {
-    min-height: calc( (100vw - 32px) * 0.5); }
   .ibm-col-xlg-8.ibm-col-bleed {
     max-width: 792px;
     width: calc( 100vw / 16 * 8); }
@@ -3140,8 +2449,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.5625);
     max-width: 864px;
     min-width: 180px; }
-  .ibm-height-xlg-9 {
-    min-height: calc( (100vw - 32px) * 0.5625); }
   .ibm-col-xlg-9.ibm-col-bleed {
     max-width: 891px;
     width: calc( 100vw / 16 * 9); }
@@ -3153,8 +2460,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.625);
     max-width: 960px;
     min-width: 200px; }
-  .ibm-height-xlg-10 {
-    min-height: calc( (100vw - 32px) * 0.625); }
   .ibm-col-xlg-10.ibm-col-bleed {
     max-width: 990px;
     width: calc( 100vw / 16 * 10); }
@@ -3166,8 +2471,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.6875);
     max-width: 1056px;
     min-width: 220px; }
-  .ibm-height-xlg-11 {
-    min-height: calc( (100vw - 32px) * 0.6875); }
   .ibm-col-xlg-11.ibm-col-bleed {
     max-width: 1089px;
     width: calc( 100vw / 16 * 11); }
@@ -3179,8 +2482,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.75);
     max-width: 1152px;
     min-width: 240px; }
-  .ibm-height-xlg-12 {
-    min-height: calc( (100vw - 32px) * 0.75); }
   .ibm-col-xlg-12.ibm-col-bleed {
     max-width: 1188px;
     width: calc( 100vw / 16 * 12); }
@@ -3192,8 +2493,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.8125);
     max-width: 1248px;
     min-width: 260px; }
-  .ibm-height-xlg-13 {
-    min-height: calc( (100vw - 32px) * 0.8125); }
   .ibm-col-xlg-13.ibm-col-bleed {
     max-width: 1287px;
     width: calc( 100vw / 16 * 13); }
@@ -3205,8 +2504,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.875);
     max-width: 1344px;
     min-width: 280px; }
-  .ibm-height-xlg-14 {
-    min-height: calc( (100vw - 32px) * 0.875); }
   .ibm-col-xlg-14.ibm-col-bleed {
     max-width: 1386px;
     width: calc( 100vw / 16 * 14); }
@@ -3218,8 +2515,6 @@ html, body {
     width: calc( (100vw - 32px) * 0.9375);
     max-width: 1440px;
     min-width: 300px; }
-  .ibm-height-xlg-15 {
-    min-height: calc( (100vw - 32px) * 0.9375); }
   .ibm-col-xlg-15.ibm-col-bleed {
     max-width: 1485px;
     width: calc( 100vw / 16 * 15); }
@@ -3231,8 +2526,6 @@ html, body {
     width: calc( (100vw - 32px) * 1);
     max-width: 1536px;
     min-width: 320px; }
-  .ibm-height-xlg-16 {
-    min-height: calc( (100vw - 32px) * 1); }
   .ibm-col-xlg-16.ibm-col-bleed {
     max-width: 1584px;
     width: calc( 100vw / 16 * 16); }
@@ -3242,18 +2535,6 @@ html, body {
     width: calc( (100vw - (16px) * 1 * 2) / 16 * 16 + 16px); } }
 
 @media (min-width: 1456px) {
-  .ibm-s-height-xlg2-1 {
-    min-height: 12px; }
-  .ibm-s-height-xlg2-2 {
-    min-height: 24px; }
-  .ibm-s-height-xlg2-3 {
-    min-height: 36px; }
-  .ibm-s-height-xlg2-4 {
-    min-height: 48px; }
-  .ibm-s-height-xlg2-6 {
-    min-height: 72px; }
-  .ibm-s-height-xlg2-8 {
-    min-height: 96px; }
   .ibm-col-xlg2-0,
   .ibm-col-hide-xlg2 {
     display: none; }
@@ -3267,8 +2548,6 @@ html, body {
       display: flex; }
   .ibm-col-sm-1 {
     width: calc( (100vw - 48px) * 0.25); }
-  .ibm-height-sm-1 {
-    min-height: calc( (100vw - 48px) * 0.25); }
   .ibm-col-sm-1.ibm-col-bleed {
     max-width: 396px;
     width: calc( 100vw / 4 * 1); }
@@ -3278,8 +2557,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 4 * 1 + 24px); }
   .ibm-col-sm-2 {
     width: calc( (100vw - 48px) * 0.5); }
-  .ibm-height-sm-2 {
-    min-height: calc( (100vw - 48px) * 0.5); }
   .ibm-col-sm-2.ibm-col-bleed {
     max-width: 792px;
     width: calc( 100vw / 4 * 2); }
@@ -3289,8 +2566,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 4 * 2 + 24px); }
   .ibm-col-sm-3 {
     width: calc( (100vw - 48px) * 0.75); }
-  .ibm-height-sm-3 {
-    min-height: calc( (100vw - 48px) * 0.75); }
   .ibm-col-sm-3.ibm-col-bleed {
     max-width: 1188px;
     width: calc( 100vw / 4 * 3); }
@@ -3300,8 +2575,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 4 * 3 + 24px); }
   .ibm-col-sm-4 {
     width: calc( (100vw - 48px) * 1); }
-  .ibm-height-sm-4 {
-    min-height: calc( (100vw - 48px) * 1); }
   .ibm-col-sm-4.ibm-col-bleed {
     max-width: 1584px;
     width: calc( 100vw / 4 * 4); }
@@ -3317,8 +2590,6 @@ html, body {
       display: flex; }
   .ibm-col-sm2-1 {
     width: calc( (100vw - 48px) * 0.125); }
-  .ibm-height-sm2-1 {
-    min-height: calc( (100vw - 48px) * 0.125); }
   .ibm-col-sm2-1.ibm-col-bleed {
     max-width: 198px;
     width: calc( 100vw / 8 * 1); }
@@ -3328,8 +2599,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 8 * 1 + 24px); }
   .ibm-col-sm2-2 {
     width: calc( (100vw - 48px) * 0.25); }
-  .ibm-height-sm2-2 {
-    min-height: calc( (100vw - 48px) * 0.25); }
   .ibm-col-sm2-2.ibm-col-bleed {
     max-width: 396px;
     width: calc( 100vw / 8 * 2); }
@@ -3339,8 +2608,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 8 * 2 + 24px); }
   .ibm-col-sm2-3 {
     width: calc( (100vw - 48px) * 0.375); }
-  .ibm-height-sm2-3 {
-    min-height: calc( (100vw - 48px) * 0.375); }
   .ibm-col-sm2-3.ibm-col-bleed {
     max-width: 594px;
     width: calc( 100vw / 8 * 3); }
@@ -3350,8 +2617,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 8 * 3 + 24px); }
   .ibm-col-sm2-4 {
     width: calc( (100vw - 48px) * 0.5); }
-  .ibm-height-sm2-4 {
-    min-height: calc( (100vw - 48px) * 0.5); }
   .ibm-col-sm2-4.ibm-col-bleed {
     max-width: 792px;
     width: calc( 100vw / 8 * 4); }
@@ -3361,8 +2626,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 8 * 4 + 24px); }
   .ibm-col-sm2-5 {
     width: calc( (100vw - 48px) * 0.625); }
-  .ibm-height-sm2-5 {
-    min-height: calc( (100vw - 48px) * 0.625); }
   .ibm-col-sm2-5.ibm-col-bleed {
     max-width: 990px;
     width: calc( 100vw / 8 * 5); }
@@ -3372,8 +2635,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 8 * 5 + 24px); }
   .ibm-col-sm2-6 {
     width: calc( (100vw - 48px) * 0.75); }
-  .ibm-height-sm2-6 {
-    min-height: calc( (100vw - 48px) * 0.75); }
   .ibm-col-sm2-6.ibm-col-bleed {
     max-width: 1188px;
     width: calc( 100vw / 8 * 6); }
@@ -3383,8 +2644,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 8 * 6 + 24px); }
   .ibm-col-sm2-7 {
     width: calc( (100vw - 48px) * 0.875); }
-  .ibm-height-sm2-7 {
-    min-height: calc( (100vw - 48px) * 0.875); }
   .ibm-col-sm2-7.ibm-col-bleed {
     max-width: 1386px;
     width: calc( 100vw / 8 * 7); }
@@ -3394,8 +2653,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 8 * 7 + 24px); }
   .ibm-col-sm2-8 {
     width: calc( (100vw - 48px) * 1); }
-  .ibm-height-sm2-8 {
-    min-height: calc( (100vw - 48px) * 1); }
   .ibm-col-sm2-8.ibm-col-bleed {
     max-width: 1584px;
     width: calc( 100vw / 8 * 8); }
@@ -3411,8 +2668,6 @@ html, body {
       display: flex; }
   .ibm-col-sm3-1 {
     width: calc( (100vw - 48px) * 0.125); }
-  .ibm-height-sm3-1 {
-    min-height: calc( (100vw - 48px) * 0.125); }
   .ibm-col-sm3-1.ibm-col-bleed {
     max-width: 198px;
     width: calc( 100vw / 8 * 1); }
@@ -3422,8 +2677,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 8 * 1 + 24px); }
   .ibm-col-sm3-2 {
     width: calc( (100vw - 48px) * 0.25); }
-  .ibm-height-sm3-2 {
-    min-height: calc( (100vw - 48px) * 0.25); }
   .ibm-col-sm3-2.ibm-col-bleed {
     max-width: 396px;
     width: calc( 100vw / 8 * 2); }
@@ -3433,8 +2686,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 8 * 2 + 24px); }
   .ibm-col-sm3-3 {
     width: calc( (100vw - 48px) * 0.375); }
-  .ibm-height-sm3-3 {
-    min-height: calc( (100vw - 48px) * 0.375); }
   .ibm-col-sm3-3.ibm-col-bleed {
     max-width: 594px;
     width: calc( 100vw / 8 * 3); }
@@ -3444,8 +2695,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 8 * 3 + 24px); }
   .ibm-col-sm3-4 {
     width: calc( (100vw - 48px) * 0.5); }
-  .ibm-height-sm3-4 {
-    min-height: calc( (100vw - 48px) * 0.5); }
   .ibm-col-sm3-4.ibm-col-bleed {
     max-width: 792px;
     width: calc( 100vw / 8 * 4); }
@@ -3455,8 +2704,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 8 * 4 + 24px); }
   .ibm-col-sm3-5 {
     width: calc( (100vw - 48px) * 0.625); }
-  .ibm-height-sm3-5 {
-    min-height: calc( (100vw - 48px) * 0.625); }
   .ibm-col-sm3-5.ibm-col-bleed {
     max-width: 990px;
     width: calc( 100vw / 8 * 5); }
@@ -3466,8 +2713,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 8 * 5 + 24px); }
   .ibm-col-sm3-6 {
     width: calc( (100vw - 48px) * 0.75); }
-  .ibm-height-sm3-6 {
-    min-height: calc( (100vw - 48px) * 0.75); }
   .ibm-col-sm3-6.ibm-col-bleed {
     max-width: 1188px;
     width: calc( 100vw / 8 * 6); }
@@ -3477,8 +2722,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 8 * 6 + 24px); }
   .ibm-col-sm3-7 {
     width: calc( (100vw - 48px) * 0.875); }
-  .ibm-height-sm3-7 {
-    min-height: calc( (100vw - 48px) * 0.875); }
   .ibm-col-sm3-7.ibm-col-bleed {
     max-width: 1386px;
     width: calc( 100vw / 8 * 7); }
@@ -3488,8 +2731,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 8 * 7 + 24px); }
   .ibm-col-sm3-8 {
     width: calc( (100vw - 48px) * 1); }
-  .ibm-height-sm3-8 {
-    min-height: calc( (100vw - 48px) * 1); }
   .ibm-col-sm3-8.ibm-col-bleed {
     max-width: 1584px;
     width: calc( 100vw / 8 * 8); }
@@ -3505,8 +2746,6 @@ html, body {
       display: flex; }
   .ibm-col-md-1 {
     width: calc( (100vw - 48px) * 0.125); }
-  .ibm-height-md-1 {
-    min-height: calc( (100vw - 48px) * 0.125); }
   .ibm-col-md-1.ibm-col-bleed {
     max-width: 198px;
     width: calc( 100vw / 8 * 1); }
@@ -3516,8 +2755,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 8 * 1 + 24px); }
   .ibm-col-md-2 {
     width: calc( (100vw - 48px) * 0.25); }
-  .ibm-height-md-2 {
-    min-height: calc( (100vw - 48px) * 0.25); }
   .ibm-col-md-2.ibm-col-bleed {
     max-width: 396px;
     width: calc( 100vw / 8 * 2); }
@@ -3527,8 +2764,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 8 * 2 + 24px); }
   .ibm-col-md-3 {
     width: calc( (100vw - 48px) * 0.375); }
-  .ibm-height-md-3 {
-    min-height: calc( (100vw - 48px) * 0.375); }
   .ibm-col-md-3.ibm-col-bleed {
     max-width: 594px;
     width: calc( 100vw / 8 * 3); }
@@ -3538,8 +2773,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 8 * 3 + 24px); }
   .ibm-col-md-4 {
     width: calc( (100vw - 48px) * 0.5); }
-  .ibm-height-md-4 {
-    min-height: calc( (100vw - 48px) * 0.5); }
   .ibm-col-md-4.ibm-col-bleed {
     max-width: 792px;
     width: calc( 100vw / 8 * 4); }
@@ -3549,8 +2782,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 8 * 4 + 24px); }
   .ibm-col-md-5 {
     width: calc( (100vw - 48px) * 0.625); }
-  .ibm-height-md-5 {
-    min-height: calc( (100vw - 48px) * 0.625); }
   .ibm-col-md-5.ibm-col-bleed {
     max-width: 990px;
     width: calc( 100vw / 8 * 5); }
@@ -3560,8 +2791,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 8 * 5 + 24px); }
   .ibm-col-md-6 {
     width: calc( (100vw - 48px) * 0.75); }
-  .ibm-height-md-6 {
-    min-height: calc( (100vw - 48px) * 0.75); }
   .ibm-col-md-6.ibm-col-bleed {
     max-width: 1188px;
     width: calc( 100vw / 8 * 6); }
@@ -3571,8 +2800,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 8 * 6 + 24px); }
   .ibm-col-md-7 {
     width: calc( (100vw - 48px) * 0.875); }
-  .ibm-height-md-7 {
-    min-height: calc( (100vw - 48px) * 0.875); }
   .ibm-col-md-7.ibm-col-bleed {
     max-width: 1386px;
     width: calc( 100vw / 8 * 7); }
@@ -3582,8 +2809,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 8 * 7 + 24px); }
   .ibm-col-md-8 {
     width: calc( (100vw - 48px) * 1); }
-  .ibm-height-md-8 {
-    min-height: calc( (100vw - 48px) * 1); }
   .ibm-col-md-8.ibm-col-bleed {
     max-width: 1584px;
     width: calc( 100vw / 8 * 8); }
@@ -3599,8 +2824,6 @@ html, body {
       display: flex; }
   .ibm-col-md2-1 {
     width: calc( (100vw - 48px) * 0.125); }
-  .ibm-height-md2-1 {
-    min-height: calc( (100vw - 48px) * 0.125); }
   .ibm-col-md2-1.ibm-col-bleed {
     max-width: 198px;
     width: calc( 100vw / 8 * 1); }
@@ -3610,8 +2833,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 8 * 1 + 24px); }
   .ibm-col-md2-2 {
     width: calc( (100vw - 48px) * 0.25); }
-  .ibm-height-md2-2 {
-    min-height: calc( (100vw - 48px) * 0.25); }
   .ibm-col-md2-2.ibm-col-bleed {
     max-width: 396px;
     width: calc( 100vw / 8 * 2); }
@@ -3621,8 +2842,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 8 * 2 + 24px); }
   .ibm-col-md2-3 {
     width: calc( (100vw - 48px) * 0.375); }
-  .ibm-height-md2-3 {
-    min-height: calc( (100vw - 48px) * 0.375); }
   .ibm-col-md2-3.ibm-col-bleed {
     max-width: 594px;
     width: calc( 100vw / 8 * 3); }
@@ -3632,8 +2851,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 8 * 3 + 24px); }
   .ibm-col-md2-4 {
     width: calc( (100vw - 48px) * 0.5); }
-  .ibm-height-md2-4 {
-    min-height: calc( (100vw - 48px) * 0.5); }
   .ibm-col-md2-4.ibm-col-bleed {
     max-width: 792px;
     width: calc( 100vw / 8 * 4); }
@@ -3643,8 +2860,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 8 * 4 + 24px); }
   .ibm-col-md2-5 {
     width: calc( (100vw - 48px) * 0.625); }
-  .ibm-height-md2-5 {
-    min-height: calc( (100vw - 48px) * 0.625); }
   .ibm-col-md2-5.ibm-col-bleed {
     max-width: 990px;
     width: calc( 100vw / 8 * 5); }
@@ -3654,8 +2869,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 8 * 5 + 24px); }
   .ibm-col-md2-6 {
     width: calc( (100vw - 48px) * 0.75); }
-  .ibm-height-md2-6 {
-    min-height: calc( (100vw - 48px) * 0.75); }
   .ibm-col-md2-6.ibm-col-bleed {
     max-width: 1188px;
     width: calc( 100vw / 8 * 6); }
@@ -3665,8 +2878,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 8 * 6 + 24px); }
   .ibm-col-md2-7 {
     width: calc( (100vw - 48px) * 0.875); }
-  .ibm-height-md2-7 {
-    min-height: calc( (100vw - 48px) * 0.875); }
   .ibm-col-md2-7.ibm-col-bleed {
     max-width: 1386px;
     width: calc( 100vw / 8 * 7); }
@@ -3676,8 +2887,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 8 * 7 + 24px); }
   .ibm-col-md2-8 {
     width: calc( (100vw - 48px) * 1); }
-  .ibm-height-md2-8 {
-    min-height: calc( (100vw - 48px) * 1); }
   .ibm-col-md2-8.ibm-col-bleed {
     max-width: 1584px;
     width: calc( 100vw / 8 * 8); }
@@ -3693,8 +2902,6 @@ html, body {
       display: flex; }
   .ibm-col-lg-1 {
     width: calc( (100vw - 48px) * 0.0625); }
-  .ibm-height-lg-1 {
-    min-height: calc( (100vw - 48px) * 0.0625); }
   .ibm-col-lg-1.ibm-col-bleed {
     max-width: 99px;
     width: calc( 100vw / 16 * 1); }
@@ -3704,8 +2911,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 1 + 24px); }
   .ibm-col-lg-2 {
     width: calc( (100vw - 48px) * 0.125); }
-  .ibm-height-lg-2 {
-    min-height: calc( (100vw - 48px) * 0.125); }
   .ibm-col-lg-2.ibm-col-bleed {
     max-width: 198px;
     width: calc( 100vw / 16 * 2); }
@@ -3715,8 +2920,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 2 + 24px); }
   .ibm-col-lg-3 {
     width: calc( (100vw - 48px) * 0.1875); }
-  .ibm-height-lg-3 {
-    min-height: calc( (100vw - 48px) * 0.1875); }
   .ibm-col-lg-3.ibm-col-bleed {
     max-width: 297px;
     width: calc( 100vw / 16 * 3); }
@@ -3726,8 +2929,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 3 + 24px); }
   .ibm-col-lg-4 {
     width: calc( (100vw - 48px) * 0.25); }
-  .ibm-height-lg-4 {
-    min-height: calc( (100vw - 48px) * 0.25); }
   .ibm-col-lg-4.ibm-col-bleed {
     max-width: 396px;
     width: calc( 100vw / 16 * 4); }
@@ -3737,8 +2938,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 4 + 24px); }
   .ibm-col-lg-5 {
     width: calc( (100vw - 48px) * 0.3125); }
-  .ibm-height-lg-5 {
-    min-height: calc( (100vw - 48px) * 0.3125); }
   .ibm-col-lg-5.ibm-col-bleed {
     max-width: 495px;
     width: calc( 100vw / 16 * 5); }
@@ -3748,8 +2947,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 5 + 24px); }
   .ibm-col-lg-6 {
     width: calc( (100vw - 48px) * 0.375); }
-  .ibm-height-lg-6 {
-    min-height: calc( (100vw - 48px) * 0.375); }
   .ibm-col-lg-6.ibm-col-bleed {
     max-width: 594px;
     width: calc( 100vw / 16 * 6); }
@@ -3759,8 +2956,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 6 + 24px); }
   .ibm-col-lg-7 {
     width: calc( (100vw - 48px) * 0.4375); }
-  .ibm-height-lg-7 {
-    min-height: calc( (100vw - 48px) * 0.4375); }
   .ibm-col-lg-7.ibm-col-bleed {
     max-width: 693px;
     width: calc( 100vw / 16 * 7); }
@@ -3770,8 +2965,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 7 + 24px); }
   .ibm-col-lg-8 {
     width: calc( (100vw - 48px) * 0.5); }
-  .ibm-height-lg-8 {
-    min-height: calc( (100vw - 48px) * 0.5); }
   .ibm-col-lg-8.ibm-col-bleed {
     max-width: 792px;
     width: calc( 100vw / 16 * 8); }
@@ -3781,8 +2974,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 8 + 24px); }
   .ibm-col-lg-9 {
     width: calc( (100vw - 48px) * 0.5625); }
-  .ibm-height-lg-9 {
-    min-height: calc( (100vw - 48px) * 0.5625); }
   .ibm-col-lg-9.ibm-col-bleed {
     max-width: 891px;
     width: calc( 100vw / 16 * 9); }
@@ -3792,8 +2983,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 9 + 24px); }
   .ibm-col-lg-10 {
     width: calc( (100vw - 48px) * 0.625); }
-  .ibm-height-lg-10 {
-    min-height: calc( (100vw - 48px) * 0.625); }
   .ibm-col-lg-10.ibm-col-bleed {
     max-width: 990px;
     width: calc( 100vw / 16 * 10); }
@@ -3803,8 +2992,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 10 + 24px); }
   .ibm-col-lg-11 {
     width: calc( (100vw - 48px) * 0.6875); }
-  .ibm-height-lg-11 {
-    min-height: calc( (100vw - 48px) * 0.6875); }
   .ibm-col-lg-11.ibm-col-bleed {
     max-width: 1089px;
     width: calc( 100vw / 16 * 11); }
@@ -3814,8 +3001,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 11 + 24px); }
   .ibm-col-lg-12 {
     width: calc( (100vw - 48px) * 0.75); }
-  .ibm-height-lg-12 {
-    min-height: calc( (100vw - 48px) * 0.75); }
   .ibm-col-lg-12.ibm-col-bleed {
     max-width: 1188px;
     width: calc( 100vw / 16 * 12); }
@@ -3825,8 +3010,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 12 + 24px); }
   .ibm-col-lg-13 {
     width: calc( (100vw - 48px) * 0.8125); }
-  .ibm-height-lg-13 {
-    min-height: calc( (100vw - 48px) * 0.8125); }
   .ibm-col-lg-13.ibm-col-bleed {
     max-width: 1287px;
     width: calc( 100vw / 16 * 13); }
@@ -3836,8 +3019,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 13 + 24px); }
   .ibm-col-lg-14 {
     width: calc( (100vw - 48px) * 0.875); }
-  .ibm-height-lg-14 {
-    min-height: calc( (100vw - 48px) * 0.875); }
   .ibm-col-lg-14.ibm-col-bleed {
     max-width: 1386px;
     width: calc( 100vw / 16 * 14); }
@@ -3847,8 +3028,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 14 + 24px); }
   .ibm-col-lg-15 {
     width: calc( (100vw - 48px) * 0.9375); }
-  .ibm-height-lg-15 {
-    min-height: calc( (100vw - 48px) * 0.9375); }
   .ibm-col-lg-15.ibm-col-bleed {
     max-width: 1485px;
     width: calc( 100vw / 16 * 15); }
@@ -3858,8 +3037,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 15 + 24px); }
   .ibm-col-lg-16 {
     width: calc( (100vw - 48px) * 1); }
-  .ibm-height-lg-16 {
-    min-height: calc( (100vw - 48px) * 1); }
   .ibm-col-lg-16.ibm-col-bleed {
     max-width: 1584px;
     width: calc( 100vw / 16 * 16); }
@@ -3875,8 +3052,6 @@ html, body {
       display: flex; }
   .ibm-col-lg2-1 {
     width: calc( (100vw - 48px) * 0.0625); }
-  .ibm-height-lg2-1 {
-    min-height: calc( (100vw - 48px) * 0.0625); }
   .ibm-col-lg2-1.ibm-col-bleed {
     max-width: 99px;
     width: calc( 100vw / 16 * 1); }
@@ -3886,8 +3061,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 1 + 24px); }
   .ibm-col-lg2-2 {
     width: calc( (100vw - 48px) * 0.125); }
-  .ibm-height-lg2-2 {
-    min-height: calc( (100vw - 48px) * 0.125); }
   .ibm-col-lg2-2.ibm-col-bleed {
     max-width: 198px;
     width: calc( 100vw / 16 * 2); }
@@ -3897,8 +3070,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 2 + 24px); }
   .ibm-col-lg2-3 {
     width: calc( (100vw - 48px) * 0.1875); }
-  .ibm-height-lg2-3 {
-    min-height: calc( (100vw - 48px) * 0.1875); }
   .ibm-col-lg2-3.ibm-col-bleed {
     max-width: 297px;
     width: calc( 100vw / 16 * 3); }
@@ -3908,8 +3079,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 3 + 24px); }
   .ibm-col-lg2-4 {
     width: calc( (100vw - 48px) * 0.25); }
-  .ibm-height-lg2-4 {
-    min-height: calc( (100vw - 48px) * 0.25); }
   .ibm-col-lg2-4.ibm-col-bleed {
     max-width: 396px;
     width: calc( 100vw / 16 * 4); }
@@ -3919,8 +3088,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 4 + 24px); }
   .ibm-col-lg2-5 {
     width: calc( (100vw - 48px) * 0.3125); }
-  .ibm-height-lg2-5 {
-    min-height: calc( (100vw - 48px) * 0.3125); }
   .ibm-col-lg2-5.ibm-col-bleed {
     max-width: 495px;
     width: calc( 100vw / 16 * 5); }
@@ -3930,8 +3097,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 5 + 24px); }
   .ibm-col-lg2-6 {
     width: calc( (100vw - 48px) * 0.375); }
-  .ibm-height-lg2-6 {
-    min-height: calc( (100vw - 48px) * 0.375); }
   .ibm-col-lg2-6.ibm-col-bleed {
     max-width: 594px;
     width: calc( 100vw / 16 * 6); }
@@ -3941,8 +3106,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 6 + 24px); }
   .ibm-col-lg2-7 {
     width: calc( (100vw - 48px) * 0.4375); }
-  .ibm-height-lg2-7 {
-    min-height: calc( (100vw - 48px) * 0.4375); }
   .ibm-col-lg2-7.ibm-col-bleed {
     max-width: 693px;
     width: calc( 100vw / 16 * 7); }
@@ -3952,8 +3115,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 7 + 24px); }
   .ibm-col-lg2-8 {
     width: calc( (100vw - 48px) * 0.5); }
-  .ibm-height-lg2-8 {
-    min-height: calc( (100vw - 48px) * 0.5); }
   .ibm-col-lg2-8.ibm-col-bleed {
     max-width: 792px;
     width: calc( 100vw / 16 * 8); }
@@ -3963,8 +3124,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 8 + 24px); }
   .ibm-col-lg2-9 {
     width: calc( (100vw - 48px) * 0.5625); }
-  .ibm-height-lg2-9 {
-    min-height: calc( (100vw - 48px) * 0.5625); }
   .ibm-col-lg2-9.ibm-col-bleed {
     max-width: 891px;
     width: calc( 100vw / 16 * 9); }
@@ -3974,8 +3133,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 9 + 24px); }
   .ibm-col-lg2-10 {
     width: calc( (100vw - 48px) * 0.625); }
-  .ibm-height-lg2-10 {
-    min-height: calc( (100vw - 48px) * 0.625); }
   .ibm-col-lg2-10.ibm-col-bleed {
     max-width: 990px;
     width: calc( 100vw / 16 * 10); }
@@ -3985,8 +3142,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 10 + 24px); }
   .ibm-col-lg2-11 {
     width: calc( (100vw - 48px) * 0.6875); }
-  .ibm-height-lg2-11 {
-    min-height: calc( (100vw - 48px) * 0.6875); }
   .ibm-col-lg2-11.ibm-col-bleed {
     max-width: 1089px;
     width: calc( 100vw / 16 * 11); }
@@ -3996,8 +3151,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 11 + 24px); }
   .ibm-col-lg2-12 {
     width: calc( (100vw - 48px) * 0.75); }
-  .ibm-height-lg2-12 {
-    min-height: calc( (100vw - 48px) * 0.75); }
   .ibm-col-lg2-12.ibm-col-bleed {
     max-width: 1188px;
     width: calc( 100vw / 16 * 12); }
@@ -4007,8 +3160,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 12 + 24px); }
   .ibm-col-lg2-13 {
     width: calc( (100vw - 48px) * 0.8125); }
-  .ibm-height-lg2-13 {
-    min-height: calc( (100vw - 48px) * 0.8125); }
   .ibm-col-lg2-13.ibm-col-bleed {
     max-width: 1287px;
     width: calc( 100vw / 16 * 13); }
@@ -4018,8 +3169,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 13 + 24px); }
   .ibm-col-lg2-14 {
     width: calc( (100vw - 48px) * 0.875); }
-  .ibm-height-lg2-14 {
-    min-height: calc( (100vw - 48px) * 0.875); }
   .ibm-col-lg2-14.ibm-col-bleed {
     max-width: 1386px;
     width: calc( 100vw / 16 * 14); }
@@ -4029,8 +3178,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 14 + 24px); }
   .ibm-col-lg2-15 {
     width: calc( (100vw - 48px) * 0.9375); }
-  .ibm-height-lg2-15 {
-    min-height: calc( (100vw - 48px) * 0.9375); }
   .ibm-col-lg2-15.ibm-col-bleed {
     max-width: 1485px;
     width: calc( 100vw / 16 * 15); }
@@ -4040,8 +3187,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 15 + 24px); }
   .ibm-col-lg2-16 {
     width: calc( (100vw - 48px) * 1); }
-  .ibm-height-lg2-16 {
-    min-height: calc( (100vw - 48px) * 1); }
   .ibm-col-lg2-16.ibm-col-bleed {
     max-width: 1584px;
     width: calc( 100vw / 16 * 16); }
@@ -4057,8 +3202,6 @@ html, body {
       display: flex; }
   .ibm-col-xlg-1 {
     width: calc( (100vw - 48px) * 0.0625); }
-  .ibm-height-xlg-1 {
-    min-height: calc( (100vw - 48px) * 0.0625); }
   .ibm-col-xlg-1.ibm-col-bleed {
     max-width: 99px;
     width: calc( 100vw / 16 * 1); }
@@ -4068,8 +3211,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 1 + 24px); }
   .ibm-col-xlg-2 {
     width: calc( (100vw - 48px) * 0.125); }
-  .ibm-height-xlg-2 {
-    min-height: calc( (100vw - 48px) * 0.125); }
   .ibm-col-xlg-2.ibm-col-bleed {
     max-width: 198px;
     width: calc( 100vw / 16 * 2); }
@@ -4079,8 +3220,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 2 + 24px); }
   .ibm-col-xlg-3 {
     width: calc( (100vw - 48px) * 0.1875); }
-  .ibm-height-xlg-3 {
-    min-height: calc( (100vw - 48px) * 0.1875); }
   .ibm-col-xlg-3.ibm-col-bleed {
     max-width: 297px;
     width: calc( 100vw / 16 * 3); }
@@ -4090,8 +3229,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 3 + 24px); }
   .ibm-col-xlg-4 {
     width: calc( (100vw - 48px) * 0.25); }
-  .ibm-height-xlg-4 {
-    min-height: calc( (100vw - 48px) * 0.25); }
   .ibm-col-xlg-4.ibm-col-bleed {
     max-width: 396px;
     width: calc( 100vw / 16 * 4); }
@@ -4101,8 +3238,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 4 + 24px); }
   .ibm-col-xlg-5 {
     width: calc( (100vw - 48px) * 0.3125); }
-  .ibm-height-xlg-5 {
-    min-height: calc( (100vw - 48px) * 0.3125); }
   .ibm-col-xlg-5.ibm-col-bleed {
     max-width: 495px;
     width: calc( 100vw / 16 * 5); }
@@ -4112,8 +3247,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 5 + 24px); }
   .ibm-col-xlg-6 {
     width: calc( (100vw - 48px) * 0.375); }
-  .ibm-height-xlg-6 {
-    min-height: calc( (100vw - 48px) * 0.375); }
   .ibm-col-xlg-6.ibm-col-bleed {
     max-width: 594px;
     width: calc( 100vw / 16 * 6); }
@@ -4123,8 +3256,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 6 + 24px); }
   .ibm-col-xlg-7 {
     width: calc( (100vw - 48px) * 0.4375); }
-  .ibm-height-xlg-7 {
-    min-height: calc( (100vw - 48px) * 0.4375); }
   .ibm-col-xlg-7.ibm-col-bleed {
     max-width: 693px;
     width: calc( 100vw / 16 * 7); }
@@ -4134,8 +3265,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 7 + 24px); }
   .ibm-col-xlg-8 {
     width: calc( (100vw - 48px) * 0.5); }
-  .ibm-height-xlg-8 {
-    min-height: calc( (100vw - 48px) * 0.5); }
   .ibm-col-xlg-8.ibm-col-bleed {
     max-width: 792px;
     width: calc( 100vw / 16 * 8); }
@@ -4145,8 +3274,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 8 + 24px); }
   .ibm-col-xlg-9 {
     width: calc( (100vw - 48px) * 0.5625); }
-  .ibm-height-xlg-9 {
-    min-height: calc( (100vw - 48px) * 0.5625); }
   .ibm-col-xlg-9.ibm-col-bleed {
     max-width: 891px;
     width: calc( 100vw / 16 * 9); }
@@ -4156,8 +3283,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 9 + 24px); }
   .ibm-col-xlg-10 {
     width: calc( (100vw - 48px) * 0.625); }
-  .ibm-height-xlg-10 {
-    min-height: calc( (100vw - 48px) * 0.625); }
   .ibm-col-xlg-10.ibm-col-bleed {
     max-width: 990px;
     width: calc( 100vw / 16 * 10); }
@@ -4167,8 +3292,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 10 + 24px); }
   .ibm-col-xlg-11 {
     width: calc( (100vw - 48px) * 0.6875); }
-  .ibm-height-xlg-11 {
-    min-height: calc( (100vw - 48px) * 0.6875); }
   .ibm-col-xlg-11.ibm-col-bleed {
     max-width: 1089px;
     width: calc( 100vw / 16 * 11); }
@@ -4178,8 +3301,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 11 + 24px); }
   .ibm-col-xlg-12 {
     width: calc( (100vw - 48px) * 0.75); }
-  .ibm-height-xlg-12 {
-    min-height: calc( (100vw - 48px) * 0.75); }
   .ibm-col-xlg-12.ibm-col-bleed {
     max-width: 1188px;
     width: calc( 100vw / 16 * 12); }
@@ -4189,8 +3310,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 12 + 24px); }
   .ibm-col-xlg-13 {
     width: calc( (100vw - 48px) * 0.8125); }
-  .ibm-height-xlg-13 {
-    min-height: calc( (100vw - 48px) * 0.8125); }
   .ibm-col-xlg-13.ibm-col-bleed {
     max-width: 1287px;
     width: calc( 100vw / 16 * 13); }
@@ -4200,8 +3319,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 13 + 24px); }
   .ibm-col-xlg-14 {
     width: calc( (100vw - 48px) * 0.875); }
-  .ibm-height-xlg-14 {
-    min-height: calc( (100vw - 48px) * 0.875); }
   .ibm-col-xlg-14.ibm-col-bleed {
     max-width: 1386px;
     width: calc( 100vw / 16 * 14); }
@@ -4211,8 +3328,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 14 + 24px); }
   .ibm-col-xlg-15 {
     width: calc( (100vw - 48px) * 0.9375); }
-  .ibm-height-xlg-15 {
-    min-height: calc( (100vw - 48px) * 0.9375); }
   .ibm-col-xlg-15.ibm-col-bleed {
     max-width: 1485px;
     width: calc( 100vw / 16 * 15); }
@@ -4222,8 +3337,6 @@ html, body {
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 15 + 24px); }
   .ibm-col-xlg-16 {
     width: calc( (100vw - 48px) * 1); }
-  .ibm-height-xlg-16 {
-    min-height: calc( (100vw - 48px) * 1); }
   .ibm-col-xlg-16.ibm-col-bleed {
     max-width: 1584px;
     width: calc( 100vw / 16 * 16); }
@@ -4235,8 +3348,6 @@ html, body {
     width: calc( (100vw - 48px) * 0.0625);
     max-width: 96px;
     min-width: 20px; }
-  .ibm-height-xlg2-1 {
-    min-height: calc( (100vw - 48px) * 0.0625); }
   .ibm-col-xlg2-1.ibm-col-bleed {
     max-width: 99px;
     width: calc( 100vw / 16 * 1); }
@@ -4248,8 +3359,6 @@ html, body {
     width: calc( (100vw - 48px) * 0.125);
     max-width: 192px;
     min-width: 40px; }
-  .ibm-height-xlg2-2 {
-    min-height: calc( (100vw - 48px) * 0.125); }
   .ibm-col-xlg2-2.ibm-col-bleed {
     max-width: 198px;
     width: calc( 100vw / 16 * 2); }
@@ -4261,8 +3370,6 @@ html, body {
     width: calc( (100vw - 48px) * 0.1875);
     max-width: 288px;
     min-width: 60px; }
-  .ibm-height-xlg2-3 {
-    min-height: calc( (100vw - 48px) * 0.1875); }
   .ibm-col-xlg2-3.ibm-col-bleed {
     max-width: 297px;
     width: calc( 100vw / 16 * 3); }
@@ -4274,8 +3381,6 @@ html, body {
     width: calc( (100vw - 48px) * 0.25);
     max-width: 384px;
     min-width: 80px; }
-  .ibm-height-xlg2-4 {
-    min-height: calc( (100vw - 48px) * 0.25); }
   .ibm-col-xlg2-4.ibm-col-bleed {
     max-width: 396px;
     width: calc( 100vw / 16 * 4); }
@@ -4287,8 +3392,6 @@ html, body {
     width: calc( (100vw - 48px) * 0.3125);
     max-width: 480px;
     min-width: 100px; }
-  .ibm-height-xlg2-5 {
-    min-height: calc( (100vw - 48px) * 0.3125); }
   .ibm-col-xlg2-5.ibm-col-bleed {
     max-width: 495px;
     width: calc( 100vw / 16 * 5); }
@@ -4300,8 +3403,6 @@ html, body {
     width: calc( (100vw - 48px) * 0.375);
     max-width: 576px;
     min-width: 120px; }
-  .ibm-height-xlg2-6 {
-    min-height: calc( (100vw - 48px) * 0.375); }
   .ibm-col-xlg2-6.ibm-col-bleed {
     max-width: 594px;
     width: calc( 100vw / 16 * 6); }
@@ -4313,8 +3414,6 @@ html, body {
     width: calc( (100vw - 48px) * 0.4375);
     max-width: 672px;
     min-width: 140px; }
-  .ibm-height-xlg2-7 {
-    min-height: calc( (100vw - 48px) * 0.4375); }
   .ibm-col-xlg2-7.ibm-col-bleed {
     max-width: 693px;
     width: calc( 100vw / 16 * 7); }
@@ -4326,8 +3425,6 @@ html, body {
     width: calc( (100vw - 48px) * 0.5);
     max-width: 768px;
     min-width: 160px; }
-  .ibm-height-xlg2-8 {
-    min-height: calc( (100vw - 48px) * 0.5); }
   .ibm-col-xlg2-8.ibm-col-bleed {
     max-width: 792px;
     width: calc( 100vw / 16 * 8); }
@@ -4339,8 +3436,6 @@ html, body {
     width: calc( (100vw - 48px) * 0.5625);
     max-width: 864px;
     min-width: 180px; }
-  .ibm-height-xlg2-9 {
-    min-height: calc( (100vw - 48px) * 0.5625); }
   .ibm-col-xlg2-9.ibm-col-bleed {
     max-width: 891px;
     width: calc( 100vw / 16 * 9); }
@@ -4352,8 +3447,6 @@ html, body {
     width: calc( (100vw - 48px) * 0.625);
     max-width: 960px;
     min-width: 200px; }
-  .ibm-height-xlg2-10 {
-    min-height: calc( (100vw - 48px) * 0.625); }
   .ibm-col-xlg2-10.ibm-col-bleed {
     max-width: 990px;
     width: calc( 100vw / 16 * 10); }
@@ -4365,8 +3458,6 @@ html, body {
     width: calc( (100vw - 48px) * 0.6875);
     max-width: 1056px;
     min-width: 220px; }
-  .ibm-height-xlg2-11 {
-    min-height: calc( (100vw - 48px) * 0.6875); }
   .ibm-col-xlg2-11.ibm-col-bleed {
     max-width: 1089px;
     width: calc( 100vw / 16 * 11); }
@@ -4378,8 +3469,6 @@ html, body {
     width: calc( (100vw - 48px) * 0.75);
     max-width: 1152px;
     min-width: 240px; }
-  .ibm-height-xlg2-12 {
-    min-height: calc( (100vw - 48px) * 0.75); }
   .ibm-col-xlg2-12.ibm-col-bleed {
     max-width: 1188px;
     width: calc( 100vw / 16 * 12); }
@@ -4391,8 +3480,6 @@ html, body {
     width: calc( (100vw - 48px) * 0.8125);
     max-width: 1248px;
     min-width: 260px; }
-  .ibm-height-xlg2-13 {
-    min-height: calc( (100vw - 48px) * 0.8125); }
   .ibm-col-xlg2-13.ibm-col-bleed {
     max-width: 1287px;
     width: calc( 100vw / 16 * 13); }
@@ -4404,8 +3491,6 @@ html, body {
     width: calc( (100vw - 48px) * 0.875);
     max-width: 1344px;
     min-width: 280px; }
-  .ibm-height-xlg2-14 {
-    min-height: calc( (100vw - 48px) * 0.875); }
   .ibm-col-xlg2-14.ibm-col-bleed {
     max-width: 1386px;
     width: calc( 100vw / 16 * 14); }
@@ -4417,8 +3502,6 @@ html, body {
     width: calc( (100vw - 48px) * 0.9375);
     max-width: 1440px;
     min-width: 300px; }
-  .ibm-height-xlg2-15 {
-    min-height: calc( (100vw - 48px) * 0.9375); }
   .ibm-col-xlg2-15.ibm-col-bleed {
     max-width: 1485px;
     width: calc( 100vw / 16 * 15); }
@@ -4430,8 +3513,6 @@ html, body {
     width: calc( (100vw - 48px) * 1);
     max-width: 1536px;
     min-width: 320px; }
-  .ibm-height-xlg2-16 {
-    min-height: calc( (100vw - 48px) * 1); }
   .ibm-col-xlg2-16.ibm-col-bleed {
     max-width: 1584px;
     width: calc( 100vw / 16 * 16); }
@@ -4439,6 +3520,1192 @@ html, body {
   .ibm-col-xlg2-16.ibm-col-bleed-right {
     max-width: calc(1536px  + 24px);
     width: calc( (100vw - (24px) * 1 * 2) / 16 * 16 + 24px); } }
+
+/* Heights */
+.ibm-height-strict {
+  max-height: 0; }
+
+@media (min-width: 0px) {
+  .ibm-height-sm-0 {
+    min-height: unset; }
+  .ibm-s-height-sm-0 {
+    min-height: unset; }
+  /* Small heights */
+  .ibm-s-height-sm-1 {
+    min-height: 8px; }
+  .ibm-s-height-sm-2 {
+    min-height: 16px; }
+  .ibm-s-height-sm-3 {
+    min-height: 24px; }
+  .ibm-s-height-sm-4 {
+    min-height: 32px; }
+  .ibm-s-height-sm-6 {
+    min-height: 48px; }
+  .ibm-s-height-sm-8 {
+    min-height: 64px; }
+  .ibm-height-sm-1 {
+    min-height: calc( 100vw * 0.25); }
+  .ibm-height-sm-2 {
+    min-height: calc( 100vw * 0.5); }
+  .ibm-height-sm-3 {
+    min-height: calc( 100vw * 0.75); }
+  .ibm-height-sm-4 {
+    min-height: calc( 100vw * 1); } }
+
+@media (min-width: 512px) {
+  .ibm-height-sm2-0 {
+    min-height: unset; }
+  .ibm-s-height-sm2-0 {
+    min-height: unset; }
+  /* Small heights */
+  .ibm-s-height-sm2-1 {
+    min-height: 12px; }
+  .ibm-s-height-sm2-2 {
+    min-height: 24px; }
+  .ibm-s-height-sm2-3 {
+    min-height: 36px; }
+  .ibm-s-height-sm2-4 {
+    min-height: 48px; }
+  .ibm-s-height-sm2-6 {
+    min-height: 72px; }
+  .ibm-s-height-sm2-8 {
+    min-height: 96px; }
+  .ibm-height-sm-1 {
+    min-height: calc( 100vw * 0.25); }
+  .ibm-height-sm-2 {
+    min-height: calc( 100vw * 0.5); }
+  .ibm-height-sm-3 {
+    min-height: calc( 100vw * 0.75); }
+  .ibm-height-sm-4 {
+    min-height: calc( 100vw * 1); }
+  .ibm-height-sm2-1 {
+    min-height: calc( 100vw * 0.125); }
+  .ibm-height-sm2-2 {
+    min-height: calc( 100vw * 0.25); }
+  .ibm-height-sm2-3 {
+    min-height: calc( 100vw * 0.375); }
+  .ibm-height-sm2-4 {
+    min-height: calc( 100vw * 0.5); }
+  .ibm-height-sm2-5 {
+    min-height: calc( 100vw * 0.625); }
+  .ibm-height-sm2-6 {
+    min-height: calc( 100vw * 0.75); }
+  .ibm-height-sm2-7 {
+    min-height: calc( 100vw * 0.875); }
+  .ibm-height-sm2-8 {
+    min-height: calc( 100vw * 1); } }
+
+@media (min-width: 640px) {
+  .ibm-height-sm3-0 {
+    min-height: unset; }
+  .ibm-s-height-sm3-0 {
+    min-height: unset; }
+  /* Small heights */
+  .ibm-s-height-sm3-1 {
+    min-height: 12px; }
+  .ibm-s-height-sm3-2 {
+    min-height: 24px; }
+  .ibm-s-height-sm3-3 {
+    min-height: 36px; }
+  .ibm-s-height-sm3-4 {
+    min-height: 48px; }
+  .ibm-s-height-sm3-6 {
+    min-height: 72px; }
+  .ibm-s-height-sm3-8 {
+    min-height: 96px; }
+  .ibm-height-sm-1 {
+    min-height: calc( 100vw * 0.25); }
+  .ibm-height-sm-2 {
+    min-height: calc( 100vw * 0.5); }
+  .ibm-height-sm-3 {
+    min-height: calc( 100vw * 0.75); }
+  .ibm-height-sm-4 {
+    min-height: calc( 100vw * 1); }
+  .ibm-height-sm2-1 {
+    min-height: calc( 100vw * 0.125); }
+  .ibm-height-sm2-2 {
+    min-height: calc( 100vw * 0.25); }
+  .ibm-height-sm2-3 {
+    min-height: calc( 100vw * 0.375); }
+  .ibm-height-sm2-4 {
+    min-height: calc( 100vw * 0.5); }
+  .ibm-height-sm2-5 {
+    min-height: calc( 100vw * 0.625); }
+  .ibm-height-sm2-6 {
+    min-height: calc( 100vw * 0.75); }
+  .ibm-height-sm2-7 {
+    min-height: calc( 100vw * 0.875); }
+  .ibm-height-sm2-8 {
+    min-height: calc( 100vw * 1); }
+  .ibm-height-sm3-1 {
+    min-height: calc( 100vw * 0.125); }
+  .ibm-height-sm3-2 {
+    min-height: calc( 100vw * 0.25); }
+  .ibm-height-sm3-3 {
+    min-height: calc( 100vw * 0.375); }
+  .ibm-height-sm3-4 {
+    min-height: calc( 100vw * 0.5); }
+  .ibm-height-sm3-5 {
+    min-height: calc( 100vw * 0.625); }
+  .ibm-height-sm3-6 {
+    min-height: calc( 100vw * 0.75); }
+  .ibm-height-sm3-7 {
+    min-height: calc( 100vw * 0.875); }
+  .ibm-height-sm3-8 {
+    min-height: calc( 100vw * 1); } }
+
+@media (min-width: 768px) {
+  .ibm-height-md-0 {
+    min-height: unset; }
+  .ibm-s-height-md-0 {
+    min-height: unset; }
+  /* Small heights */
+  .ibm-s-height-md-1 {
+    min-height: 12px; }
+  .ibm-s-height-md-2 {
+    min-height: 24px; }
+  .ibm-s-height-md-3 {
+    min-height: 36px; }
+  .ibm-s-height-md-4 {
+    min-height: 48px; }
+  .ibm-s-height-md-6 {
+    min-height: 72px; }
+  .ibm-s-height-md-8 {
+    min-height: 96px; }
+  .ibm-height-sm-1 {
+    min-height: calc( 100vw * 0.25); }
+  .ibm-height-sm-2 {
+    min-height: calc( 100vw * 0.5); }
+  .ibm-height-sm-3 {
+    min-height: calc( 100vw * 0.75); }
+  .ibm-height-sm-4 {
+    min-height: calc( 100vw * 1); }
+  .ibm-height-sm2-1 {
+    min-height: calc( 100vw * 0.125); }
+  .ibm-height-sm2-2 {
+    min-height: calc( 100vw * 0.25); }
+  .ibm-height-sm2-3 {
+    min-height: calc( 100vw * 0.375); }
+  .ibm-height-sm2-4 {
+    min-height: calc( 100vw * 0.5); }
+  .ibm-height-sm2-5 {
+    min-height: calc( 100vw * 0.625); }
+  .ibm-height-sm2-6 {
+    min-height: calc( 100vw * 0.75); }
+  .ibm-height-sm2-7 {
+    min-height: calc( 100vw * 0.875); }
+  .ibm-height-sm2-8 {
+    min-height: calc( 100vw * 1); }
+  .ibm-height-sm3-1 {
+    min-height: calc( 100vw * 0.125); }
+  .ibm-height-sm3-2 {
+    min-height: calc( 100vw * 0.25); }
+  .ibm-height-sm3-3 {
+    min-height: calc( 100vw * 0.375); }
+  .ibm-height-sm3-4 {
+    min-height: calc( 100vw * 0.5); }
+  .ibm-height-sm3-5 {
+    min-height: calc( 100vw * 0.625); }
+  .ibm-height-sm3-6 {
+    min-height: calc( 100vw * 0.75); }
+  .ibm-height-sm3-7 {
+    min-height: calc( 100vw * 0.875); }
+  .ibm-height-sm3-8 {
+    min-height: calc( 100vw * 1); }
+  .ibm-height-md-1 {
+    min-height: calc( 100vw * 0.125); }
+  .ibm-height-md-2 {
+    min-height: calc( 100vw * 0.25); }
+  .ibm-height-md-3 {
+    min-height: calc( 100vw * 0.375); }
+  .ibm-height-md-4 {
+    min-height: calc( 100vw * 0.5); }
+  .ibm-height-md-5 {
+    min-height: calc( 100vw * 0.625); }
+  .ibm-height-md-6 {
+    min-height: calc( 100vw * 0.75); }
+  .ibm-height-md-7 {
+    min-height: calc( 100vw * 0.875); }
+  .ibm-height-md-8 {
+    min-height: calc( 100vw * 1); } }
+
+@media (min-width: 896px) {
+  .ibm-height-md2-0 {
+    min-height: unset; }
+  .ibm-s-height-md2-0 {
+    min-height: unset; }
+  /* Small heights */
+  .ibm-s-height-md2-1 {
+    min-height: 12px; }
+  .ibm-s-height-md2-2 {
+    min-height: 24px; }
+  .ibm-s-height-md2-3 {
+    min-height: 36px; }
+  .ibm-s-height-md2-4 {
+    min-height: 48px; }
+  .ibm-s-height-md2-6 {
+    min-height: 72px; }
+  .ibm-s-height-md2-8 {
+    min-height: 96px; }
+  .ibm-height-sm-1 {
+    min-height: calc( 100vw * 0.25); }
+  .ibm-height-sm-2 {
+    min-height: calc( 100vw * 0.5); }
+  .ibm-height-sm-3 {
+    min-height: calc( 100vw * 0.75); }
+  .ibm-height-sm-4 {
+    min-height: calc( 100vw * 1); }
+  .ibm-height-sm2-1 {
+    min-height: calc( 100vw * 0.125); }
+  .ibm-height-sm2-2 {
+    min-height: calc( 100vw * 0.25); }
+  .ibm-height-sm2-3 {
+    min-height: calc( 100vw * 0.375); }
+  .ibm-height-sm2-4 {
+    min-height: calc( 100vw * 0.5); }
+  .ibm-height-sm2-5 {
+    min-height: calc( 100vw * 0.625); }
+  .ibm-height-sm2-6 {
+    min-height: calc( 100vw * 0.75); }
+  .ibm-height-sm2-7 {
+    min-height: calc( 100vw * 0.875); }
+  .ibm-height-sm2-8 {
+    min-height: calc( 100vw * 1); }
+  .ibm-height-sm3-1 {
+    min-height: calc( 100vw * 0.125); }
+  .ibm-height-sm3-2 {
+    min-height: calc( 100vw * 0.25); }
+  .ibm-height-sm3-3 {
+    min-height: calc( 100vw * 0.375); }
+  .ibm-height-sm3-4 {
+    min-height: calc( 100vw * 0.5); }
+  .ibm-height-sm3-5 {
+    min-height: calc( 100vw * 0.625); }
+  .ibm-height-sm3-6 {
+    min-height: calc( 100vw * 0.75); }
+  .ibm-height-sm3-7 {
+    min-height: calc( 100vw * 0.875); }
+  .ibm-height-sm3-8 {
+    min-height: calc( 100vw * 1); }
+  .ibm-height-md-1 {
+    min-height: calc( 100vw * 0.125); }
+  .ibm-height-md-2 {
+    min-height: calc( 100vw * 0.25); }
+  .ibm-height-md-3 {
+    min-height: calc( 100vw * 0.375); }
+  .ibm-height-md-4 {
+    min-height: calc( 100vw * 0.5); }
+  .ibm-height-md-5 {
+    min-height: calc( 100vw * 0.625); }
+  .ibm-height-md-6 {
+    min-height: calc( 100vw * 0.75); }
+  .ibm-height-md-7 {
+    min-height: calc( 100vw * 0.875); }
+  .ibm-height-md-8 {
+    min-height: calc( 100vw * 1); }
+  .ibm-height-md2-1 {
+    min-height: calc( 100vw * 0.125); }
+  .ibm-height-md2-2 {
+    min-height: calc( 100vw * 0.25); }
+  .ibm-height-md2-3 {
+    min-height: calc( 100vw * 0.375); }
+  .ibm-height-md2-4 {
+    min-height: calc( 100vw * 0.5); }
+  .ibm-height-md2-5 {
+    min-height: calc( 100vw * 0.625); }
+  .ibm-height-md2-6 {
+    min-height: calc( 100vw * 0.75); }
+  .ibm-height-md2-7 {
+    min-height: calc( 100vw * 0.875); }
+  .ibm-height-md2-8 {
+    min-height: calc( 100vw * 1); } }
+
+@media (min-width: 1056px) {
+  .ibm-height-lg-0 {
+    min-height: unset; }
+  .ibm-s-height-lg-0 {
+    min-height: unset; }
+  /* Small heights */
+  .ibm-s-height-lg-1 {
+    min-height: 8px; }
+  .ibm-s-height-lg-2 {
+    min-height: 16px; }
+  .ibm-s-height-lg-3 {
+    min-height: 24px; }
+  .ibm-s-height-lg-4 {
+    min-height: 32px; }
+  .ibm-s-height-lg-6 {
+    min-height: 48px; }
+  .ibm-s-height-lg-8 {
+    min-height: 64px; }
+  .ibm-height-sm-1 {
+    min-height: calc( (100vw - 32px) * 0.25); }
+  .ibm-height-sm-2 {
+    min-height: calc( (100vw - 32px) * 0.5); }
+  .ibm-height-sm-3 {
+    min-height: calc( (100vw - 32px) * 0.75); }
+  .ibm-height-sm-4 {
+    min-height: calc( (100vw - 32px) * 1); }
+  .ibm-height-sm2-1 {
+    min-height: calc( (100vw - 32px) * 0.125); }
+  .ibm-height-sm2-2 {
+    min-height: calc( (100vw - 32px) * 0.25); }
+  .ibm-height-sm2-3 {
+    min-height: calc( (100vw - 32px) * 0.375); }
+  .ibm-height-sm2-4 {
+    min-height: calc( (100vw - 32px) * 0.5); }
+  .ibm-height-sm2-5 {
+    min-height: calc( (100vw - 32px) * 0.625); }
+  .ibm-height-sm2-6 {
+    min-height: calc( (100vw - 32px) * 0.75); }
+  .ibm-height-sm2-7 {
+    min-height: calc( (100vw - 32px) * 0.875); }
+  .ibm-height-sm2-8 {
+    min-height: calc( (100vw - 32px) * 1); }
+  .ibm-height-sm3-1 {
+    min-height: calc( (100vw - 32px) * 0.125); }
+  .ibm-height-sm3-2 {
+    min-height: calc( (100vw - 32px) * 0.25); }
+  .ibm-height-sm3-3 {
+    min-height: calc( (100vw - 32px) * 0.375); }
+  .ibm-height-sm3-4 {
+    min-height: calc( (100vw - 32px) * 0.5); }
+  .ibm-height-sm3-5 {
+    min-height: calc( (100vw - 32px) * 0.625); }
+  .ibm-height-sm3-6 {
+    min-height: calc( (100vw - 32px) * 0.75); }
+  .ibm-height-sm3-7 {
+    min-height: calc( (100vw - 32px) * 0.875); }
+  .ibm-height-sm3-8 {
+    min-height: calc( (100vw - 32px) * 1); }
+  .ibm-height-md-1 {
+    min-height: calc( (100vw - 32px) * 0.125); }
+  .ibm-height-md-2 {
+    min-height: calc( (100vw - 32px) * 0.25); }
+  .ibm-height-md-3 {
+    min-height: calc( (100vw - 32px) * 0.375); }
+  .ibm-height-md-4 {
+    min-height: calc( (100vw - 32px) * 0.5); }
+  .ibm-height-md-5 {
+    min-height: calc( (100vw - 32px) * 0.625); }
+  .ibm-height-md-6 {
+    min-height: calc( (100vw - 32px) * 0.75); }
+  .ibm-height-md-7 {
+    min-height: calc( (100vw - 32px) * 0.875); }
+  .ibm-height-md-8 {
+    min-height: calc( (100vw - 32px) * 1); }
+  .ibm-height-md2-1 {
+    min-height: calc( (100vw - 32px) * 0.125); }
+  .ibm-height-md2-2 {
+    min-height: calc( (100vw - 32px) * 0.25); }
+  .ibm-height-md2-3 {
+    min-height: calc( (100vw - 32px) * 0.375); }
+  .ibm-height-md2-4 {
+    min-height: calc( (100vw - 32px) * 0.5); }
+  .ibm-height-md2-5 {
+    min-height: calc( (100vw - 32px) * 0.625); }
+  .ibm-height-md2-6 {
+    min-height: calc( (100vw - 32px) * 0.75); }
+  .ibm-height-md2-7 {
+    min-height: calc( (100vw - 32px) * 0.875); }
+  .ibm-height-md2-8 {
+    min-height: calc( (100vw - 32px) * 1); }
+  .ibm-height-lg-1 {
+    min-height: calc( (100vw - 32px) * 0.0625); }
+  .ibm-height-lg-2 {
+    min-height: calc( (100vw - 32px) * 0.125); }
+  .ibm-height-lg-3 {
+    min-height: calc( (100vw - 32px) * 0.1875); }
+  .ibm-height-lg-4 {
+    min-height: calc( (100vw - 32px) * 0.25); }
+  .ibm-height-lg-5 {
+    min-height: calc( (100vw - 32px) * 0.3125); }
+  .ibm-height-lg-6 {
+    min-height: calc( (100vw - 32px) * 0.375); }
+  .ibm-height-lg-7 {
+    min-height: calc( (100vw - 32px) * 0.4375); }
+  .ibm-height-lg-8 {
+    min-height: calc( (100vw - 32px) * 0.5); }
+  .ibm-height-lg-9 {
+    min-height: calc( (100vw - 32px) * 0.5625); }
+  .ibm-height-lg-10 {
+    min-height: calc( (100vw - 32px) * 0.625); }
+  .ibm-height-lg-11 {
+    min-height: calc( (100vw - 32px) * 0.6875); }
+  .ibm-height-lg-12 {
+    min-height: calc( (100vw - 32px) * 0.75); }
+  .ibm-height-lg-13 {
+    min-height: calc( (100vw - 32px) * 0.8125); }
+  .ibm-height-lg-14 {
+    min-height: calc( (100vw - 32px) * 0.875); }
+  .ibm-height-lg-15 {
+    min-height: calc( (100vw - 32px) * 0.9375); }
+  .ibm-height-lg-16 {
+    min-height: calc( (100vw - 32px) * 1); } }
+
+@media (min-width: 1184px) {
+  .ibm-height-lg2-0 {
+    min-height: unset; }
+  .ibm-s-height-lg2-0 {
+    min-height: unset; }
+  /* Small heights */
+  .ibm-s-height-lg2-1 {
+    min-height: 8px; }
+  .ibm-s-height-lg2-2 {
+    min-height: 16px; }
+  .ibm-s-height-lg2-3 {
+    min-height: 24px; }
+  .ibm-s-height-lg2-4 {
+    min-height: 32px; }
+  .ibm-s-height-lg2-6 {
+    min-height: 48px; }
+  .ibm-s-height-lg2-8 {
+    min-height: 64px; }
+  .ibm-height-sm-1 {
+    min-height: calc( (100vw - 32px) * 0.25); }
+  .ibm-height-sm-2 {
+    min-height: calc( (100vw - 32px) * 0.5); }
+  .ibm-height-sm-3 {
+    min-height: calc( (100vw - 32px) * 0.75); }
+  .ibm-height-sm-4 {
+    min-height: calc( (100vw - 32px) * 1); }
+  .ibm-height-sm2-1 {
+    min-height: calc( (100vw - 32px) * 0.125); }
+  .ibm-height-sm2-2 {
+    min-height: calc( (100vw - 32px) * 0.25); }
+  .ibm-height-sm2-3 {
+    min-height: calc( (100vw - 32px) * 0.375); }
+  .ibm-height-sm2-4 {
+    min-height: calc( (100vw - 32px) * 0.5); }
+  .ibm-height-sm2-5 {
+    min-height: calc( (100vw - 32px) * 0.625); }
+  .ibm-height-sm2-6 {
+    min-height: calc( (100vw - 32px) * 0.75); }
+  .ibm-height-sm2-7 {
+    min-height: calc( (100vw - 32px) * 0.875); }
+  .ibm-height-sm2-8 {
+    min-height: calc( (100vw - 32px) * 1); }
+  .ibm-height-sm3-1 {
+    min-height: calc( (100vw - 32px) * 0.125); }
+  .ibm-height-sm3-2 {
+    min-height: calc( (100vw - 32px) * 0.25); }
+  .ibm-height-sm3-3 {
+    min-height: calc( (100vw - 32px) * 0.375); }
+  .ibm-height-sm3-4 {
+    min-height: calc( (100vw - 32px) * 0.5); }
+  .ibm-height-sm3-5 {
+    min-height: calc( (100vw - 32px) * 0.625); }
+  .ibm-height-sm3-6 {
+    min-height: calc( (100vw - 32px) * 0.75); }
+  .ibm-height-sm3-7 {
+    min-height: calc( (100vw - 32px) * 0.875); }
+  .ibm-height-sm3-8 {
+    min-height: calc( (100vw - 32px) * 1); }
+  .ibm-height-md-1 {
+    min-height: calc( (100vw - 32px) * 0.125); }
+  .ibm-height-md-2 {
+    min-height: calc( (100vw - 32px) * 0.25); }
+  .ibm-height-md-3 {
+    min-height: calc( (100vw - 32px) * 0.375); }
+  .ibm-height-md-4 {
+    min-height: calc( (100vw - 32px) * 0.5); }
+  .ibm-height-md-5 {
+    min-height: calc( (100vw - 32px) * 0.625); }
+  .ibm-height-md-6 {
+    min-height: calc( (100vw - 32px) * 0.75); }
+  .ibm-height-md-7 {
+    min-height: calc( (100vw - 32px) * 0.875); }
+  .ibm-height-md-8 {
+    min-height: calc( (100vw - 32px) * 1); }
+  .ibm-height-md2-1 {
+    min-height: calc( (100vw - 32px) * 0.125); }
+  .ibm-height-md2-2 {
+    min-height: calc( (100vw - 32px) * 0.25); }
+  .ibm-height-md2-3 {
+    min-height: calc( (100vw - 32px) * 0.375); }
+  .ibm-height-md2-4 {
+    min-height: calc( (100vw - 32px) * 0.5); }
+  .ibm-height-md2-5 {
+    min-height: calc( (100vw - 32px) * 0.625); }
+  .ibm-height-md2-6 {
+    min-height: calc( (100vw - 32px) * 0.75); }
+  .ibm-height-md2-7 {
+    min-height: calc( (100vw - 32px) * 0.875); }
+  .ibm-height-md2-8 {
+    min-height: calc( (100vw - 32px) * 1); }
+  .ibm-height-lg-1 {
+    min-height: calc( (100vw - 32px) * 0.0625); }
+  .ibm-height-lg-2 {
+    min-height: calc( (100vw - 32px) * 0.125); }
+  .ibm-height-lg-3 {
+    min-height: calc( (100vw - 32px) * 0.1875); }
+  .ibm-height-lg-4 {
+    min-height: calc( (100vw - 32px) * 0.25); }
+  .ibm-height-lg-5 {
+    min-height: calc( (100vw - 32px) * 0.3125); }
+  .ibm-height-lg-6 {
+    min-height: calc( (100vw - 32px) * 0.375); }
+  .ibm-height-lg-7 {
+    min-height: calc( (100vw - 32px) * 0.4375); }
+  .ibm-height-lg-8 {
+    min-height: calc( (100vw - 32px) * 0.5); }
+  .ibm-height-lg-9 {
+    min-height: calc( (100vw - 32px) * 0.5625); }
+  .ibm-height-lg-10 {
+    min-height: calc( (100vw - 32px) * 0.625); }
+  .ibm-height-lg-11 {
+    min-height: calc( (100vw - 32px) * 0.6875); }
+  .ibm-height-lg-12 {
+    min-height: calc( (100vw - 32px) * 0.75); }
+  .ibm-height-lg-13 {
+    min-height: calc( (100vw - 32px) * 0.8125); }
+  .ibm-height-lg-14 {
+    min-height: calc( (100vw - 32px) * 0.875); }
+  .ibm-height-lg-15 {
+    min-height: calc( (100vw - 32px) * 0.9375); }
+  .ibm-height-lg-16 {
+    min-height: calc( (100vw - 32px) * 1); }
+  .ibm-height-lg2-1 {
+    min-height: calc( (100vw - 32px) * 0.0625); }
+  .ibm-height-lg2-2 {
+    min-height: calc( (100vw - 32px) * 0.125); }
+  .ibm-height-lg2-3 {
+    min-height: calc( (100vw - 32px) * 0.1875); }
+  .ibm-height-lg2-4 {
+    min-height: calc( (100vw - 32px) * 0.25); }
+  .ibm-height-lg2-5 {
+    min-height: calc( (100vw - 32px) * 0.3125); }
+  .ibm-height-lg2-6 {
+    min-height: calc( (100vw - 32px) * 0.375); }
+  .ibm-height-lg2-7 {
+    min-height: calc( (100vw - 32px) * 0.4375); }
+  .ibm-height-lg2-8 {
+    min-height: calc( (100vw - 32px) * 0.5); }
+  .ibm-height-lg2-9 {
+    min-height: calc( (100vw - 32px) * 0.5625); }
+  .ibm-height-lg2-10 {
+    min-height: calc( (100vw - 32px) * 0.625); }
+  .ibm-height-lg2-11 {
+    min-height: calc( (100vw - 32px) * 0.6875); }
+  .ibm-height-lg2-12 {
+    min-height: calc( (100vw - 32px) * 0.75); }
+  .ibm-height-lg2-13 {
+    min-height: calc( (100vw - 32px) * 0.8125); }
+  .ibm-height-lg2-14 {
+    min-height: calc( (100vw - 32px) * 0.875); }
+  .ibm-height-lg2-15 {
+    min-height: calc( (100vw - 32px) * 0.9375); }
+  .ibm-height-lg2-16 {
+    min-height: calc( (100vw - 32px) * 1); } }
+
+@media (min-width: 1312px) {
+  .ibm-height-xlg-0 {
+    min-height: unset; }
+  .ibm-s-height-xlg-0 {
+    min-height: unset; }
+  /* Small heights */
+  .ibm-s-height-xlg-1 {
+    min-height: 8px; }
+  .ibm-s-height-xlg-2 {
+    min-height: 16px; }
+  .ibm-s-height-xlg-3 {
+    min-height: 24px; }
+  .ibm-s-height-xlg-4 {
+    min-height: 32px; }
+  .ibm-s-height-xlg-6 {
+    min-height: 48px; }
+  .ibm-s-height-xlg-8 {
+    min-height: 64px; }
+  .ibm-height-sm-1 {
+    min-height: calc( (100vw - 32px) * 0.25); }
+  .ibm-height-sm-2 {
+    min-height: calc( (100vw - 32px) * 0.5); }
+  .ibm-height-sm-3 {
+    min-height: calc( (100vw - 32px) * 0.75); }
+  .ibm-height-sm-4 {
+    min-height: calc( (100vw - 32px) * 1); }
+  .ibm-height-sm2-1 {
+    min-height: calc( (100vw - 32px) * 0.125); }
+  .ibm-height-sm2-2 {
+    min-height: calc( (100vw - 32px) * 0.25); }
+  .ibm-height-sm2-3 {
+    min-height: calc( (100vw - 32px) * 0.375); }
+  .ibm-height-sm2-4 {
+    min-height: calc( (100vw - 32px) * 0.5); }
+  .ibm-height-sm2-5 {
+    min-height: calc( (100vw - 32px) * 0.625); }
+  .ibm-height-sm2-6 {
+    min-height: calc( (100vw - 32px) * 0.75); }
+  .ibm-height-sm2-7 {
+    min-height: calc( (100vw - 32px) * 0.875); }
+  .ibm-height-sm2-8 {
+    min-height: calc( (100vw - 32px) * 1); }
+  .ibm-height-sm3-1 {
+    min-height: calc( (100vw - 32px) * 0.125); }
+  .ibm-height-sm3-2 {
+    min-height: calc( (100vw - 32px) * 0.25); }
+  .ibm-height-sm3-3 {
+    min-height: calc( (100vw - 32px) * 0.375); }
+  .ibm-height-sm3-4 {
+    min-height: calc( (100vw - 32px) * 0.5); }
+  .ibm-height-sm3-5 {
+    min-height: calc( (100vw - 32px) * 0.625); }
+  .ibm-height-sm3-6 {
+    min-height: calc( (100vw - 32px) * 0.75); }
+  .ibm-height-sm3-7 {
+    min-height: calc( (100vw - 32px) * 0.875); }
+  .ibm-height-sm3-8 {
+    min-height: calc( (100vw - 32px) * 1); }
+  .ibm-height-md-1 {
+    min-height: calc( (100vw - 32px) * 0.125); }
+  .ibm-height-md-2 {
+    min-height: calc( (100vw - 32px) * 0.25); }
+  .ibm-height-md-3 {
+    min-height: calc( (100vw - 32px) * 0.375); }
+  .ibm-height-md-4 {
+    min-height: calc( (100vw - 32px) * 0.5); }
+  .ibm-height-md-5 {
+    min-height: calc( (100vw - 32px) * 0.625); }
+  .ibm-height-md-6 {
+    min-height: calc( (100vw - 32px) * 0.75); }
+  .ibm-height-md-7 {
+    min-height: calc( (100vw - 32px) * 0.875); }
+  .ibm-height-md-8 {
+    min-height: calc( (100vw - 32px) * 1); }
+  .ibm-height-md2-1 {
+    min-height: calc( (100vw - 32px) * 0.125); }
+  .ibm-height-md2-2 {
+    min-height: calc( (100vw - 32px) * 0.25); }
+  .ibm-height-md2-3 {
+    min-height: calc( (100vw - 32px) * 0.375); }
+  .ibm-height-md2-4 {
+    min-height: calc( (100vw - 32px) * 0.5); }
+  .ibm-height-md2-5 {
+    min-height: calc( (100vw - 32px) * 0.625); }
+  .ibm-height-md2-6 {
+    min-height: calc( (100vw - 32px) * 0.75); }
+  .ibm-height-md2-7 {
+    min-height: calc( (100vw - 32px) * 0.875); }
+  .ibm-height-md2-8 {
+    min-height: calc( (100vw - 32px) * 1); }
+  .ibm-height-lg-1 {
+    min-height: calc( (100vw - 32px) * 0.0625); }
+  .ibm-height-lg-2 {
+    min-height: calc( (100vw - 32px) * 0.125); }
+  .ibm-height-lg-3 {
+    min-height: calc( (100vw - 32px) * 0.1875); }
+  .ibm-height-lg-4 {
+    min-height: calc( (100vw - 32px) * 0.25); }
+  .ibm-height-lg-5 {
+    min-height: calc( (100vw - 32px) * 0.3125); }
+  .ibm-height-lg-6 {
+    min-height: calc( (100vw - 32px) * 0.375); }
+  .ibm-height-lg-7 {
+    min-height: calc( (100vw - 32px) * 0.4375); }
+  .ibm-height-lg-8 {
+    min-height: calc( (100vw - 32px) * 0.5); }
+  .ibm-height-lg-9 {
+    min-height: calc( (100vw - 32px) * 0.5625); }
+  .ibm-height-lg-10 {
+    min-height: calc( (100vw - 32px) * 0.625); }
+  .ibm-height-lg-11 {
+    min-height: calc( (100vw - 32px) * 0.6875); }
+  .ibm-height-lg-12 {
+    min-height: calc( (100vw - 32px) * 0.75); }
+  .ibm-height-lg-13 {
+    min-height: calc( (100vw - 32px) * 0.8125); }
+  .ibm-height-lg-14 {
+    min-height: calc( (100vw - 32px) * 0.875); }
+  .ibm-height-lg-15 {
+    min-height: calc( (100vw - 32px) * 0.9375); }
+  .ibm-height-lg-16 {
+    min-height: calc( (100vw - 32px) * 1); }
+  .ibm-height-lg2-1 {
+    min-height: calc( (100vw - 32px) * 0.0625); }
+  .ibm-height-lg2-2 {
+    min-height: calc( (100vw - 32px) * 0.125); }
+  .ibm-height-lg2-3 {
+    min-height: calc( (100vw - 32px) * 0.1875); }
+  .ibm-height-lg2-4 {
+    min-height: calc( (100vw - 32px) * 0.25); }
+  .ibm-height-lg2-5 {
+    min-height: calc( (100vw - 32px) * 0.3125); }
+  .ibm-height-lg2-6 {
+    min-height: calc( (100vw - 32px) * 0.375); }
+  .ibm-height-lg2-7 {
+    min-height: calc( (100vw - 32px) * 0.4375); }
+  .ibm-height-lg2-8 {
+    min-height: calc( (100vw - 32px) * 0.5); }
+  .ibm-height-lg2-9 {
+    min-height: calc( (100vw - 32px) * 0.5625); }
+  .ibm-height-lg2-10 {
+    min-height: calc( (100vw - 32px) * 0.625); }
+  .ibm-height-lg2-11 {
+    min-height: calc( (100vw - 32px) * 0.6875); }
+  .ibm-height-lg2-12 {
+    min-height: calc( (100vw - 32px) * 0.75); }
+  .ibm-height-lg2-13 {
+    min-height: calc( (100vw - 32px) * 0.8125); }
+  .ibm-height-lg2-14 {
+    min-height: calc( (100vw - 32px) * 0.875); }
+  .ibm-height-lg2-15 {
+    min-height: calc( (100vw - 32px) * 0.9375); }
+  .ibm-height-lg2-16 {
+    min-height: calc( (100vw - 32px) * 1); }
+  .ibm-height-xlg-1 {
+    min-height: calc( (100vw - 32px) * 0.0625); }
+  .ibm-height-xlg-2 {
+    min-height: calc( (100vw - 32px) * 0.125); }
+  .ibm-height-xlg-3 {
+    min-height: calc( (100vw - 32px) * 0.1875); }
+  .ibm-height-xlg-4 {
+    min-height: calc( (100vw - 32px) * 0.25); }
+  .ibm-height-xlg-5 {
+    min-height: calc( (100vw - 32px) * 0.3125); }
+  .ibm-height-xlg-6 {
+    min-height: calc( (100vw - 32px) * 0.375); }
+  .ibm-height-xlg-7 {
+    min-height: calc( (100vw - 32px) * 0.4375); }
+  .ibm-height-xlg-8 {
+    min-height: calc( (100vw - 32px) * 0.5); }
+  .ibm-height-xlg-9 {
+    min-height: calc( (100vw - 32px) * 0.5625); }
+  .ibm-height-xlg-10 {
+    min-height: calc( (100vw - 32px) * 0.625); }
+  .ibm-height-xlg-11 {
+    min-height: calc( (100vw - 32px) * 0.6875); }
+  .ibm-height-xlg-12 {
+    min-height: calc( (100vw - 32px) * 0.75); }
+  .ibm-height-xlg-13 {
+    min-height: calc( (100vw - 32px) * 0.8125); }
+  .ibm-height-xlg-14 {
+    min-height: calc( (100vw - 32px) * 0.875); }
+  .ibm-height-xlg-15 {
+    min-height: calc( (100vw - 32px) * 0.9375); }
+  .ibm-height-xlg-16 {
+    min-height: calc( (100vw - 32px) * 1); } }
+
+@media (min-width: 1456px) {
+  .ibm-height-xlg2-0 {
+    min-height: unset; }
+  .ibm-s-height-xlg2-0 {
+    min-height: unset; }
+  /* Small heights */
+  .ibm-s-height-xlg2-1 {
+    min-height: 12px; }
+  .ibm-s-height-xlg2-2 {
+    min-height: 24px; }
+  .ibm-s-height-xlg2-3 {
+    min-height: 36px; }
+  .ibm-s-height-xlg2-4 {
+    min-height: 48px; }
+  .ibm-s-height-xlg2-6 {
+    min-height: 72px; }
+  .ibm-s-height-xlg2-8 {
+    min-height: 96px; }
+  .ibm-height-sm-1 {
+    min-height: calc( (100vw - 48px) * 0.25); }
+  .ibm-height-sm-2 {
+    min-height: calc( (100vw - 48px) * 0.5); }
+  .ibm-height-sm-3 {
+    min-height: calc( (100vw - 48px) * 0.75); }
+  .ibm-height-sm-4 {
+    min-height: calc( (100vw - 48px) * 1); }
+  .ibm-height-sm2-1 {
+    min-height: calc( (100vw - 48px) * 0.125); }
+  .ibm-height-sm2-2 {
+    min-height: calc( (100vw - 48px) * 0.25); }
+  .ibm-height-sm2-3 {
+    min-height: calc( (100vw - 48px) * 0.375); }
+  .ibm-height-sm2-4 {
+    min-height: calc( (100vw - 48px) * 0.5); }
+  .ibm-height-sm2-5 {
+    min-height: calc( (100vw - 48px) * 0.625); }
+  .ibm-height-sm2-6 {
+    min-height: calc( (100vw - 48px) * 0.75); }
+  .ibm-height-sm2-7 {
+    min-height: calc( (100vw - 48px) * 0.875); }
+  .ibm-height-sm2-8 {
+    min-height: calc( (100vw - 48px) * 1); }
+  .ibm-height-sm3-1 {
+    min-height: calc( (100vw - 48px) * 0.125); }
+  .ibm-height-sm3-2 {
+    min-height: calc( (100vw - 48px) * 0.25); }
+  .ibm-height-sm3-3 {
+    min-height: calc( (100vw - 48px) * 0.375); }
+  .ibm-height-sm3-4 {
+    min-height: calc( (100vw - 48px) * 0.5); }
+  .ibm-height-sm3-5 {
+    min-height: calc( (100vw - 48px) * 0.625); }
+  .ibm-height-sm3-6 {
+    min-height: calc( (100vw - 48px) * 0.75); }
+  .ibm-height-sm3-7 {
+    min-height: calc( (100vw - 48px) * 0.875); }
+  .ibm-height-sm3-8 {
+    min-height: calc( (100vw - 48px) * 1); }
+  .ibm-height-md-1 {
+    min-height: calc( (100vw - 48px) * 0.125); }
+  .ibm-height-md-2 {
+    min-height: calc( (100vw - 48px) * 0.25); }
+  .ibm-height-md-3 {
+    min-height: calc( (100vw - 48px) * 0.375); }
+  .ibm-height-md-4 {
+    min-height: calc( (100vw - 48px) * 0.5); }
+  .ibm-height-md-5 {
+    min-height: calc( (100vw - 48px) * 0.625); }
+  .ibm-height-md-6 {
+    min-height: calc( (100vw - 48px) * 0.75); }
+  .ibm-height-md-7 {
+    min-height: calc( (100vw - 48px) * 0.875); }
+  .ibm-height-md-8 {
+    min-height: calc( (100vw - 48px) * 1); }
+  .ibm-height-md2-1 {
+    min-height: calc( (100vw - 48px) * 0.125); }
+  .ibm-height-md2-2 {
+    min-height: calc( (100vw - 48px) * 0.25); }
+  .ibm-height-md2-3 {
+    min-height: calc( (100vw - 48px) * 0.375); }
+  .ibm-height-md2-4 {
+    min-height: calc( (100vw - 48px) * 0.5); }
+  .ibm-height-md2-5 {
+    min-height: calc( (100vw - 48px) * 0.625); }
+  .ibm-height-md2-6 {
+    min-height: calc( (100vw - 48px) * 0.75); }
+  .ibm-height-md2-7 {
+    min-height: calc( (100vw - 48px) * 0.875); }
+  .ibm-height-md2-8 {
+    min-height: calc( (100vw - 48px) * 1); }
+  .ibm-height-lg-1 {
+    min-height: calc( (100vw - 48px) * 0.0625); }
+  .ibm-height-lg-2 {
+    min-height: calc( (100vw - 48px) * 0.125); }
+  .ibm-height-lg-3 {
+    min-height: calc( (100vw - 48px) * 0.1875); }
+  .ibm-height-lg-4 {
+    min-height: calc( (100vw - 48px) * 0.25); }
+  .ibm-height-lg-5 {
+    min-height: calc( (100vw - 48px) * 0.3125); }
+  .ibm-height-lg-6 {
+    min-height: calc( (100vw - 48px) * 0.375); }
+  .ibm-height-lg-7 {
+    min-height: calc( (100vw - 48px) * 0.4375); }
+  .ibm-height-lg-8 {
+    min-height: calc( (100vw - 48px) * 0.5); }
+  .ibm-height-lg-9 {
+    min-height: calc( (100vw - 48px) * 0.5625); }
+  .ibm-height-lg-10 {
+    min-height: calc( (100vw - 48px) * 0.625); }
+  .ibm-height-lg-11 {
+    min-height: calc( (100vw - 48px) * 0.6875); }
+  .ibm-height-lg-12 {
+    min-height: calc( (100vw - 48px) * 0.75); }
+  .ibm-height-lg-13 {
+    min-height: calc( (100vw - 48px) * 0.8125); }
+  .ibm-height-lg-14 {
+    min-height: calc( (100vw - 48px) * 0.875); }
+  .ibm-height-lg-15 {
+    min-height: calc( (100vw - 48px) * 0.9375); }
+  .ibm-height-lg-16 {
+    min-height: calc( (100vw - 48px) * 1); }
+  .ibm-height-lg2-1 {
+    min-height: calc( (100vw - 48px) * 0.0625); }
+  .ibm-height-lg2-2 {
+    min-height: calc( (100vw - 48px) * 0.125); }
+  .ibm-height-lg2-3 {
+    min-height: calc( (100vw - 48px) * 0.1875); }
+  .ibm-height-lg2-4 {
+    min-height: calc( (100vw - 48px) * 0.25); }
+  .ibm-height-lg2-5 {
+    min-height: calc( (100vw - 48px) * 0.3125); }
+  .ibm-height-lg2-6 {
+    min-height: calc( (100vw - 48px) * 0.375); }
+  .ibm-height-lg2-7 {
+    min-height: calc( (100vw - 48px) * 0.4375); }
+  .ibm-height-lg2-8 {
+    min-height: calc( (100vw - 48px) * 0.5); }
+  .ibm-height-lg2-9 {
+    min-height: calc( (100vw - 48px) * 0.5625); }
+  .ibm-height-lg2-10 {
+    min-height: calc( (100vw - 48px) * 0.625); }
+  .ibm-height-lg2-11 {
+    min-height: calc( (100vw - 48px) * 0.6875); }
+  .ibm-height-lg2-12 {
+    min-height: calc( (100vw - 48px) * 0.75); }
+  .ibm-height-lg2-13 {
+    min-height: calc( (100vw - 48px) * 0.8125); }
+  .ibm-height-lg2-14 {
+    min-height: calc( (100vw - 48px) * 0.875); }
+  .ibm-height-lg2-15 {
+    min-height: calc( (100vw - 48px) * 0.9375); }
+  .ibm-height-lg2-16 {
+    min-height: calc( (100vw - 48px) * 1); }
+  .ibm-height-xlg-1 {
+    min-height: calc( (100vw - 48px) * 0.0625); }
+  .ibm-height-xlg-2 {
+    min-height: calc( (100vw - 48px) * 0.125); }
+  .ibm-height-xlg-3 {
+    min-height: calc( (100vw - 48px) * 0.1875); }
+  .ibm-height-xlg-4 {
+    min-height: calc( (100vw - 48px) * 0.25); }
+  .ibm-height-xlg-5 {
+    min-height: calc( (100vw - 48px) * 0.3125); }
+  .ibm-height-xlg-6 {
+    min-height: calc( (100vw - 48px) * 0.375); }
+  .ibm-height-xlg-7 {
+    min-height: calc( (100vw - 48px) * 0.4375); }
+  .ibm-height-xlg-8 {
+    min-height: calc( (100vw - 48px) * 0.5); }
+  .ibm-height-xlg-9 {
+    min-height: calc( (100vw - 48px) * 0.5625); }
+  .ibm-height-xlg-10 {
+    min-height: calc( (100vw - 48px) * 0.625); }
+  .ibm-height-xlg-11 {
+    min-height: calc( (100vw - 48px) * 0.6875); }
+  .ibm-height-xlg-12 {
+    min-height: calc( (100vw - 48px) * 0.75); }
+  .ibm-height-xlg-13 {
+    min-height: calc( (100vw - 48px) * 0.8125); }
+  .ibm-height-xlg-14 {
+    min-height: calc( (100vw - 48px) * 0.875); }
+  .ibm-height-xlg-15 {
+    min-height: calc( (100vw - 48px) * 0.9375); }
+  .ibm-height-xlg-16 {
+    min-height: calc( (100vw - 48px) * 1); }
+  .ibm-height-xlg2-1 {
+    min-height: calc( (100vw - 48px) * 0.0625); }
+  .ibm-height-xlg2-2 {
+    min-height: calc( (100vw - 48px) * 0.125); }
+  .ibm-height-xlg2-3 {
+    min-height: calc( (100vw - 48px) * 0.1875); }
+  .ibm-height-xlg2-4 {
+    min-height: calc( (100vw - 48px) * 0.25); }
+  .ibm-height-xlg2-5 {
+    min-height: calc( (100vw - 48px) * 0.3125); }
+  .ibm-height-xlg2-6 {
+    min-height: calc( (100vw - 48px) * 0.375); }
+  .ibm-height-xlg2-7 {
+    min-height: calc( (100vw - 48px) * 0.4375); }
+  .ibm-height-xlg2-8 {
+    min-height: calc( (100vw - 48px) * 0.5); }
+  .ibm-height-xlg2-9 {
+    min-height: calc( (100vw - 48px) * 0.5625); }
+  .ibm-height-xlg2-10 {
+    min-height: calc( (100vw - 48px) * 0.625); }
+  .ibm-height-xlg2-11 {
+    min-height: calc( (100vw - 48px) * 0.6875); }
+  .ibm-height-xlg2-12 {
+    min-height: calc( (100vw - 48px) * 0.75); }
+  .ibm-height-xlg2-13 {
+    min-height: calc( (100vw - 48px) * 0.8125); }
+  .ibm-height-xlg2-14 {
+    min-height: calc( (100vw - 48px) * 0.875); }
+  .ibm-height-xlg2-15 {
+    min-height: calc( (100vw - 48px) * 0.9375); }
+  .ibm-height-xlg2-16 {
+    min-height: calc( (100vw - 48px) * 1); } }
+
+@media (min-width: 1584px) {
+  /* Small heights */
+  .ibm-height-sm-1 {
+    min-height: 384px; }
+  .ibm-height-sm-2 {
+    min-height: 768px; }
+  .ibm-height-sm-3 {
+    min-height: 1152px; }
+  .ibm-height-sm-4 {
+    min-height: 1536px; }
+  .ibm-height-sm2-1 {
+    min-height: 192px; }
+  .ibm-height-sm2-2 {
+    min-height: 384px; }
+  .ibm-height-sm2-3 {
+    min-height: 576px; }
+  .ibm-height-sm2-4 {
+    min-height: 768px; }
+  .ibm-height-sm2-5 {
+    min-height: 960px; }
+  .ibm-height-sm2-6 {
+    min-height: 1152px; }
+  .ibm-height-sm2-7 {
+    min-height: 1344px; }
+  .ibm-height-sm2-8 {
+    min-height: 1536px; }
+  .ibm-height-sm3-1 {
+    min-height: 192px; }
+  .ibm-height-sm3-2 {
+    min-height: 384px; }
+  .ibm-height-sm3-3 {
+    min-height: 576px; }
+  .ibm-height-sm3-4 {
+    min-height: 768px; }
+  .ibm-height-sm3-5 {
+    min-height: 960px; }
+  .ibm-height-sm3-6 {
+    min-height: 1152px; }
+  .ibm-height-sm3-7 {
+    min-height: 1344px; }
+  .ibm-height-sm3-8 {
+    min-height: 1536px; }
+  .ibm-height-md-1 {
+    min-height: 192px; }
+  .ibm-height-md-2 {
+    min-height: 384px; }
+  .ibm-height-md-3 {
+    min-height: 576px; }
+  .ibm-height-md-4 {
+    min-height: 768px; }
+  .ibm-height-md-5 {
+    min-height: 960px; }
+  .ibm-height-md-6 {
+    min-height: 1152px; }
+  .ibm-height-md-7 {
+    min-height: 1344px; }
+  .ibm-height-md-8 {
+    min-height: 1536px; }
+  .ibm-height-md2-1 {
+    min-height: 192px; }
+  .ibm-height-md2-2 {
+    min-height: 384px; }
+  .ibm-height-md2-3 {
+    min-height: 576px; }
+  .ibm-height-md2-4 {
+    min-height: 768px; }
+  .ibm-height-md2-5 {
+    min-height: 960px; }
+  .ibm-height-md2-6 {
+    min-height: 1152px; }
+  .ibm-height-md2-7 {
+    min-height: 1344px; }
+  .ibm-height-md2-8 {
+    min-height: 1536px; }
+  .ibm-height-lg-1 {
+    min-height: 96px; }
+  .ibm-height-lg-2 {
+    min-height: 192px; }
+  .ibm-height-lg-3 {
+    min-height: 288px; }
+  .ibm-height-lg-4 {
+    min-height: 384px; }
+  .ibm-height-lg-5 {
+    min-height: 480px; }
+  .ibm-height-lg-6 {
+    min-height: 576px; }
+  .ibm-height-lg-7 {
+    min-height: 672px; }
+  .ibm-height-lg-8 {
+    min-height: 768px; }
+  .ibm-height-lg-9 {
+    min-height: 864px; }
+  .ibm-height-lg-10 {
+    min-height: 960px; }
+  .ibm-height-lg-11 {
+    min-height: 1056px; }
+  .ibm-height-lg-12 {
+    min-height: 1152px; }
+  .ibm-height-lg-13 {
+    min-height: 1248px; }
+  .ibm-height-lg-14 {
+    min-height: 1344px; }
+  .ibm-height-lg-15 {
+    min-height: 1440px; }
+  .ibm-height-lg-16 {
+    min-height: 1536px; }
+  .ibm-height-lg2-1 {
+    min-height: 96px; }
+  .ibm-height-lg2-2 {
+    min-height: 192px; }
+  .ibm-height-lg2-3 {
+    min-height: 288px; }
+  .ibm-height-lg2-4 {
+    min-height: 384px; }
+  .ibm-height-lg2-5 {
+    min-height: 480px; }
+  .ibm-height-lg2-6 {
+    min-height: 576px; }
+  .ibm-height-lg2-7 {
+    min-height: 672px; }
+  .ibm-height-lg2-8 {
+    min-height: 768px; }
+  .ibm-height-lg2-9 {
+    min-height: 864px; }
+  .ibm-height-lg2-10 {
+    min-height: 960px; }
+  .ibm-height-lg2-11 {
+    min-height: 1056px; }
+  .ibm-height-lg2-12 {
+    min-height: 1152px; }
+  .ibm-height-lg2-13 {
+    min-height: 1248px; }
+  .ibm-height-lg2-14 {
+    min-height: 1344px; }
+  .ibm-height-lg2-15 {
+    min-height: 1440px; }
+  .ibm-height-lg2-16 {
+    min-height: 1536px; }
+  .ibm-height-xlg-1 {
+    min-height: 96px; }
+  .ibm-height-xlg-2 {
+    min-height: 192px; }
+  .ibm-height-xlg-3 {
+    min-height: 288px; }
+  .ibm-height-xlg-4 {
+    min-height: 384px; }
+  .ibm-height-xlg-5 {
+    min-height: 480px; }
+  .ibm-height-xlg-6 {
+    min-height: 576px; }
+  .ibm-height-xlg-7 {
+    min-height: 672px; }
+  .ibm-height-xlg-8 {
+    min-height: 768px; }
+  .ibm-height-xlg-9 {
+    min-height: 864px; }
+  .ibm-height-xlg-10 {
+    min-height: 960px; }
+  .ibm-height-xlg-11 {
+    min-height: 1056px; }
+  .ibm-height-xlg-12 {
+    min-height: 1152px; }
+  .ibm-height-xlg-13 {
+    min-height: 1248px; }
+  .ibm-height-xlg-14 {
+    min-height: 1344px; }
+  .ibm-height-xlg-15 {
+    min-height: 1440px; }
+  .ibm-height-xlg-16 {
+    min-height: 1536px; }
+  .ibm-height-xlg2-1 {
+    min-height: 96px; }
+  .ibm-height-xlg2-2 {
+    min-height: 192px; }
+  .ibm-height-xlg2-3 {
+    min-height: 288px; }
+  .ibm-height-xlg2-4 {
+    min-height: 384px; }
+  .ibm-height-xlg2-5 {
+    min-height: 480px; }
+  .ibm-height-xlg2-6 {
+    min-height: 576px; }
+  .ibm-height-xlg2-7 {
+    min-height: 672px; }
+  .ibm-height-xlg2-8 {
+    min-height: 768px; }
+  .ibm-height-xlg2-9 {
+    min-height: 864px; }
+  .ibm-height-xlg2-10 {
+    min-height: 960px; }
+  .ibm-height-xlg2-11 {
+    min-height: 1056px; }
+  .ibm-height-xlg2-12 {
+    min-height: 1152px; }
+  .ibm-height-xlg2-13 {
+    min-height: 1248px; }
+  .ibm-height-xlg2-14 {
+    min-height: 1344px; }
+  .ibm-height-xlg2-15 {
+    min-height: 1440px; }
+  .ibm-height-xlg2-16 {
+    min-height: 1536px; } }
 
 /* Bleed */
 .ibm-col-bleed {

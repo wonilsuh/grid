@@ -80,10 +80,32 @@ $ibm-grid-breakpoints: (
 
 // let's build $ibm-grid based on config and breakpoints, which is used by the rest of the code
 
+// let's build a next map
+$prev-breakpoint:null;
+$next-map:();
+@each $breakpoint in $breakpoints-config {
+  
+  @if $prev-breakpoint != null {
+    $new-entry:(
+      #{$prev-breakpoint}: $breakpoint
+    );
+    $next-map: map-merge($next-map, $new-entry);
+  }
+  $prev-breakpoint:$breakpoint;
+}
+
+@warn(inspect($next-map));
+
 $ibm-grid:();
 @each $breakpoint in $breakpoints-config {
+  $new-map:(
+    next:map-get($next-map, $breakpoint)
+  );
 	$new-entry:(
-		$breakpoint: map-get($ibm-grid-breakpoints, $breakpoint)
+		#{$breakpoint}: map-merge(map-get($ibm-grid-breakpoints, $breakpoint), $new-map)
 	);
 	$ibm-grid:map-merge($ibm-grid, $new-entry);
 }
+
+@warn("ibm-grid is");
+@warn(inspect($ibm-grid));

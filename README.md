@@ -113,18 +113,28 @@ There are three breakpoints in IBM Grid: sm (0px+), md (640px+), and lg (1056px+
 
 ### Height
 
-The grid contains the same unit sizes that a visual designer uses. These units change size between breakpoints: sm = 1/16vw, md = 1/32vw, and lg = 1/66vw. We use these units to measure specific heights in all of our wireframes and mock-ups.
+The grid offers two different ways to control the height of an element and your layout.
 
-**Note:** To respect mobile-first design, a smaller breakpoints’ units will scale at the next breakpoint unless the next breakpoint has unit heights specified. This means that setting a height at `.ibm-height-sm-2` will scale to `.ibm-height-md-4` and `.ibm-height-lg-8` unless a height at those breakpoints is specified. You can use a height at `0` to unset heights at a breakpoint.
+#### Small heights
+
+Small heights are based on the unit size, 8px, and supports 8px times {1, 2, 3, 4, 6, 8].
+
+`.ibm-s-height-[breakpoint]-[1, 2, 3, 4, 6, 8]`
+
+#### Large heights
+
+Large heights are based on the column width, and as many as the number of columns at a given breakpoint are supported. For an example, if the current breakpoint supports 8 columns, there will be 8 large heights available.
+
+| Breakpoint | Class |
+|---|---|
+| `sm`, `sm2`, `sm3` | `.ibm-height-sm-[0-4]` |
+| `md`, `md2` | `.ibm-height-md-[0-8] |
+| `lg`, `lg2`, 'xlg', `xls2` | `.ibm-height-lg-[0-16] |
+
+**Note:** To respect mobile-first design, a smaller breakpoints’ units will scale at the next breakpoint unless the next breakpoint has unit heights specified. This means that setting a height at `.ibm-s-height-sm-2` will scale to `.ibm-s-height-md-4` and `.ibm-s-height-lg-8` unless a height at those breakpoints is specified. You can use a height at `0` to unset heights at a breakpoint.
 
 **Note:** Since this code uses flex wrap, a row of columns will reflect the column with the largest height. To undo this behavior, you can wrap the smaller height in a `.ibm-col-group` to ignore the larger height sibling.
 
-| Class | Purpose |
-|---|---|
-| **Heights** | |
-| `.ibm-height-sm-[0-16]` | Set the min-height based on the units of the grid starting at 0px screen width |
-| `.ibm-height-md-[0-16]` | Set the min-height based on the units of the grid starting at 640px screen width |
-| `.ibm-height-lg-[0-33]` | Set the min-height based on the units of the grid starting at 1056px screen width |
 | **Height Modifiers** | |
 | `.ibm-height-strict` | Will switch the behavior of the height from min-height to height |
 
