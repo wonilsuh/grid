@@ -5,6 +5,7 @@
   width: 100vw; 
 }
 
+$prev-padding:0px;
 @each $breakpoint, $values in $ibm-grid {
   
   @if map-get($values, 'margin') > 0 {
@@ -48,9 +49,11 @@
       }
 
       $values-max: map-get($ibm-grid, $breakpoint-max);
+      
       @each $breakpoint2, $values2 in $ibm-grid {
+        /* prev-padding:#{$prev-padding} @ #{$breakpoint2} */
 
-        @if $breakpoint2 != $breakpoint-max {
+        @if $breakpoint2 != $breakpoint-max and $prev-padding != map-get($values, 'padding') {
 
           $a:1;
           @while $a < map-get($values2, 'columns'){
@@ -66,10 +69,10 @@
             }
             $a: $a + 1;
           }
-        } @else {
-
         }
       }
     }
   }
+
+  $prev-padding:map-get($values, 'padding');
 }

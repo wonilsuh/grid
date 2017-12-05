@@ -94,8 +94,6 @@ $next-map:();
   $prev-breakpoint:$breakpoint;
 }
 
-@warn(inspect($next-map));
-
 $ibm-grid:();
 @each $breakpoint in $breakpoints-config {
   $new-map:(
@@ -106,6 +104,3 @@ $ibm-grid:();
 	);
 	$ibm-grid:map-merge($ibm-grid, $new-entry);
 }
-
-@warn("ibm-grid is");
-@warn(inspect($ibm-grid));
