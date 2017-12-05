@@ -11,7 +11,7 @@
 
     @media (min-width:#{map-get($values, 'breakpoint')}) {
 
-      $padding: get-padding($values, 1);
+      $padding: map-get($values, 'padding');
       .ibm-col-bleed {
         margin: 0 #{get-padding($values, -1 * map-get($values, 'margin'))};
         padding-left: calc( #{get-padding($values, 1)} * #{map-get($values, 'margin') * 2});
@@ -44,6 +44,30 @@
 
         &.ibm-col-group{
           padding-right: calc( #{get-padding($values, 1)});
+        }
+      }
+
+      $values-max: map-get($ibm-grid, $breakpoint-max);
+      @each $breakpoint2, $values2 in $ibm-grid {
+
+        @if $breakpoint2 != $breakpoint-max {
+
+          $a:1;
+          @while $a < map-get($values2, 'columns'){
+
+            .ibm-col-#{$breakpoint2}-#{$a}.ibm-col-bleed {
+              max-width: #{map-get($values-max, 'breakpoint') / map-get($values, 'columns') * $a };
+              width: calc( 100vw / #{map-get($values, 'columns')} * #{$a} );
+            }
+
+            .ibm-col-#{$breakpoint2}-#{$a}[class*="ibm-col-bleed-"] {
+              max-width: #{(map-get($values-max, 'breakpoint') - map-get($values-max, 'padding') * 2) * $a / map-get($values2, 'columns') + $padding};
+              width: calc( (100vw - #{$padding} * 2) * #{$a / map-get($values2, 'columns')} + #{$padding});
+            }
+            $a: $a + 1;
+          }
+        } @else {
+
         }
       }
     }

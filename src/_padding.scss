@@ -21,7 +21,7 @@
 $prev-padding:0;
 @each $breakpoint, $values in $ibm-grid {
 
-  	@if $breakpoint != $breakpoint-min  and $breakpoint != $breakpoint-max and $prev-padding != map-get($values, 'padding') {
+  	@if $breakpoint != $breakpoint-min  and $prev-padding != map-get($values, 'padding') {
   		$prev-padding: map-get($values, 'padding');
 
   		$width: map-get($values, 'breakpoint');

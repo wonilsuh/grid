@@ -14,17 +14,17 @@ $ibm-grid-breakpoints: (
   ),
   "sm2": (
     breakpoint: 512px,
-    columns: 8,
+    columns: 4,
     heights: 32,
     margin: 0,
-    padding:24px,
+    padding:16px,
   ),
   "sm3": (
     breakpoint: 640px,
-    columns: 8,
+    columns: 4,
     heights: 32,
     margin: 0,
-    padding:24px,
+    padding:16px,
   ),
   "md": (
     breakpoint: 768px,
@@ -62,11 +62,11 @@ $ibm-grid-breakpoints: (
     padding:16px,
   ),
   "xlg2": (
-    breakpoint: 1456px,
+    breakpoint: 1440px,
     columns: 16,
     heights: 33,
     margin: 1,
-    padding:24px,
+    padding:16px,
   ),
   "max": (
     breakpoint: 1584px,

@@ -67,19 +67,6 @@ $prev-values:null;
 								min-width: map-get($values-min, 'min-width') / map-get($values2, 'columns') * $a;
 							}
 						}
-
-						@if map-get($values, 'margin') > 0 {
-							$padding: get-padding($values, 1);
-							.ibm-col-#{$breakpoint2}-#{$a}.ibm-col-bleed {
-								max-width: #{map-get($values-max, 'breakpoint') / map-get($values2, 'columns') * $a };
-								width: calc( 100vw / #{map-get($values2, 'columns')} * #{$a} );
-							}
-							.ibm-col-#{$breakpoint2}-#{$a}.ibm-col-bleed-left,
-							.ibm-col-#{$breakpoint2}-#{$a}.ibm-col-bleed-right {
-								max-width: calc(#{(map-get($values-max, 'breakpoint') - map-get($values-max, 'padding') *2 ) / map-get($values2, 'columns') * $a }  + #{map-get($values-max, 'padding')} );
-								width: calc( (100vw - (#{$padding}) * #{map-get($values, 'margin')} * 2) / #{map-get($values2, 'columns')} * #{$a} + #{$padding});
-							}
-						}
 						$a: $a + 1;
 					}
 				}
