@@ -12,12 +12,11 @@ $prev-values:null;
 
 		@media (min-width:#{map-get($values, 'breakpoint')}) {
 
-			.ibm-col-#{$breakpoint}-0,
-			.ibm-col-hide-#{$breakpoint} {
+			.ibm-col-#{$breakpoint}-0 {
 				display: none;
 			}
 			@if $prev-breakpoint != null {
-				[class*="ibm-col-#{$prev-breakpoint}-"].ibm-col-hide-#{$breakpoint} {
+				[class*="ibm-col-#{$prev-breakpoint}-"].ibm-col-#{$breakpoint}-0 {
 					display: none;
 				}
 			}
@@ -31,8 +30,7 @@ $prev-values:null;
 						@if map-get($values3, 'breakpoint') > map-get($values2, 'breakpoint')
 							and map-get($values3, 'breakpoint') == map-get($values, 'breakpoint') {
 
-							[class*="ibm-col-#{$breakpoint3}-"].ibm-col-#{$breakpoint2}-0,
-							[class*="ibm-col-#{$breakpoint3}-"].ibm-col-hide-#{$breakpoint2} {
+							[class*="ibm-col-#{$breakpoint3}-"].ibm-col-#{$breakpoint2}-0 {
 								display: initial; 
 
 								&.ibm-col-group {
@@ -77,8 +75,7 @@ $prev-values:null;
 	@if "deprecating" == null and $breakpoint != $breakpoint-max{
 		/* Onlies */
 		@media (min-width:map-get($values, 'breakpoint')) and (max-width:#{map-get($next-values, 'breakpoint') - 1px}) {
-			.ibm-col-#{$breakpoint}-0-only,
-			.ibm-col-hide-#{$breakpoint}-only {
+			.ibm-col-#{$breakpoint}-0-only {
 				display:none;
 			}
 		}
