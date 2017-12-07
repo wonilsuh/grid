@@ -132,8 +132,8 @@ There are three breakpoints in IBM Grid: sm (0px+), md (640px+), and lg (1056px+
 | `.ibm-col-xlg2-[1-16]` | Set the width out of sixteen columns for an item in the grid starting at 1056px screen width |  |
 | **Column Modifiers** | | |
 | `.ibm-col-group` | Use a column to group other columns to make sub-rows and sub-columns <br> <br> *This is the most powerful part of IBM Grid’s ability to make complex layouts.* |
-| `.ibm-col-[sm, sm2, sm3, md, md2, lg, lg2, xlg, xlg2]-0 | Hide the given column at a specific breakpoint | |
-| `.ibm-col-[sm, sm2, sm3, md, md2, lg, lg2, xlg, xlg2]-0-only | Do not display a column at a specific breakpoint | |
+| `.ibm-col-hide-[sm, sm2, sm3, md, md2, lg, lg2, xlg, xlg2] | Hide the given column at a specific breakpoint | |
+| `.ibm-col-hide-[sm, sm2, sm3, md, md2, lg, lg2, xlg, xlg2]-only | Do not display a column at a specific breakpoint | |
 | `.ibm-col-full` | Remove all padding of a column | |
 | **Padding** | |
 | `.ibm-padding` | Set the padding of an element at one unit of the grid <br> <br> *Each column already applies one unit of padding. You can add this element inside for another unit of padding. Most helpful when using `.ibm-col-full` and you want to add padding back in a child.* |
