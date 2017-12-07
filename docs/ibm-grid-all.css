@@ -934,7 +934,7 @@ html, body {
     max-width: 1536px;
     min-width: 320px; } }
 
-@media (min-width: 1440px) {
+@media (min-width: 1456px) {
   .ibm-col-xlg2-0 {
     display: none; }
   [class*="ibm-col-xlg-"].ibm-col-xlg2-0 {
@@ -1848,7 +1848,7 @@ html, body {
   .ibm-height-xlg-16 {
     min-height: calc( (100vw - 32px) * 1); } }
 
-@media (min-width: 1440px) {
+@media (min-width: 1456px) {
   .ibm-height-xlg2-0 {
     min-height: unset; }
   .ibm-s-height-xlg2-0 {
@@ -2840,7 +2840,7 @@ html, body {
   /* prev-padding:16px @ xlg2 */
   /* prev-padding:16px @ max */ }
 
-@media (min-width: 1440px) {
+@media (min-width: 1456px) {
   .ibm-col-bleed {
     margin: 0 -16px;
     padding-left: calc( 16px * 2);

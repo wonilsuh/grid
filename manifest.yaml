@@ -1,6 +1,0 @@
-applications:
-- name: duo-grid-test-fixed-padding
-  buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
-  disk_quota: 256MB
-  memory: 128MB
-path: ./docs
