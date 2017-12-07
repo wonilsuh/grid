@@ -12,16 +12,20 @@ $prev-values:null;
 
 		@media (min-width:#{map-get($values, 'breakpoint')}) {
 
-			.ibm-col-#{$breakpoint}-0 {
+			// basic hide classes
+			.ibm-col-hide-#{$breakpoint} {
 				display: none;
-			}
-			@if $prev-breakpoint != null {
-				[class*="ibm-col-#{$prev-breakpoint}-"].ibm-col-#{$breakpoint}-0 {
-					display: none;
-				}
 			}
 
 			@each $breakpoint2, $values2 in $ibm-grid {
+
+				@if map-get($values2, 'breakpoint') <= map-get($values, 'breakpoint') {
+
+					// when using with other classes from previous breakpoints
+					[class*="ibm-col-#{$breakpoint2}-"].ibm-col-hide-#{$breakpoint} {
+						display: none;
+					}
+				}
 
 				@if map-get($values2, 'breakpoint') <= map-get($values, 'breakpoint') {
 
@@ -30,7 +34,8 @@ $prev-values:null;
 						@if map-get($values3, 'breakpoint') > map-get($values2, 'breakpoint')
 							and map-get($values3, 'breakpoint') == map-get($values, 'breakpoint') {
 
-							[class*="ibm-col-#{$breakpoint3}-"].ibm-col-#{$breakpoint2}-0 {
+							// showing a column hidden at an earlier breakpoint
+							[class*="ibm-col-#{$breakpoint3}-"].ibm-col-hide-#{$breakpoint2} {
 								display: initial; 
 
 								&.ibm-col-group {
@@ -75,7 +80,7 @@ $prev-values:null;
 	@if "deprecating" == null and $breakpoint != $breakpoint-max{
 		/* Onlies */
 		@media (min-width:map-get($values, 'breakpoint')) and (max-width:#{map-get($next-values, 'breakpoint') - 1px}) {
-			.ibm-col-#{$breakpoint}-0-only {
+			.ibm-col-hide-#{$breakpoint}-only {
 				display:none;
 			}
 		}

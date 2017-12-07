@@ -109,7 +109,9 @@ html, body {
  *	columns
  */
 @media (min-width: 0px) {
-  .ibm-col-sm-0 {
+  .ibm-col-hide-sm {
+    display: none; }
+  [class*="ibm-col-sm-"].ibm-col-hide-sm {
     display: none; }
   .ibm-col-sm-1 {
     width: calc( 100vw * 0.25);
@@ -129,13 +131,13 @@ html, body {
     min-width: 320px; } }
 
 @media (min-width: 768px) {
-  .ibm-col-md-0 {
+  .ibm-col-hide-md {
     display: none; }
-  [class*="ibm-col-sm-"].ibm-col-md-0 {
+  [class*="ibm-col-sm-"].ibm-col-hide-md {
     display: none; }
-  [class*="ibm-col-md-"].ibm-col-sm-0 {
+  [class*="ibm-col-md-"].ibm-col-hide-sm {
     display: initial; }
-    [class*="ibm-col-md-"].ibm-col-sm-0.ibm-col-group {
+    [class*="ibm-col-md-"].ibm-col-hide-sm.ibm-col-group {
       display: flex; }
   .ibm-col-sm-1 {
     width: calc( 100vw * 0.25); }
@@ -145,6 +147,8 @@ html, body {
     width: calc( 100vw * 0.75); }
   .ibm-col-sm-4 {
     width: calc( 100vw * 1); }
+  [class*="ibm-col-md-"].ibm-col-hide-md {
+    display: none; }
   .ibm-col-md-1 {
     width: calc( 100vw * 0.125);
     max-width: 192px;
@@ -179,13 +183,13 @@ html, body {
     min-width: 320px; } }
 
 @media (min-width: 1056px) {
-  .ibm-col-lg-0 {
+  .ibm-col-hide-lg {
     display: none; }
-  [class*="ibm-col-md-"].ibm-col-lg-0 {
+  [class*="ibm-col-sm-"].ibm-col-hide-lg {
     display: none; }
-  [class*="ibm-col-lg-"].ibm-col-sm-0 {
+  [class*="ibm-col-lg-"].ibm-col-hide-sm {
     display: initial; }
-    [class*="ibm-col-lg-"].ibm-col-sm-0.ibm-col-group {
+    [class*="ibm-col-lg-"].ibm-col-hide-sm.ibm-col-group {
       display: flex; }
   .ibm-col-sm-1 {
     width: calc( (100vw - 32px) * 0.25); }
@@ -195,9 +199,11 @@ html, body {
     width: calc( (100vw - 32px) * 0.75); }
   .ibm-col-sm-4 {
     width: calc( (100vw - 32px) * 1); }
-  [class*="ibm-col-lg-"].ibm-col-md-0 {
+  [class*="ibm-col-md-"].ibm-col-hide-lg {
+    display: none; }
+  [class*="ibm-col-lg-"].ibm-col-hide-md {
     display: initial; }
-    [class*="ibm-col-lg-"].ibm-col-md-0.ibm-col-group {
+    [class*="ibm-col-lg-"].ibm-col-hide-md.ibm-col-group {
       display: flex; }
   .ibm-col-md-1 {
     width: calc( (100vw - 32px) * 0.125); }
@@ -215,6 +221,8 @@ html, body {
     width: calc( (100vw - 32px) * 0.875); }
   .ibm-col-md-8 {
     width: calc( (100vw - 32px) * 1); }
+  [class*="ibm-col-lg-"].ibm-col-hide-lg {
+    display: none; }
   .ibm-col-lg-1 {
     width: calc( (100vw - 32px) * 0.0625);
     max-width: 96px;
@@ -281,13 +289,13 @@ html, body {
     min-width: 320px; } }
 
 @media (min-width: 1312px) {
-  .ibm-col-xlg-0 {
+  .ibm-col-hide-xlg {
     display: none; }
-  [class*="ibm-col-lg-"].ibm-col-xlg-0 {
+  [class*="ibm-col-sm-"].ibm-col-hide-xlg {
     display: none; }
-  [class*="ibm-col-xlg-"].ibm-col-sm-0 {
+  [class*="ibm-col-xlg-"].ibm-col-hide-sm {
     display: initial; }
-    [class*="ibm-col-xlg-"].ibm-col-sm-0.ibm-col-group {
+    [class*="ibm-col-xlg-"].ibm-col-hide-sm.ibm-col-group {
       display: flex; }
   .ibm-col-sm-1 {
     width: calc( (100vw - 32px) * 0.25); }
@@ -297,9 +305,11 @@ html, body {
     width: calc( (100vw - 32px) * 0.75); }
   .ibm-col-sm-4 {
     width: calc( (100vw - 32px) * 1); }
-  [class*="ibm-col-xlg-"].ibm-col-md-0 {
+  [class*="ibm-col-md-"].ibm-col-hide-xlg {
+    display: none; }
+  [class*="ibm-col-xlg-"].ibm-col-hide-md {
     display: initial; }
-    [class*="ibm-col-xlg-"].ibm-col-md-0.ibm-col-group {
+    [class*="ibm-col-xlg-"].ibm-col-hide-md.ibm-col-group {
       display: flex; }
   .ibm-col-md-1 {
     width: calc( (100vw - 32px) * 0.125); }
@@ -317,9 +327,11 @@ html, body {
     width: calc( (100vw - 32px) * 0.875); }
   .ibm-col-md-8 {
     width: calc( (100vw - 32px) * 1); }
-  [class*="ibm-col-xlg-"].ibm-col-lg-0 {
+  [class*="ibm-col-lg-"].ibm-col-hide-xlg {
+    display: none; }
+  [class*="ibm-col-xlg-"].ibm-col-hide-lg {
     display: initial; }
-    [class*="ibm-col-xlg-"].ibm-col-lg-0.ibm-col-group {
+    [class*="ibm-col-xlg-"].ibm-col-hide-lg.ibm-col-group {
       display: flex; }
   .ibm-col-lg-1 {
     width: calc( (100vw - 32px) * 0.0625); }
@@ -353,6 +365,8 @@ html, body {
     width: calc( (100vw - 32px) * 0.9375); }
   .ibm-col-lg-16 {
     width: calc( (100vw - 32px) * 1); }
+  [class*="ibm-col-xlg-"].ibm-col-hide-xlg {
+    display: none; }
   .ibm-col-xlg-1 {
     width: calc( (100vw - 32px) * 0.0625);
     max-width: 96px;
